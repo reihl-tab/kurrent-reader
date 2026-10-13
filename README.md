@@ -28,10 +28,20 @@ First real runs (2026-10-13, 2 GB RAM / 2 vCPU sandbox, CPU fp16):
   `2.) Den 23ten Nov ist dem hiesigen Schulzuden` (twins entry, conf 0.95),
   `4.) Den 28. August Abend 10 Uhr ist dem Grie-` (conf 0.87),
   `von seiner Ehefrau Kula...` (the twins' parents' line).
-- **Fails: isolated table-cell crops.** Single date cells from the 1845
-  death-register table ("28ten May", "30ten May") came back as garbage
-  (`zuſchlag`, `Bſtron`). The model needs a full line of context; cell
-  fragments are out of distribution.
+- **Fails: isolated table-cell crops, even after table-rule removal.**
+  Single date cells from the 1845 death-register table ("28ten May",
+  "30ten May") came back as garbage (`zuſchlag`, `Bſtron`, `922`). The
+  model needs a full line of context; cell fragments are out of
+  distribution. Erasing the printed table rules first (`kurrent-reader
+  derule`: morphological rule detection + inpainting) improved honesty and
+  partial content - the misleading `922` at 0.84 became `geometrisch` at
+  0.13, and the year strip reads `1845` at 0.996 - but the day/month
+  words are still not recovered.
+- **Per-word strips: partial.** De-ruled cells split into word crops and
+  padded to line-like strips read `1845` at 0.996 and flag a rule stub as
+  a mark (`+` at 0.92), but merged cursive spans stay garbage at near-zero
+  confidence (`Das Meeres` at 0.004). The Gerson death/burial day and
+  month remain unreadable here; the quorum owns those fields.
 - **Segmentation fragments tables.** Classic boxes on the death page:
   187 boxes original vs 120 cleaned; birth page 118 vs 77. Cleaned
   segmentation is less fragmented, but box indexes do not align between
@@ -39,7 +49,10 @@ First real runs (2026-10-13, 2 GB RAM / 2 vCPU sandbox, CPU fp16):
   meaningful when both variants segment alike (a known caveat).
 - **Noisy photocopies can break the classic segmenter** (kraken
   connected-component limit); `segment.py` retries with a smoothed,
-  downscaled image. The Kochendorf family-book photocopy needed it.
+  downscaled image. On the Kochendorf family-book photocopy that retry
+  completed but found 0 lines; the recipe that works is the full
+  preprocess filter first, then segmentation of the cleaned image at
+  0.5x scale (82 lines).
 - **Memory.** fp32 weights are ~1.3 GB and `torch` cannot quantize fp16
   tensors, so machines with < ~2.6 GB free fall back to fp16 inference
   (~670 MB). Throughput on 2 vCPU: ~30-120 s per line. A confidence of
