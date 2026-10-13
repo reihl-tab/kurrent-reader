@@ -1,4 +1,4 @@
-"""Command line interface: kurrent-reader <preprocess|segment|read|run>."""
+"""Command line interface: kurrent-reader <preprocess|derule|segment|read|run>."""
 
 from __future__ import annotations
 
@@ -6,13 +6,21 @@ import argparse
 import json
 import sys
 
-from . import preprocess, segment
+from . import derule, preprocess, segment
 from .pipeline import run_page
 from .read import DEFAULT_MODEL, LineReader
 
 
 def _cmd_preprocess(args: argparse.Namespace) -> int:
     meta = preprocess.process_file(args.image, args.output_dir)
+    print(json.dumps(meta, indent=2))
+    return 0
+
+
+def _cmd_derule(args: argparse.Namespace) -> int:
+    meta = derule.process_file(
+        args.image, args.output_dir, line_fraction=args.line_fraction, split=args.split
+    )
     print(json.dumps(meta, indent=2))
     return 0
 
@@ -61,6 +69,13 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("image")
     p.add_argument("output_dir")
     p.set_defaults(func=_cmd_preprocess)
+
+    p = sub.add_parser("derule", help="erase table ruling lines (original kept untouched)")
+    p.add_argument("image")
+    p.add_argument("output_dir")
+    p.add_argument("--line-fraction", type=float, default=0.2)
+    p.add_argument("--split", action="store_true", help="also write one crop per column")
+    p.set_defaults(func=_cmd_derule)
 
     p = sub.add_parser("segment", help="detect text lines and write crops")
     p.add_argument("image")
