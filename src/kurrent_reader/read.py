@@ -116,5 +116,7 @@ def _mean_token_probability(ids: Any, scores: Any) -> float:
         prob = torch.softmax(step_scores[0].float(), dim=-1)[int(token_id)]
         probs.append(float(prob))
     if not probs:
-        return 0.0
+        # Scores can be missing (e.g. early EOS under inference_mode); an
+        # honest "unknown" is -1.0, never a fake zero-confidence reading.
+        return -1.0
     return math.exp(sum(math.log(max(p, 1e-9)) for p in probs) / len(probs))
