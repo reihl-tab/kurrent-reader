@@ -45,3 +45,41 @@ def test_align_missing_rows_gives_none() -> None:
 
 def test_align_empty() -> None:
     assert align_chronological([], 0) == []
+
+
+def _skewed_table(angle: float = 0.0) -> np.ndarray:
+    import numpy as np
+    from PIL import Image
+
+    img = np.full((800, 600), 220, dtype=np.uint8)
+    for y in range(50, 750, 60):
+        img[y - 1 : y + 2, :] = 30  # horizontal rules
+    for x in range(80, 520, 110):
+        img[:, x - 1 : x + 2] = 30  # vertical rules
+    if angle:
+        img = np.asarray(
+            Image.fromarray(img).rotate(-angle, resample=Image.Resampling.BILINEAR, expand=False, fillcolor=255),
+            dtype=np.uint8,
+        )
+    return img
+
+
+def test_estimate_skew_zero_on_straight_table() -> None:
+    from kurrent_reader.ruled_table import estimate_skew_deg
+
+    assert abs(estimate_skew_deg(_skewed_table(0.0))) < 0.2
+
+
+def test_estimate_skew_recovers_rotation() -> None:
+    from kurrent_reader.ruled_table import estimate_skew_deg
+
+    est = estimate_skew_deg(_skewed_table(1.5))
+    assert abs(abs(est) - 1.5) < 0.4
+
+
+def test_row_bands_deskewed_finds_rows_on_skewed_scan() -> None:
+    from kurrent_reader.ruled_table import row_bands_deskewed
+
+    bands, angle = row_bands_deskewed(_skewed_table(2.0))
+    assert abs(abs(angle) - 2.0) < 0.5
+    assert len(bands) >= 8  # deskew round trip restores detectability
