@@ -88,3 +88,72 @@ def align_chronological(bands: list[RowBand], n_entries: int) -> list[RowBand | 
         return selected
     padded: list[RowBand | None] = [None] * (n_entries - len(bands)) + list(bands)
     return padded
+
+
+def estimate_skew_deg(
+    gray: NDArray[np.uint8],
+    n_bands: int = 5,
+    dark_threshold: int = 140,
+    min_fraction: float = 0.2,
+) -> float:
+    """Estimate page skew in degrees from vertical-rule drift across bands.
+
+    Full-page projection fails on slightly rotated scans because a rule
+    drifts across columns over long y-ranges. Detect vertical rules per
+    horizontal band, track each rule across bands by nearest-x matching,
+    and fit each rule's x drift against band y; the median slope gives the
+    skew angle. Returns 0.0 when too few rules can be tracked.
+    """
+    import math
+
+    h, _w = gray.shape
+    band_h = h // n_bands
+    strips: list[tuple[float, list[int]]] = []
+    for b in range(n_bands):
+        strip = gray[b * band_h : (b + 1) * band_h]
+        rules = detect_rules(strip, axis=0, dark_threshold=dark_threshold, min_fraction=min_fraction)
+        strips.append((b * band_h + band_h / 2, rules))
+    ref_y, ref_rules = max(strips, key=lambda s: len(s[1]))
+    if len(ref_rules) < 2:
+        return 0.0
+    slopes: list[float] = []
+    for ref_x in ref_rules:
+        pts = [(ref_y, float(ref_x))]
+        for y, rules in strips:
+            if not rules:
+                continue
+            nearest = min(rules, key=lambda x: abs(x - pts[-1][1]))
+            if abs(nearest - pts[-1][1]) <= band_h * 0.25 + 8:
+                pts.append((y, float(nearest)))
+        if len(pts) >= 3:
+            ys = np.array([p[0] for p in pts])
+            xs = np.array([p[1] for p in pts])
+            slope, _intercept = np.polyfit(ys, xs, 1)
+            slopes.append(float(slope))
+    if not slopes:
+        return 0.0
+    return math.degrees(math.atan(float(np.median(slopes))))
+
+
+def deskew(gray: NDArray[np.uint8], angle_deg: float) -> NDArray[np.uint8]:
+    """Rotate a grayscale image by ``angle_deg`` (PIL, no canvas expansion)."""
+    from PIL import Image
+
+    if abs(angle_deg) < 0.05:
+        return gray
+    img = Image.fromarray(gray)
+    rotated = img.rotate(-angle_deg, resample=Image.Resampling.BILINEAR, expand=False, fillcolor=255)
+    return np.asarray(rotated, dtype=np.uint8)
+
+
+def row_bands_deskewed(
+    gray: NDArray[np.uint8],
+    dark_threshold: int = 140,
+    min_fraction: float = 0.2,
+    min_height: int = 40,
+    n_bands: int = 5,
+) -> tuple[list[RowBand], float]:
+    """Deskew-tolerant row detection: estimate skew, deskew, then row_bands."""
+    angle = estimate_skew_deg(gray, n_bands=n_bands, dark_threshold=dark_threshold, min_fraction=min_fraction)
+    fixed = deskew(gray, angle)
+    return row_bands(fixed, dark_threshold=dark_threshold, min_fraction=min_fraction, min_height=min_height), angle
