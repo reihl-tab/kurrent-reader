@@ -5,11 +5,16 @@ from __future__ import annotations
 import ast
 from pathlib import Path
 
-SCRIPT = Path(__file__).resolve().parents[1] / "scripts" / "colab_train.py"
+SCRIPTS = [
+    Path(__file__).resolve().parents[1] / "scripts" / "colab_train.py",
+    Path(__file__).resolve().parents[1] / "scripts" / "colab_train_v2.py",
+]
+SCRIPT = SCRIPTS[0]
 
 
 def test_colab_runner_compiles() -> None:
-    compile(SCRIPT.read_text(encoding="utf-8"), str(SCRIPT), "exec")
+    for script in SCRIPTS:
+        compile(script.read_text(encoding="utf-8"), str(script), "exec")
 
 
 def test_stdout_reconfigure_is_guarded() -> None:
