@@ -1,0 +1,32 @@
+name: release
+on:
+  push:
+    branches: [main]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pytest
+      - run: python -m pytest tests/ -q
+  release:
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: |
+          git config user.name "reihlinstinct"
+          git config user.email "reihlinstinct@gmail.com"
+      - run: python scripts/release.py
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
