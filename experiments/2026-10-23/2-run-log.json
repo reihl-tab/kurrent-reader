@@ -1,0 +1,40 @@
+{
+ "experiment_series": "trocr-kurrent Eschau fine-tune (Kaggle kernel reihlinstinct/kurrent-timing-run-1)",
+ "base_model": "dh-unibe/trocr-kurrent",
+ "metric_definitions": {
+  "EVAL_NAMES": "5-row held-out Eschau validation (4 occupation crops + the Gerson Mosbacher row). Selection-touched: used for keep-best and experiment selection. NOT an untouched test.",
+  "EVAL12": "12-item secondary validation set (selection-touched in earlier v2/v3 rounds).",
+  "EVAL500_mm006": "500-row MM corpus hold-out. Date-flattered: overstates register-cell ability.",
+  "EVAL_SEEDS_FIT": "12 trained seed cells re-scored. Fit-check only; proves learnability, NOT generalization.",
+  "untouched_test": "Reserved for a future verified labeling wave (incl. g01 twins row). Never trained on, never used for selection."
+ },
+ "runs": [
+  {
+   "kernel_version": 5, "source_file": "scripts/kaggle_kernel_v4.py", "kaggle_run_id": 361378838,
+   "date": "2026-10-23", "gpu": "T4 x2", "gpu_seconds": 7373.6, "status": "success",
+   "config": {"from": "base", "lr": 5e-6, "warmup": 100, "epochs": 1, "batch": 8, "train_rows": 62999, "manifest": "train_manifest_v4.jsonl (Kaggle kurrent-code dataset v9)"},
+   "metrics": {"EVAL500_mm006": {"cer": 0.0182, "word_acc": 0.9151}, "EVAL_NAMES": {"cer_approx": 1.0}, "EVAL_SEEDS_FIT": {"n": 12, "cer": 0.974}, "gerson_span_hits": false},
+   "verdict": "mm006 improved sharply but target-domain (register cells) collapsed: underfit on Eschau cells (each of 170 cells seen ~once among 62,963 MM lines)."
+  },
+  {
+   "kernel_version": 6, "source_file": "scripts/kaggle_kernel_v7_diag.py", "kaggle_run_id": 361419225,
+   "date": "2026-10-23", "gpu": "T4 x2", "gpu_seconds": 458, "status": "failed",
+   "failure": "NameError from an editing typo (_EM vs _EMB) in the manually patched manifest-embedding line. Fixed and re-pushed as version 7. No metrics."
+  },
+  {
+   "kernel_version": 7, "source_file": "scripts/kaggle_kernel_v7_diag.py", "kaggle_run_id": null,
+   "date": "2026-10-23", "gpu": "T4 x2", "gpu_seconds": 1892.4, "status": "success",
+   "config": {"from": "base", "lr": 5e-6, "warmup": 20, "epochs": 3, "batch": 8, "eval_every": 200, "train_rows": 3700, "data": "148 clean verified target cells x25 (target-only overfit diagnostic, no MM lines)"},
+   "metrics": {"EVAL_SEEDS_FIT": {"n": 12, "cer": 0.1094}, "EVAL_NAMES": {"before": 0.9067, "step200_on": 1.2685}, "EVAL500_mm006": {"before": 0.0624, "after": 0.0625}, "train_loss": {"first": 16.18, "last": 0.0017}},
+   "verdict": "Learnability confirmed under 25x exposure (seeds-fit 0.109 vs 0.974 in the mixed run). Memorization of 148 cells did NOT generalize (held-out EVAL_NAMES got worse, degenerate fixed outputs). Format transfer visible on EVAL12 (date-shaped outputs on date cells)."
+  },
+  {
+   "kernel_version": 8, "source_file": "scripts/kaggle_kernel_v8.py", "kaggle_run_id": null,
+   "date": "2026-10-23", "gpu": "T4 x2", "gpu_seconds": null, "status": "running (launched 14:33 IDT)",
+   "config": {"from": "base", "lr": 5e-6, "warmup": 100, "epochs": 1, "batch": 8, "eval_every": 500, "train_rows": 68749, "steps": 8593, "data": "62,829 MM lines + 148 clean verified target cells x40 (mix-oversample)", "keep_best_frozen_to": "EVAL_NAMES cer only"},
+   "metrics": "pending",
+   "verdict": "pending - results due ~17:15 IDT. Interpretation bounded: EVAL_NAMES improvement = fit under mixed exposure; does not prove mix dominance caused v5 collapse; generalization claims reserved for the untouched test wave."
+  }
+ ],
+ "reference_baselines": {"base_model": {"EVAL_NAMES_cer": 0.9067, "EVAL500_mm006_cer": 0.0624}}
+}

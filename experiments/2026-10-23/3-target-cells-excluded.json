@@ -1,0 +1,343 @@
+{
+ "summary": {
+  "original_target_cells": 170,
+  "dropped": 22,
+  "retained": 148,
+  "retained_by_kind": {
+   "date": 61,
+   "name": 79,
+   "occupation": 8
+  }
+ },
+ "corrections": [
+  {
+   "IdNr": 38796,
+   "kind": "name",
+   "file": "g06_22.jpg",
+   "bbox_before": [
+    150,
+    1195,
+    250,
+    146
+   ],
+   "bbox_after": [
+    150,
+    1095,
+    250,
+    115
+   ],
+   "reason": "bbox sat one row too low; corrected to the actual name band"
+  }
+ ],
+ "dropped": [
+  {
+   "project": "eschau-seeds",
+   "IdNr": 38315,
+   "kind": "date",
+   "file": "s02_22.jpg",
+   "bbox": [
+    520,
+    512,
+    320,
+    194
+   ],
+   "text": "28.06.1823",
+   "reason": "date bbox x=520 lands in the officiant column on s02/s03; the real date column is x~1400-1720"
+  },
+  {
+   "project": "eschau-seeds",
+   "IdNr": 38622,
+   "kind": "date",
+   "file": "s02_22.jpg",
+   "bbox": [
+    520,
+    686,
+    320,
+    217
+   ],
+   "text": "04.10.1823",
+   "reason": "date bbox x=520 lands in the officiant column on s02/s03; the real date column is x~1400-1720"
+  },
+  {
+   "project": "eschau-seeds",
+   "IdNr": 38624,
+   "kind": "date",
+   "file": "s02_22.jpg",
+   "bbox": [
+    520,
+    1002,
+    320,
+    152
+   ],
+   "text": "11.05.1825",
+   "reason": "date bbox x=520 lands in the officiant column on s02/s03; the real date column is x~1400-1720"
+  },
+  {
+   "project": "eschau-seeds",
+   "IdNr": 38623,
+   "kind": "date",
+   "file": "s02_22.jpg",
+   "bbox": [
+    520,
+    883,
+    320,
+    139
+   ],
+   "text": "9.4.1825",
+   "reason": "date bbox x=520 lands in the officiant column on s02/s03; the real date column is x~1400-1720"
+  },
+  {
+   "project": "eschau-seeds",
+   "IdNr": 38625,
+   "kind": "date",
+   "file": "s02_22.jpg",
+   "bbox": [
+    520,
+    1365,
+    320,
+    187
+   ],
+   "text": "08.04.1827",
+   "reason": "date bbox x=520 lands in the officiant column on s02/s03; the real date column is x~1400-1720"
+  },
+  {
+   "project": "eschau-seeds",
+   "IdNr": 38626,
+   "kind": "date",
+   "file": "s02_22.jpg",
+   "bbox": [
+    520,
+    1532,
+    320,
+    234
+   ],
+   "text": "07.12.1827",
+   "reason": "date bbox x=520 lands in the officiant column on s02/s03; the real date column is x~1400-1720"
+  },
+  {
+   "project": "eschau-seeds",
+   "IdNr": 38627,
+   "kind": "date",
+   "file": "s02_22.jpg",
+   "bbox": [
+    520,
+    1746,
+    320,
+    188
+   ],
+   "text": "29.03.1829",
+   "reason": "date bbox x=520 lands in the officiant column on s02/s03; the real date column is x~1400-1720"
+  },
+  {
+   "project": "eschau-seeds",
+   "IdNr": 38628,
+   "kind": "date",
+   "file": "s02_22.jpg",
+   "bbox": [
+    520,
+    1914,
+    320,
+    202
+   ],
+   "text": "21.12.1829",
+   "reason": "date bbox x=520 lands in the officiant column on s02/s03; the real date column is x~1400-1720"
+  },
+  {
+   "project": "eschau-seeds",
+   "IdNr": 38629,
+   "kind": "date",
+   "file": "s03_22.jpg",
+   "bbox": [
+    520,
+    406,
+    260,
+    159
+   ],
+   "text": "01.08.1831",
+   "reason": "date bbox x=520 lands in the officiant column on s02/s03; the real date column is x~1400-1720"
+  },
+  {
+   "project": "eschau-seeds",
+   "IdNr": 38633,
+   "kind": "date",
+   "file": "s03_22.jpg",
+   "bbox": [
+    520,
+    545,
+    260,
+    185
+   ],
+   "text": "26.11.1831",
+   "reason": "date bbox x=520 lands in the officiant column on s02/s03; the real date column is x~1400-1720"
+  },
+  {
+   "project": "eschau-seeds",
+   "IdNr": 38634,
+   "kind": "date",
+   "file": "s03_22.jpg",
+   "bbox": [
+    520,
+    710,
+    260,
+    186
+   ],
+   "text": "30.05.1833",
+   "reason": "date bbox x=520 lands in the officiant column on s02/s03; the real date column is x~1400-1720"
+  },
+  {
+   "project": "eschau-seeds",
+   "IdNr": 38635,
+   "kind": "date",
+   "file": "s03_22.jpg",
+   "bbox": [
+    520,
+    876,
+    260,
+    144
+   ],
+   "text": "05.08.1833",
+   "reason": "date bbox x=520 lands in the officiant column on s02/s03; the real date column is x~1400-1720"
+  },
+  {
+   "project": "eschau-seeds",
+   "IdNr": 38638,
+   "kind": "date",
+   "file": "s03_22.jpg",
+   "bbox": [
+    520,
+    1000,
+    260,
+    201
+   ],
+   "text": "03.01.1834",
+   "reason": "date bbox x=520 lands in the officiant column on s02/s03; the real date column is x~1400-1720"
+  },
+  {
+   "project": "eschau-seeds",
+   "IdNr": 38637,
+   "kind": "date",
+   "file": "s03_22.jpg",
+   "bbox": [
+    520,
+    1181,
+    260,
+    198
+   ],
+   "text": "10.05.1834",
+   "reason": "date bbox x=520 lands in the officiant column on s02/s03; the real date column is x~1400-1720"
+  },
+  {
+   "project": "eschau-seeds",
+   "IdNr": 38636,
+   "kind": "date",
+   "file": "s03_22.jpg",
+   "bbox": [
+    520,
+    1359,
+    260,
+    170
+   ],
+   "text": "22.05.1834",
+   "reason": "date bbox x=520 lands in the officiant column on s02/s03; the real date column is x~1400-1720"
+  },
+  {
+   "project": "eschau-seeds",
+   "IdNr": 38639,
+   "kind": "date",
+   "file": "s03_22.jpg",
+   "bbox": [
+    520,
+    1509,
+    260,
+    219
+   ],
+   "text": "09.08.1835",
+   "reason": "date bbox x=520 lands in the officiant column on s02/s03; the real date column is x~1400-1720"
+  },
+  {
+   "project": "eschau-seeds",
+   "IdNr": 38640,
+   "kind": "date",
+   "file": "s03_22.jpg",
+   "bbox": [
+    520,
+    1708,
+    260,
+    141
+   ],
+   "text": "26.06.1836",
+   "reason": "date bbox x=520 lands in the officiant column on s02/s03; the real date column is x~1400-1720"
+  },
+  {
+   "project": "eschau-seeds",
+   "IdNr": 38015,
+   "kind": "date",
+   "file": "s02_22.jpg",
+   "bbox": [
+    520,
+    1134,
+    320,
+    251
+   ],
+   "text": "18.07.1825",
+   "reason": "date bbox x=520 lands in the officiant column on s02/s03; the real date column is x~1400-1720"
+  },
+  {
+   "project": "eschau-seeds",
+   "IdNr": 38098,
+   "kind": "date",
+   "file": "s03_22.jpg",
+   "bbox": [
+    520,
+    1829,
+    260,
+    227
+   ],
+   "text": "08.04.1837",
+   "reason": "date bbox x=520 lands in the officiant column on s02/s03; the real date column is x~1400-1720"
+  },
+  {
+   "project": "eschau-occ",
+   "IdNr": 38624,
+   "kind": "occupation",
+   "file": "s02_22.jpg",
+   "bbox": [
+    402,
+    976,
+    119,
+    160
+   ],
+   "text": "Schäfer",
+   "reason": "occupation bbox suspect on s02 (column x not verified)"
+  },
+  {
+   "project": "eschau-occ",
+   "IdNr": 38627,
+   "kind": "occupation",
+   "file": "s02_22.jpg",
+   "bbox": [
+    385,
+    1720,
+    121,
+    196
+   ],
+   "text": "Handelsjude",
+   "reason": "occupation bbox suspect on s02 (column x not verified)"
+  },
+  {
+   "project": "eschau-gbirths",
+   "IdNr": 38646,
+   "kind": "name",
+   "file": "g06_22.jpg",
+   "bbox": [
+    150,
+    1048,
+    250,
+    135
+   ],
+   "text": "Babeta Mosbacher",
+   "reason": "name band empty (no ink) on g06"
+  }
+ ],
+ "geometry_note": "Column x verified per page against row bands (s04 x890, s05 x652, s06/s07/s08 x1400 correct; s02/s03 x520 wrong). Row assignment was correct everywhere; the defect was column x only."
+}

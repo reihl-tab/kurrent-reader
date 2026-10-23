@@ -1,0 +1,7 @@
+{"file": "s05_22.jpg", "bbox": [630, 1790, 260, 130], "text": "Schächter", "project": "eschau-occ", "kind": "occupation", "IdNr": 38666}
+{"file": "s07_22.jpg", "bbox": [462, 1066, 166, 137], "text": "Metzger", "project": "eschau-occ", "kind": "occupation", "IdNr": 38678}
+{"file": "s07_22.jpg", "bbox": [462, 1560, 166, 108], "text": "Makler", "project": "eschau-occ", "kind": "occupation", "IdNr": 38693}
+{"file": "s07_22.jpg", "bbox": [462, 1870, 166, 183], "text": "Lehrer", "project": "eschau-occ", "kind": "occupation", "IdNr": 38696}
+{"file": "s04_22.jpg", "bbox": [150, 995, 280, 170], "text": "Gerson Mosbacher", "project": "eschau-gerson", "kind": "name", "IdNr": 33739}
+{"file": "s04_22.jpg", "bbox": [890, 995, 360, 170], "text": "28.05.1845", "scored_gold": ["28", "1845"], "project": "eschau-gerson", "kind": "date", "IdNr": 33739}
+{"file": "s04_22.jpg", "bbox": [537, 995, 241, 170], "text": "Handelsmann", "project": "eschau-gerson", "kind": "occupation", "IdNr": 33739}
