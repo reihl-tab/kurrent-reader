@@ -1,0 +1,13 @@
+{
+ "config": {"lr": 0.000005, "warmup": 100, "epochs": 1, "eval_every": 500, "batch": 8, "base_model": "/kaggle/input/__nonexistent_no_checkpoint__", "resume": true, "left_out": "MM_1_006"},
+ "before": {"h12": {"h01": {"cer": 0.929, "word_acc": 0}, "h07": {"cer": 0.476, "word_acc": 0.571}, "score12": 0.7025}, "mm006_500": {"n": 500, "cer": 0.0624, "word_acc": 0.7372}, "names": {"n": 7, "cer": 0.9067, "word_acc": 0}},
+ "after_final": {"h12": {"h01": {"cer": 0.714, "word_acc": 0}, "h07": {"cer": 0.167, "word_acc": 0.714}, "score12": 0.4405}},
+ "best": {"step": 500, "combined_cer": 1.2447, "h12": {"h01": {"cer": 0.714, "word_acc": 0}, "h07": {"cer": 0.238, "word_acc": 0.571}, "score12": 0.476}, "mm006_500": {"n": 500, "cer": 0.0233, "word_acc": 0.9004}, "names": {"n": 7, "cer": 1.2447, "word_acc": 0}},
+ "train_seconds": 6975,
+ "total_seconds": 7765,
+ "samples": 68749,
+ "seeds_fit": {"n": 12, "cer": 0.4037},
+ "pages": 1468,
+ "max_steps": null,
+ "_meta": {"run_id": "361444657", "kernel": "reihlinstinct/kurrent-timing-run-1 version 8", "finished": "2026-10-23 ~16:57 IDT", "gpu": "T4 x2", "transcribed": "2026-10-23 17:02 IDT from Kaggle output page JSON tree (timing_result.json 4.97 kB); h12 rows h00-h06,h08-h11 omitted from transcription (span-hit detail only), score12 = mean(h01.cer, h07.cer)", "verdict": "NEGATIVE on frozen metric: EVAL_NAMES never beat base at any eval point; best@500 1.2447 vs base 0.9067. mm006 improved 0.0624->0.0233. seeds_fit 0.4037 (fit worse than v7 diag 0.1094). x40 oversampling diluted in 62,829 MM lines neither fits nor generalizes targets."}
+}

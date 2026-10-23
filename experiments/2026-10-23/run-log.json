@@ -10,31 +10,141 @@
  },
  "runs": [
   {
-   "kernel_version": 5, "source_file": "scripts/kaggle_kernel_v4.py", "kaggle_run_id": 361378838,
-   "date": "2026-10-23", "gpu": "T4 x2", "gpu_seconds": 7373.6, "status": "success",
-   "config": {"from": "base", "lr": 5e-6, "warmup": 100, "epochs": 1, "batch": 8, "train_rows": 62999, "manifest": "train_manifest_v4.jsonl (Kaggle kurrent-code dataset v9)"},
-   "metrics": {"EVAL500_mm006": {"cer": 0.0182, "word_acc": 0.9151}, "EVAL_NAMES": {"cer_approx": 1.0}, "EVAL_SEEDS_FIT": {"n": 12, "cer": 0.974}, "gerson_span_hits": false},
+   "kernel_version": 5,
+   "source_file": "scripts/kaggle_kernel_v4.py",
+   "kaggle_run_id": 361378838,
+   "date": "2026-10-23",
+   "gpu": "T4 x2",
+   "gpu_seconds": 7373.6,
+   "status": "success",
+   "config": {
+    "from": "base",
+    "lr": 5e-06,
+    "warmup": 100,
+    "epochs": 1,
+    "batch": 8,
+    "train_rows": 62999,
+    "manifest": "train_manifest_v4.jsonl (Kaggle kurrent-code dataset v9)"
+   },
+   "metrics": {
+    "EVAL500_mm006": {
+     "cer": 0.0182,
+     "word_acc": 0.9151
+    },
+    "EVAL_NAMES": {
+     "cer_approx": 1.0
+    },
+    "EVAL_SEEDS_FIT": {
+     "n": 12,
+     "cer": 0.974
+    },
+    "gerson_span_hits": false
+   },
    "verdict": "mm006 improved sharply but target-domain (register cells) collapsed: underfit on Eschau cells (each of 170 cells seen ~once among 62,963 MM lines)."
   },
   {
-   "kernel_version": 6, "source_file": "scripts/kaggle_kernel_v7_diag.py", "kaggle_run_id": 361419225,
-   "date": "2026-10-23", "gpu": "T4 x2", "gpu_seconds": 458, "status": "failed",
+   "kernel_version": 6,
+   "source_file": "scripts/kaggle_kernel_v7_diag.py",
+   "kaggle_run_id": 361419225,
+   "date": "2026-10-23",
+   "gpu": "T4 x2",
+   "gpu_seconds": 458,
+   "status": "failed",
    "failure": "NameError from an editing typo (_EM vs _EMB) in the manually patched manifest-embedding line. Fixed and re-pushed as version 7. No metrics."
   },
   {
-   "kernel_version": 7, "source_file": "scripts/kaggle_kernel_v7_diag.py", "kaggle_run_id": null,
-   "date": "2026-10-23", "gpu": "T4 x2", "gpu_seconds": 1892.4, "status": "success",
-   "config": {"from": "base", "lr": 5e-6, "warmup": 20, "epochs": 3, "batch": 8, "eval_every": 200, "train_rows": 3700, "data": "148 clean verified target cells x25 (target-only overfit diagnostic, no MM lines)"},
-   "metrics": {"EVAL_SEEDS_FIT": {"n": 12, "cer": 0.1094}, "EVAL_NAMES": {"before": 0.9067, "step200_on": 1.2685}, "EVAL500_mm006": {"before": 0.0624, "after": 0.0625}, "train_loss": {"first": 16.18, "last": 0.0017}},
+   "kernel_version": 7,
+   "source_file": "scripts/kaggle_kernel_v7_diag.py",
+   "kaggle_run_id": null,
+   "date": "2026-10-23",
+   "gpu": "T4 x2",
+   "gpu_seconds": 1892.4,
+   "status": "success",
+   "config": {
+    "from": "base",
+    "lr": 5e-06,
+    "warmup": 20,
+    "epochs": 3,
+    "batch": 8,
+    "eval_every": 200,
+    "train_rows": 3700,
+    "data": "148 clean verified target cells x25 (target-only overfit diagnostic, no MM lines)"
+   },
+   "metrics": {
+    "EVAL_SEEDS_FIT": {
+     "n": 12,
+     "cer": 0.1094
+    },
+    "EVAL_NAMES": {
+     "before": 0.9067,
+     "step200_on": 1.2685
+    },
+    "EVAL500_mm006": {
+     "before": 0.0624,
+     "after": 0.0625
+    },
+    "train_loss": {
+     "first": 16.18,
+     "last": 0.0017
+    }
+   },
    "verdict": "Learnability confirmed under 25x exposure (seeds-fit 0.109 vs 0.974 in the mixed run). Memorization of 148 cells did NOT generalize (held-out EVAL_NAMES got worse, degenerate fixed outputs). Format transfer visible on EVAL12 (date-shaped outputs on date cells)."
   },
   {
-   "kernel_version": 8, "source_file": "scripts/kaggle_kernel_v8.py", "kaggle_run_id": null,
-   "date": "2026-10-23", "gpu": "T4 x2", "gpu_seconds": null, "status": "running (launched 14:33 IDT)",
-   "config": {"from": "base", "lr": 5e-6, "warmup": 100, "epochs": 1, "batch": 8, "eval_every": 500, "train_rows": 68749, "steps": 8593, "data": "62,829 MM lines + 148 clean verified target cells x40 (mix-oversample)", "keep_best_frozen_to": "EVAL_NAMES cer only"},
+   "kernel_version": 8,
+   "source_file": "scripts/kaggle_kernel_v8.py",
+   "kaggle_run_id": null,
+   "date": "2026-10-23",
+   "gpu": "T4 x2",
+   "gpu_seconds": null,
+   "status": "running (launched 14:33 IDT)",
+   "config": {
+    "from": "base",
+    "lr": 5e-06,
+    "warmup": 100,
+    "epochs": 1,
+    "batch": 8,
+    "eval_every": 500,
+    "train_rows": 68749,
+    "steps": 8593,
+    "data": "62,829 MM lines + 148 clean verified target cells x40 (mix-oversample)",
+    "keep_best_frozen_to": "EVAL_NAMES cer only"
+   },
    "metrics": "pending",
    "verdict": "pending - results due ~17:15 IDT. Interpretation bounded: EVAL_NAMES improvement = fit under mixed exposure; does not prove mix dominance caused v5 collapse; generalization claims reserved for the untouched test wave."
+  },
+  {
+   "version": "v8",
+   "run_id": "361444657",
+   "date": "2026-10-23",
+   "status": "completed",
+   "config": {
+    "data": "62,829 MM + 148 clean target cells x40 = 68,749 lines (8.6% target)",
+    "batch": 8,
+    "lr": 5e-06,
+    "epochs": 1,
+    "eval_every": 500,
+    "from": "base",
+    "keep_best": "EVAL_NAMES cer only (frozen pre-run)"
+   },
+   "results_file": "experiments/2026-10-23/timing_result_v8.json",
+   "headline": {
+    "names_base": 0.9067,
+    "names_best_at_step_500": 1.2447,
+    "mm006_base": 0.0624,
+    "mm006_best": 0.0233,
+    "seeds_fit": 0.4037,
+    "train_seconds": 6975,
+    "total_seconds": 7765
+   },
+   "verdict": "negative on frozen metric: no eval point beat base on held-out names; x40 oversampling diluted in MM neither fits (seeds 0.40) nor generalizes (names +0.338 vs base); mm006 improved. Next lever: more unique verified cells, not more repeats.",
+   "artifacts": "checkpoint-best@500 + checkpoint-final in Kaggle kernel output only (token write-blocked, accepted blocker)"
   }
  ],
- "reference_baselines": {"base_model": {"EVAL_NAMES_cer": 0.9067, "EVAL500_mm006_cer": 0.0624}}
+ "reference_baselines": {
+  "base_model": {
+   "EVAL_NAMES_cer": 0.9067,
+   "EVAL500_mm006_cer": 0.0624
+  }
+ }
 }
