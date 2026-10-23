@@ -37,3 +37,8 @@ Model weights (v5/v7 best checkpoints) exist only in the Kaggle kernel
 Output tab: the account's API tokens currently refuse writes (cause
 unknown), so no independent checkpoint backup exists. Metrics and configs
 are preserved here instead.
+
+## Provenance notes (2026-10-23 17:10 IDT)
+- timing_result_v8.json is a HAND TRANSCRIPTION from the Kaggle output page's rendered JSON tree (with per-row h12 span detail abbreviated; _meta.transcribed records this). The issuer-original file remains in the kernel output of reihlinstinct/kurrent-timing-run-1 (Version 8, run 361444657). Reconstructed metrics file != original.
+- Source scans: NOT stored here. Retrievability tested 2026-10-23 ~17:08 IDT: all 9 distinct pages referenced by target-cells-retained.jsonl (g05,g06,s02,s03,s04,s05,s06,s07,s08) plus twins page g01 return HTTP 200 from https://files.juf.stadtarchiv-digital.de/quellen/eschau/standesregister/1081/<page>_22.jpg (10/10 tested). Other pages of register 1081 and the MM corpus pages (1,468 in v8; separate corpus) NOT tested - no blanket retrievability claim. MM corpus images live in Kaggle dataset kurrent-train-v1 only; their independent provenance is an open item.
+- Model weights (v8 checkpoint-best@500, checkpoint-final; v5/v7 checkpoints): Kaggle kernel output only. Export blocked by read-only API tokens (accepted blocker); not backed up.
