@@ -6,3 +6,9 @@
 - Paket distribution: register sections are the low paketNrs (0-28); high paketNrs (>=35, up to 4791265) look like cross-source/document references - filter before use. Membership must be rebuilt from raw quellen (entry-viewer-map.json is known-buggy); rows = children only via strict quellen regex (parents/witnesses inflate counts).
 - paketNr -> scan file (s/g/hNN_22.jpg) mapping: NOT yet established - next step, via the archive viewer (JUF_viewer.php?quelleId=1081&paketNr=N), read-only.
 - Prior labeled coverage: 78 IdNrs / 148 cells (see experiments/2026-10-23/). This universe is the pool for the new unique-label wave (hypothesis, not proven lever).
+
+## paketNr -> scan file (2026-10-23)
+Each record's 1081 anchors were resolved once via JUF_viewer.php (read-only): paket_map.json.
+Sections: g=Geburten, h=Heiraten, s=Sterben. eschau1081_index.json now carries the full anchors
+and a resolved scan_files list per person. Records whose only 1081 pakets are unprobed/high
+(cross-source refs) have no scan_files yet.

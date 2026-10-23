@@ -1,0 +1,32 @@
+{
+ "quelle": "Eschau Standesregister (quelleId=1081)",
+ "note": "paketNr -> scan file, resolved via JUF_viewer.php anchors on 2026-10-23 (read-only, one probe per paket). Sections: g=Geburten, h=Heiraten, s=Sterben. paket 0 = no image (cover/intro). Paket 3 has no linked person records; pakets 28+ not referenced. Pakets 0-27 fully cover all 235 linked persons. High paketNrs (35-99) are cross-source refs, not this register's pages.",
+ "map": {
+  "1": "g01_22.jpg",
+  "2": "g02_22.jpg",
+  "4": "g04_22.jpg",
+  "5": "g05_22.jpg",
+  "6": "g06_22.jpg",
+  "7": "g07_22.jpg",
+  "8": "g08_22.jpg",
+  "9": "g09_22.jpg",
+  "10": "g10_22.jpg",
+  "11": "g11_22.jpg",
+  "12": "g12_22.jpg",
+  "13": "g13_22.jpg",
+  "14": "h01_22.jpg",
+  "15": "h02_22.jpg",
+  "16": "h03_22.jpg",
+  "17": "h04_22.jpg",
+  "18": "h05_22.jpg",
+  "19": "h06_22.jpg",
+  "20": "s01_22.jpg",
+  "21": "s02_22.jpg",
+  "22": "s03_22.jpg",
+  "23": "s04_22.jpg",
+  "24": "s05_22.jpg",
+  "25": "s06_22.jpg",
+  "26": "s07_22.jpg",
+  "27": "s08_22.jpg"
+ }
+}
