@@ -1,0 +1,288 @@
+{
+ "g01_22.jpg": {
+  "size": [
+   1510,
+   2149
+  ],
+  "v_rules": [],
+  "h_rules": []
+ },
+ "g02_22.jpg": {
+  "size": [
+   2807,
+   2187
+  ],
+  "v_rules": [
+   147
+  ],
+  "h_rules": [
+   165,
+   658
+  ]
+ },
+ "g04_22.jpg": {
+  "size": [
+   2807,
+   2187
+  ],
+  "v_rules": [],
+  "h_rules": [
+   174,
+   379,
+   2157,
+   2376
+  ]
+ },
+ "g05_22.jpg": {
+  "size": [
+   2807,
+   2187
+  ],
+  "v_rules": [],
+  "h_rules": []
+ },
+ "g06_22.jpg": {
+  "size": [
+   2807,
+   2187
+  ],
+  "v_rules": [],
+  "h_rules": [
+   386
+  ]
+ },
+ "g07_22.jpg": {
+  "size": [
+   2807,
+   2187
+  ],
+  "v_rules": [
+   150
+  ],
+  "h_rules": [
+   190,
+   1350
+  ]
+ },
+ "g08_22.jpg": {
+  "size": [
+   2807,
+   2187
+  ],
+  "v_rules": [],
+  "h_rules": []
+ },
+ "g09_22.jpg": {
+  "size": [
+   2807,
+   2187
+  ],
+  "v_rules": [
+   145
+  ],
+  "h_rules": [
+   194
+  ]
+ },
+ "g10_22.jpg": {
+  "size": [
+   2807,
+   2187
+  ],
+  "v_rules": [
+   149
+  ],
+  "h_rules": [
+   183
+  ]
+ },
+ "g11_22.jpg": {
+  "size": [
+   2807,
+   2187
+  ],
+  "v_rules": [],
+  "h_rules": []
+ },
+ "g12_22.jpg": {
+  "size": [
+   2807,
+   2187
+  ],
+  "v_rules": [],
+  "h_rules": []
+ },
+ "g13_22.jpg": {
+  "size": [
+   2807,
+   2187
+  ],
+  "v_rules": [],
+  "h_rules": []
+ },
+ "h01_22.jpg": {
+  "size": [
+   1362,
+   2207
+  ],
+  "v_rules": [],
+  "h_rules": [
+   1247
+  ]
+ },
+ "h02_22.jpg": {
+  "size": [
+   1458,
+   2187
+  ],
+  "v_rules": [
+   717,
+   771,
+   822,
+   872,
+   925,
+   978,
+   1021
+  ],
+  "h_rules": [
+   159
+  ]
+ },
+ "h03_22.jpg": {
+  "size": [
+   1362,
+   2207
+  ],
+  "v_rules": [
+   903,
+   954,
+   1000,
+   1049,
+   1094,
+   1139
+  ],
+  "h_rules": []
+ },
+ "h04_22.jpg": {
+  "size": [
+   1458,
+   2187
+  ],
+  "v_rules": [
+   738,
+   780,
+   869
+  ],
+  "h_rules": []
+ },
+ "h05_22.jpg": {
+  "size": [
+   1362,
+   2207
+  ],
+  "v_rules": [
+   1124,
+   1161,
+   1198
+  ],
+  "h_rules": []
+ },
+ "h06_22.jpg": {
+  "size": [
+   1458,
+   2187
+  ],
+  "v_rules": [
+   875,
+   913,
+   947
+  ],
+  "h_rules": []
+ },
+ "s01_22.jpg": {
+  "size": [
+   1362,
+   2207
+  ],
+  "v_rules": [],
+  "h_rules": []
+ },
+ "s02_22.jpg": {
+  "size": [
+   2807,
+   2187
+  ],
+  "v_rules": [
+   339,
+   535
+  ],
+  "h_rules": [
+   173
+  ]
+ },
+ "s03_22.jpg": {
+  "size": [
+   2807,
+   2187
+  ],
+  "v_rules": [
+   144
+  ],
+  "h_rules": [
+   159,
+   536,
+   767,
+   984
+  ]
+ },
+ "s04_22.jpg": {
+  "size": [
+   2807,
+   2187
+  ],
+  "v_rules": [],
+  "h_rules": [
+   134
+  ]
+ },
+ "s05_22.jpg": {
+  "size": [
+   2807,
+   2187
+  ],
+  "v_rules": [],
+  "h_rules": []
+ },
+ "s06_22.jpg": {
+  "size": [
+   2807,
+   2187
+  ],
+  "v_rules": [],
+  "h_rules": [
+   147
+  ]
+ },
+ "s07_22.jpg": {
+  "size": [
+   2807,
+   2187
+  ],
+  "v_rules": [
+   143
+  ],
+  "h_rules": [
+   160,
+   1334
+  ]
+ },
+ "s08_22.jpg": {
+  "size": [
+   2807,
+   2187
+  ],
+  "v_rules": [],
+  "h_rules": []
+ },
+ "_note": "Raw full-page projection detection (ruled_table.detect_rules, threshold 140/0.2). Mostly empty on narrative pages (correct) AND on light-ruled table spreads (known skew/region limit, issue #4). v-rules>2 on h02/h03 are false positives from handwriting. Per-half-table banded detection is the needed next step for table_spread pages; narrative pages need line segmentation instead."
+}

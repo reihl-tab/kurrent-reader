@@ -12,3 +12,13 @@ Each record's 1081 anchors were resolved once via JUF_viewer.php (read-only): pa
 Sections: g=Geburten, h=Heiraten, s=Sterben. eschau1081_index.json now carries the full anchors
 and a resolved scan_files list per person. Records whose only 1081 pakets are unprobed/high
 (cross-source refs) have no scan_files yet.
+
+## Page inventory + types (2026-10-26)
+All 26 referenced scan files downloaded once (read-only, ~1 req/s) and classified visually:
+page_types.json. Key finding: format varies within books by year - g01 (1821-22) and all h pages
+are NARRATIVE prose; g02+ and s02-s08 are ruled TABLE SPREADS (two book-pages per scan, 2807px);
+g09/g11/g12 look like narrative spreads (unconfirmed). Geometry extraction must be per-page-type:
+table spreads need per-half banded rule detection (full-page projection fails on skew/light rules,
+issue #4); narrative pages need line segmentation, not ruled_table. Raw detection output:
+geometry_raw_fullpage.json. Downloaded pages themselves are NOT committed (archive ToS; re-fetch
+from files.juf.stadtarchiv-digital.de when needed).

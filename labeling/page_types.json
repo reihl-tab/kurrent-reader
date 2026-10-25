@@ -1,0 +1,38 @@
+{
+ "_note": "Per-page classification from visual inspection (thumbnails + 4 full views), 2026-10-26. 'narrative_single' = prose entries, one book-page per scan. 'table_spread' = two ruled book-pages side by side (2807px wide). 'narrative_spread' = two prose book-pages side by side (needs confirmation at full resolution). Format varies WITHIN a book by year (g01 1821-22 narrative; g05 1836+ ruled).",
+ "narrative_single": [
+  "g01_22.jpg",
+  "h01_22.jpg",
+  "h02_22.jpg",
+  "h03_22.jpg",
+  "h04_22.jpg",
+  "h05_22.jpg",
+  "h06_22.jpg",
+  "s01_22.jpg"
+ ],
+ "table_spread": [
+  "g02_22.jpg",
+  "g04_22.jpg",
+  "g05_22.jpg",
+  "g06_22.jpg",
+  "g07_22.jpg",
+  "g08_22.jpg",
+  "g10_22.jpg",
+  "g13_22.jpg",
+  "s02_22.jpg",
+  "s03_22.jpg",
+  "s04_22.jpg",
+  "s05_22.jpg",
+  "s06_22.jpg",
+  "s07_22.jpg",
+  "s08_22.jpg"
+ ],
+ "narrative_spread_unconfirmed": [
+  "g09_22.jpg",
+  "g11_22.jpg",
+  "g12_22.jpg"
+ ],
+ "special": {
+  "s01_22.jpg": "mostly empty page (1-2 entries at top)"
+ }
+}
