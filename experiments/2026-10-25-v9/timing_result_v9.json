@@ -1,14 +1,58 @@
 {
-  "_provenance": "HAND TRANSCRIPTION from the Kaggle Version 9 viewer (Output tab timing_result.json tree + Logs tab EVAL lines), 2026-10-26 ~00:50 IST. Not the issuer original - the original timing_result.json (4.97 kB) and checkpoint-best/checkpoint-final live in the Kaggle run output attached to Version 9 of reihlinstinct/kurrent-timing-run-1. API retrieval blocked (kernels endpoints 401/403 since ~Oct 23).",
-  "run": {"kernel": "reihlinstinct/kurrent-timing-run-1", "version": 9, "launched": "2026-10-25T19:47+03:00", "gpu": "T4 x2", "runtime_shown": "4h 12m 32s"},
-  "change_vs_v8": "single variable: 2 epochs instead of 1 (underfitting test). Same data (68,749 lines = 62,829 MM + 148 cells x40), same frozen metrics, from base.",
-  "config": {"lr": 5e-06, "warmup": 100, "epochs": 2, "eval_every": 500, "batch": 8, "base_model": "from-base (no checkpoint)", "left_out": "MM_1_006"},
-  "results": {
-    "EVAL_NAMES_frozen_primary": {"base": 0.9067, "best_step500": 1.2447, "later_steps_range": [1.2844, 1.4193], "note": "never beat base; best point identical to v8 (deterministic prefix, same seed)"},
-    "EVAL500_mm006_dates": {"before": {"cer": 0.0624, "word_acc": 0.7372}, "best_step500": {"cer": 0.0236, "word_acc": 0.8983}},
-    "score12_h01_h07": {"before": 0.7025, "best_step500": 0.476, "after_final": 0.488},
-    "seeds_fit": {"n": 12, "cer": 0.3766, "v8_comparison": 0.4037},
-    "train_seconds": 14334, "total_seconds": 15103, "samples": 68749, "pages": 1468, "max_steps": null
+ "_provenance": "HAND TRANSCRIPTION from the Kaggle Version 9 viewer (Output tab timing_result.json tree + Logs tab EVAL lines), 2026-10-26 ~00:50 IST. Not the issuer original - the original timing_result.json (4.97 kB) and checkpoint-best/checkpoint-final live in the Kaggle run output attached to Version 9 of reihlinstinct/kurrent-timing-run-1. API retrieval blocked (kernels endpoints 401/403 since ~Oct 23).",
+ "run": {
+  "kernel": "reihlinstinct/kurrent-timing-run-1",
+  "version": 9,
+  "launched": "2026-10-25T19:47+03:00",
+  "gpu": "T4 x2",
+  "runtime_shown": "4h 12m 32s"
+ },
+ "change_vs_v8": "single variable: 2 epochs instead of 1 (underfitting test). Same data (68,749 lines = 62,829 MM + 148 cells x40), same frozen metrics, from base.",
+ "config": {
+  "lr": 5e-06,
+  "warmup": 100,
+  "epochs": 2,
+  "eval_every": 500,
+  "batch": 8,
+  "base_model": "from-base (no checkpoint)",
+  "left_out": "MM_1_006"
+ },
+ "results": {
+  "EVAL_NAMES_frozen_primary": {
+   "base": 0.9067,
+   "best_step500": 1.2447,
+   "later_steps_range": [
+    1.2844,
+    1.4193
+   ],
+   "note": "never beat base; best point identical to v8 (deterministic prefix, same seed)"
   },
-  "conclusion": "Underfitting hypothesis REJECTED for this data/recipe: doubling training (2 epochs, 14,334s) did not improve seeds fit (0.3766 vs 0.4037) and names never recovered (best stays the step500 point shared with v8; later steps worse, up to 1.4193). mm006 date ability retained (0.0236). Repetition of 148 unique cells is exhausted as a lever; unique verified labels remain the untested direction (hypothesis, not proven)."
+  "EVAL500_mm006_dates": {
+   "before": {
+    "cer": 0.0624,
+    "word_acc": 0.7372
+   },
+   "best_step500": {
+    "cer": 0.0236,
+    "word_acc": 0.8983
+   }
+  },
+  "score12_h01_h07": {
+   "before": 0.7025,
+   "best_step500": 0.476,
+   "after_final": 0.488
+  },
+  "seeds_fit": {
+   "n": 12,
+   "cer": 0.3766,
+   "v8_comparison": 0.4037
+  },
+  "train_seconds": 14334,
+  "total_seconds": 15103,
+  "samples": 68749,
+  "pages": 1468,
+  "max_steps": null,
+  "conclusion": "Bounded finding only: TWO EPOCHS OF THIS seeded x40 mixed recipe did not improve held-out names over one epoch (best point stays step500 - an artifact of the deterministic data order shared with v8, NOT independent confirmation) and seeds_fit did not rise (0.3766 vs 0.4037). This rules out one specific fix - more epochs of this exact recipe - not underfitting in general. It does NOT prove repetition can never work, and new unique verified cells are a reasonable next experiment, not a proven fix."
+ },
+ "conclusion": "Underfitting hypothesis REJECTED for this data/recipe: doubling training (2 epochs, 14,334s) did not improve seeds fit (0.3766 vs 0.4037) and names never recovered (best stays the step500 point shared with v8; later steps worse, up to 1.4193). mm006 date ability retained (0.0236). Repetition of 148 unique cells is exhausted as a lever; unique verified labels remain the untested direction (hypothesis, not proven)."
 }
