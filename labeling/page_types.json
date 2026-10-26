@@ -1,5 +1,5 @@
 {
- "_note": "Per-page classification from visual inspection (thumbnails + 4 full views), 2026-10-26. 'narrative_single' = prose entries, one book-page per scan. 'table_spread' = two ruled book-pages side by side (2807px wide). 'narrative_spread' = two prose book-pages side by side (needs confirmation at full resolution). Format varies WITHIN a book by year (g01 1821-22 narrative; g05 1836+ ruled).",
+ "_note": "Per-page classification from visual inspection (thumbnails + 4 full views), 2026-10-26. 'narrative_single' = prose entries, one book-page per scan. 'table_spread' = two ruled book-pages side by side (2807px wide). 'narrative_spread' = two prose book-pages side by side (needs confirmation at full resolution). Format varies WITHIN a book by year (g01 1821-22 narrative; g05 1836+ ruled). Correction 2026-10-26: g13 reclassified after full-res overlay check - year-divided prose entries (1813-1815 visible) under a printed column header, NOT ruled rows; rule detection output for it is meaningless.",
  "narrative_single": [
   "g01_22.jpg",
   "h01_22.jpg",
@@ -18,7 +18,6 @@
   "g07_22.jpg",
   "g08_22.jpg",
   "g10_22.jpg",
-  "g13_22.jpg",
   "s02_22.jpg",
   "s03_22.jpg",
   "s04_22.jpg",
@@ -34,5 +33,8 @@
  ],
  "special": {
   "s01_22.jpg": "mostly empty page (1-2 entries at top)"
- }
+ },
+ "prose_with_column_header": [
+  "g13_22.jpg"
+ ]
 }
