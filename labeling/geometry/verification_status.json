@@ -1,0 +1,18 @@
+{
+ "_note": "Per-page verification of row grids (2026-10-28). verified = grid visually checked against overlay, rows align with entries. Batch-1 = first labeling wave (~51-57 fresh persons). Narrative pages deferred: entries are multi-line prose; index gives only name+date, so line labels would need blind-quorum transcription - separate method decision.",
+ "fresh_person_ranking": {"g02_22.jpg": 19, "h04_22.jpg": 16, "g01_22.jpg": 12, "h03_22.jpg": 11, "h05_22.jpg": 10, "g07_22.jpg": 9, "g04_22.jpg": 9, "g13_22.jpg": 9, "g08_22.jpg": 8, "g10_22.jpg": 6, "g05_22.jpg": 3, "s04_22.jpg": 3, "s08_22.jpg": 2, "s05_22.jpg": 1},
+ "batch1_pages": ["g02_22.jpg", "g07_22.jpg", "g04_22.jpg", "g08_22.jpg", "g10_22.jpg"],
+ "pages": {
+  "g02_22.jpg": {"rows": "verified", "columns": "pending", "notes": "left: one entry per row band. right: entries span 2+ ruled rows (step 185) - crop taller bands, careful alignment. Birth register (Geburten)."},
+  "g04_22.jpg": {"rows": "verified", "columns": "pending", "notes": "one-line entries, step 116 left / 219 right. Visual pass 2026-10-27."},
+  "g07_22.jpg": {"rows": "verified", "columns": "pending", "notes": "left good. right: some ruled rows empty (no entry) - pairing must skip empty bands."},
+  "g08_22.jpg": {"rows": "verified_with_caveats", "columns": "pending", "notes": "year dividers 1853/1854/1855 as own bands (skip). Some entries straddle 2 bands; right-bottom lines cut text. Verify per crop at labeling."},
+  "g10_22.jpg": {"rows": "verified_with_caveats", "columns": "pending", "notes": "year dividers 1858-1862 as own bands (skip). Some straddle. Low rule-detection confidence but overlay check passed."},
+  "s04_22.jpg": {"rows": "verified", "columns": "pending", "notes": "grid row 988-1184 contains held-out Gerson band (truth 995-1165). Held-out row EXCLUDED from training crops."},
+  "s02_22.jpg": {"rows": "verified", "columns": "pending", "notes": "0 fresh persons (all covered) - not in batch 1."},
+  "g05_22.jpg": {"rows": "pending", "columns": "pending", "notes": "3 fresh; deferred from batch 1."},
+  "g13_22.jpg": {"rows": "n/a", "columns": "n/a", "notes": "prose-with-header, not a ruled table. Deferred with narrative pages."}
+ },
+ "deferred_narrative": ["g01_22.jpg", "h01_22.jpg", "h02_22.jpg", "h03_22.jpg", "h04_22.jpg", "h05_22.jpg", "h06_22.jpg", "g09_22.jpg", "g11_22.jpg", "g12_22.jpg", "g13_22.jpg"],
+ "deferred_reason": "~62 fresh persons on narrative pages, but line-level labels cannot come from the index alone (entries are prose; index has only name+date). Needs blind-quorum transcription or span-labeling method - decision for later wave."
+}
