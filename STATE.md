@@ -31,3 +31,11 @@ Fine-tune dh-unibe/trocr-kurrent (MIT) to read Kurrent register table cells. Fre
 - VALIDATED: s04 left row 988-1184 fully contains Gerson ground-truth band 995-1165. Visual pass s02/g04. Low-confidence pages: g10/s05/s08/g07 (+g13 prose).
 - Committed labeling/geometry/row_grids_draft.json + rowgrid_overlays/. NEXT: per-page verify (start high fresh-person pages), then column verify per page, then cell crops + index pairing.
 - Wipe hit again; rebuilt (clone + cv2 + /tmp/pages re-downloaded). STATE.md lives in git since 26.10.
+
+## 2026-10-30 batch-1 matching milestone
+- labeling/batch1/band_person_map.json: 35 person-matches across g02/g04/g07/g08/g10 (30 bands), all visually verified on full-res crops (date-cell or name-cell + chronological order). Method, per-band confidence, caveats and column x geometry are inside the map JSON.
+- Multi-entry bands needing y-split before cropping: g04 band1.10 (2-3 entries), g08 band1.3 (Getta+Gerson), g10 band0.4 (4 entries).
+- g04 right page: child-name column NOT found (father/residence + birth date only) -> date-cell samples unless name col located later.
+- g04 band1.0: candidate Madel Strauß 13.01.1831 (index says g02!) - unlabeled pending legible date.
+- Local-only artifacts (ephemeral): /tmp/vrf_*.png verification sheets, /tmp/pairing.json, /tmp/entry_bands.json (rebuild: re-run entry segmentation or extract bands from map? bands source = labeling/geometry/entry_bands_draft.json in git).
+- Next: split multi bands, match remaining g07/g04 children, crop name+date cells per map, build manifest.jsonl, spot-check, then ask user go for next Kaggle run.

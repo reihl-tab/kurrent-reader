@@ -1,0 +1,330 @@
+{
+ "_meta": {
+  "created": "2026-10-30",
+  "method": "entry bands from dense h-rule detection (labeling/geometry/entry_bands_draft.json); band->person pairing by READING the birth-date cell and/or name cell on the band and matching to the JUF index per-page child list (name+gebdatum). Label TEXT comes from the index only; reading only LOCALIZES.",
+  "verification": "every match below was visually confirmed on full-res cell crops (verification sheets vrf_*.png): g02/g04/g08 by date-cell text, g07/g10 by name-cell text + entry numbering + chronological order.",
+  "held_out": "Gerson Mosbacher d.28.05.1845 (s04_22.jpg) never used for training.",
+  "caveats": [
+   "g04_22.jpg right page: child-name column NOT located (page shows father/residence + birth date); these bands yield DATE-cell samples only unless the name column is found later (check page header).",
+   "g04 1.0 = candidate for Strauß, Madel 13.01.1831 (IdNr 38034) although index scan_files says g02; date cell shows 1831, day/month not legible at review scale - DO NOT label yet.",
+   "g04 1.10 (446px tall) contains at least 2 of {Isaak Strauß 15.01.1835, Jonas Mosbacher 18.01.1835, Madel Mosbacher 28.11.1835}; exact sub-splits TBD before cropping.",
+   "g08 1.3 contains Getta (top) + Gerson (bottom) - split before cropping. g08 1.8 (Mendel 29.12.1854) date partially legible, confidence medium.",
+   "g10 0.4 (788px) contains 4 entries: Jette Marx, Manuel Mosbacher, Elieser Marx, Mendel Strauß - split before cropping.",
+   "JUF index is PARTIAL per page: bands with no index child (e.g. g04 1.8 = 15.12.1833) are skipped."
+  ],
+  "column_geometry_fullres": {
+   "g02_22.jpg": {
+    "half1": {
+     "name_x": [
+      1307,
+      1640
+     ],
+     "date_x": [
+      1927,
+      2247
+     ]
+    }
+   },
+   "g04_22.jpg": {
+    "half1": {
+     "date_x_frac": [
+      0.4,
+      0.7
+     ],
+     "name_x": null
+    }
+   },
+   "g07_22.jpg": {
+    "half0": {
+     "name_x_frac": [
+      0.08,
+      0.25
+     ],
+     "col2_x_frac": [
+      0.27,
+      0.42
+     ]
+    }
+   },
+   "g08_22.jpg": {
+    "half1": {
+     "name_x_frac": [
+      0.08,
+      0.3
+     ],
+     "date_x_frac": [
+      0.48,
+      0.76
+     ]
+    }
+   },
+   "g10_22.jpg": {
+    "half0": {
+     "name_x_frac": [
+      0.05,
+      0.25
+     ],
+     "col2_x_frac": [
+      0.25,
+      0.45
+     ]
+    }
+   }
+  }
+ },
+ "matches": {
+  "g02_22.jpg": {
+   "half": 1,
+   "by": "date+prev-era verification",
+   "bands": {
+    "2": {
+     "idnr": 34023,
+     "name": "Mosbacher, Elias",
+     "gebdatum": "25.06.1823",
+     "conf": "verified"
+    },
+    "3": {
+     "idnr": 37361,
+     "name": "Strauß, Hajum",
+     "gebdatum": "18.08.1823",
+     "conf": "verified"
+    },
+    "4": {
+     "idnr": 38015,
+     "name": "Michel, Jakob",
+     "gebdatum": "03.10.1824",
+     "conf": "verified"
+    },
+    "5": {
+     "idnr": 38018,
+     "name": "Michel, Kindle",
+     "gebdatum": "01.11.1824",
+     "conf": "verified"
+    },
+    "6": {
+     "idnr": 38022,
+     "name": "Michel, NN Vromeln",
+     "gebdatum": "27.02.1825",
+     "conf": "verified"
+    },
+    "7": {
+     "idnr": 38784,
+     "name": "Strauß, Abraham",
+     "gebdatum": "18.11.1825",
+     "conf": "verified"
+    },
+    "8": {
+     "idnr": 38738,
+     "name": "Michel, Vromel",
+     "gebdatum": "24.06.1826",
+     "conf": "verified"
+    },
+    "9": {
+     "idnr": 38031,
+     "name": "Strasburger, Isaak",
+     "gebdatum": "07.08.1826",
+     "conf": "verified"
+    }
+   }
+  },
+  "g04_22.jpg": {
+   "half": 1,
+   "by": "date-cell",
+   "bands": {
+    "0": {
+     "idnr": 38034,
+     "name": "Strauß, Madel",
+     "gebdatum": "13.01.1831",
+     "conf": "candidate-do-not-label"
+    },
+    "1": {
+     "idnr": 38037,
+     "name": "Mosbacher, Veila",
+     "gebdatum": "23.04.1831",
+     "conf": "verified"
+    },
+    "2": {
+     "idnr": 3763,
+     "name": "Mosbacher, Mendel",
+     "gebdatum": "18.10.1831",
+     "conf": "verified",
+     "idnr_alt": [
+      3764,
+      38040
+     ]
+    },
+    "4": {
+     "idnr": 38043,
+     "name": "Michel, Jakob",
+     "gebdatum": "19.12.1831",
+     "conf": "verified"
+    },
+    "6": {
+     "idnr": 38794,
+     "name": "Strauß, Moses",
+     "gebdatum": "14.06.1833",
+     "conf": "verified"
+    },
+    "7": {
+     "idnr": 6403,
+     "name": "Mosbacher, Joseph",
+     "gebdatum": "18.08.1833",
+     "conf": "verified",
+     "idnr_alt": [
+      38095
+     ]
+    },
+    "10": {
+     "multi": [
+      {
+       "idnr": 38097,
+       "name": "Strauß, Isaak",
+       "gebdatum": "15.01.1835"
+      },
+      {
+       "idnr": 38096,
+       "name": "Mosbacher, Jonas",
+       "gebdatum": "18.01.1835"
+      },
+      {
+       "idnr": 38098,
+       "name": "Mosbacher, Madel",
+       "gebdatum": "28.11.1835"
+      }
+     ],
+     "conf": "verified-contents-unsplit"
+    }
+   }
+  },
+  "g07_22.jpg": {
+   "half": 0,
+   "by": "name-cell+order",
+   "bands": {
+    "1": {
+     "idnr": 38749,
+     "name": "Mosbacher, Regina",
+     "gebdatum": "25.03.1848",
+     "conf": "verified"
+    },
+    "6": {
+     "idnr": 38653,
+     "name": "Mosbacher, Mina",
+     "gebdatum": "28.03.1851",
+     "conf": "verified"
+    },
+    "7": {
+     "idnr": 38780,
+     "name": "Rothschild, Sarah",
+     "gebdatum": "08.04.1851",
+     "conf": "verified"
+    }
+   }
+  },
+  "g08_22.jpg": {
+   "half": 1,
+   "by": "date-cell",
+   "bands": {
+    "1": {
+     "idnr": 38739,
+     "name": "Michel, Jette",
+     "gebdatum": "07.03.1852",
+     "conf": "verified"
+    },
+    "2": {
+     "idnr": 38785,
+     "name": "Strauß, Fanny",
+     "gebdatum": "08.05.1852",
+     "conf": "verified"
+    },
+    "3": {
+     "multi": [
+      {
+       "idnr": 38745,
+       "name": "Mosbacher, Getta",
+       "gebdatum": "21.06.1852"
+      },
+      {
+       "idnr": 38750,
+       "name": "Mosbacher, Gerson",
+       "gebdatum": "30.11.1852"
+      }
+     ],
+     "conf": "verified-contents-unsplit"
+    },
+    "5": {
+     "idnr": 38664,
+     "name": "Regensburger, Moses",
+     "gebdatum": "27.05.1854",
+     "conf": "verified"
+    },
+    "6": {
+     "idnr": 38751,
+     "name": "Mosbacher, Gidel",
+     "gebdatum": "18.08.1854",
+     "conf": "verified"
+    },
+    "7": {
+     "idnr": 38740,
+     "name": "Michel, Elias",
+     "gebdatum": "28.09.1854",
+     "conf": "verified"
+    },
+    "8": {
+     "idnr": 38756,
+     "name": "Mosbacher, Mendel",
+     "gebdatum": "29.12.1854",
+     "conf": "medium"
+    },
+    "9": {
+     "idnr": 38799,
+     "name": "Strauß, Lazarus",
+     "gebdatum": "30.05.1855",
+     "conf": "verified"
+    }
+   }
+  },
+  "g10_22.jpg": {
+   "half": 0,
+   "by": "name-cell+order",
+   "bands": {
+    "2": {
+     "idnr": 38752,
+     "name": "Mosbacher, Isaak",
+     "gebdatum": "17.01.1858",
+     "conf": "verified"
+    },
+    "3": {
+     "idnr": 38675,
+     "name": "Strauß, Wilhelmine (Mina)",
+     "gebdatum": "21.07.1858",
+     "conf": "verified"
+    },
+    "4": {
+     "multi": [
+      {
+       "idnr": 3664,
+       "name": "Marx, Jette",
+       "gebdatum": "15.09.1858"
+      },
+      {
+       "idnr": 38674,
+       "name": "Mosbacher, Manuel",
+       "gebdatum": "19.12.1859"
+      },
+      {
+       "idnr": 38733,
+       "name": "Marx, Elieser",
+       "gebdatum": "04.02.1860"
+      },
+      {
+       "idnr": 38788,
+       "name": "Strauß, Mendel",
+       "gebdatum": "04.04.1860"
+      }
+     ],
+     "conf": "verified-contents-unsplit"
+    }
+   }
+  }
+ }
+}
