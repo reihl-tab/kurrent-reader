@@ -95,5 +95,14 @@
   "g13_22.jpg"
  ],
  "deferred_reason": "~62 fresh persons on narrative pages, but line-level labels cannot come from the index alone (entries are prose; index has only name+date). Needs blind-quorum transcription or span-labeling method - decision for later wave.",
- "_column_semantics": "g-birth format (header read on g02: Geburts-Register der Israeliten): Nr | Namen des Kindes | Geburtstag und Jahr | Namen des Vaters | Stand des Vaters | ... | Namen der Mutter. Dates on LEFT page col2, not right page. Detected v_rules are +/-40px off true rules; use header-anchored positions + generous crops."
+ "_column_semantics": "g-birth format (header read on g02: Geburts-Register der Israeliten): Nr | Namen des Kindes | Geburtstag und Jahr | Namen des Vaters | Stand des Vaters | ... | Namen der Mutter. Dates on LEFT page col2, not right page. Detected v_rules are +/-40px off true rules; use header-anchored positions + generous crops.",
+ "_index_coverage_finding": "2026-10-30 CRITICAL: the JUF index is a PARTIAL extraction, not complete per page. Evidence: g02 left-page entry read at full-res (name \"Heymann\", date \"9. Herbst[monat]\") matches NO index child for g02. Also per-page index 'persons' include PARENTS mentioned in birth entries (dates 'vor 1790', 'etwa 1800') and duplicate IdNrs - person count != entry count. CONSEQUENCE: chronological/count-based row-to-person alignment is UNSAFE. Pairing must be content-matched: read each band's name (short candidate list per page from the index), match band->IdNr; label TEXT still only from the index. Uniform row grids superseded by rule-based entry segmentation (entry_bands_draft.json: ALL detected h_rules at frac 0.05 kernel 25 = entry boundaries; verified visually on g02 left - blue-rule detection lands on true pencil rules where the uniform grid cut through entries).",
+ "batch1_pipeline": [
+  "detect all h_rules (frac 0.05, kernel 25) = entry boundaries",
+  "skip header/title bands",
+  "match each band to index child by reading name (+date cross-check); short candidate list per page",
+  "crop name cell (x per page from column verification)",
+  "label = index name text",
+  "manifest + upload"
+ ]
 }
