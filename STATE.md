@@ -40,3 +40,10 @@ Fine-tune dh-unibe/trocr-kurrent (MIT) to read Kurrent register table cells. Fre
 - g04 band1.0: candidate Madel Strauß 13.01.1831 (index says g02!) - unlabeled pending legible date.
 - Local-only artifacts (ephemeral): /tmp/vrf_*.png verification sheets, /tmp/pairing.json, /tmp/entry_bands.json (rebuild: re-run entry segmentation or extract bands from map? bands source = labeling/geometry/entry_bands_draft.json in git).
 - Next: split multi bands, match remaining g07/g04 children, crop name+date cells per map, build manifest.jsonl, spot-check, then ask user go for next Kaggle run.
+
+## 2026-10-31 late: second-pass matching - batch-1 essentially complete
+- 41 of 42 index children localized (only Jonas Mosbacher 18.01.1835 unlocated - not on g04 right; check duplicate-register pages later) + 1 candidate (Madel Strauß on g04 1.0, still unlabeled).
+- New verified: g07 0.2 Josef Rothschild (1945), 0.4 Madel Strauß (38816); g07-right 1.9 Sarah Regensburger (38765), 1.10 Abraham Strauß (38798); g10-right 1.6 Abraham Mosbacher (38753), 1.8 Veist Strauß (38677). g07 0.3 = Joseph+Karoline pair, order TBD. g07 0.5 = non-indexed, skipped.
+- FINDING: right-side pages of g07/g10 = second hand's rendition (duplicate register/parents-side): same events, clear dates, child-name cell TBD -> future augmentation samples.
+- Multi-band splits recorded in map JSON 'splits' (manual, verify at crop).
+- Next: header read of right pages (locate child-name cell), g07 0.3 order, then cell crops + manifest.jsonl + spot-check, then user go for Kaggle run.

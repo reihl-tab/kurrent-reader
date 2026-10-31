@@ -11,7 +11,11 @@
    "g08 1.3 contains Getta (top) + Gerson (bottom) - split before cropping. g08 1.8 (Mendel 29.12.1854) date partially legible, confidence medium.",
    "g10 0.4 (788px) contains 4 entries: Jette Marx, Manuel Mosbacher, Elieser Marx, Mendel Strauß - split before cropping.",
    "JUF index is PARTIAL per page: bands with no index child (e.g. g04 1.8 = 15.12.1833) are skipped.",
-   "g02 band 1.3 (Hajum, 37361): manuscript date reads 19.08.1823 vs index 18.08.1823 - date target excluded, person match kept."
+   "g02 band 1.3 (Hajum, 37361): manuscript date reads 19.08.1823 vs index 18.08.1823 - date target excluded, person match kept.",
+   "Right-side pages of g07/g10 are a SECOND hand's rendition (duplicate register / parents-side): same events, clear date cells, child-name cell location TBD - usable as independent augmentation samples later.",
+   "g07 band 0.5 = non-indexed entry (skipped); g07 band 0.3 two entries (Joseph 28.05.1849, Karoline 12.07.1849) - order TBD.",
+   "g10 band 0.4 last sub-entry (Mendel Strauß) may be cut at page bottom.",
+   "Multi-band splits are manual (eyeballed on full-width strips, verified against entry text) - re-verify at crop time."
   ],
   "column_geometry_fullres": {
    "g02_22.jpg": {
@@ -185,17 +189,13 @@
        "gebdatum": "15.01.1835"
       },
       {
-       "idnr": 38096,
-       "name": "Mosbacher, Jonas",
-       "gebdatum": "18.01.1835"
-      },
-      {
        "idnr": 38098,
        "name": "Mosbacher, Madel",
        "gebdatum": "28.11.1835"
       }
      ],
-     "conf": "verified-contents-unsplit"
+     "conf": "verified-contents-unsplit",
+     "note": "TWO entries only (split y1818); Jonas Mosbacher 18.01.1835 NOT found on g04 right page - unlocated (check duplicate-register pages later)"
     }
    }
   },
@@ -220,8 +220,64 @@
      "name": "Rothschild, Sarah",
      "gebdatum": "08.04.1851",
      "conf": "verified"
+    },
+    "2": {
+     "idnr": 1945,
+     "name": "Rothschild, Josef",
+     "gebdatum": "25.01.1849",
+     "conf": "verified",
+     "idnr_alt": [
+      38779
+     ],
+     "note": "name cell 'Josef Rothschild' + father cell 'Jakob Rothschild' read clearly 2026-10-31"
+    },
+    "4": {
+     "idnr": 38816,
+     "name": "Strauß, Madel",
+     "gebdatum": "25.10.1849",
+     "conf": "verified",
+     "note": "name 'Madel Strauß' + entry Nr 4 (1849 year-restart numbering) + later note anno 1853"
+    },
+    "3": {
+     "multi": [
+      {
+       "idnr": 38797,
+       "name": "Strauß, Joseph",
+       "gebdatum": "28.05.1849"
+      },
+      {
+       "idnr": 38744,
+       "name": "Mosbacher, Karoline",
+       "gebdatum": "12.07.1849"
+      }
+     ],
+     "conf": "tentative-order-tbd",
+     "note": "two entries in band (Nr 2. and 3. of 1849); Kurrent given-name cells ambiguous to my eye; split y875 recorded; assign order after header/col2 date read"
+    },
+    "5": {
+     "idnr": null,
+     "name": "NON-INDEXED ENTRY",
+     "conf": "skip",
+     "note": "entry between Madel(0.4) and Mina(0.6); not in JUF index per-page list - consistent with partial-index finding; do not label"
     }
-   }
+   },
+   "bands_right": {
+    "9": {
+     "idnr": 38765,
+     "name": "Regensburger, Sarah",
+     "gebdatum": "05.01.1852",
+     "conf": "verified-date",
+     "note": "right(duplicate) page; date cell 'd. 5. Jan 1852' read; name area plausibly Regensburger; child-name cell location on right pages TBD"
+    },
+    "10": {
+     "idnr": 38798,
+     "name": "Strauß, Abraham",
+     "gebdatum": "08.02.1852",
+     "conf": "verified-date",
+     "note": "right(duplicate) page; date cell 'd. 8. Febr 1852' read"
+    }
+   },
+   "right_half": 1
   },
   "g08_22.jpg": {
    "half": 1,
@@ -327,7 +383,82 @@
      ],
      "conf": "verified-contents-unsplit"
     }
-   }
+   },
+   "bands_right": {
+    "6": {
+     "idnr": 38753,
+     "name": "Mosbacher, Abraham",
+     "gebdatum": "08.12.1860",
+     "conf": "verified-date",
+     "note": "right(duplicate) page; date cell 'am 8. December 1860' + mother cell 'geb. Heumann von Homburg bei Würzburg' read"
+    },
+    "8": {
+     "idnr": 38677,
+     "name": "Strauß, Veist",
+     "gebdatum": "30.01.1862",
+     "conf": "verified-date",
+     "note": "right(duplicate) page; date cell '30. ... 1862' read (day clear, month weak)"
+    }
+   },
+   "right_half": 1
+  }
+ },
+ "splits": {
+  "g04_22.jpg#1.10": {
+   "band_y": [
+    1664,
+    2110
+   ],
+   "splits": [
+    1818
+   ],
+   "entries": [
+    "38097 Strauß, Isaak 15.01.1835 (top)",
+    "38098 Mosbacher, Madel 28.11.1835 (bottom)"
+   ]
+  },
+  "g08_22.jpg#1.3": {
+   "band_y": [
+    532,
+    764
+   ],
+   "splits": [
+    648
+   ],
+   "entries": [
+    "38745 Mosbacher, Getta 21.06.1852 (top)",
+    "38750 Mosbacher, Gerson 30.11.1852 (bottom)"
+   ]
+  },
+  "g10_22.jpg#0.4": {
+   "band_y": [
+    825,
+    1613
+   ],
+   "splits": [
+    1025,
+    1280,
+    1535
+   ],
+   "entries": [
+    "3664 Marx, Jette 15.09.1858",
+    "38674 Mosbacher, Manuel 19.12.1859",
+    "38733 Marx, Elieser 04.02.1860",
+    "38788 Strauß, Mendel 04.04.1860 (may be cut at page bottom)"
+   ]
+  },
+  "g07_22.jpg#0.3": {
+   "band_y": [
+    665,
+    1096
+   ],
+   "splits": [
+    875
+   ],
+   "entries": [
+    "Joseph Strauß 28.05.1849 OR Karoline Mosbacher 12.07.1849 (order TBD)",
+    "the other one"
+   ]
   }
  }
 }
