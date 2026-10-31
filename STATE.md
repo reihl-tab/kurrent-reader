@@ -34,6 +34,7 @@ Fine-tune dh-unibe/trocr-kurrent (MIT) to read Kurrent register table cells. Fre
 
 ## 2026-10-30 batch-1 matching milestone
 - labeling/batch1/band_person_map.json: 35 person-matches across g02/g04/g07/g08/g10 (30 bands), all visually verified on full-res crops (date-cell or name-cell + chronological order). Method, per-band confidence, caveats and column x geometry are inside the map JSON.
+- CORRECTION 2026-10-31: g02 band1.3 (Hajum) date cell reads 19.08.1823 vs index 18.08 - date target EXCLUDED for that band (details in map JSON); person match kept.
 - Multi-entry bands needing y-split before cropping: g04 band1.10 (2-3 entries), g08 band1.3 (Getta+Gerson), g10 band0.4 (4 entries).
 - g04 right page: child-name column NOT found (father/residence + birth date only) -> date-cell samples unless name col located later.
 - g04 band1.0: candidate Madel Strauß 13.01.1831 (index says g02!) - unlabeled pending legible date.
