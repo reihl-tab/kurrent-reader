@@ -27,14 +27,6 @@
     },
     {
       "path": "Dockerfile",
-      "rule": "unpinned-container",
-      "scope": "docker",
-      "evidence": "FROM python:3.11-slim",
-      "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
-      "reason": "CPU runtime image predates the guard (PR #2); digest-pinning tracked as follow-up hardening."
-    },
-    {
-      "path": "Dockerfile",
       "rule": "unhashed-pip-install",
       "scope": "dependencies",
       "evidence": "pip install --index-url https://download.pytorch.org/whl/cpu 'torch>=2.1'",
