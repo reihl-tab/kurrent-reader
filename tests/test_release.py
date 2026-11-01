@@ -1,4 +1,5 @@
 """Tests for the automated release script (scripts/release.py)."""
+import re
 import sys
 from datetime import date
 from pathlib import Path
@@ -86,3 +87,23 @@ class TestReleaseSubjectRe:
         assert release.RELEASE_SUBJECT_RE.match("chore(release): v0.2.0-rc1") is None
         assert release.RELEASE_SUBJECT_RE.match("chore: release v0.2.0") is None
         assert release.RELEASE_SUBJECT_RE.match("feat: chore(release): v1.0.0") is None
+
+
+class TestVersionSync:
+    def test_version_carriers_agree(self):
+        root = Path(__file__).resolve().parents[1]
+        v = (root / "VERSION").read_text().strip()
+        pp = re.search(r'(?m)^version = "([^"]+)"', (root / "pyproject.toml").read_text())
+        init = re.search(r'(?m)^__version__ = "([^"]+)"', (root / "src" / "kurrent_reader" / "__init__.py").read_text())
+        assert pp and pp.group(1) == v
+        assert init and init.group(1) == v
+
+    def test_sync_version_files(self, tmp_path):
+        (tmp_path / "pyproject.toml").write_text('[project]\nname = "x"\nversion = "0.1.0"\n')
+        pkg = tmp_path / "src" / "kurrent_reader"
+        pkg.mkdir(parents=True)
+        (pkg / "__init__.py").write_text('__version__ = "0.1.0"\n')
+        touched = release.sync_version_files("0.3.0", root=tmp_path)
+        assert 'version = "0.3.0"' in (tmp_path / "pyproject.toml").read_text()
+        assert '__version__ = "0.3.0"' in (pkg / "__init__.py").read_text()
+        assert len(touched) == 2

@@ -104,6 +104,7 @@ python -m mypy src/
 ```
 src/kurrent_reader/
   preprocess.py   scan cleanup (denoise/contrast/deskew/binarise)
+  derule.py       table-rule removal for register scans
   segment.py      kraken line segmentation + crop writing
   read.py         TrOCR line reader (CPU, optional int8 quantization)
   pipeline.py     original-vs-cleaned end-to-end run + comparison
@@ -127,6 +128,8 @@ promoting a reading to a genealogical fact. Do not infer missing people or facts
 from OCR output. Keep private scans and identifying material in their approved
 private audience, not public examples or logs.
 
-Changes should start with an issue and a small PR, with tests where code
+Changes should start with an issue and a small signed PR, with tests where code
 exists and honest limits where it does not. Independent review is required
-before merge; a successful test or merge is not approval to train, publish data.
+before merge; a successful test or merge is not approval to train, publish data
+or change any external family tree.
+
