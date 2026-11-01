@@ -1,8 +1,8 @@
-"""Kaggle GPU run: fine-tune dh-unibe/trocr-kurrent on line-level Kurrent crops.
+"""Colab GPU run: fine-tune dh-unibe/trocr-kurrent on line-level Kurrent crops.
 
 Data: line_manifest.jsonl rows {file, bbox:[x,y,w,h], text, project} + page JPGs
 + eval PNGs + eval_manifest.jsonl, all flat in the attached dataset.
-Kernel crops lines from page images on the fly (per-worker page cache, pages
+Crops lines from page images on the fly (per-worker page cache, pages
 processed contiguously in a fixed page-level permutation).
 MAX_STEPS=50 -> short timing probe; None -> full run.
 """
