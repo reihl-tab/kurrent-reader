@@ -90,7 +90,7 @@ def test_word_accuracy_duplicate_words_need_duplicate_matches() -> None:
 
 def test_pad_collator_handles_variable_label_lengths() -> None:
     torch = __import__("torch")
-    collate = make_pad_collator(pad_token_id=1)
+    collate = make_pad_collator()
     features = [
         {"pixel_values": torch.zeros(3, 4, 4), "labels": torch.tensor([5, 6, 7, 8])},
         {"pixel_values": torch.ones(3, 4, 4), "labels": torch.tensor([9])},
@@ -100,3 +100,14 @@ def test_pad_collator_handles_variable_label_lengths() -> None:
     assert batch["labels"].shape == (2, 4)
     assert batch["labels"][0].tolist() == [5, 6, 7, 8]
     assert batch["labels"][1].tolist() == [9, -100, -100, -100]
+
+
+def test_load_manifest_skips_blank_lines_and_missing_file_key(tmp_path: Path) -> None:
+    (tmp_path / "a.png").write_bytes(b"x")
+    manifest = tmp_path / "m.jsonl"
+    manifest.write_text(
+        '\n' + json.dumps({"text": "no file key"}) + "\n" + json.dumps({"file": "a.png", "text": "ok"}) + "\n",
+        encoding="utf-8",
+    )
+    samples = load_manifest(manifest, tmp_path)
+    assert [s.text for s in samples] == ["ok"]

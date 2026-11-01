@@ -38,9 +38,14 @@ def load_manifest(path: Path, image_dir: Path) -> list[LineSample]:
     samples: list[LineSample] = []
     with path.open(encoding="utf-8") as fh:
         for line in fh:
+            if not line.strip():
+                continue
             row = json.loads(line)
             text = str(row.get("text", "")).strip()
-            image = (image_dir / str(row["file"])).resolve()
+            name = row.get("file")
+            if not name:
+                continue
+            image = (image_dir / str(name)).resolve()
             if not image.is_relative_to(base):
                 continue
             if text and image.exists():
@@ -93,7 +98,7 @@ def load_training_samples(
     return exclude_files(load_manifest(train_manifest, image_dir), blocked_files or set())
 
 
-def make_pad_collator(pad_token_id: int) -> Any:
+def make_pad_collator() -> Any:
     """Collator that pads variable-length label sequences with -100.
 
     TrOCR line crops vary in text length, so default_data_collator crashes
@@ -176,5 +181,5 @@ def build_trainer(
         model=model,
         args=args,
         train_dataset=LineDataset(),
-        data_collator=make_pad_collator(tokenizer.pad_token_id),
+        data_collator=make_pad_collator(),
     )
