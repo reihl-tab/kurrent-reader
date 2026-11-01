@@ -14,7 +14,7 @@ import json
 from collections import Counter
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any
+from typing import Any, cast
 
 import numpy as np
 from numpy.typing import NDArray
@@ -139,11 +139,12 @@ def build_trainer(
     )
 
     processor = TrOCRProcessor.from_pretrained(model_id)
+    tokenizer = cast(Any, processor).tokenizer  # composite-processor attr missing from stubs
     source = str(resume_from) if resume_from is not None else model_id
-    model = VisionEncoderDecoderModel.from_pretrained(source)
-    model.config.decoder_start_token_id = processor.tokenizer.bos_token_id
-    model.config.pad_token_id = processor.tokenizer.pad_token_id
-    model.config.eos_token_id = processor.tokenizer.eos_token_id
+    model = cast(Any, VisionEncoderDecoderModel).from_pretrained(source)
+    model.config.decoder_start_token_id = tokenizer.bos_token_id
+    model.config.pad_token_id = tokenizer.pad_token_id
+    model.config.eos_token_id = tokenizer.eos_token_id
 
     samples = load_training_samples(train_manifest, image_dir, blocked_files)
     if not samples:
@@ -157,7 +158,7 @@ def build_trainer(
             sample = samples[idx]
             image = Image.open(sample.file).convert("RGB")
             pixels = processor(images=image, return_tensors="pt").pixel_values[0]
-            labels = processor.tokenizer(sample.text, return_tensors="pt").input_ids[0]
+            labels = tokenizer(sample.text, return_tensors="pt").input_ids[0]
             return {"pixel_values": pixels, "labels": labels}
 
     args = Seq2SeqTrainingArguments(
@@ -175,5 +176,5 @@ def build_trainer(
         model=model,
         args=args,
         train_dataset=LineDataset(),
-        data_collator=make_pad_collator(processor.tokenizer.pad_token_id),
+        data_collator=make_pad_collator(tokenizer.pad_token_id),
     )

@@ -10,7 +10,7 @@ from __future__ import annotations
 import math
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Sequence
+from typing import Any, Sequence, cast
 
 from PIL import Image
 
@@ -47,11 +47,11 @@ class LineReader:
             # fp32 weights (1.3 GB) plus runtime overhead do not fit on small
             # machines, and torch cannot quantize fp16 tensors, so fall back
             # to plain fp16 inference (~670 MB weights).
-            model = VisionEncoderDecoderModel.from_pretrained(
+            model = cast(Any, VisionEncoderDecoderModel).from_pretrained(
                 self.model_id, dtype=torch.float16, low_cpu_mem_usage=True
             )
         else:
-            model = VisionEncoderDecoderModel.from_pretrained(
+            model = cast(Any, VisionEncoderDecoderModel).from_pretrained(
                 self.model_id, low_cpu_mem_usage=True
             )
             if self.quantize == "int8":
