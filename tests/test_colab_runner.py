@@ -8,8 +8,8 @@ from pathlib import Path
 SCRIPTS = [
     Path(__file__).resolve().parents[1] / "scripts" / "colab_train.py",
     Path(__file__).resolve().parents[1] / "scripts" / "colab_train_v2.py",
+    Path(__file__).resolve().parents[1] / "scripts" / "colab_train_v4.py",
 ]
-SCRIPT = SCRIPTS[0]
 
 
 def test_colab_runner_compiles() -> None:
@@ -23,14 +23,18 @@ def test_stdout_reconfigure_is_guarded() -> None:
     Jupyter/Colab replaces sys.stdout with ipykernel OutStream, which has no
     reconfigure(); an unguarded call crashes the run at startup (issue #5).
     """
-    tree = ast.parse(SCRIPT.read_text(encoding="utf-8"))
+    for script in SCRIPTS:
+        tree = ast.parse(script.read_text(encoding="utf-8"))
+        assert _has_guard(tree), (
+            f"{script.name}: no try/except AttributeError guard around sys.stdout.reconfigure"
+        )
+
+
+def _has_guard(tree: ast.AST) -> bool:
     for node in ast.walk(tree):
         if not isinstance(node, ast.Try):
             continue
-        guards_attribute_error = any(
-            isinstance(h.type, ast.Name) and h.type.id == "AttributeError" for h in node.handlers
-        )
-        if not guards_attribute_error:
+        if not any(isinstance(h.type, ast.Name) and h.type.id == "AttributeError" for h in node.handlers):
             continue
         for inner in ast.walk(node):
             if (
@@ -38,5 +42,5 @@ def test_stdout_reconfigure_is_guarded() -> None:
                 and isinstance(inner.func, ast.Attribute)
                 and inner.func.attr == "reconfigure"
             ):
-                return
-    raise AssertionError("no try/except AttributeError guard around sys.stdout.reconfigure")
+                return True
+    return False
