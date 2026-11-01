@@ -98,11 +98,74 @@ def render_release_notes(version: str, level: str, commits: list[dict],
 
 
 def sh(*args: str) -> str:
-    return subprocess.run(args, capture_output=True, text=True, check=True).stdout.strip()
+    try:
+        return subprocess.run(args, capture_output=True, text=True, check=True).stdout.strip()
+    except subprocess.CalledProcessError as exc:
+        raise subprocess.CalledProcessError(
+            exc.returncode, exc.cmd, exc.stdout, exc.stderr
+        ) from None
+
+
+RELEASE_SUBJECT_RE = re.compile(r"^chore\(release\): v(\d+\.\d+\.\d+)$")
+
+
+def tag_exists(tag: str) -> bool:
+    return subprocess.run(
+        ("git", "rev-parse", "--verify", "--quiet", f"refs/tags/{tag}"),
+        capture_output=True,
+    ).returncode == 0
+
+
+def complete_interrupted_release(version: str, commit: str) -> None:
+    """Tag + publish a release commit that was pushed without its tag.
+
+    A release job that fails after `git push` but before `gh release create`
+    leaves `chore(release): vX` on main with no tag; finish it instead of
+    skipping forever or cutting the next version on top.
+    """
+    subjects = sh("git", "log", f"{commit}^", "--pretty=%s").splitlines()
+    level = bump(parse_commits(subjects)) or "patch"
+    day = date.fromisoformat(sh("git", "show", "-s", "--format=%cs", commit))
+    notes = render_release_notes(version, level, parse_commits(subjects), day)
+    sh("git", "tag", "-a", f"v{version}", "-m", f"v{version}", commit)
+    sh("git", "push", "origin", f"refs/tags/v{version}")
+    notes_path = Path(f"/tmp/release-notes-{version}.md")
+    notes_path.write_text(notes)
+    sh("gh", "release", "create", f"v{version}", "--title", f"v{version}",
+       "--notes-file", str(notes_path))
+    print(f"completed interrupted release v{version} at {commit[:7]}")
+
+
+def find_untagged_release_commit() -> tuple[str, str] | None:
+    """Newest chore(release) commit on HEAD's first-parent chain without its tag."""
+    for line in sh("git", "log", "--first-parent", "--pretty=%H %s").splitlines():
+        sha, subject = line.split(" ", 1)
+        m = RELEASE_SUBJECT_RE.match(subject)
+        if m and not tag_exists(f"v{m.group(1)}"):
+            return m.group(1), sha
+        if m:
+            return None  # newest release commit is tagged; history is healthy
+    return None
+
+
+def push_with_rebase_retry(attempts: int = 3) -> None:
+    """Push main, rebasing onto a concurrently-moved origin/main (issue #21)."""
+    for attempt in range(1, attempts + 1):
+        try:
+            sh("git", "push", "origin", "main")
+            return
+        except subprocess.CalledProcessError:
+            if attempt == attempts:
+                raise
+            sh("git", "fetch", "origin", "main")
+            sh("git", "rebase", "origin/main")
 
 
 def main(dry_run: bool = False) -> int:
-    current = VERSION_FILE.read_text().strip()
+    sh("git", "fetch", "origin", "main", "--tags")
+    interrupted = find_untagged_release_commit()
+    if interrupted and not dry_run:
+        complete_interrupted_release(*interrupted)
     try:
         last_tag = sh("git", "describe", "--tags", "--abbrev=0")
     except subprocess.CalledProcessError:
@@ -118,6 +181,7 @@ def main(dry_run: bool = False) -> int:
     if level is None:
         print("no release-worthy commits; skipping")
         return 0
+    current = VERSION_FILE.read_text().strip()
     version = next_version(current, level)
     today = date.today()
     entry = render_changelog_entry(version, level, commits, today)
@@ -132,8 +196,9 @@ def main(dry_run: bool = False) -> int:
     CHANGELOG_FILE.write_text(old[:idx + 1] + entry + "\n" + old[idx + 1:])
     sh("git", "add", "VERSION", "CHANGELOG.md")
     sh("git", "commit", "-m", f"chore(release): v{version}")
-    sh("git", "tag", f"v{version}")
-    sh("git", "push", "origin", "main", "--follow-tags")
+    push_with_rebase_retry()
+    sh("git", "tag", "-a", f"v{version}", "-m", f"v{version}")
+    sh("git", "push", "origin", f"refs/tags/v{version}")
     notes_path = Path(f"/tmp/release-notes-{version}.md")
     notes_path.write_text(notes)
     sh("gh", "release", "create", f"v{version}", "--title", f"v{version}",

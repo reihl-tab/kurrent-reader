@@ -75,3 +75,14 @@ class TestRender:
         # policy guard: notes are built from commit subjects only
         n = release.render_release_notes("0.1.1", "patch", self.COMMITS, D)
         assert "@" not in n.split("###")[1]
+
+
+class TestReleaseSubjectRe:
+    def test_matches_release_commit(self):
+        m = release.RELEASE_SUBJECT_RE.match("chore(release): v0.2.0")
+        assert m and m.group(1) == "0.2.0"
+
+    def test_rejects_lookalikes(self):
+        assert release.RELEASE_SUBJECT_RE.match("chore(release): v0.2.0-rc1") is None
+        assert release.RELEASE_SUBJECT_RE.match("chore: release v0.2.0") is None
+        assert release.RELEASE_SUBJECT_RE.match("feat: chore(release): v1.0.0") is None
