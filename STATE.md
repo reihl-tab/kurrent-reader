@@ -53,3 +53,12 @@ Fine-tune dh-unibe/trocr-kurrent (MIT) to read Kurrent register table cells. Fre
 - Exclusions: g02 1.3 date, g04 1.0 candidate, g07 0.3 pair (order TBD), g07 0.5 (non-indexed), g08 1.8 name (near-empty crop).
 - Crop geometry verified visually per page/kind; g08 name col is faint but located; right-page date fracs recorded in map.
 - Next: Kaggle data-mount check (are g-pages already in the dataset?), kernel v10 config (add batch-1 manifest, keep held-out eval), then user go.
+
+## 2026-11-01 ~14:52 - batch-1 GPU run launched (kernel v10)
+- Board session before this: PRs #25 (runner lows), #26 (kernel guard tests + docstrings), #27 (CI hardening: least-privilege + SHA pins), #28 (Dockerfile digest pin) merged via independent reviews; #24 closed; v0.2.2 auto-cut by release.py (accepted flow). Issue #13 remainder: pip hash-locking (owner declined). #9 draft backup-only.
+- Data-mount check: g02/g04/g07/g08/g10 were NOT in any dataset. New version of reihlinstinct/kurrent-train-v1d (private) now holds all 7 g-pages (g02,g04,g05,g06,g07,g08,g10) from JUF, sizes cross-checked.
+- New private dataset reihlinstinct/kurrent-batch1 = labeling/batch1/manifest.jsonl (61 rows).
+- Kernel v10 = repo-main v8 code (incl. 2026-11-01 runner fixes) + v9 EPOCHS=2 + batch-1 rows appended to target cells (148 -> 209 x40 = 8360/epoch). Frozen metrics: EVAL_NAMES primary + mm006 + score12 + seeds_fit. Source: scripts/kaggle_kernel_v10.py.
+- Pre-push validation: kernel compiles; embedded block = 148 cells; leak assert passes on the real mix; planted int 33739 + str "35238" both caught; batch-1 pages all in v1d; 0 rows fail the text-length filter.
+- USER GO verified: phonemsg-[redacted] "כן, תן go" (14:45:52 IST). Pushed 14:51 IST = kernel Version 10, RUNNING. Expect ~5h (v9 took 4h12m32s).
+- Monitor: wakeschedule-[redacted] (60 min, gated). On completion: pull timing_result.json, report vs v9 baseline (names 0.9067->1.2447 best@500, seeds_fit 0.3766, mm006 0.0236/0.8983), delete the schedule.
