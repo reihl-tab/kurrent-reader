@@ -53,9 +53,9 @@
       "path": ".github/workflows/release.yml",
       "rule": "unhashed-pip-install",
       "scope": "dependencies",
-      "evidence": "pip install pytest",
+      "evidence": "pip install -e '.[dev]' pytest",
       "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
-      "reason": "CI installs pytest from PyPI without hashes (workflow merged via PR #8); hash-pinning tracked as follow-up hardening."
+      "reason": "CI installs the local package with dev extras from PyPI without hashes; hash-pinning tracked as follow-up hardening."
     },
     {
       "path": ".github/workflows/tests.yml",
@@ -85,9 +85,41 @@
       "path": ".github/workflows/tests.yml",
       "rule": "unhashed-pip-install",
       "scope": "dependencies",
-      "evidence": "pip install pytest",
+      "evidence": "pip install -e '.[dev]' pytest",
       "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
-      "reason": "CI installs pytest from PyPI without hashes (workflow merged via PR #8); hash-pinning tracked as follow-up hardening."
+      "reason": "CI installs the local package with dev extras from PyPI without hashes; hash-pinning tracked as follow-up hardening."
+    },
+    {
+      "path": "Dockerfile",
+      "rule": "unpinned-container",
+      "scope": "docker",
+      "evidence": "FROM python:3.11-slim",
+      "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
+      "reason": "CPU runtime image predates the guard (PR #2); digest-pinning tracked as follow-up hardening."
+    },
+    {
+      "path": "Dockerfile",
+      "rule": "unhashed-pip-install",
+      "scope": "dependencies",
+      "evidence": "pip install --index-url https://download.pytorch.org/whl/cpu 'torch>=2.1'",
+      "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
+      "reason": "Docker image installs unpinned deps (torch cpu wheel + local package); hash-pinning tracked as follow-up hardening."
+    },
+    {
+      "path": "Dockerfile",
+      "rule": "unhashed-pip-install",
+      "scope": "dependencies",
+      "evidence": "pip install .",
+      "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
+      "reason": "Docker image installs unpinned deps (torch cpu wheel + local package); hash-pinning tracked as follow-up hardening."
+    },
+    {
+      "path": "Dockerfile",
+      "rule": "unhashed-pip-install",
+      "scope": "dependencies",
+      "evidence": "pip install '.[dev]'",
+      "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
+      "reason": "Docker image installs unpinned deps (torch cpu wheel + local package); hash-pinning tracked as follow-up hardening."
     }
   ]
 }
