@@ -11,6 +11,7 @@ SCRIPTS = [
     Path(__file__).resolve().parents[1] / "scripts" / "colab_train_v4.py",
     Path(__file__).resolve().parents[1] / "scripts" / "kaggle_kernel_v4.py",
     Path(__file__).resolve().parents[1] / "scripts" / "kaggle_kernel_v8.py",
+    Path(__file__).resolve().parents[1] / "scripts" / "kaggle_kernel_v11.py",
 ]
 
 
@@ -52,6 +53,7 @@ V4_RUNNERS = [
     Path(__file__).resolve().parents[1] / "scripts" / "colab_train_v4.py",
     Path(__file__).resolve().parents[1] / "scripts" / "kaggle_kernel_v4.py",
     Path(__file__).resolve().parents[1] / "scripts" / "kaggle_kernel_v8.py",
+    Path(__file__).resolve().parents[1] / "scripts" / "kaggle_kernel_v11.py",
 ]
 
 
@@ -141,3 +143,101 @@ def test_held_out_leak_check_catches_int_and_str() -> None:
         ns = {"samples": [{"IdNr": 1}, {"IdNr": "2"}, {"IdNr": None}]}
         _load_assignments(script, {"_held_idnrs", "_leaked"}, ns)
         assert ns["_leaked"] == [], f"{script.name}: false positive on clean samples"
+
+
+V11 = Path(__file__).resolve().parents[1] / "scripts" / "kaggle_kernel_v11.py"
+
+
+def _load_heartbeat(ns: dict) -> dict:
+    """Exec the heartbeat block (constants + 3 functions) out of kernel v11."""
+    import json as _json
+    import os as _os
+    import time as _time
+
+    tree = ast.parse(V11.read_text(encoding="utf-8"))
+    want_fns = {"progress_payload", "progress_push"}
+    want_assigns = {"PROGRESS_DATASET", "PROGRESS_ENABLED", "_progress_state"}
+    nodes = []
+    for node in tree.body:
+        if isinstance(node, ast.FunctionDef) and node.name in want_fns:
+            nodes.append(node)
+        elif isinstance(node, ast.Assign) and any(
+            isinstance(t, ast.Name) and t.id in want_assigns for t in node.targets
+        ):
+            nodes.append(node)
+    names = {n.name for n in nodes if isinstance(n, ast.FunctionDef)} | {
+        t.id for n in nodes if isinstance(n, ast.Assign) for t in n.targets if isinstance(t, ast.Name)
+    }
+    assert want_fns | want_assigns <= names, f"missing heartbeat pieces: {want_fns | want_assigns - names}"
+    ns.setdefault("json", _json)
+    ns.setdefault("os", _os)
+    ns.setdefault("time", _time)
+    ns.setdefault("T0", 0.0)
+    ns.setdefault("Path", Path)
+    exec(compile(ast.Module(body=nodes, type_ignores=[]), str(V11), "exec"), ns)
+    return ns
+
+
+class _FakeApi:
+    def __init__(self) -> None:
+        self.calls = []
+
+    def dataset_create_version(self, folder, version_notes, dir_mode=None):
+        self.calls.append((folder, version_notes, dir_mode))
+
+
+def test_progress_payload_shape() -> None:
+    ns = _load_heartbeat({})
+    p = ns["progress_payload"]("step500", step=500, combined=0.5)
+    assert p["stage"] == "step500"
+    assert p["step"] == 500
+    assert p["combined"] == 0.5
+    assert isinstance(p["elapsed_sec"], float)
+
+
+def test_progress_push_success_writes_progress_json() -> None:
+    fake = _FakeApi()
+    ns = _load_heartbeat({})
+    ns["_progress_api"] = lambda: fake
+    ok = ns["progress_push"]({"stage": "boot", "train_samples": 42})
+    assert ok is True
+    assert ns["_progress_state"]["pushes"] == 1
+    folder, notes, dir_mode = fake.calls[0]
+    assert notes == "boot" and dir_mode == "skip"
+    import json as _json
+
+    payload = _json.loads((Path(folder) / "progress.json").read_text(encoding="utf-8"))
+    assert payload == {"stage": "boot", "train_samples": 42}
+    meta = _json.loads((Path(folder) / "dataset-metadata.json").read_text(encoding="utf-8"))
+    assert meta["id"] == ns["PROGRESS_DATASET"] == "reihlinstinct/kurrent-run-progress"
+
+
+def test_progress_push_never_raises() -> None:
+    def _boom():
+        raise RuntimeError("no auth in this environment")
+
+    ns = _load_heartbeat({})
+    ns["_progress_api"] = _boom
+    ok = ns["progress_push"]({"stage": "boot"})
+    assert ok is False
+    assert "RuntimeError" in ns["_progress_state"]["last_error"]
+
+
+def test_progress_push_disabled_skips_api() -> None:
+    fake = _FakeApi()
+    ns = _load_heartbeat({})
+    ns["PROGRESS_ENABLED"] = False
+    ns["_progress_api"] = lambda: fake
+    assert ns["progress_push"]({"stage": "boot"}) is False
+    assert fake.calls == []
+
+
+def test_heartbeat_hooked_at_boot_eval_and_end() -> None:
+    src = V11.read_text(encoding="utf-8")
+    assert src.count("def progress_push") == 1
+    assert 'progress_push(progress_payload("boot"' in src, "no boot heartbeat after the data-stage asserts"
+    assert 'f"step{state.global_step}", step=state.global_step' in src, "no per-eval heartbeat in KeepBestCallback"
+    assert 'progress_push(progress_payload("train-done"' in src, "no final heartbeat"
+    # definition must precede every call site
+    def_line = src.index("def progress_push")
+    assert def_line < src.index('progress_push(progress_payload("boot"')
