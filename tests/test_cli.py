@@ -26,3 +26,15 @@ def test_help_lists_commands(capsys) -> None:  # type: ignore[no-untyped-def]
     out = capsys.readouterr().out
     for word in ("preprocess", "segment", "read", "run"):
         assert word in out
+
+
+def test_version_flag(capsys) -> None:  # type: ignore[no-untyped-def]
+    """--version must print the package version (VERSIONING.md documents it)."""
+    from kurrent_reader import __version__
+
+    try:
+        main(["--version"])
+    except SystemExit as exc:
+        assert exc.code == 0
+    out = capsys.readouterr().out
+    assert __version__ in out

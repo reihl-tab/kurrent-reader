@@ -6,7 +6,7 @@ import argparse
 import json
 import sys
 
-from . import derule, preprocess, segment
+from . import __version__, derule, preprocess, segment
 from .pipeline import run_page
 from .read import DEFAULT_MODEL, LineReader
 
@@ -63,6 +63,7 @@ def build_parser() -> argparse.ArgumentParser:
         prog="kurrent-reader",
         description="Free local reader for 19th-century German Kurrent scans.",
     )
+    parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
     sub = parser.add_subparsers(dest="command", required=True)
 
     p = sub.add_parser("preprocess", help="clean one scan (original kept untouched)")
