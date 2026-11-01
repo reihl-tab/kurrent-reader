@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "kurrent-reader"
-version = "0.4.0"
+version = "0.4.1"
 description = "Free, local line-level reader for 19th-century German Kurrent handwriting: scan cleanup, kraken segmentation, and TrOCR (dh-unibe/trocr-kurrent) reading."
 readme = "README.md"
 requires-python = ">=3.10"
