@@ -1,0 +1,36 @@
+name: Offline security regression guard
+on:
+  push:
+    paths:
+      - '.github/**'
+      - '**/Dockerfile*'
+      - '**/*.dockerfile'
+      - 'scripts/**'
+      - 'tests/security/**'
+      - '**/*requirements*.txt'
+      - '**/pyproject.toml'
+  pull_request:
+    paths:
+      - '.github/**'
+      - '**/Dockerfile*'
+      - '**/*.dockerfile'
+      - 'scripts/**'
+      - 'tests/security/**'
+      - '**/*requirements*.txt'
+      - '**/pyproject.toml'
+  schedule:
+    - cron: '37 3 * * 0'
+permissions:
+  contents: read
+jobs:
+  security-guard:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - name: Offline security regression guard and self-tests
+        run: |
+          python3 -m unittest discover -s tests/security -p test_scorecard_guard.py -v
+          python3 scripts/security/scorecard_guard.py

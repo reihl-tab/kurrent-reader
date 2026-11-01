@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "findings": [
+    {
+      "path": ".github/workflows/release.yml",
+      "rule": "top-level-permissions",
+      "scope": "workflow",
+      "evidence": "expected exactly one top-level permissions mapping",
+      "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
+      "reason": "Workflow predates the guard (merged via PR #8); least-privilege hardening tracked separately, baseline documents the known state."
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "rule": "unpinned-action",
+      "scope": "test",
+      "evidence": "actions/checkout@v4",
+      "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
+      "reason": "Workflow predates the guard (merged via PR #8); SHA-pinning of actions/checkout and actions/setup-python tracked as follow-up hardening."
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "rule": "unpinned-action",
+      "scope": "test",
+      "evidence": "actions/setup-python@v5",
+      "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
+      "reason": "Workflow predates the guard (merged via PR #8); SHA-pinning of actions/checkout and actions/setup-python tracked as follow-up hardening."
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "rule": "job-write",
+      "scope": "release",
+      "evidence": "contents: write",
+      "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
+      "reason": "release job needs contents: write to tag and publish GitHub releases; scoped to that job only, workflow has no other write grants."
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "rule": "unpinned-action",
+      "scope": "release",
+      "evidence": "actions/checkout@v4",
+      "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
+      "reason": "Workflow predates the guard (merged via PR #8); SHA-pinning of actions/checkout and actions/setup-python tracked as follow-up hardening."
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "rule": "unpinned-action",
+      "scope": "release",
+      "evidence": "actions/setup-python@v5",
+      "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
+      "reason": "Workflow predates the guard (merged via PR #8); SHA-pinning of actions/checkout and actions/setup-python tracked as follow-up hardening."
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "rule": "unhashed-pip-install",
+      "scope": "dependencies",
+      "evidence": "pip install pytest",
+      "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
+      "reason": "CI installs pytest from PyPI without hashes (workflow merged via PR #8); hash-pinning tracked as follow-up hardening."
+    },
+    {
+      "path": ".github/workflows/tests.yml",
+      "rule": "top-level-permissions",
+      "scope": "workflow",
+      "evidence": "expected exactly one top-level permissions mapping",
+      "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
+      "reason": "Workflow predates the guard (merged via PR #8); least-privilege hardening tracked separately, baseline documents the known state."
+    },
+    {
+      "path": ".github/workflows/tests.yml",
+      "rule": "unpinned-action",
+      "scope": "pytest",
+      "evidence": "actions/checkout@v4",
+      "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
+      "reason": "Workflow predates the guard (merged via PR #8); SHA-pinning of actions/checkout and actions/setup-python tracked as follow-up hardening."
+    },
+    {
+      "path": ".github/workflows/tests.yml",
+      "rule": "unpinned-action",
+      "scope": "pytest",
+      "evidence": "actions/setup-python@v5",
+      "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
+      "reason": "Workflow predates the guard (merged via PR #8); SHA-pinning of actions/checkout and actions/setup-python tracked as follow-up hardening."
+    },
+    {
+      "path": ".github/workflows/tests.yml",
+      "rule": "unhashed-pip-install",
+      "scope": "dependencies",
+      "evidence": "pip install pytest",
+      "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
+      "reason": "CI installs pytest from PyPI without hashes (workflow merged via PR #8); hash-pinning tracked as follow-up hardening."
+    }
+  ]
+}
