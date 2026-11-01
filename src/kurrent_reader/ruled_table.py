@@ -15,7 +15,11 @@ from numpy.typing import NDArray
 
 
 def _group_contiguous(indices: list[int], max_gap: int = 4) -> list[int]:
-    """Collapse contiguous index runs into their mean positions."""
+    """Collapse contiguous index runs into their mean positions.
+
+    Runs of a single index are dropped: a 1px dark line is almost always a
+    pen stroke, not a table rule, so single-pixel hits are treated as noise.
+    """
     groups: list[list[int]] = []
     for idx in indices:
         if groups and idx - groups[-1][-1] <= max_gap:

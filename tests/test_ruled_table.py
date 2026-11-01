@@ -90,3 +90,16 @@ def test_row_bands_deskewed_finds_rows_on_skewed_scan() -> None:
     bands, angle = row_bands_deskewed(_skewed_table(2.0))
     assert abs(abs(angle) - 2.0) < 0.5
     assert len(bands) >= 8  # deskew round trip restores detectability
+
+
+def test_estimate_skew_recovers_known_angle() -> None:
+    # _skewed_table(1.0) rotates content by -1.0 deg, so the estimator must
+    # report about -1.0 (the skew present); deskew() then rotates by +1.0.
+    from kurrent_reader.ruled_table import deskew, estimate_skew_deg, row_bands
+
+    est = estimate_skew_deg(_skewed_table(1.0))
+    assert -1.5 < est < -0.5  # sign and magnitude, not just non-zero
+    assert 0.5 < estimate_skew_deg(_skewed_table(-1.0)) < 1.5
+    fixed = deskew(_skewed_table(1.0), est)
+    assert abs(estimate_skew_deg(fixed)) < 0.2  # round-trip removes the skew
+    assert len(row_bands(fixed)) >= 10
