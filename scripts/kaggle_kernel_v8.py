@@ -73,7 +73,7 @@ print(f"STAGE imports-done device={DEVICE} gpu={torch.cuda.get_device_name(0) if
 
 print("STAGE processor-load", flush=True)
 processor = TrOCRProcessor.from_pretrained(MODEL_ID)
-CKPT_SRC = os.environ.get("KURRENT_CKPT_SRC", "/kaggle/input/__nonexistent_no_checkpoint__")  # from-base by design (v4)
+CKPT_SRC = os.environ.get("KURRENT_CKPT_SRC", "/kaggle/input/__nonexistent_no_checkpoint__")  # from-base by design (v8)
 print("STAGE model-download", flush=True)
 if os.path.exists(os.path.join(CKPT_SRC, "config.json")):
     model = VisionEncoderDecoderModel.from_pretrained(CKPT_SRC).to(DEVICE)
