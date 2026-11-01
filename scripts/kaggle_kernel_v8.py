@@ -128,12 +128,21 @@ def crop_from_page(row: dict) -> Image.Image:
     return img.crop((x0, y0, x1, y1))
 
 
+def _safe_data_path(root, rel):
+    """Resolve rel under root, rejecting paths that escape it."""
+    base = root.resolve()
+    p = (base / rel).resolve()
+    if p != base and base not in p.parents:
+        raise ValueError(f"unsafe path escapes data root: {rel!r}")
+    return p
+
+
 def evaluate12(tag: str) -> dict:
     rows = [json.loads(l) for l in (DATA / "eval_manifest.jsonl").open()]
     results = {}
     model.eval()
     for r in rows:
-        hyp = read_pil(Image.open(DATA / r["file"]))
+        hyp = read_pil(Image.open(_safe_data_path(DATA, r["file"])))
         entry = {"hyp": hyp}
         gold = r.get("scored_gold") or ""
         if r["id"] in ("h01", "h07") and gold:
@@ -225,8 +234,8 @@ from collections import Counter as _Counter
 _proj = _Counter(s.get("project", "?") for s in samples)
 print("DATA dir:", str(DATA), flush=True)
 print("project counts:", dict(_proj), flush=True)
-_held_idnrs = {33739, 35238}
-_leaked = sorted({s.get("IdNr") for s in samples if s.get("IdNr") in _held_idnrs})
+_held_idnrs = {"33739", "35238"}
+_leaked = sorted({str(s.get("IdNr")) for s in samples if str(s.get("IdNr")) in _held_idnrs})
 if not SMOKE:
     assert "MM_1_006" not in _proj, "MM_1_006 leaked into training manifest!"
     assert not _leaked, f"held-out IdNrs leaked into training: {_leaked}"
