@@ -1,0 +1,42 @@
+{
+  "run": "v12 (kernel Version 12), 2026-11-01 19:38-23:24 IST, Tesla T4, elapsed 13538.9s (3h45m38s)",
+  "recipe": "v11 pipeline + heartbeat, single lever REPEAT 40 -> 4 (issue #32): 62829 MM + 209x4 = 63665 samples/epoch, 2 epochs, from base, LR 5e-6, batch 8, eval-every-500",
+  "data_stage": "batch-1: 61 loaded; mix 63665; missing pages: none; eval pages missing: none; leak asserts passed; heartbeat 17 pushes, 0 failures",
+  "eval_names": {
+    "before": 0.9067,
+    "best": 1.1706,
+    "best_step": 500,
+    "after_best_only": "single NEW BEST at step500; names degrade to ~1.36-1.42 by step3000+ and stay there"
+  },
+  "seeds_fit_cer": 1.0121,
+  "mm006_500": {
+    "before": {
+      "cer": 0.0624,
+      "word_acc": 0.7372
+    },
+    "best_step500": {
+      "cer": 0.0225,
+      "word_acc": 0.8996
+    }
+  },
+  "new_best_steps": [
+    500
+  ],
+  "comparison": {
+    "v9": {
+      "names_best": 1.2447,
+      "seeds_fit": 0.3766
+    },
+    "v10": {
+      "names_best": 1.2173,
+      "seeds_fit": 0.0
+    },
+    "v12": {
+      "names_best": 1.1706,
+      "seeds_fit": 1.0121
+    }
+  },
+  "verdict_vs_issue32": "FAILURE by the stated criteria (best names CER 1.1706 still >> 0.9067 base), though directionally best of the three runs",
+  "interpretation": "Repetition was NOT the primary driver: x4 eliminated memorization (seeds_fit 0.0 -> 1.0121, seeds not even learned) yet held-out names still degrade from step500 and never recover. Full fine-tuning on this mix degrades held-out name reading regardless of oversampling; the model still recites training-vocabulary names (Jakob Michel, Mosbacher, Strauss) on held-out crops. Next levers: optimization pressure (much lower LR / fewer steps / frozen encoder), data composition (more unique labels), or parameter-efficient tuning - not repetition count.",
+  "outputs_note": "kernels-output file route STILL degraded (0-byte model.safetensors, no timing_result.json) for v9+v10+v12; all metrics from the run log via the API log endpoint. checkpoint-best (step500) weights not retrieved; low value (worse than base on names)."
+}

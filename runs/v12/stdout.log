@@ -1,0 +1,932 @@
+STAGE boot
+versions: 5.16.1 2.11.0+cu128
+STAGE manifest-search: ['/kaggle/input/kurrent-train-v1/eval_manifest.jsonl']
+STAGE page-roots: ['/kaggle/input/kurrent-train-v1', '/kaggle/input/kurrent-train-v1b', '/kaggle/input/kurrent-train-v1c', '/kaggle/input/kurrent-train-v1d'] pages: 1681
+STAGE imports-done device=cuda gpu=Tesla T4 smoke=False
+STAGE processor-load
+STAGE model-download
+STAGE model-ready src=dh-unibe/trocr-kurrent (BASE - checkpoint missing at /kaggle/input/__nonexistent_no_checkpoint__!)
+STAGE eval-before
+EVAL12 before: {"h00": {"hyp": "Ed . Fenzl", "span_hit": false}, "h01": {"hyp": "ist", "cer": 0.929, "word_acc": 0.0}, "h02": {"hyp": "27 .", "span_hit": false}, "h03": {"hyp": "größen"}, "h04": {"hyp": "Papay"}, "h05": {"hyp": "23 ."}, "h06": {"hyp": "Beltsch"}, "h07": {"hyp": "2 . ) Den könn . Nov ist dem häufigen Schön unden", "cer": 0.476, "word_acc": 0.571}, "h08": {"hyp": "Exrechniger 2 Kinder nämlich ein Sohn und", "span_hit": true}, "h09": {"hyp": "Die Mädchen geboren welche die Namen neuen", "span_hit": false}, "h10": {"hyp": "das Wädchen Mergend und der Sohn Joseph erhielt .", "span_hit": {"das Mädchen": false, "und der Sohn Joseph": true}}, "h11": {"hyp": "[ .... ] übernomme war profanna Gla-Männer )"}}
+EVAL500 before: {"n": 500, "cer": 0.0624, "word_acc": 0.7372}
+EVAL_NAMES before: {"n": 7, "cer": 0.9067, "word_acc": 0.0, "detail": {"occupation:38666": {"hyp": "xx", "cer": 1.0, "word_acc": 0.0}, "occupation:38678": {"hyp": "Weltan", "cer": 0.857, "word_acc": 0.0}, "occupation:38693": {"hyp": "die", "cer": 0.833, "word_acc": 0.0}, "occupation:38696": {"hyp": "22 .", "cer": 1.0, "word_acc": 0.0}, "name:33739": {"hyp": "Breite nach", "cer": 0.75, "word_acc": 0.0}, "date:33739": {"hyp": "Zu B. M.", "span_hit": {"28": false, "1845": false}}, "occupation:33739": {"hyp": "|", "cer": 1.0, "word_acc": 0.0}}}
+embedded clean target cells: 148
+batch-1 target cells: 61 (/kaggle/input/kurrent-batch1/batch1_manifest.jsonl)
+train manifest: train_manifest_v4.jsonl
+mix: MM lines 62829 + target 209x4 = 63665
+train line-samples: 63665
+DATA dir: /kaggle/input/kurrent-train-v1
+project counts: {'MM_1_004': 12443, 'MM_1_001': 12324, 'MM_1_002': 11642, 'MM_1_003': 11387, 'MM_1_005': 15033, 'eschau-seeds': 420, 'eschau-gbirths': 140, 'eschau1081-batch1': 244, 'eschau-occ': 32}
+ESCHAU seed lines: 420
+ESCHAU seed pages: ['s02_22.jpg', 's03_22.jpg', 's04_22.jpg', 's05_22.jpg', 's06_22.jpg', 's07_22.jpg', 's08_22.jpg']
+missing pages: none
+eval500 rows: 500 eval pages missing: none
+Warning: Looks like you're using an outdated `kaggle` version (installed: 2.0.2), please consider upgrading to the latest version (2.2.5)
+Warning: Looks like you're using an outdated `kaggle` version (installed: 2.0.2), please consider upgrading to the latest version (2.2.5)
+Starting upload for file progress.json
+Upload successful: progress.json (143B)
+PROGRESS pushed: boot (total 1)
+seed page resolution: s02_22.jpg (2807, 2187)
+train pages: 1473
+STAGE train-start
+{'loss': '2.713', 'grad_norm': '17.26', 'learning_rate': '4.5e-07', 'epoch': '0.002513'}
+{'loss': '2.525', 'grad_norm': '17.86', 'learning_rate': '9.5e-07', 'epoch': '0.005025'}
+{'loss': '2.694', 'grad_norm': '16.15', 'learning_rate': '1.45e-06', 'epoch': '0.007538'}
+{'loss': '2.401', 'grad_norm': '20.46', 'learning_rate': '1.95e-06', 'epoch': '0.01005'}
+{'loss': '2.552', 'grad_norm': '17.08', 'learning_rate': '2.45e-06', 'epoch': '0.01256'}
+{'loss': '2.377', 'grad_norm': '19.92', 'learning_rate': '2.95e-06', 'epoch': '0.01508'}
+{'loss': '1.979', 'grad_norm': '20.06', 'learning_rate': '3.45e-06', 'epoch': '0.01759'}
+{'loss': '1.781', 'grad_norm': '12.2', 'learning_rate': '3.95e-06', 'epoch': '0.0201'}
+{'loss': '1.619', 'grad_norm': '14.8', 'learning_rate': '4.45e-06', 'epoch': '0.02261'}
+{'loss': '1.181', 'grad_norm': '17', 'learning_rate': '4.95e-06', 'epoch': '0.02513'}
+{'loss': '1.171', 'grad_norm': '21.22', 'learning_rate': '4.994e-06', 'epoch': '0.02764'}
+{'loss': '1.451', 'grad_norm': '11.2', 'learning_rate': '4.988e-06', 'epoch': '0.03015'}
+{'loss': '1.357', 'grad_norm': '16.56', 'learning_rate': '4.982e-06', 'epoch': '0.03266'}
+{'loss': '1.171', 'grad_norm': '12.9', 'learning_rate': '4.975e-06', 'epoch': '0.03518'}
+{'loss': '0.9788', 'grad_norm': '13.71', 'learning_rate': '4.969e-06', 'epoch': '0.03769'}
+{'loss': '1.034', 'grad_norm': '15.64', 'learning_rate': '4.962e-06', 'epoch': '0.0402'}
+{'loss': '1.094', 'grad_norm': '13.11', 'learning_rate': '4.956e-06', 'epoch': '0.04271'}
+{'loss': '1.213', 'grad_norm': '13.92', 'learning_rate': '4.95e-06', 'epoch': '0.04523'}
+{'loss': '1.021', 'grad_norm': '10.25', 'learning_rate': '4.943e-06', 'epoch': '0.04774'}
+{'loss': '0.9912', 'grad_norm': '11.74', 'learning_rate': '4.937e-06', 'epoch': '0.05025'}
+{'loss': '1.093', 'grad_norm': '11.98', 'learning_rate': '4.931e-06', 'epoch': '0.05276'}
+{'loss': '0.9586', 'grad_norm': '16.17', 'learning_rate': '4.924e-06', 'epoch': '0.05528'}
+{'loss': '1.127', 'grad_norm': '14.02', 'learning_rate': '4.918e-06', 'epoch': '0.05779'}
+{'loss': '0.9409', 'grad_norm': '12.45', 'learning_rate': '4.912e-06', 'epoch': '0.0603'}
+{'loss': '0.9184', 'grad_norm': '15.07', 'learning_rate': '4.905e-06', 'epoch': '0.06281'}
+{'loss': '0.9174', 'grad_norm': '13.16', 'learning_rate': '4.899e-06', 'epoch': '0.06533'}
+{'loss': '0.7951', 'grad_norm': '9.354', 'learning_rate': '4.892e-06', 'epoch': '0.06784'}
+{'loss': '0.9179', 'grad_norm': '11.03', 'learning_rate': '4.886e-06', 'epoch': '0.07035'}
+{'loss': '0.8871', 'grad_norm': '11.72', 'learning_rate': '4.88e-06', 'epoch': '0.07286'}
+{'loss': '0.8477', 'grad_norm': '9.824', 'learning_rate': '4.873e-06', 'epoch': '0.07538'}
+{'loss': '1.11', 'grad_norm': '17.99', 'learning_rate': '4.867e-06', 'epoch': '0.07789'}
+{'loss': '0.721', 'grad_norm': '13.14', 'learning_rate': '4.861e-06', 'epoch': '0.0804'}
+{'loss': '0.7843', 'grad_norm': '7.606', 'learning_rate': '4.854e-06', 'epoch': '0.08291'}
+{'loss': '0.7634', 'grad_norm': '11.34', 'learning_rate': '4.848e-06', 'epoch': '0.08543'}
+{'loss': '0.7378', 'grad_norm': '10.42', 'learning_rate': '4.842e-06', 'epoch': '0.08794'}
+{'loss': '0.8231', 'grad_norm': '9.454', 'learning_rate': '4.835e-06', 'epoch': '0.09045'}
+{'loss': '0.6916', 'grad_norm': '12.55', 'learning_rate': '4.829e-06', 'epoch': '0.09296'}
+{'loss': '0.7551', 'grad_norm': '10.78', 'learning_rate': '4.823e-06', 'epoch': '0.09548'}
+{'loss': '0.9117', 'grad_norm': '9.633', 'learning_rate': '4.816e-06', 'epoch': '0.09799'}
+{'loss': '0.7907', 'grad_norm': '12.31', 'learning_rate': '4.81e-06', 'epoch': '0.1005'}
+{'loss': '0.8368', 'grad_norm': '11.62', 'learning_rate': '4.803e-06', 'epoch': '0.103'}
+{'loss': '0.934', 'grad_norm': '9.497', 'learning_rate': '4.797e-06', 'epoch': '0.1055'}
+{'loss': '0.9021', 'grad_norm': '8.522', 'learning_rate': '4.791e-06', 'epoch': '0.108'}
+{'loss': '0.8919', 'grad_norm': '12', 'learning_rate': '4.784e-06', 'epoch': '0.1106'}
+{'loss': '0.7471', 'grad_norm': '11.53', 'learning_rate': '4.778e-06', 'epoch': '0.1131'}
+{'loss': '0.9684', 'grad_norm': '10.88', 'learning_rate': '4.772e-06', 'epoch': '0.1156'}
+{'loss': '0.767', 'grad_norm': '10.61', 'learning_rate': '4.765e-06', 'epoch': '0.1181'}
+{'loss': '0.593', 'grad_norm': '9.689', 'learning_rate': '4.759e-06', 'epoch': '0.1206'}
+{'loss': '0.7504', 'grad_norm': '9.614', 'learning_rate': '4.753e-06', 'epoch': '0.1231'}
+EVAL12 step500: {"h00": {"hyp": "9. heute haben", "span_hit": false}, "h01": {"hyp": "13.5.1845", "cer": 0.714, "word_acc": 0.0}, "h02": {"hyp": "27.|", "span_hit": false}, "h03": {"hyp": "Hofburg"}, "h04": {"hyp": "Ed . Fenzl"}, "h05": {"hyp": "23.18.1833"}, "h06": {"hyp": "Gesellschaft"}, "h07": {"hyp": "Den können Nov ist dem häufigen Schön zuden", "cer": 0.262, "word_acc": 0.571}, "h08": {"hyp": "Sprecheizer u. Rindes nämlich ein Sohn und", "span_hit": false}, "h09": {"hyp": "Die Mädchen geboren welches die Namen neuung", "span_hit": false}, "h10": {"hyp": "das Wädchen Merzend und der Sohn Joseph erhielt", "span_hit": {"das Mädchen": false, "und der Sohn Joseph": true}}, "h11": {"hyp": "—M. zusammen war dochanna Glašmann !"}}
+EVAL_NAMES step500: {"n": 7, "cer": 1.1706, "word_acc": 0.0, "detail": {"occupation:38666": {"hyp": "xx", "cer": 1.0, "word_acc": 0.0}, "occupation:38678": {"hyp": "Weltin", "cer": 0.857, "word_acc": 0.0}, "occupation:38693": {"hyp": "neben Sie", "cer": 1.5, "word_acc": 0.0}, "occupation:38696": {"hyp": "22.10.1849", "cer": 1.667, "word_acc": 0.0}, "name:33739": {"hyp": "19.1845.1833", "cer": 1.0, "word_acc": 0.0}, "date:33739": {"hyp": "Ziel, Bedarlach", "span_hit": {"28": false, "1845": false}}, "occupation:33739": {"hyp": "7.11.1833", "cer": 1.0, "word_acc": 0.0}}}
+NEW BEST step=500 combinedCER=1.171 -> checkpoint-best saved
+Warning: Looks like you're using an outdated `kaggle` version (installed: 2.0.2), please consider upgrading to the latest version (2.2.5)
+Starting upload for file progress.json
+Upload successful: progress.json (214B)
+PROGRESS pushed: step500 (total 2)
+{'loss': '0.9067', 'grad_norm': '9.458', 'learning_rate': '4.746e-06', 'epoch': '0.1256'}
+{'loss': '0.8541', 'grad_norm': '16.33', 'learning_rate': '4.74e-06', 'epoch': '0.1281'}
+{'loss': '0.789', 'grad_norm': '10.9', 'learning_rate': '4.733e-06', 'epoch': '0.1307'}
+{'loss': '0.7998', 'grad_norm': '12.41', 'learning_rate': '4.727e-06', 'epoch': '0.1332'}
+{'loss': '1.008', 'grad_norm': '12.16', 'learning_rate': '4.721e-06', 'epoch': '0.1357'}
+{'loss': '0.7454', 'grad_norm': '9.932', 'learning_rate': '4.714e-06', 'epoch': '0.1382'}
+{'loss': '0.7734', 'grad_norm': '11.99', 'learning_rate': '4.708e-06', 'epoch': '0.1407'}
+{'loss': '0.6663', 'grad_norm': '11.73', 'learning_rate': '4.702e-06', 'epoch': '0.1432'}
+{'loss': '0.6488', 'grad_norm': '11.01', 'learning_rate': '4.695e-06', 'epoch': '0.1457'}
+{'loss': '0.7516', 'grad_norm': '8.453', 'learning_rate': '4.689e-06', 'epoch': '0.1482'}
+{'loss': '0.7298', 'grad_norm': '9.096', 'learning_rate': '4.683e-06', 'epoch': '0.1508'}
+{'loss': '0.7911', 'grad_norm': '8.641', 'learning_rate': '4.676e-06', 'epoch': '0.1533'}
+{'loss': '0.6506', 'grad_norm': '10.72', 'learning_rate': '4.67e-06', 'epoch': '0.1558'}
+{'loss': '0.8051', 'grad_norm': '11.84', 'learning_rate': '4.663e-06', 'epoch': '0.1583'}
+{'loss': '0.7132', 'grad_norm': '6.722', 'learning_rate': '4.657e-06', 'epoch': '0.1608'}
+{'loss': '0.6178', 'grad_norm': '11.59', 'learning_rate': '4.651e-06', 'epoch': '0.1633'}
+{'loss': '0.6215', 'grad_norm': '12.26', 'learning_rate': '4.644e-06', 'epoch': '0.1658'}
+{'loss': '0.567', 'grad_norm': '10.76', 'learning_rate': '4.638e-06', 'epoch': '0.1683'}
+{'loss': '0.8445', 'grad_norm': '9.478', 'learning_rate': '4.632e-06', 'epoch': '0.1709'}
+{'loss': '0.6333', 'grad_norm': '7.608', 'learning_rate': '4.625e-06', 'epoch': '0.1734'}
+{'loss': '0.6286', 'grad_norm': '8.163', 'learning_rate': '4.619e-06', 'epoch': '0.1759'}
+{'loss': '0.609', 'grad_norm': '10.08', 'learning_rate': '4.613e-06', 'epoch': '0.1784'}
+{'loss': '0.5779', 'grad_norm': '7.645', 'learning_rate': '4.606e-06', 'epoch': '0.1809'}
+{'loss': '0.6908', 'grad_norm': '10.27', 'learning_rate': '4.6e-06', 'epoch': '0.1834'}
+{'loss': '0.5873', 'grad_norm': '9.201', 'learning_rate': '4.594e-06', 'epoch': '0.1859'}
+{'loss': '0.5707', 'grad_norm': '9.093', 'learning_rate': '4.587e-06', 'epoch': '0.1884'}
+{'loss': '0.6128', 'grad_norm': '4.806', 'learning_rate': '4.581e-06', 'epoch': '0.191'}
+{'loss': '0.6749', 'grad_norm': '6.439', 'learning_rate': '4.574e-06', 'epoch': '0.1935'}
+{'loss': '0.5874', 'grad_norm': '9.628', 'learning_rate': '4.568e-06', 'epoch': '0.196'}
+{'loss': '0.8364', 'grad_norm': '7.654', 'learning_rate': '4.562e-06', 'epoch': '0.1985'}
+{'loss': '0.7489', 'grad_norm': '10.64', 'learning_rate': '4.555e-06', 'epoch': '0.201'}
+{'loss': '0.7468', 'grad_norm': '16.59', 'learning_rate': '4.549e-06', 'epoch': '0.2035'}
+{'loss': '0.6175', 'grad_norm': '11.61', 'learning_rate': '4.543e-06', 'epoch': '0.206'}
+{'loss': '0.6571', 'grad_norm': '10.44', 'learning_rate': '4.536e-06', 'epoch': '0.2085'}
+{'loss': '0.6506', 'grad_norm': '10.76', 'learning_rate': '4.53e-06', 'epoch': '0.2111'}
+{'loss': '0.7271', 'grad_norm': '10.97', 'learning_rate': '4.524e-06', 'epoch': '0.2136'}
+{'loss': '0.4995', 'grad_norm': '8.742', 'learning_rate': '4.517e-06', 'epoch': '0.2161'}
+{'loss': '0.6505', 'grad_norm': '9.653', 'learning_rate': '4.511e-06', 'epoch': '0.2186'}
+{'loss': '0.6201', 'grad_norm': '10.5', 'learning_rate': '4.504e-06', 'epoch': '0.2211'}
+{'loss': '0.5218', 'grad_norm': '7.118', 'learning_rate': '4.498e-06', 'epoch': '0.2236'}
+{'loss': '0.5738', 'grad_norm': '10.4', 'learning_rate': '4.492e-06', 'epoch': '0.2261'}
+{'loss': '0.6346', 'grad_norm': '9.895', 'learning_rate': '4.485e-06', 'epoch': '0.2286'}
+{'loss': '0.6584', 'grad_norm': '11.35', 'learning_rate': '4.479e-06', 'epoch': '0.2312'}
+{'loss': '0.5618', 'grad_norm': '7.209', 'learning_rate': '4.473e-06', 'epoch': '0.2337'}
+{'loss': '0.7135', 'grad_norm': '9.14', 'learning_rate': '4.466e-06', 'epoch': '0.2362'}
+{'loss': '0.5496', 'grad_norm': '9.441', 'learning_rate': '4.46e-06', 'epoch': '0.2387'}
+{'loss': '0.4908', 'grad_norm': '8.586', 'learning_rate': '4.454e-06', 'epoch': '0.2412'}
+{'loss': '0.6885', 'grad_norm': '11.6', 'learning_rate': '4.447e-06', 'epoch': '0.2437'}
+{'loss': '0.7232', 'grad_norm': '8.86', 'learning_rate': '4.441e-06', 'epoch': '0.2462'}
+{'loss': '0.8156', 'grad_norm': '10.54', 'learning_rate': '4.434e-06', 'epoch': '0.2487'}
+EVAL12 step1000: {"h00": {"hyp": "9.05.1845", "span_hit": false}, "h01": {"hyp": "1845", "cer": 0.714, "word_acc": 0.333}, "h02": {"hyp": "27.J .", "span_hit": false}, "h03": {"hyp": "Hofburg"}, "h04": {"hyp": "18.03.1891"}, "h05": {"hyp": "28.10.1849"}, "h06": {"hyp": "Gesellschaft mit"}, "h07": {"hyp": "b ) Den können Nov ist dem hiesigen Schön zuden", "cer": 0.286, "word_acc": 0.714}, "h08": {"hyp": "s-Sprecheizer u. Kinder nämlich ein Sohn und", "span_hit": false}, "h09": {"hyp": "Die Mädchen geboren welches die Namen neuen", "span_hit": false}, "h10": {"hyp": "das Wädchen Mergend und der Sohn ++ erhielt", "span_hit": {"das Mädchen": false, "und der Sohn Joseph": false}}, "h11": {"hyp": "— bekamme war doch eine Gla-Männer-"}}
+EVAL_NAMES step1000: {"n": 7, "cer": 1.2844, "word_acc": 0.0, "detail": {"occupation:38666": {"hyp": "28.10.1849", "cer": 1.111, "word_acc": 0.0}, "occupation:38678": {"hyp": "zur Kriegs-", "cer": 1.429, "word_acc": 0.0}, "occupation:38693": {"hyp": "neben Sie", "cer": 1.5, "word_acc": 0.0}, "occupation:38696": {"hyp": "25.10.1849", "cer": 1.667, "word_acc": 0.0}, "name:33739": {"hyp": "19.10.1845", "cer": 1.0, "word_acc": 0.0}, "date:33739": {"hyp": "Z. H. Mosbacher", "span_hit": {"28": false, "1845": false}}, "occupation:33739": {"hyp": "7.11.1845", "cer": 1.0, "word_acc": 0.0}}}
+Warning: Looks like you're using an outdated `kaggle` version (installed: 2.0.2), please consider upgrading to the latest version (2.2.5)
+Starting upload for file progress.json
+Upload successful: progress.json (214B)
+PROGRESS pushed: step1000 (total 3)
+{'loss': '0.7558', 'grad_norm': '11.81', 'learning_rate': '4.428e-06', 'epoch': '0.2513'}
+{'loss': '0.576', 'grad_norm': '7.56', 'learning_rate': '4.422e-06', 'epoch': '0.2538'}
+{'loss': '0.7034', 'grad_norm': '10.02', 'learning_rate': '4.415e-06', 'epoch': '0.2563'}
+{'loss': '0.5418', 'grad_norm': '6.261', 'learning_rate': '4.409e-06', 'epoch': '0.2588'}
+{'loss': '0.6484', 'grad_norm': '10.86', 'learning_rate': '4.403e-06', 'epoch': '0.2613'}
+{'loss': '0.4201', 'grad_norm': '8.911', 'learning_rate': '4.396e-06', 'epoch': '0.2638'}
+{'loss': '0.6006', 'grad_norm': '10.99', 'learning_rate': '4.39e-06', 'epoch': '0.2663'}
+{'loss': '0.7354', 'grad_norm': '9.976', 'learning_rate': '4.384e-06', 'epoch': '0.2688'}
+{'loss': '0.7318', 'grad_norm': '11.8', 'learning_rate': '4.377e-06', 'epoch': '0.2714'}
+{'loss': '0.6875', 'grad_norm': '7.347', 'learning_rate': '4.371e-06', 'epoch': '0.2739'}
+{'loss': '0.4434', 'grad_norm': '6.648', 'learning_rate': '4.365e-06', 'epoch': '0.2764'}
+{'loss': '0.5549', 'grad_norm': '9.189', 'learning_rate': '4.358e-06', 'epoch': '0.2789'}
+{'loss': '0.4412', 'grad_norm': '6.481', 'learning_rate': '4.352e-06', 'epoch': '0.2814'}
+{'loss': '0.5617', 'grad_norm': '10.83', 'learning_rate': '4.345e-06', 'epoch': '0.2839'}
+{'loss': '0.5747', 'grad_norm': '11.06', 'learning_rate': '4.339e-06', 'epoch': '0.2864'}
+{'loss': '0.6024', 'grad_norm': '10.36', 'learning_rate': '4.333e-06', 'epoch': '0.2889'}
+{'loss': '0.4334', 'grad_norm': '8.238', 'learning_rate': '4.326e-06', 'epoch': '0.2915'}
+{'loss': '0.5042', 'grad_norm': '9.852', 'learning_rate': '4.32e-06', 'epoch': '0.294'}
+{'loss': '0.571', 'grad_norm': '11.14', 'learning_rate': '4.314e-06', 'epoch': '0.2965'}
+{'loss': '0.5846', 'grad_norm': '8.162', 'learning_rate': '4.307e-06', 'epoch': '0.299'}
+{'loss': '0.5575', 'grad_norm': '4.115', 'learning_rate': '4.301e-06', 'epoch': '0.3015'}
+{'loss': '0.5598', 'grad_norm': '3.672', 'learning_rate': '4.295e-06', 'epoch': '0.304'}
+{'loss': '0.5935', 'grad_norm': '4.762', 'learning_rate': '4.288e-06', 'epoch': '0.3065'}
+{'loss': '0.4345', 'grad_norm': '10.3', 'learning_rate': '4.282e-06', 'epoch': '0.309'}
+{'loss': '0.4997', 'grad_norm': '7.092', 'learning_rate': '4.275e-06', 'epoch': '0.3116'}
+{'loss': '0.4606', 'grad_norm': '10.33', 'learning_rate': '4.269e-06', 'epoch': '0.3141'}
+{'loss': '0.7517', 'grad_norm': '18.28', 'learning_rate': '4.263e-06', 'epoch': '0.3166'}
+{'loss': '0.6362', 'grad_norm': '8.919', 'learning_rate': '4.256e-06', 'epoch': '0.3191'}
+{'loss': '0.506', 'grad_norm': '9.963', 'learning_rate': '4.25e-06', 'epoch': '0.3216'}
+{'loss': '0.5196', 'grad_norm': '7.443', 'learning_rate': '4.244e-06', 'epoch': '0.3241'}
+{'loss': '0.5304', 'grad_norm': '8.623', 'learning_rate': '4.237e-06', 'epoch': '0.3266'}
+{'loss': '0.621', 'grad_norm': '9.758', 'learning_rate': '4.231e-06', 'epoch': '0.3291'}
+{'loss': '0.5473', 'grad_norm': '9.72', 'learning_rate': '4.225e-06', 'epoch': '0.3317'}
+{'loss': '0.4919', 'grad_norm': '5.217', 'learning_rate': '4.218e-06', 'epoch': '0.3342'}
+{'loss': '0.454', 'grad_norm': '8.868', 'learning_rate': '4.212e-06', 'epoch': '0.3367'}
+{'loss': '0.4783', 'grad_norm': '7.485', 'learning_rate': '4.205e-06', 'epoch': '0.3392'}
+{'loss': '0.5722', 'grad_norm': '6.046', 'learning_rate': '4.199e-06', 'epoch': '0.3417'}
+{'loss': '0.5803', 'grad_norm': '9.37', 'learning_rate': '4.193e-06', 'epoch': '0.3442'}
+{'loss': '0.5459', 'grad_norm': '10.2', 'learning_rate': '4.186e-06', 'epoch': '0.3467'}
+{'loss': '0.5136', 'grad_norm': '12.88', 'learning_rate': '4.18e-06', 'epoch': '0.3492'}
+{'loss': '0.5566', 'grad_norm': '7.917', 'learning_rate': '4.174e-06', 'epoch': '0.3518'}
+{'loss': '0.5257', 'grad_norm': '10.35', 'learning_rate': '4.167e-06', 'epoch': '0.3543'}
+{'loss': '0.5894', 'grad_norm': '17.35', 'learning_rate': '4.161e-06', 'epoch': '0.3568'}
+{'loss': '0.5884', 'grad_norm': '8.115', 'learning_rate': '4.155e-06', 'epoch': '0.3593'}
+{'loss': '0.531', 'grad_norm': '8.795', 'learning_rate': '4.148e-06', 'epoch': '0.3618'}
+{'loss': '0.519', 'grad_norm': '10.45', 'learning_rate': '4.142e-06', 'epoch': '0.3643'}
+{'loss': '0.5313', 'grad_norm': '10.41', 'learning_rate': '4.135e-06', 'epoch': '0.3668'}
+{'loss': '0.4779', 'grad_norm': '6.332', 'learning_rate': '4.129e-06', 'epoch': '0.3693'}
+{'loss': '0.5387', 'grad_norm': '10.89', 'learning_rate': '4.123e-06', 'epoch': '0.3719'}
+{'loss': '0.4661', 'grad_norm': '7.492', 'learning_rate': '4.116e-06', 'epoch': '0.3744'}
+EVAL12 step1500: {"h00": {"hyp": "18.05.1845", "span_hit": false}, "h01": {"hyp": "1845", "cer": 0.714, "word_acc": 0.333}, "h02": {"hyp": "27J.1857", "span_hit": false}, "h03": {"hyp": "Hofburg"}, "h04": {"hyp": "Friedhof"}, "h05": {"hyp": "28.06.1849"}, "h06": {"hyp": "Gesellschaft mit"}, "h07": {"hyp": "b ) Den können 1901 ist dem hiesigen Schön zuden", "cer": 0.381, "word_acc": 0.571}, "h08": {"hyp": "s-Sprecheizer & Kundea nämlich ein Sohn und", "span_hit": false}, "h09": {"hyp": "Die Mädchen geboren , welches die Namen neuen", "span_hit": false}, "h10": {"hyp": "das Wädchen Mergend und der Sohn", "span_hit": {"das Mädchen": false, "und der Sohn Joseph": false}}, "h11": {"hyp": "— bekamme war doch eine Gla-Männer-"}}
+EVAL_NAMES step1500: {"n": 7, "cer": 1.2606, "word_acc": 0.0, "detail": {"occupation:38666": {"hyp": "28.04.1849", "cer": 1.111, "word_acc": 0.0}, "occupation:38678": {"hyp": "Jhre Strauß", "cer": 1.286, "word_acc": 0.0}, "occupation:38693": {"hyp": "neben Sie", "cer": 1.5, "word_acc": 0.0}, "occupation:38696": {"hyp": "25.10.1850", "cer": 1.667, "word_acc": 0.0}, "name:33739": {"hyp": "19.04.1845", "cer": 1.0, "word_acc": 0.0}, "date:33739": {"hyp": "Geburtstag", "span_hit": {"28": false, "1845": false}}, "occupation:33739": {"hyp": "7.11.1845", "cer": 1.0, "word_acc": 0.0}}}
+Warning: Looks like you're using an outdated `kaggle` version (installed: 2.0.2), please consider upgrading to the latest version (2.2.5)
+Starting upload for file progress.json
+Upload successful: progress.json (217B)
+PROGRESS pushed: step1500 (total 4)
+{'loss': '0.4228', 'grad_norm': '7.058', 'learning_rate': '4.11e-06', 'epoch': '0.3769'}
+{'loss': '0.4249', 'grad_norm': '9.631', 'learning_rate': '4.104e-06', 'epoch': '0.3794'}
+{'loss': '0.6022', 'grad_norm': '10.89', 'learning_rate': '4.097e-06', 'epoch': '0.3819'}
+{'loss': '0.5103', 'grad_norm': '9.203', 'learning_rate': '4.091e-06', 'epoch': '0.3844'}
+{'loss': '0.6051', 'grad_norm': '8.929', 'learning_rate': '4.085e-06', 'epoch': '0.3869'}
+{'loss': '0.443', 'grad_norm': '12.7', 'learning_rate': '4.078e-06', 'epoch': '0.3894'}
+{'loss': '0.6109', 'grad_norm': '9.93', 'learning_rate': '4.072e-06', 'epoch': '0.392'}
+{'loss': '0.6477', 'grad_norm': '9.232', 'learning_rate': '4.066e-06', 'epoch': '0.3945'}
+{'loss': '0.6751', 'grad_norm': '8.723', 'learning_rate': '4.059e-06', 'epoch': '0.397'}
+{'loss': '0.484', 'grad_norm': '9.228', 'learning_rate': '4.053e-06', 'epoch': '0.3995'}
+{'loss': '0.5267', 'grad_norm': '11.46', 'learning_rate': '4.046e-06', 'epoch': '0.402'}
+{'loss': '0.7052', 'grad_norm': '8.484', 'learning_rate': '4.04e-06', 'epoch': '0.4045'}
+{'loss': '0.4073', 'grad_norm': '7.921', 'learning_rate': '4.034e-06', 'epoch': '0.407'}
+{'loss': '0.4655', 'grad_norm': '7.117', 'learning_rate': '4.027e-06', 'epoch': '0.4095'}
+{'loss': '0.4502', 'grad_norm': '7.139', 'learning_rate': '4.021e-06', 'epoch': '0.4121'}
+{'loss': '0.6454', 'grad_norm': '17.14', 'learning_rate': '4.015e-06', 'epoch': '0.4146'}
+{'loss': '0.4978', 'grad_norm': '7.051', 'learning_rate': '4.008e-06', 'epoch': '0.4171'}
+{'loss': '0.5348', 'grad_norm': '9.28', 'learning_rate': '4.002e-06', 'epoch': '0.4196'}
+{'loss': '0.4859', 'grad_norm': '7.224', 'learning_rate': '3.996e-06', 'epoch': '0.4221'}
+{'loss': '0.6602', 'grad_norm': '8.579', 'learning_rate': '3.989e-06', 'epoch': '0.4246'}
+{'loss': '0.6348', 'grad_norm': '10', 'learning_rate': '3.983e-06', 'epoch': '0.4271'}
+{'loss': '0.3601', 'grad_norm': '2.873', 'learning_rate': '3.976e-06', 'epoch': '0.4296'}
+{'loss': '0.4248', 'grad_norm': '8.895', 'learning_rate': '3.97e-06', 'epoch': '0.4322'}
+{'loss': '0.4065', 'grad_norm': '8.107', 'learning_rate': '3.964e-06', 'epoch': '0.4347'}
+{'loss': '0.5489', 'grad_norm': '19.89', 'learning_rate': '3.957e-06', 'epoch': '0.4372'}
+{'loss': '0.4858', 'grad_norm': '8.617', 'learning_rate': '3.951e-06', 'epoch': '0.4397'}
+{'loss': '0.4445', 'grad_norm': '6.455', 'learning_rate': '3.945e-06', 'epoch': '0.4422'}
+{'loss': '0.5709', 'grad_norm': '10.06', 'learning_rate': '3.938e-06', 'epoch': '0.4447'}
+{'loss': '0.4428', 'grad_norm': '7.79', 'learning_rate': '3.932e-06', 'epoch': '0.4472'}
+{'loss': '0.4599', 'grad_norm': '4.497', 'learning_rate': '3.926e-06', 'epoch': '0.4497'}
+{'loss': '0.4879', 'grad_norm': '13.53', 'learning_rate': '3.919e-06', 'epoch': '0.4523'}
+{'loss': '0.431', 'grad_norm': '6.782', 'learning_rate': '3.913e-06', 'epoch': '0.4548'}
+{'loss': '0.4383', 'grad_norm': '6.043', 'learning_rate': '3.906e-06', 'epoch': '0.4573'}
+{'loss': '0.5037', 'grad_norm': '6.863', 'learning_rate': '3.9e-06', 'epoch': '0.4598'}
+{'loss': '0.5688', 'grad_norm': '9.881', 'learning_rate': '3.894e-06', 'epoch': '0.4623'}
+{'loss': '0.383', 'grad_norm': '6.68', 'learning_rate': '3.887e-06', 'epoch': '0.4648'}
+{'loss': '0.5915', 'grad_norm': '6.561', 'learning_rate': '3.881e-06', 'epoch': '0.4673'}
+{'loss': '0.4703', 'grad_norm': '7.85', 'learning_rate': '3.875e-06', 'epoch': '0.4698'}
+{'loss': '0.316', 'grad_norm': '5.722', 'learning_rate': '3.868e-06', 'epoch': '0.4724'}
+{'loss': '0.5602', 'grad_norm': '12.19', 'learning_rate': '3.862e-06', 'epoch': '0.4749'}
+{'loss': '0.3753', 'grad_norm': '7.29', 'learning_rate': '3.856e-06', 'epoch': '0.4774'}
+{'loss': '0.4652', 'grad_norm': '7.722', 'learning_rate': '3.849e-06', 'epoch': '0.4799'}
+{'loss': '0.4839', 'grad_norm': '11.06', 'learning_rate': '3.843e-06', 'epoch': '0.4824'}
+{'loss': '0.4911', 'grad_norm': '6.702', 'learning_rate': '3.837e-06', 'epoch': '0.4849'}
+{'loss': '0.3055', 'grad_norm': '4.494', 'learning_rate': '3.83e-06', 'epoch': '0.4874'}
+{'loss': '0.4903', 'grad_norm': '8.743', 'learning_rate': '3.824e-06', 'epoch': '0.4899'}
+{'loss': '0.4211', 'grad_norm': '6.623', 'learning_rate': '3.817e-06', 'epoch': '0.4925'}
+{'loss': '0.4778', 'grad_norm': '10.09', 'learning_rate': '3.811e-06', 'epoch': '0.495'}
+{'loss': '0.4991', 'grad_norm': '7.508', 'learning_rate': '3.805e-06', 'epoch': '0.4975'}
+{'loss': '0.3903', 'grad_norm': '8.589', 'learning_rate': '3.798e-06', 'epoch': '0.5'}
+EVAL12 step2000: {"h00": {"hyp": "01.05.1850", "span_hit": false}, "h01": {"hyp": "28.11.1852", "cer": 0.857, "word_acc": 0.0}, "h02": {"hyp": "26J.2627", "span_hit": false}, "h03": {"hyp": "Hofburg"}, "h04": {"hyp": "St. Georg Mosbacher"}, "h05": {"hyp": "28.10.1850"}, "h06": {"hyp": "Güstrow Heidberg"}, "h07": {"hyp": "b ) Den könn Noch ist dem hiesigen Schönzuden", "cer": 0.31, "word_acc": 0.571}, "h08": {"hyp": "s-Sprechnides 2 Kinder nämlich ein Sohn und", "span_hit": true}, "h09": {"hyp": "Die Mädchen geboren , welches die Namen neuen", "span_hit": false}, "h10": {"hyp": "das Wädchen Mergend und der Sohn", "span_hit": {"das Mädchen": false, "und der Sohn Joseph": false}}, "h11": {"hyp": "— bekamme war Unsame Glašnämin-"}}
+EVAL_NAMES step2000: {"n": 7, "cer": 1.3234, "word_acc": 0.0, "detail": {"occupation:38666": {"hyp": "28.04.1850", "cer": 1.111, "word_acc": 0.0}, "occupation:38678": {"hyp": "Jhre Mosbacher", "cer": 1.571, "word_acc": 0.0}, "occupation:38693": {"hyp": "neben Sie", "cer": 1.5, "word_acc": 0.0}, "occupation:38696": {"hyp": "25.10.1850", "cer": 1.667, "word_acc": 0.0}, "name:33739": {"hyp": "19.12.1845", "cer": 1.0, "word_acc": 0.0}, "date:33739": {"hyp": "Z. H. Mosbacher", "span_hit": {"28": false, "1845": false}}, "occupation:33739": {"hyp": "J. Hochbacher", "cer": 1.091, "word_acc": 0.0}}}
+Warning: Looks like you're using an outdated `kaggle` version (installed: 2.0.2), please consider upgrading to the latest version (2.2.5)
+Starting upload for file progress.json
+Upload successful: progress.json (217B)
+PROGRESS pushed: step2000 (total 5)
+{'loss': '0.397', 'grad_norm': '6.315', 'learning_rate': '3.792e-06', 'epoch': '0.5025'}
+{'loss': '0.4395', 'grad_norm': '11.39', 'learning_rate': '3.786e-06', 'epoch': '0.505'}
+{'loss': '0.5226', 'grad_norm': '3.91', 'learning_rate': '3.779e-06', 'epoch': '0.5075'}
+{'loss': '0.4111', 'grad_norm': '7.42', 'learning_rate': '3.773e-06', 'epoch': '0.5101'}
+{'loss': '0.4486', 'grad_norm': '8.108', 'learning_rate': '3.767e-06', 'epoch': '0.5126'}
+{'loss': '0.5225', 'grad_norm': '6.134', 'learning_rate': '3.76e-06', 'epoch': '0.5151'}
+{'loss': '0.4968', 'grad_norm': '7.647', 'learning_rate': '3.754e-06', 'epoch': '0.5176'}
+{'loss': '0.3691', 'grad_norm': '5.092', 'learning_rate': '3.747e-06', 'epoch': '0.5201'}
+{'loss': '0.3502', 'grad_norm': '9.014', 'learning_rate': '3.741e-06', 'epoch': '0.5226'}
+{'loss': '0.5187', 'grad_norm': '5.172', 'learning_rate': '3.735e-06', 'epoch': '0.5251'}
+{'loss': '0.3332', 'grad_norm': '10.06', 'learning_rate': '3.728e-06', 'epoch': '0.5276'}
+{'loss': '0.5036', 'grad_norm': '4.691', 'learning_rate': '3.722e-06', 'epoch': '0.5302'}
+{'loss': '0.5622', 'grad_norm': '6.35', 'learning_rate': '3.716e-06', 'epoch': '0.5327'}
+{'loss': '0.3187', 'grad_norm': '7.338', 'learning_rate': '3.709e-06', 'epoch': '0.5352'}
+{'loss': '0.488', 'grad_norm': '7.693', 'learning_rate': '3.703e-06', 'epoch': '0.5377'}
+{'loss': '0.4503', 'grad_norm': '6.237', 'learning_rate': '3.697e-06', 'epoch': '0.5402'}
+{'loss': '0.4773', 'grad_norm': '6.975', 'learning_rate': '3.69e-06', 'epoch': '0.5427'}
+{'loss': '0.4263', 'grad_norm': '5.039', 'learning_rate': '3.684e-06', 'epoch': '0.5452'}
+{'loss': '0.5697', 'grad_norm': '7.702', 'learning_rate': '3.677e-06', 'epoch': '0.5477'}
+{'loss': '0.5081', 'grad_norm': '5.715', 'learning_rate': '3.671e-06', 'epoch': '0.5503'}
+{'loss': '0.4142', 'grad_norm': '9.147', 'learning_rate': '3.665e-06', 'epoch': '0.5528'}
+{'loss': '0.5468', 'grad_norm': '8.219', 'learning_rate': '3.658e-06', 'epoch': '0.5553'}
+{'loss': '0.5083', 'grad_norm': '8.922', 'learning_rate': '3.652e-06', 'epoch': '0.5578'}
+{'loss': '0.4629', 'grad_norm': '8.659', 'learning_rate': '3.646e-06', 'epoch': '0.5603'}
+{'loss': '0.4828', 'grad_norm': '8.464', 'learning_rate': '3.639e-06', 'epoch': '0.5628'}
+{'loss': '0.502', 'grad_norm': '8.086', 'learning_rate': '3.633e-06', 'epoch': '0.5653'}
+{'loss': '0.4014', 'grad_norm': '9.014', 'learning_rate': '3.627e-06', 'epoch': '0.5678'}
+{'loss': '0.4813', 'grad_norm': '7.946', 'learning_rate': '3.62e-06', 'epoch': '0.5704'}
+{'loss': '0.4939', 'grad_norm': '6.961', 'learning_rate': '3.614e-06', 'epoch': '0.5729'}
+{'loss': '0.4918', 'grad_norm': '5.404', 'learning_rate': '3.608e-06', 'epoch': '0.5754'}
+{'loss': '0.3477', 'grad_norm': '7.749', 'learning_rate': '3.601e-06', 'epoch': '0.5779'}
+{'loss': '0.355', 'grad_norm': '6.627', 'learning_rate': '3.595e-06', 'epoch': '0.5804'}
+{'loss': '0.4402', 'grad_norm': '6.553', 'learning_rate': '3.588e-06', 'epoch': '0.5829'}
+{'loss': '0.3957', 'grad_norm': '5.933', 'learning_rate': '3.582e-06', 'epoch': '0.5854'}
+{'loss': '0.4889', 'grad_norm': '11.83', 'learning_rate': '3.576e-06', 'epoch': '0.5879'}
+{'loss': '0.2932', 'grad_norm': '8.931', 'learning_rate': '3.569e-06', 'epoch': '0.5905'}
+{'loss': '0.3717', 'grad_norm': '9.072', 'learning_rate': '3.563e-06', 'epoch': '0.593'}
+{'loss': '0.5182', 'grad_norm': '8.382', 'learning_rate': '3.557e-06', 'epoch': '0.5955'}
+{'loss': '0.2632', 'grad_norm': '7.623', 'learning_rate': '3.55e-06', 'epoch': '0.598'}
+{'loss': '0.4472', 'grad_norm': '7.014', 'learning_rate': '3.544e-06', 'epoch': '0.6005'}
+{'loss': '0.53', 'grad_norm': '7.772', 'learning_rate': '3.538e-06', 'epoch': '0.603'}
+{'loss': '0.5192', 'grad_norm': '6.431', 'learning_rate': '3.531e-06', 'epoch': '0.6055'}
+{'loss': '0.3958', 'grad_norm': '9.178', 'learning_rate': '3.525e-06', 'epoch': '0.608'}
+{'loss': '0.4443', 'grad_norm': '8.295', 'learning_rate': '3.518e-06', 'epoch': '0.6106'}
+{'loss': '0.3467', 'grad_norm': '8.832', 'learning_rate': '3.512e-06', 'epoch': '0.6131'}
+{'loss': '0.3543', 'grad_norm': '6.077', 'learning_rate': '3.506e-06', 'epoch': '0.6156'}
+{'loss': '0.628', 'grad_norm': '9.261', 'learning_rate': '3.499e-06', 'epoch': '0.6181'}
+{'loss': '0.4298', 'grad_norm': '6.898', 'learning_rate': '3.493e-06', 'epoch': '0.6206'}
+{'loss': '0.4879', 'grad_norm': '7.579', 'learning_rate': '3.487e-06', 'epoch': '0.6231'}
+{'loss': '0.3964', 'grad_norm': '6.155', 'learning_rate': '3.48e-06', 'epoch': '0.6256'}
+EVAL12 step2500: {"h00": {"hyp": "08.01.1852", "span_hit": false}, "h01": {"hyp": "1845", "cer": 0.714, "word_acc": 0.333}, "h02": {"hyp": "27J.1824", "span_hit": true}, "h03": {"hyp": "Hofburg"}, "h04": {"hyp": "19.03.1852"}, "h05": {"hyp": "28.12.1852"}, "h06": {"hyp": "20.05.1852"}, "h07": {"hyp": "b ) Den kann Noch ist dem hiesigen Schönznden", "cer": 0.333, "word_acc": 0.571}, "h08": {"hyp": "s-Sprecheizer & Kinder nämlich ein Sohn und", "span_hit": false}, "h09": {"hyp": "Die Mädchen geboren welche die Namen neuen", "span_hit": false}, "h10": {"hyp": "das Wädchen Mergend und der Sohn", "span_hit": {"das Mädchen": false, "und der Sohn Joseph": false}}, "h11": {"hyp": "— bekamme war fnahanna Glernmännen."}}
+EVAL_NAMES step2500: {"n": 7, "cer": 1.3511, "word_acc": 0.0, "detail": {"occupation:38666": {"hyp": "28.04.1854", "cer": 1.111, "word_acc": 0.0}, "occupation:38678": {"hyp": "Jhre Mosbacher", "cer": 1.571, "word_acc": 0.0}, "occupation:38693": {"hyp": "30.02.1852", "cer": 1.667, "word_acc": 0.0}, "occupation:38696": {"hyp": "28.12.1852", "cer": 1.667, "word_acc": 0.0}, "name:33739": {"hyp": "19.03.1852", "cer": 1.0, "word_acc": 0.0}, "date:33739": {"hyp": "Edel Strauß", "span_hit": {"28": false, "1845": false}}, "occupation:33739": {"hyp": "J. Hochbacher", "cer": 1.091, "word_acc": 0.0}}}
+Warning: Looks like you're using an outdated `kaggle` version (installed: 2.0.2), please consider upgrading to the latest version (2.2.5)
+Starting upload for file progress.json
+Upload successful: progress.json (217B)
+PROGRESS pushed: step2500 (total 6)
+{'loss': '0.4194', 'grad_norm': '8.734', 'learning_rate': '3.474e-06', 'epoch': '0.6281'}
+{'loss': '0.4914', 'grad_norm': '7.83', 'learning_rate': '3.468e-06', 'epoch': '0.6307'}
+{'loss': '0.4309', 'grad_norm': '5.588', 'learning_rate': '3.461e-06', 'epoch': '0.6332'}
+{'loss': '0.4853', 'grad_norm': '6.293', 'learning_rate': '3.455e-06', 'epoch': '0.6357'}
+{'loss': '0.441', 'grad_norm': '4.578', 'learning_rate': '3.448e-06', 'epoch': '0.6382'}
+{'loss': '0.3712', 'grad_norm': '5.827', 'learning_rate': '3.442e-06', 'epoch': '0.6407'}
+{'loss': '0.4857', 'grad_norm': '9.147', 'learning_rate': '3.436e-06', 'epoch': '0.6432'}
+{'loss': '0.468', 'grad_norm': '7.165', 'learning_rate': '3.429e-06', 'epoch': '0.6457'}
+{'loss': '0.4467', 'grad_norm': '4.052', 'learning_rate': '3.423e-06', 'epoch': '0.6482'}
+{'loss': '0.5204', 'grad_norm': '6.596', 'learning_rate': '3.417e-06', 'epoch': '0.6508'}
+{'loss': '0.4002', 'grad_norm': '3.907', 'learning_rate': '3.41e-06', 'epoch': '0.6533'}
+{'loss': '0.4615', 'grad_norm': '5.333', 'learning_rate': '3.404e-06', 'epoch': '0.6558'}
+{'loss': '0.3535', 'grad_norm': '8.062', 'learning_rate': '3.398e-06', 'epoch': '0.6583'}
+{'loss': '0.4478', 'grad_norm': '9.77', 'learning_rate': '3.391e-06', 'epoch': '0.6608'}
+{'loss': '0.391', 'grad_norm': '7.852', 'learning_rate': '3.385e-06', 'epoch': '0.6633'}
+{'loss': '0.4507', 'grad_norm': '6.376', 'learning_rate': '3.378e-06', 'epoch': '0.6658'}
+{'loss': '0.4238', 'grad_norm': '7.062', 'learning_rate': '3.372e-06', 'epoch': '0.6683'}
+{'loss': '0.3199', 'grad_norm': '5.989', 'learning_rate': '3.366e-06', 'epoch': '0.6709'}
+{'loss': '0.3442', 'grad_norm': '5.617', 'learning_rate': '3.359e-06', 'epoch': '0.6734'}
+{'loss': '0.5107', 'grad_norm': '8.201', 'learning_rate': '3.353e-06', 'epoch': '0.6759'}
+{'loss': '0.4343', 'grad_norm': '7.905', 'learning_rate': '3.347e-06', 'epoch': '0.6784'}
+{'loss': '0.3927', 'grad_norm': '7.81', 'learning_rate': '3.34e-06', 'epoch': '0.6809'}
+{'loss': '0.3704', 'grad_norm': '8.862', 'learning_rate': '3.334e-06', 'epoch': '0.6834'}
+{'loss': '0.419', 'grad_norm': '7.413', 'learning_rate': '3.328e-06', 'epoch': '0.6859'}
+{'loss': '0.414', 'grad_norm': '7.012', 'learning_rate': '3.321e-06', 'epoch': '0.6884'}
+{'loss': '0.4546', 'grad_norm': '5.809', 'learning_rate': '3.315e-06', 'epoch': '0.691'}
+{'loss': '0.4244', 'grad_norm': '4.976', 'learning_rate': '3.309e-06', 'epoch': '0.6935'}
+{'loss': '0.4343', 'grad_norm': '8.739', 'learning_rate': '3.302e-06', 'epoch': '0.696'}
+{'loss': '0.4678', 'grad_norm': '8.565', 'learning_rate': '3.296e-06', 'epoch': '0.6985'}
+{'loss': '0.4983', 'grad_norm': '8.949', 'learning_rate': '3.289e-06', 'epoch': '0.701'}
+{'loss': '0.4839', 'grad_norm': '8.44', 'learning_rate': '3.283e-06', 'epoch': '0.7035'}
+{'loss': '0.3654', 'grad_norm': '7.872', 'learning_rate': '3.277e-06', 'epoch': '0.706'}
+{'loss': '0.447', 'grad_norm': '4.182', 'learning_rate': '3.27e-06', 'epoch': '0.7085'}
+{'loss': '0.553', 'grad_norm': '7.001', 'learning_rate': '3.264e-06', 'epoch': '0.7111'}
+{'loss': '0.4163', 'grad_norm': '9.449', 'learning_rate': '3.258e-06', 'epoch': '0.7136'}
+{'loss': '0.3217', 'grad_norm': '5.753', 'learning_rate': '3.251e-06', 'epoch': '0.7161'}
+{'loss': '0.5283', 'grad_norm': '8.589', 'learning_rate': '3.245e-06', 'epoch': '0.7186'}
+{'loss': '0.5011', 'grad_norm': '9.213', 'learning_rate': '3.239e-06', 'epoch': '0.7211'}
+{'loss': '0.5519', 'grad_norm': '8.897', 'learning_rate': '3.232e-06', 'epoch': '0.7236'}
+{'loss': '0.3528', 'grad_norm': '5.308', 'learning_rate': '3.226e-06', 'epoch': '0.7261'}
+{'loss': '0.4518', 'grad_norm': '5.992', 'learning_rate': '3.219e-06', 'epoch': '0.7286'}
+{'loss': '0.4192', 'grad_norm': '8.196', 'learning_rate': '3.213e-06', 'epoch': '0.7312'}
+{'loss': '0.3948', 'grad_norm': '4.893', 'learning_rate': '3.207e-06', 'epoch': '0.7337'}
+{'loss': '0.4289', 'grad_norm': '6.656', 'learning_rate': '3.2e-06', 'epoch': '0.7362'}
+{'loss': '0.4792', 'grad_norm': '7.551', 'learning_rate': '3.194e-06', 'epoch': '0.7387'}
+{'loss': '0.4639', 'grad_norm': '9.216', 'learning_rate': '3.188e-06', 'epoch': '0.7412'}
+{'loss': '0.4092', 'grad_norm': '7.67', 'learning_rate': '3.181e-06', 'epoch': '0.7437'}
+{'loss': '0.403', 'grad_norm': '7.815', 'learning_rate': '3.175e-06', 'epoch': '0.7462'}
+{'loss': '0.3174', 'grad_norm': '6.402', 'learning_rate': '3.169e-06', 'epoch': '0.7487'}
+{'loss': '0.3265', 'grad_norm': '5.238', 'learning_rate': '3.162e-06', 'epoch': '0.7513'}
+EVAL12 step3000: {"h00": {"hyp": "08.01.1852", "span_hit": false}, "h01": {"hyp": "1845", "cer": 0.714, "word_acc": 0.333}, "h02": {"hyp": "27.05.1854", "span_hit": false}, "h03": {"hyp": "Hofburg Strauß"}, "h04": {"hyp": "Ständler"}, "h05": {"hyp": "28.12.1852"}, "h06": {"hyp": "19.05.1852"}, "h07": {"hyp": "b ) Den könn Noch ist dem hiesigen Schönzuden", "cer": 0.31, "word_acc": 0.571}, "h08": {"hyp": "s-Sprecheides 2 Kinder nämlich ein Sohn und", "span_hit": true}, "h09": {"hyp": "Die Mädchen geboren welches die Namen neuen", "span_hit": false}, "h10": {"hyp": "das Wädchen Mergend und der Sohn", "span_hit": {"das Mädchen": false, "und der Sohn Joseph": false}}, "h11": {"hyp": "— übernomme war Unsame Gla-Männer «"}}
+EVAL_NAMES step3000: {"n": 7, "cer": 1.4244, "word_acc": 0.0, "detail": {"occupation:38666": {"hyp": "28.01.1854", "cer": 1.111, "word_acc": 0.0}, "occupation:38678": {"hyp": "Jhre Mosbacher", "cer": 1.571, "word_acc": 0.0}, "occupation:38693": {"hyp": "nehmen Strauß", "cer": 1.833, "word_acc": 0.0}, "occupation:38696": {"hyp": "22.12.1852", "cer": 1.667, "word_acc": 0.0}, "name:33739": {"hyp": "19.03.1852", "cer": 1.0, "word_acc": 0.0}, "date:33739": {"hyp": "Edel Strauß", "span_hit": {"28": false, "1845": false}}, "occupation:33739": {"hyp": "J. Johann Mosbacher", "cer": 1.364, "word_acc": 0.0}}}
+Warning: Looks like you're using an outdated `kaggle` version (installed: 2.0.2), please consider upgrading to the latest version (2.2.5)
+Starting upload for file progress.json
+Upload successful: progress.json (216B)
+PROGRESS pushed: step3000 (total 7)
+{'loss': '0.3815', 'grad_norm': '14.66', 'learning_rate': '3.156e-06', 'epoch': '0.7538'}
+{'loss': '0.3379', 'grad_norm': '6.182', 'learning_rate': '3.149e-06', 'epoch': '0.7563'}
+{'loss': '0.3573', 'grad_norm': '11.65', 'learning_rate': '3.143e-06', 'epoch': '0.7588'}
+{'loss': '0.405', 'grad_norm': '6.948', 'learning_rate': '3.137e-06', 'epoch': '0.7613'}
+{'loss': '0.3553', 'grad_norm': '7.213', 'learning_rate': '3.13e-06', 'epoch': '0.7638'}
+{'loss': '0.4298', 'grad_norm': '5.263', 'learning_rate': '3.124e-06', 'epoch': '0.7663'}
+{'loss': '0.3186', 'grad_norm': '5.862', 'learning_rate': '3.118e-06', 'epoch': '0.7688'}
+{'loss': '0.4265', 'grad_norm': '7.221', 'learning_rate': '3.111e-06', 'epoch': '0.7714'}
+{'loss': '0.3858', 'grad_norm': '10.84', 'learning_rate': '3.105e-06', 'epoch': '0.7739'}
+{'loss': '0.3237', 'grad_norm': '7.268', 'learning_rate': '3.099e-06', 'epoch': '0.7764'}
+{'loss': '0.4357', 'grad_norm': '4.796', 'learning_rate': '3.092e-06', 'epoch': '0.7789'}
+{'loss': '0.4007', 'grad_norm': '7.758', 'learning_rate': '3.086e-06', 'epoch': '0.7814'}
+{'loss': '0.3717', 'grad_norm': '6.736', 'learning_rate': '3.08e-06', 'epoch': '0.7839'}
+{'loss': '0.5294', 'grad_norm': '10.28', 'learning_rate': '3.073e-06', 'epoch': '0.7864'}
+{'loss': '0.463', 'grad_norm': '6.056', 'learning_rate': '3.067e-06', 'epoch': '0.7889'}
+{'loss': '0.3623', 'grad_norm': '3.732', 'learning_rate': '3.06e-06', 'epoch': '0.7915'}
+{'loss': '0.5338', 'grad_norm': '2.949', 'learning_rate': '3.054e-06', 'epoch': '0.794'}
+{'loss': '0.3397', 'grad_norm': '7.369', 'learning_rate': '3.048e-06', 'epoch': '0.7965'}
+{'loss': '0.3867', 'grad_norm': '5.116', 'learning_rate': '3.041e-06', 'epoch': '0.799'}
+{'loss': '0.4019', 'grad_norm': '8.51', 'learning_rate': '3.035e-06', 'epoch': '0.8015'}
+{'loss': '0.393', 'grad_norm': '7.818', 'learning_rate': '3.029e-06', 'epoch': '0.804'}
+{'loss': '0.2822', 'grad_norm': '6.507', 'learning_rate': '3.022e-06', 'epoch': '0.8065'}
+{'loss': '0.4034', 'grad_norm': '6.201', 'learning_rate': '3.016e-06', 'epoch': '0.809'}
+{'loss': '0.3818', 'grad_norm': '11.18', 'learning_rate': '3.01e-06', 'epoch': '0.8116'}
+{'loss': '0.4529', 'grad_norm': '9.32', 'learning_rate': '3.003e-06', 'epoch': '0.8141'}
+{'loss': '0.2849', 'grad_norm': '8.781', 'learning_rate': '2.997e-06', 'epoch': '0.8166'}
+{'loss': '0.36', 'grad_norm': '5.188', 'learning_rate': '2.99e-06', 'epoch': '0.8191'}
+{'loss': '0.3468', 'grad_norm': '6.069', 'learning_rate': '2.984e-06', 'epoch': '0.8216'}
+{'loss': '0.5269', 'grad_norm': '7.416', 'learning_rate': '2.978e-06', 'epoch': '0.8241'}
+{'loss': '0.4668', 'grad_norm': '8.044', 'learning_rate': '2.971e-06', 'epoch': '0.8266'}
+{'loss': '0.5899', 'grad_norm': '7.851', 'learning_rate': '2.965e-06', 'epoch': '0.8291'}
+{'loss': '0.5077', 'grad_norm': '16.81', 'learning_rate': '2.959e-06', 'epoch': '0.8317'}
+{'loss': '0.3814', 'grad_norm': '7.257', 'learning_rate': '2.952e-06', 'epoch': '0.8342'}
+{'loss': '0.3642', 'grad_norm': '9.168', 'learning_rate': '2.946e-06', 'epoch': '0.8367'}
+{'loss': '0.3589', 'grad_norm': '8.573', 'learning_rate': '2.94e-06', 'epoch': '0.8392'}
+{'loss': '0.4223', 'grad_norm': '7.97', 'learning_rate': '2.933e-06', 'epoch': '0.8417'}
+{'loss': '0.43', 'grad_norm': '8.677', 'learning_rate': '2.927e-06', 'epoch': '0.8442'}
+{'loss': '0.404', 'grad_norm': '8.409', 'learning_rate': '2.92e-06', 'epoch': '0.8467'}
+{'loss': '0.4594', 'grad_norm': '8.007', 'learning_rate': '2.914e-06', 'epoch': '0.8492'}
+{'loss': '0.4537', 'grad_norm': '5.053', 'learning_rate': '2.908e-06', 'epoch': '0.8518'}
+{'loss': '0.5457', 'grad_norm': '7.441', 'learning_rate': '2.901e-06', 'epoch': '0.8543'}
+{'loss': '0.4077', 'grad_norm': '8.216', 'learning_rate': '2.895e-06', 'epoch': '0.8568'}
+{'loss': '0.3628', 'grad_norm': '5.942', 'learning_rate': '2.889e-06', 'epoch': '0.8593'}
+{'loss': '0.324', 'grad_norm': '8.075', 'learning_rate': '2.882e-06', 'epoch': '0.8618'}
+{'loss': '0.4169', 'grad_norm': '5.763', 'learning_rate': '2.876e-06', 'epoch': '0.8643'}
+{'loss': '0.4514', 'grad_norm': '6.814', 'learning_rate': '2.87e-06', 'epoch': '0.8668'}
+{'loss': '0.3526', 'grad_norm': '6.952', 'learning_rate': '2.863e-06', 'epoch': '0.8693'}
+{'loss': '0.4174', 'grad_norm': '4.591', 'learning_rate': '2.857e-06', 'epoch': '0.8719'}
+{'loss': '0.3596', 'grad_norm': '7.139', 'learning_rate': '2.851e-06', 'epoch': '0.8744'}
+{'loss': '0.4649', 'grad_norm': '6.711', 'learning_rate': '2.844e-06', 'epoch': '0.8769'}
+EVAL12 step3500: {"h00": {"hyp": "08.05.1852", "span_hit": false}, "h01": {"hyp": "1845", "cer": 0.714, "word_acc": 0.333}, "h02": {"hyp": "27.04", "span_hit": false}, "h03": {"hyp": "Hofburg Strauß"}, "h04": {"hyp": "19.03.1852"}, "h05": {"hyp": "28.06.1849"}, "h06": {"hyp": "19.05.1852"}, "h07": {"hyp": "b) Den können Nov ist dem hiesigen Schönzuden", "cer": 0.238, "word_acc": 0.714}, "h08": {"hyp": "lsprecheides 2 Kinder nämlich ein Sohn und", "span_hit": true}, "h09": {"hyp": "Die Mädchen geboren welche die Namen neu¬", "span_hit": false}, "h10": {"hyp": "das Wädchen Mergend und der Sohn", "span_hit": {"das Mädchen": false, "und der Sohn Joseph": false}}, "h11": {"hyp": "[-Monomme war Unserne Gla-Männer"}}
+EVAL_NAMES step3500: {"n": 7, "cer": 1.3638, "word_acc": 0.0, "detail": {"occupation:38666": {"hyp": "28.04.1849", "cer": 1.111, "word_acc": 0.0}, "occupation:38678": {"hyp": "Jhre Mosbacher", "cer": 1.571, "word_acc": 0.0}, "occupation:38693": {"hyp": "nehmen Strauß", "cer": 1.833, "word_acc": 0.0}, "occupation:38696": {"hyp": "22.04.1849", "cer": 1.667, "word_acc": 0.0}, "name:33739": {"hyp": "19.06.1846", "cer": 1.0, "word_acc": 0.0}, "date:33739": {"hyp": "Edel Mosbacher", "span_hit": {"28": false, "1845": false}}, "occupation:33739": {"hyp": "18.06.1846", "cer": 1.0, "word_acc": 0.0}}}
+Warning: Looks like you're using an outdated `kaggle` version (installed: 2.0.2), please consider upgrading to the latest version (2.2.5)
+Starting upload for file progress.json
+Upload successful: progress.json (216B)
+PROGRESS pushed: step3500 (total 8)
+{'loss': '0.4456', 'grad_norm': '7.537', 'learning_rate': '2.838e-06', 'epoch': '0.8794'}
+{'loss': '0.3556', 'grad_norm': '7.173', 'learning_rate': '2.831e-06', 'epoch': '0.8819'}
+{'loss': '0.3827', 'grad_norm': '7.617', 'learning_rate': '2.825e-06', 'epoch': '0.8844'}
+{'loss': '0.2952', 'grad_norm': '6.068', 'learning_rate': '2.819e-06', 'epoch': '0.8869'}
+{'loss': '0.381', 'grad_norm': '5.048', 'learning_rate': '2.812e-06', 'epoch': '0.8894'}
+{'loss': '0.4489', 'grad_norm': '4.526', 'learning_rate': '2.806e-06', 'epoch': '0.892'}
+{'loss': '0.3754', 'grad_norm': '10.19', 'learning_rate': '2.8e-06', 'epoch': '0.8945'}
+{'loss': '0.3656', 'grad_norm': '6.516', 'learning_rate': '2.793e-06', 'epoch': '0.897'}
+{'loss': '0.4192', 'grad_norm': '9.478', 'learning_rate': '2.787e-06', 'epoch': '0.8995'}
+{'loss': '0.4327', 'grad_norm': '5.044', 'learning_rate': '2.781e-06', 'epoch': '0.902'}
+{'loss': '0.3462', 'grad_norm': '7.495', 'learning_rate': '2.774e-06', 'epoch': '0.9045'}
+{'loss': '0.3557', 'grad_norm': '6.187', 'learning_rate': '2.768e-06', 'epoch': '0.907'}
+{'loss': '0.3484', 'grad_norm': '6.131', 'learning_rate': '2.761e-06', 'epoch': '0.9095'}
+{'loss': '0.2885', 'grad_norm': '5.27', 'learning_rate': '2.755e-06', 'epoch': '0.9121'}
+{'loss': '0.3747', 'grad_norm': '3.515', 'learning_rate': '2.749e-06', 'epoch': '0.9146'}
+{'loss': '0.3973', 'grad_norm': '5.903', 'learning_rate': '2.742e-06', 'epoch': '0.9171'}
+{'loss': '0.3695', 'grad_norm': '6.773', 'learning_rate': '2.736e-06', 'epoch': '0.9196'}
+{'loss': '0.4706', 'grad_norm': '8.332', 'learning_rate': '2.73e-06', 'epoch': '0.9221'}
+{'loss': '0.317', 'grad_norm': '7.036', 'learning_rate': '2.723e-06', 'epoch': '0.9246'}
+{'loss': '0.4114', 'grad_norm': '7.356', 'learning_rate': '2.717e-06', 'epoch': '0.9271'}
+{'loss': '0.4046', 'grad_norm': '5.617', 'learning_rate': '2.711e-06', 'epoch': '0.9296'}
+{'loss': '0.3345', 'grad_norm': '3.494', 'learning_rate': '2.704e-06', 'epoch': '0.9322'}
+{'loss': '0.3246', 'grad_norm': '7.521', 'learning_rate': '2.698e-06', 'epoch': '0.9347'}
+{'loss': '0.3602', 'grad_norm': '7.934', 'learning_rate': '2.691e-06', 'epoch': '0.9372'}
+{'loss': '0.3439', 'grad_norm': '9.112', 'learning_rate': '2.685e-06', 'epoch': '0.9397'}
+{'loss': '0.4625', 'grad_norm': '6.893', 'learning_rate': '2.679e-06', 'epoch': '0.9422'}
+{'loss': '0.3665', 'grad_norm': '4.506', 'learning_rate': '2.672e-06', 'epoch': '0.9447'}
+{'loss': '0.411', 'grad_norm': '7.8', 'learning_rate': '2.666e-06', 'epoch': '0.9472'}
+{'loss': '0.3646', 'grad_norm': '6.564', 'learning_rate': '2.66e-06', 'epoch': '0.9497'}
+{'loss': '0.4482', 'grad_norm': '10.67', 'learning_rate': '2.653e-06', 'epoch': '0.9523'}
+{'loss': '0.3694', 'grad_norm': '5.767', 'learning_rate': '2.647e-06', 'epoch': '0.9548'}
+{'loss': '0.3518', 'grad_norm': '6.933', 'learning_rate': '2.641e-06', 'epoch': '0.9573'}
+{'loss': '0.4435', 'grad_norm': '10.1', 'learning_rate': '2.634e-06', 'epoch': '0.9598'}
+{'loss': '0.4518', 'grad_norm': '8.675', 'learning_rate': '2.628e-06', 'epoch': '0.9623'}
+{'loss': '0.5297', 'grad_norm': '8.339', 'learning_rate': '2.622e-06', 'epoch': '0.9648'}
+{'loss': '0.4076', 'grad_norm': '7.559', 'learning_rate': '2.615e-06', 'epoch': '0.9673'}
+{'loss': '0.3251', 'grad_norm': '8.733', 'learning_rate': '2.609e-06', 'epoch': '0.9698'}
+{'loss': '0.3368', 'grad_norm': '5.274', 'learning_rate': '2.602e-06', 'epoch': '0.9724'}
+{'loss': '0.3754', 'grad_norm': '5.594', 'learning_rate': '2.596e-06', 'epoch': '0.9749'}
+{'loss': '0.3644', 'grad_norm': '9.958', 'learning_rate': '2.59e-06', 'epoch': '0.9774'}
+{'loss': '0.3515', 'grad_norm': '7.73', 'learning_rate': '2.583e-06', 'epoch': '0.9799'}
+{'loss': '0.3334', 'grad_norm': '6.17', 'learning_rate': '2.577e-06', 'epoch': '0.9824'}
+{'loss': '0.3292', 'grad_norm': '7.876', 'learning_rate': '2.571e-06', 'epoch': '0.9849'}
+{'loss': '0.3705', 'grad_norm': '7.533', 'learning_rate': '2.564e-06', 'epoch': '0.9874'}
+{'loss': '0.4584', 'grad_norm': '6.708', 'learning_rate': '2.558e-06', 'epoch': '0.9899'}
+{'loss': '0.3127', 'grad_norm': '7.66', 'learning_rate': '2.552e-06', 'epoch': '0.9925'}
+{'loss': '0.3144', 'grad_norm': '6.028', 'learning_rate': '2.545e-06', 'epoch': '0.995'}
+{'loss': '0.3931', 'grad_norm': '7.972', 'learning_rate': '2.539e-06', 'epoch': '0.9975'}
+{'loss': '0.2943', 'grad_norm': '0.6376', 'learning_rate': '2.532e-06', 'epoch': '1'}
+{'loss': '0.2926', 'grad_norm': '5.922', 'learning_rate': '2.526e-06', 'epoch': '1.003'}
+EVAL12 step4000: {"h00": {"hyp": "02.05.1845", "span_hit": false}, "h01": {"hyp": "08.04.1849", "cer": 0.714, "word_acc": 0.0}, "h02": {"hyp": "27J.1824", "span_hit": true}, "h03": {"hyp": "Hofburg Strauß"}, "h04": {"hyp": "Stelle Strauß"}, "h05": {"hyp": "28.06.1849"}, "h06": {"hyp": "Gesellschaft"}, "h07": {"hyp": "b ) Den könn Noch ist dem hiesigen Schönzuden", "cer": 0.31, "word_acc": 0.571}, "h08": {"hyp": "s-Sprecheides 2 Kinder nämlich ein Sohn und", "span_hit": true}, "h09": {"hyp": "Die Mädchen geboren welche die Namen neu¬", "span_hit": false}, "h10": {"hyp": "das Wädchen Mergend und der Sohn gesch erhielt,", "span_hit": {"das Mädchen": false, "und der Sohn Joseph": false}}, "h11": {"hyp": "— übernomme war Unsame Gla-Männnin."}}
+EVAL_NAMES step4000: {"n": 7, "cer": 1.4244, "word_acc": 0.0, "detail": {"occupation:38666": {"hyp": "28.04.1849", "cer": 1.111, "word_acc": 0.0}, "occupation:38678": {"hyp": "Jakob Michel", "cer": 1.571, "word_acc": 0.0}, "occupation:38693": {"hyp": "nehmen Strauß", "cer": 1.833, "word_acc": 0.0}, "occupation:38696": {"hyp": "22.04.1849", "cer": 1.667, "word_acc": 0.0}, "name:33739": {"hyp": "19.04.1849", "cer": 1.0, "word_acc": 0.0}, "date:33739": {"hyp": "Edel Strauß", "span_hit": {"28": false, "1845": false}}, "occupation:33739": {"hyp": "J. Johann Mosbacher", "cer": 1.364, "word_acc": 0.0}}}
+Warning: Looks like you're using an outdated `kaggle` version (installed: 2.0.2), please consider upgrading to the latest version (2.2.5)
+Starting upload for file progress.json
+Upload successful: progress.json (216B)
+PROGRESS pushed: step4000 (total 9)
+{'loss': '0.2568', 'grad_norm': '5.363', 'learning_rate': '2.52e-06', 'epoch': '1.005'}
+{'loss': '0.3553', 'grad_norm': '6.398', 'learning_rate': '2.513e-06', 'epoch': '1.008'}
+{'loss': '0.3501', 'grad_norm': '6.107', 'learning_rate': '2.507e-06', 'epoch': '1.01'}
+{'loss': '0.3263', 'grad_norm': '2.999', 'learning_rate': '2.501e-06', 'epoch': '1.013'}
+{'loss': '0.2759', 'grad_norm': '5.1', 'learning_rate': '2.494e-06', 'epoch': '1.015'}
+{'loss': '0.2282', 'grad_norm': '4.015', 'learning_rate': '2.488e-06', 'epoch': '1.018'}
+{'loss': '0.322', 'grad_norm': '5.134', 'learning_rate': '2.482e-06', 'epoch': '1.02'}
+{'loss': '0.2841', 'grad_norm': '6.745', 'learning_rate': '2.475e-06', 'epoch': '1.023'}
+{'loss': '0.3595', 'grad_norm': '4.64', 'learning_rate': '2.469e-06', 'epoch': '1.025'}
+{'loss': '0.2607', 'grad_norm': '5.531', 'learning_rate': '2.462e-06', 'epoch': '1.028'}
+{'loss': '0.3068', 'grad_norm': '7.503', 'learning_rate': '2.456e-06', 'epoch': '1.03'}
+{'loss': '0.3006', 'grad_norm': '7.707', 'learning_rate': '2.45e-06', 'epoch': '1.033'}
+{'loss': '0.2817', 'grad_norm': '3.563', 'learning_rate': '2.443e-06', 'epoch': '1.035'}
+{'loss': '0.259', 'grad_norm': '1.725', 'learning_rate': '2.437e-06', 'epoch': '1.038'}
+{'loss': '0.2672', 'grad_norm': '5.875', 'learning_rate': '2.431e-06', 'epoch': '1.04'}
+{'loss': '0.3214', 'grad_norm': '8.398', 'learning_rate': '2.424e-06', 'epoch': '1.043'}
+{'loss': '0.3222', 'grad_norm': '5.083', 'learning_rate': '2.418e-06', 'epoch': '1.045'}
+{'loss': '0.2526', 'grad_norm': '4.617', 'learning_rate': '2.412e-06', 'epoch': '1.048'}
+{'loss': '0.3071', 'grad_norm': '7.286', 'learning_rate': '2.405e-06', 'epoch': '1.05'}
+{'loss': '0.388', 'grad_norm': '13.82', 'learning_rate': '2.399e-06', 'epoch': '1.053'}
+{'loss': '0.2517', 'grad_norm': '5.282', 'learning_rate': '2.392e-06', 'epoch': '1.055'}
+{'loss': '0.3827', 'grad_norm': '6.473', 'learning_rate': '2.386e-06', 'epoch': '1.058'}
+{'loss': '0.2987', 'grad_norm': '5.485', 'learning_rate': '2.38e-06', 'epoch': '1.06'}
+{'loss': '0.2472', 'grad_norm': '8.123', 'learning_rate': '2.373e-06', 'epoch': '1.063'}
+{'loss': '0.2573', 'grad_norm': '5.737', 'learning_rate': '2.367e-06', 'epoch': '1.065'}
+{'loss': '0.3218', 'grad_norm': '6.479', 'learning_rate': '2.361e-06', 'epoch': '1.068'}
+{'loss': '0.247', 'grad_norm': '4.272', 'learning_rate': '2.354e-06', 'epoch': '1.07'}
+{'loss': '0.2647', 'grad_norm': '6.742', 'learning_rate': '2.348e-06', 'epoch': '1.073'}
+{'loss': '0.3391', 'grad_norm': '6.21', 'learning_rate': '2.342e-06', 'epoch': '1.075'}
+{'loss': '0.3188', 'grad_norm': '7.401', 'learning_rate': '2.335e-06', 'epoch': '1.078'}
+{'loss': '0.2585', 'grad_norm': '5.026', 'learning_rate': '2.329e-06', 'epoch': '1.08'}
+{'loss': '0.2316', 'grad_norm': '5.87', 'learning_rate': '2.323e-06', 'epoch': '1.083'}
+{'loss': '0.2508', 'grad_norm': '5.846', 'learning_rate': '2.316e-06', 'epoch': '1.085'}
+{'loss': '0.3317', 'grad_norm': '7.387', 'learning_rate': '2.31e-06', 'epoch': '1.088'}
+{'loss': '0.3656', 'grad_norm': '7.312', 'learning_rate': '2.303e-06', 'epoch': '1.09'}
+{'loss': '0.1921', 'grad_norm': '4.687', 'learning_rate': '2.297e-06', 'epoch': '1.093'}
+{'loss': '0.3466', 'grad_norm': '6.064', 'learning_rate': '2.291e-06', 'epoch': '1.095'}
+{'loss': '0.3619', 'grad_norm': '8.774', 'learning_rate': '2.284e-06', 'epoch': '1.098'}
+{'loss': '0.2406', 'grad_norm': '5.301', 'learning_rate': '2.278e-06', 'epoch': '1.101'}
+{'loss': '0.2259', 'grad_norm': '4.776', 'learning_rate': '2.272e-06', 'epoch': '1.103'}
+{'loss': '0.2214', 'grad_norm': '6.934', 'learning_rate': '2.265e-06', 'epoch': '1.106'}
+{'loss': '0.2348', 'grad_norm': '6.696', 'learning_rate': '2.259e-06', 'epoch': '1.108'}
+{'loss': '0.2608', 'grad_norm': '4.664', 'learning_rate': '2.253e-06', 'epoch': '1.111'}
+{'loss': '0.1663', 'grad_norm': '4.694', 'learning_rate': '2.246e-06', 'epoch': '1.113'}
+{'loss': '0.263', 'grad_norm': '7.398', 'learning_rate': '2.24e-06', 'epoch': '1.116'}
+{'loss': '0.3354', 'grad_norm': '4.16', 'learning_rate': '2.233e-06', 'epoch': '1.118'}
+{'loss': '0.2636', 'grad_norm': '5.76', 'learning_rate': '2.227e-06', 'epoch': '1.121'}
+{'loss': '0.3541', 'grad_norm': '6.974', 'learning_rate': '2.221e-06', 'epoch': '1.123'}
+{'loss': '0.3432', 'grad_norm': '4.077', 'learning_rate': '2.214e-06', 'epoch': '1.126'}
+{'loss': '0.249', 'grad_norm': '2.863', 'learning_rate': '2.208e-06', 'epoch': '1.128'}
+EVAL12 step4500: {"h00": {"hyp": "02.05.1845", "span_hit": false}, "h01": {"hyp": "08.11.1845", "cer": 0.643, "word_acc": 0.0}, "h02": {"hyp": "27J.1824", "span_hit": true}, "h03": {"hyp": "Hofburg Regensburger"}, "h04": {"hyp": "Stelle Strauß"}, "h05": {"hyp": "22.06.1849"}, "h06": {"hyp": "Germacht Michel"}, "h07": {"hyp": "b ) Den könn Noch ist dem hiesigen Schönznden", "cer": 0.333, "word_acc": 0.571}, "h08": {"hyp": "s-Sprecheides 2 Kinder nämlich ein Sohn und", "span_hit": true}, "h09": {"hyp": "Die Mädchen geboren welche die Namen neu¬", "span_hit": false}, "h10": {"hyp": "das Wädchen Mergend und der Sohn", "span_hit": {"das Mädchen": false, "und der Sohn Joseph": false}}, "h11": {"hyp": "— bekamme war Unsame Glašnämin."}}
+EVAL_NAMES step4500: {"n": 7, "cer": 1.3638, "word_acc": 0.0, "detail": {"occupation:38666": {"hyp": "28.04.1849", "cer": 1.111, "word_acc": 0.0}, "occupation:38678": {"hyp": "Jakob Michel", "cer": 1.571, "word_acc": 0.0}, "occupation:38693": {"hyp": "nehmen Strauß", "cer": 1.833, "word_acc": 0.0}, "occupation:38696": {"hyp": "25.12.1854", "cer": 1.667, "word_acc": 0.0}, "name:33739": {"hyp": "19.04.1849", "cer": 1.0, "word_acc": 0.0}, "date:33739": {"hyp": "Edel Strauß", "span_hit": {"28": false, "1845": false}}, "occupation:33739": {"hyp": "Jakob Michel", "cer": 1.0, "word_acc": 0.0}}}
+Warning: Looks like you're using an outdated `kaggle` version (installed: 2.0.2), please consider upgrading to the latest version (2.2.5)
+Starting upload for file progress.json
+Upload successful: progress.json (216B)
+PROGRESS pushed: step4500 (total 10)
+{'loss': '0.2302', 'grad_norm': '5.004', 'learning_rate': '2.202e-06', 'epoch': '1.131'}
+{'loss': '0.3585', 'grad_norm': '7.079', 'learning_rate': '2.195e-06', 'epoch': '1.133'}
+{'loss': '0.4298', 'grad_norm': '4.291', 'learning_rate': '2.189e-06', 'epoch': '1.136'}
+{'loss': '0.2956', 'grad_norm': '7.332', 'learning_rate': '2.183e-06', 'epoch': '1.138'}
+{'loss': '0.255', 'grad_norm': '6.242', 'learning_rate': '2.176e-06', 'epoch': '1.141'}
+{'loss': '0.3032', 'grad_norm': '13.05', 'learning_rate': '2.17e-06', 'epoch': '1.143'}
+{'loss': '0.298', 'grad_norm': '6.48', 'learning_rate': '2.163e-06', 'epoch': '1.146'}
+{'loss': '0.297', 'grad_norm': '4.369', 'learning_rate': '2.157e-06', 'epoch': '1.148'}
+{'loss': '0.3945', 'grad_norm': '4.264', 'learning_rate': '2.151e-06', 'epoch': '1.151'}
+{'loss': '0.2488', 'grad_norm': '5.936', 'learning_rate': '2.144e-06', 'epoch': '1.153'}
+{'loss': '0.2597', 'grad_norm': '4.56', 'learning_rate': '2.138e-06', 'epoch': '1.156'}
+{'loss': '0.3275', 'grad_norm': '4.136', 'learning_rate': '2.132e-06', 'epoch': '1.158'}
+{'loss': '0.2271', 'grad_norm': '4.457', 'learning_rate': '2.125e-06', 'epoch': '1.161'}
+{'loss': '0.234', 'grad_norm': '7.031', 'learning_rate': '2.119e-06', 'epoch': '1.163'}
+{'loss': '0.2126', 'grad_norm': '6.509', 'learning_rate': '2.113e-06', 'epoch': '1.166'}
+{'loss': '0.302', 'grad_norm': '5.265', 'learning_rate': '2.106e-06', 'epoch': '1.168'}
+{'loss': '0.2676', 'grad_norm': '6.39', 'learning_rate': '2.1e-06', 'epoch': '1.171'}
+{'loss': '0.3023', 'grad_norm': '5.727', 'learning_rate': '2.094e-06', 'epoch': '1.173'}
+{'loss': '0.2164', 'grad_norm': '5.405', 'learning_rate': '2.087e-06', 'epoch': '1.176'}
+{'loss': '0.3253', 'grad_norm': '5.52', 'learning_rate': '2.081e-06', 'epoch': '1.178'}
+{'loss': '0.3717', 'grad_norm': '7.662', 'learning_rate': '2.074e-06', 'epoch': '1.181'}
+{'loss': '0.2514', 'grad_norm': '4.596', 'learning_rate': '2.068e-06', 'epoch': '1.183'}
+{'loss': '0.2728', 'grad_norm': '3.372', 'learning_rate': '2.062e-06', 'epoch': '1.186'}
+{'loss': '0.2167', 'grad_norm': '4.504', 'learning_rate': '2.055e-06', 'epoch': '1.188'}
+{'loss': '0.2539', 'grad_norm': '5.017', 'learning_rate': '2.049e-06', 'epoch': '1.191'}
+{'loss': '0.2542', 'grad_norm': '5.814', 'learning_rate': '2.043e-06', 'epoch': '1.193'}
+{'loss': '0.2325', 'grad_norm': '7.131', 'learning_rate': '2.036e-06', 'epoch': '1.196'}
+{'loss': '0.3265', 'grad_norm': '5.553', 'learning_rate': '2.03e-06', 'epoch': '1.198'}
+{'loss': '0.3067', 'grad_norm': '8.798', 'learning_rate': '2.024e-06', 'epoch': '1.201'}
+{'loss': '0.2286', 'grad_norm': '8.578', 'learning_rate': '2.017e-06', 'epoch': '1.204'}
+{'loss': '0.3198', 'grad_norm': '7.631', 'learning_rate': '2.011e-06', 'epoch': '1.206'}
+{'loss': '0.2315', 'grad_norm': '4.582', 'learning_rate': '2.004e-06', 'epoch': '1.209'}
+{'loss': '0.3411', 'grad_norm': '5.513', 'learning_rate': '1.998e-06', 'epoch': '1.211'}
+{'loss': '0.2604', 'grad_norm': '3.249', 'learning_rate': '1.992e-06', 'epoch': '1.214'}
+{'loss': '0.2238', 'grad_norm': '6.214', 'learning_rate': '1.985e-06', 'epoch': '1.216'}
+{'loss': '0.298', 'grad_norm': '6.492', 'learning_rate': '1.979e-06', 'epoch': '1.219'}
+{'loss': '0.3276', 'grad_norm': '4.579', 'learning_rate': '1.973e-06', 'epoch': '1.221'}
+{'loss': '0.3257', 'grad_norm': '3.691', 'learning_rate': '1.966e-06', 'epoch': '1.224'}
+{'loss': '0.2948', 'grad_norm': '6.51', 'learning_rate': '1.96e-06', 'epoch': '1.226'}
+{'loss': '0.295', 'grad_norm': '3.512', 'learning_rate': '1.954e-06', 'epoch': '1.229'}
+{'loss': '0.2111', 'grad_norm': '5.643', 'learning_rate': '1.947e-06', 'epoch': '1.231'}
+{'loss': '0.2742', 'grad_norm': '8.697', 'learning_rate': '1.941e-06', 'epoch': '1.234'}
+{'loss': '0.2431', 'grad_norm': '6.241', 'learning_rate': '1.934e-06', 'epoch': '1.236'}
+{'loss': '0.2506', 'grad_norm': '6.454', 'learning_rate': '1.928e-06', 'epoch': '1.239'}
+{'loss': '0.2432', 'grad_norm': '3.338', 'learning_rate': '1.922e-06', 'epoch': '1.241'}
+{'loss': '0.2391', 'grad_norm': '2.081', 'learning_rate': '1.915e-06', 'epoch': '1.244'}
+{'loss': '0.2627', 'grad_norm': '1.732', 'learning_rate': '1.909e-06', 'epoch': '1.246'}
+{'loss': '0.2258', 'grad_norm': '29.09', 'learning_rate': '1.903e-06', 'epoch': '1.249'}
+{'loss': '0.4114', 'grad_norm': '18.37', 'learning_rate': '1.896e-06', 'epoch': '1.251'}
+{'loss': '0.2448', 'grad_norm': '3.848', 'learning_rate': '1.89e-06', 'epoch': '1.254'}
+EVAL12 step5000: {"h00": {"hyp": "08.05.1845", "span_hit": false}, "h01": {"hyp": "08.11.1845", "cer": 0.643, "word_acc": 0.0}, "h02": {"hyp": "227.", "span_hit": false}, "h03": {"hyp": "Hofburg Strauß"}, "h04": {"hyp": "Stelle Strauß"}, "h05": {"hyp": "28.06.1849"}, "h06": {"hyp": "Gesellschaft"}, "h07": {"hyp": "Den können Nov ist dem hiesigen Schönzuden", "cer": 0.167, "word_acc": 0.714}, "h08": {"hyp": "s-Sprecheizer & Kinder nämlich ein Sohn und", "span_hit": false}, "h09": {"hyp": "Die Mädchen geboren welche die Namen neu¬", "span_hit": false}, "h10": {"hyp": "das Wädchen Mergend und der Sohn", "span_hit": {"das Mädchen": false, "und der Sohn Joseph": false}}, "h11": {"hyp": "[-Monomme war Unserne Glaçnwin."}}
+EVAL_NAMES step5000: {"n": 7, "cer": 1.3789, "word_acc": 0.0, "detail": {"occupation:38666": {"hyp": "28.04.1849", "cer": 1.111, "word_acc": 0.0}, "occupation:38678": {"hyp": "Jakob Michel", "cer": 1.571, "word_acc": 0.0}, "occupation:38693": {"hyp": "nehmen Strauß", "cer": 1.833, "word_acc": 0.0}, "occupation:38696": {"hyp": "25.12.1852", "cer": 1.667, "word_acc": 0.0}, "name:33739": {"hyp": "19.04.1849", "cer": 1.0, "word_acc": 0.0}, "date:33739": {"hyp": "Edel Strauß", "span_hit": {"28": false, "1845": false}}, "occupation:33739": {"hyp": "J. Hochbacher", "cer": 1.091, "word_acc": 0.0}}}
+Warning: Looks like you're using an outdated `kaggle` version (installed: 2.0.2), please consider upgrading to the latest version (2.2.5)
+Starting upload for file progress.json
+Upload successful: progress.json (216B)
+PROGRESS pushed: step5000 (total 11)
+{'loss': '0.245', 'grad_norm': '4.886', 'learning_rate': '1.884e-06', 'epoch': '1.256'}
+{'loss': '0.2487', 'grad_norm': '4.116', 'learning_rate': '1.877e-06', 'epoch': '1.259'}
+{'loss': '0.3317', 'grad_norm': '5.25', 'learning_rate': '1.871e-06', 'epoch': '1.261'}
+{'loss': '0.2819', 'grad_norm': '6.408', 'learning_rate': '1.865e-06', 'epoch': '1.264'}
+{'loss': '0.2592', 'grad_norm': '5.277', 'learning_rate': '1.858e-06', 'epoch': '1.266'}
+{'loss': '0.2789', 'grad_norm': '6.078', 'learning_rate': '1.852e-06', 'epoch': '1.269'}
+{'loss': '0.2421', 'grad_norm': '6.862', 'learning_rate': '1.845e-06', 'epoch': '1.271'}
+{'loss': '0.2868', 'grad_norm': '4.491', 'learning_rate': '1.839e-06', 'epoch': '1.274'}
+{'loss': '0.2965', 'grad_norm': '6.012', 'learning_rate': '1.833e-06', 'epoch': '1.276'}
+{'loss': '0.3153', 'grad_norm': '5.269', 'learning_rate': '1.826e-06', 'epoch': '1.279'}
+{'loss': '0.2968', 'grad_norm': '10.92', 'learning_rate': '1.82e-06', 'epoch': '1.281'}
+{'loss': '0.2899', 'grad_norm': '5.533', 'learning_rate': '1.814e-06', 'epoch': '1.284'}
+{'loss': '0.241', 'grad_norm': '5.724', 'learning_rate': '1.807e-06', 'epoch': '1.286'}
+{'loss': '0.2343', 'grad_norm': '6.168', 'learning_rate': '1.801e-06', 'epoch': '1.289'}
+{'loss': '0.2303', 'grad_norm': '5.819', 'learning_rate': '1.795e-06', 'epoch': '1.291'}
+{'loss': '0.2061', 'grad_norm': '4.622', 'learning_rate': '1.788e-06', 'epoch': '1.294'}
+{'loss': '0.2683', 'grad_norm': '5.038', 'learning_rate': '1.782e-06', 'epoch': '1.296'}
+{'loss': '0.226', 'grad_norm': '4.51', 'learning_rate': '1.775e-06', 'epoch': '1.299'}
+{'loss': '0.2185', 'grad_norm': '5.337', 'learning_rate': '1.769e-06', 'epoch': '1.302'}
+{'loss': '0.3416', 'grad_norm': '5.011', 'learning_rate': '1.763e-06', 'epoch': '1.304'}
+{'loss': '0.2276', 'grad_norm': '3.355', 'learning_rate': '1.756e-06', 'epoch': '1.307'}
+{'loss': '0.2014', 'grad_norm': '5.825', 'learning_rate': '1.75e-06', 'epoch': '1.309'}
+{'loss': '0.2565', 'grad_norm': '5.513', 'learning_rate': '1.744e-06', 'epoch': '1.312'}
+{'loss': '0.2637', 'grad_norm': '4.666', 'learning_rate': '1.737e-06', 'epoch': '1.314'}
+{'loss': '0.2073', 'grad_norm': '5.272', 'learning_rate': '1.731e-06', 'epoch': '1.317'}
+{'loss': '0.2449', 'grad_norm': '5.521', 'learning_rate': '1.725e-06', 'epoch': '1.319'}
+{'loss': '0.3087', 'grad_norm': '7.053', 'learning_rate': '1.718e-06', 'epoch': '1.322'}
+{'loss': '0.186', 'grad_norm': '7.497', 'learning_rate': '1.712e-06', 'epoch': '1.324'}
+{'loss': '0.3017', 'grad_norm': '4.834', 'learning_rate': '1.705e-06', 'epoch': '1.327'}
+{'loss': '0.2277', 'grad_norm': '5.279', 'learning_rate': '1.699e-06', 'epoch': '1.329'}
+{'loss': '0.2721', 'grad_norm': '5.769', 'learning_rate': '1.693e-06', 'epoch': '1.332'}
+{'loss': '0.2798', 'grad_norm': '3.73', 'learning_rate': '1.686e-06', 'epoch': '1.334'}
+{'loss': '0.3408', 'grad_norm': '5.266', 'learning_rate': '1.68e-06', 'epoch': '1.337'}
+{'loss': '0.3004', 'grad_norm': '6.966', 'learning_rate': '1.674e-06', 'epoch': '1.339'}
+{'loss': '0.2965', 'grad_norm': '4.742', 'learning_rate': '1.667e-06', 'epoch': '1.342'}
+{'loss': '0.27', 'grad_norm': '6.021', 'learning_rate': '1.661e-06', 'epoch': '1.344'}
+{'loss': '0.3181', 'grad_norm': '4.262', 'learning_rate': '1.655e-06', 'epoch': '1.347'}
+{'loss': '0.2336', 'grad_norm': '5.969', 'learning_rate': '1.648e-06', 'epoch': '1.349'}
+{'loss': '0.2629', 'grad_norm': '6.846', 'learning_rate': '1.642e-06', 'epoch': '1.352'}
+{'loss': '0.3001', 'grad_norm': '6.897', 'learning_rate': '1.635e-06', 'epoch': '1.354'}
+{'loss': '0.2181', 'grad_norm': '4.85', 'learning_rate': '1.629e-06', 'epoch': '1.357'}
+{'loss': '0.2975', 'grad_norm': '7.331', 'learning_rate': '1.623e-06', 'epoch': '1.359'}
+{'loss': '0.2877', 'grad_norm': '5.378', 'learning_rate': '1.616e-06', 'epoch': '1.362'}
+{'loss': '0.2446', 'grad_norm': '8.585', 'learning_rate': '1.61e-06', 'epoch': '1.364'}
+{'loss': '0.2721', 'grad_norm': '5.741', 'learning_rate': '1.604e-06', 'epoch': '1.367'}
+{'loss': '0.2703', 'grad_norm': '6.07', 'learning_rate': '1.597e-06', 'epoch': '1.369'}
+{'loss': '0.2929', 'grad_norm': '5.71', 'learning_rate': '1.591e-06', 'epoch': '1.372'}
+{'loss': '0.2034', 'grad_norm': '2.677', 'learning_rate': '1.585e-06', 'epoch': '1.374'}
+{'loss': '0.2395', 'grad_norm': '4.653', 'learning_rate': '1.578e-06', 'epoch': '1.377'}
+{'loss': '0.2647', 'grad_norm': '5.778', 'learning_rate': '1.572e-06', 'epoch': '1.379'}
+EVAL12 step5500: {"h00": {"hyp": "08.01.1845", "span_hit": false}, "h01": {"hyp": "08.11.1845", "cer": 0.643, "word_acc": 0.0}, "h02": {"hyp": "27J.1827", "span_hit": true}, "h03": {"hyp": "Hauschanzer Mosbacher"}, "h04": {"hyp": "Stelle Strauß"}, "h05": {"hyp": "28.12.1852"}, "h06": {"hyp": "Germacht Mosbacher"}, "h07": {"hyp": "b ) Den könn Noch ist dem hiesigen Schönzuden", "cer": 0.31, "word_acc": 0.571}, "h08": {"hyp": "s-Sprecheizer & Kinder nämlich ein Sohn und", "span_hit": false}, "h09": {"hyp": "Die Mädchen geboren , welche die Namen neuen", "span_hit": false}, "h10": {"hyp": "das Wädchen Mergend und der Sohn saßt erhielt,", "span_hit": {"das Mädchen": false, "und der Sohn Joseph": false}}, "h11": {"hyp": "[-Monomme war Unserne Gla-Männnin."}}
+EVAL_NAMES step5500: {"n": 7, "cer": 1.3789, "word_acc": 0.0, "detail": {"occupation:38666": {"hyp": "28.01.1854", "cer": 1.111, "word_acc": 0.0}, "occupation:38678": {"hyp": "Jakob Michel", "cer": 1.571, "word_acc": 0.0}, "occupation:38693": {"hyp": "diesen Strauß", "cer": 1.833, "word_acc": 0.0}, "occupation:38696": {"hyp": "28.12.1852", "cer": 1.667, "word_acc": 0.0}, "name:33739": {"hyp": "19.12.1856", "cer": 1.0, "word_acc": 0.0}, "date:33739": {"hyp": "Edel Strauß", "span_hit": {"28": false, "1845": false}}, "occupation:33739": {"hyp": "J. Hochbacher", "cer": 1.091, "word_acc": 0.0}}}
+Warning: Looks like you're using an outdated `kaggle` version (installed: 2.0.2), please consider upgrading to the latest version (2.2.5)
+Starting upload for file progress.json
+Upload successful: progress.json (217B)
+PROGRESS pushed: step5500 (total 12)
+{'loss': '0.28', 'grad_norm': '5.772', 'learning_rate': '1.566e-06', 'epoch': '1.382'}
+{'loss': '0.2553', 'grad_norm': '3.912', 'learning_rate': '1.559e-06', 'epoch': '1.384'}
+{'loss': '0.2641', 'grad_norm': '6.24', 'learning_rate': '1.553e-06', 'epoch': '1.387'}
+{'loss': '0.2337', 'grad_norm': '4.93', 'learning_rate': '1.546e-06', 'epoch': '1.389'}
+{'loss': '0.4051', 'grad_norm': '8.086', 'learning_rate': '1.54e-06', 'epoch': '1.392'}
+{'loss': '0.2258', 'grad_norm': '4.079', 'learning_rate': '1.534e-06', 'epoch': '1.394'}
+{'loss': '0.2976', 'grad_norm': '5.365', 'learning_rate': '1.527e-06', 'epoch': '1.397'}
+{'loss': '0.287', 'grad_norm': '3.611', 'learning_rate': '1.521e-06', 'epoch': '1.399'}
+{'loss': '0.2589', 'grad_norm': '4.441', 'learning_rate': '1.515e-06', 'epoch': '1.402'}
+{'loss': '0.3031', 'grad_norm': '7.223', 'learning_rate': '1.508e-06', 'epoch': '1.405'}
+{'loss': '0.2736', 'grad_norm': '6.302', 'learning_rate': '1.502e-06', 'epoch': '1.407'}
+{'loss': '0.2369', 'grad_norm': '2.595', 'learning_rate': '1.496e-06', 'epoch': '1.41'}
+{'loss': '0.2829', 'grad_norm': '6.691', 'learning_rate': '1.489e-06', 'epoch': '1.412'}
+{'loss': '0.2329', 'grad_norm': '7.526', 'learning_rate': '1.483e-06', 'epoch': '1.415'}
+{'loss': '0.3375', 'grad_norm': '4.837', 'learning_rate': '1.476e-06', 'epoch': '1.417'}
+{'loss': '0.2923', 'grad_norm': '2.91', 'learning_rate': '1.47e-06', 'epoch': '1.42'}
+{'loss': '0.2427', 'grad_norm': '4.426', 'learning_rate': '1.464e-06', 'epoch': '1.422'}
+{'loss': '0.3574', 'grad_norm': '7.742', 'learning_rate': '1.457e-06', 'epoch': '1.425'}
+{'loss': '0.2034', 'grad_norm': '3.316', 'learning_rate': '1.451e-06', 'epoch': '1.427'}
+{'loss': '0.2553', 'grad_norm': '6.331', 'learning_rate': '1.445e-06', 'epoch': '1.43'}
+{'loss': '0.1998', 'grad_norm': '6.453', 'learning_rate': '1.438e-06', 'epoch': '1.432'}
+{'loss': '0.1616', 'grad_norm': '6.017', 'learning_rate': '1.432e-06', 'epoch': '1.435'}
+{'loss': '0.2856', 'grad_norm': '5.923', 'learning_rate': '1.426e-06', 'epoch': '1.437'}
+{'loss': '0.2185', 'grad_norm': '3.798', 'learning_rate': '1.419e-06', 'epoch': '1.44'}
+{'loss': '0.278', 'grad_norm': '2.213', 'learning_rate': '1.413e-06', 'epoch': '1.442'}
+{'loss': '0.2058', 'grad_norm': '5.316', 'learning_rate': '1.406e-06', 'epoch': '1.445'}
+{'loss': '0.326', 'grad_norm': '3.759', 'learning_rate': '1.4e-06', 'epoch': '1.447'}
+{'loss': '0.2491', 'grad_norm': '6.851', 'learning_rate': '1.394e-06', 'epoch': '1.45'}
+{'loss': '0.2877', 'grad_norm': '5.04', 'learning_rate': '1.387e-06', 'epoch': '1.452'}
+{'loss': '0.2883', 'grad_norm': '6.448', 'learning_rate': '1.381e-06', 'epoch': '1.455'}
+{'loss': '0.216', 'grad_norm': '5.748', 'learning_rate': '1.375e-06', 'epoch': '1.457'}
+{'loss': '0.3042', 'grad_norm': '5.147', 'learning_rate': '1.368e-06', 'epoch': '1.46'}
+{'loss': '0.2717', 'grad_norm': '4.129', 'learning_rate': '1.362e-06', 'epoch': '1.462'}
+{'loss': '0.2607', 'grad_norm': '2.672', 'learning_rate': '1.356e-06', 'epoch': '1.465'}
+{'loss': '0.4379', 'grad_norm': '8.802', 'learning_rate': '1.349e-06', 'epoch': '1.467'}
+{'loss': '0.3494', 'grad_norm': '6.455', 'learning_rate': '1.343e-06', 'epoch': '1.47'}
+{'loss': '0.218', 'grad_norm': '8.327', 'learning_rate': '1.337e-06', 'epoch': '1.472'}
+{'loss': '0.2523', 'grad_norm': '5.303', 'learning_rate': '1.33e-06', 'epoch': '1.475'}
+{'loss': '0.2561', 'grad_norm': '8.935', 'learning_rate': '1.324e-06', 'epoch': '1.477'}
+{'loss': '0.2086', 'grad_norm': '5.177', 'learning_rate': '1.317e-06', 'epoch': '1.48'}
+{'loss': '0.2996', 'grad_norm': '4.434', 'learning_rate': '1.311e-06', 'epoch': '1.482'}
+{'loss': '0.2585', 'grad_norm': '5.604', 'learning_rate': '1.305e-06', 'epoch': '1.485'}
+{'loss': '0.2249', 'grad_norm': '6.345', 'learning_rate': '1.298e-06', 'epoch': '1.487'}
+{'loss': '0.3041', 'grad_norm': '5.161', 'learning_rate': '1.292e-06', 'epoch': '1.49'}
+{'loss': '0.1959', 'grad_norm': '5.122', 'learning_rate': '1.286e-06', 'epoch': '1.492'}
+{'loss': '0.2251', 'grad_norm': '6.683', 'learning_rate': '1.279e-06', 'epoch': '1.495'}
+{'loss': '0.2999', 'grad_norm': '5.044', 'learning_rate': '1.273e-06', 'epoch': '1.497'}
+{'loss': '0.4169', 'grad_norm': '7.363', 'learning_rate': '1.267e-06', 'epoch': '1.5'}
+{'loss': '0.2331', 'grad_norm': '5.908', 'learning_rate': '1.26e-06', 'epoch': '1.503'}
+{'loss': '0.2463', 'grad_norm': '3.751', 'learning_rate': '1.254e-06', 'epoch': '1.505'}
+EVAL12 step6000: {"h00": {"hyp": "08.05.1845", "span_hit": false}, "h01": {"hyp": "08.11.1845", "cer": 0.643, "word_acc": 0.0}, "h02": {"hyp": "27J.1827", "span_hit": true}, "h03": {"hyp": "Hauschanzer Mosbacher"}, "h04": {"hyp": "19.05.1854"}, "h05": {"hyp": "22.03.1852"}, "h06": {"hyp": "Leopold Rothschild"}, "h07": {"hyp": "b ) Den könn Noch ist dem hiesigen Schönzuden", "cer": 0.31, "word_acc": 0.571}, "h08": {"hyp": "s-Sprecheizer & Kinder nämlich ein Sohn und", "span_hit": false}, "h09": {"hyp": "Die Mädchen geboren , welches die Namen neuen", "span_hit": false}, "h10": {"hyp": "das Wädchen Mergend und der Sohn", "span_hit": {"das Mädchen": false, "und der Sohn Joseph": false}}, "h11": {"hyp": "[-Monomme war Unserne Gla-Männer"}}
+EVAL_NAMES step6000: {"n": 7, "cer": 1.3273, "word_acc": 0.0, "detail": {"occupation:38666": {"hyp": "28.01.1854", "cer": 1.111, "word_acc": 0.0}, "occupation:38678": {"hyp": "22.04.1852", "cer": 1.429, "word_acc": 0.0}, "occupation:38693": {"hyp": "30.01.1856", "cer": 1.667, "word_acc": 0.0}, "occupation:38696": {"hyp": "22.04.1849", "cer": 1.667, "word_acc": 0.0}, "name:33739": {"hyp": "19.04.1852", "cer": 1.0, "word_acc": 0.0}, "date:33739": {"hyp": "Edel Strauß", "span_hit": {"28": false, "1845": false}}, "occupation:33739": {"hyp": "J. Hochbacher", "cer": 1.091, "word_acc": 0.0}}}
+Warning: Looks like you're using an outdated `kaggle` version (installed: 2.0.2), please consider upgrading to the latest version (2.2.5)
+Starting upload for file progress.json
+Upload successful: progress.json (218B)
+PROGRESS pushed: step6000 (total 13)
+{'loss': '0.2268', 'grad_norm': '3.658', 'learning_rate': '1.247e-06', 'epoch': '1.508'}
+{'loss': '0.2017', 'grad_norm': '5.027', 'learning_rate': '1.241e-06', 'epoch': '1.51'}
+{'loss': '0.3114', 'grad_norm': '5.487', 'learning_rate': '1.235e-06', 'epoch': '1.513'}
+{'loss': '0.2607', 'grad_norm': '5.143', 'learning_rate': '1.228e-06', 'epoch': '1.515'}
+{'loss': '0.1753', 'grad_norm': '4.032', 'learning_rate': '1.222e-06', 'epoch': '1.518'}
+{'loss': '0.2584', 'grad_norm': '4.385', 'learning_rate': '1.216e-06', 'epoch': '1.52'}
+{'loss': '0.2299', 'grad_norm': '4.809', 'learning_rate': '1.209e-06', 'epoch': '1.523'}
+{'loss': '0.2322', 'grad_norm': '4.948', 'learning_rate': '1.203e-06', 'epoch': '1.525'}
+{'loss': '0.3181', 'grad_norm': '4.198', 'learning_rate': '1.197e-06', 'epoch': '1.528'}
+{'loss': '0.2389', 'grad_norm': '4.927', 'learning_rate': '1.19e-06', 'epoch': '1.53'}
+{'loss': '0.2836', 'grad_norm': '6.569', 'learning_rate': '1.184e-06', 'epoch': '1.533'}
+{'loss': '0.2398', 'grad_norm': '4.14', 'learning_rate': '1.177e-06', 'epoch': '1.535'}
+{'loss': '0.2171', 'grad_norm': '5.947', 'learning_rate': '1.171e-06', 'epoch': '1.538'}
+{'loss': '0.23', 'grad_norm': '6.87', 'learning_rate': '1.165e-06', 'epoch': '1.54'}
+{'loss': '0.2818', 'grad_norm': '4.164', 'learning_rate': '1.158e-06', 'epoch': '1.543'}
+{'loss': '0.2458', 'grad_norm': '5.585', 'learning_rate': '1.152e-06', 'epoch': '1.545'}
+{'loss': '0.2487', 'grad_norm': '5.54', 'learning_rate': '1.146e-06', 'epoch': '1.548'}
+{'loss': '0.2394', 'grad_norm': '5.685', 'learning_rate': '1.139e-06', 'epoch': '1.55'}
+{'loss': '0.2864', 'grad_norm': '5.485', 'learning_rate': '1.133e-06', 'epoch': '1.553'}
+{'loss': '0.2668', 'grad_norm': '6.422', 'learning_rate': '1.127e-06', 'epoch': '1.555'}
+{'loss': '0.2674', 'grad_norm': '7.331', 'learning_rate': '1.12e-06', 'epoch': '1.558'}
+{'loss': '0.2551', 'grad_norm': '11.59', 'learning_rate': '1.114e-06', 'epoch': '1.56'}
+{'loss': '0.2707', 'grad_norm': '4.316', 'learning_rate': '1.108e-06', 'epoch': '1.563'}
+{'loss': '0.3108', 'grad_norm': '4.859', 'learning_rate': '1.101e-06', 'epoch': '1.565'}
+{'loss': '0.2363', 'grad_norm': '3.586', 'learning_rate': '1.095e-06', 'epoch': '1.568'}
+{'loss': '0.2634', 'grad_norm': '5.988', 'learning_rate': '1.088e-06', 'epoch': '1.57'}
+{'loss': '0.2826', 'grad_norm': '5.943', 'learning_rate': '1.082e-06', 'epoch': '1.573'}
+{'loss': '0.2019', 'grad_norm': '5.16', 'learning_rate': '1.076e-06', 'epoch': '1.575'}
+{'loss': '0.1511', 'grad_norm': '3.701', 'learning_rate': '1.069e-06', 'epoch': '1.578'}
+{'loss': '0.2234', 'grad_norm': '7.901', 'learning_rate': '1.063e-06', 'epoch': '1.58'}
+{'loss': '0.2343', 'grad_norm': '5.507', 'learning_rate': '1.057e-06', 'epoch': '1.583'}
+{'loss': '0.2816', 'grad_norm': '7.6', 'learning_rate': '1.05e-06', 'epoch': '1.585'}
+{'loss': '0.2704', 'grad_norm': '4.237', 'learning_rate': '1.044e-06', 'epoch': '1.588'}
+{'loss': '0.2781', 'grad_norm': '4.572', 'learning_rate': '1.038e-06', 'epoch': '1.59'}
+{'loss': '0.3012', 'grad_norm': '4.807', 'learning_rate': '1.031e-06', 'epoch': '1.593'}
+{'loss': '0.2806', 'grad_norm': '4.954', 'learning_rate': '1.025e-06', 'epoch': '1.595'}
+{'loss': '0.3619', 'grad_norm': '7.605', 'learning_rate': '1.018e-06', 'epoch': '1.598'}
+{'loss': '0.256', 'grad_norm': '2.651', 'learning_rate': '1.012e-06', 'epoch': '1.601'}
+{'loss': '0.1879', 'grad_norm': '4.685', 'learning_rate': '1.006e-06', 'epoch': '1.603'}
+{'loss': '0.3409', 'grad_norm': '8.197', 'learning_rate': '9.994e-07', 'epoch': '1.606'}
+{'loss': '0.3276', 'grad_norm': '6.441', 'learning_rate': '9.93e-07', 'epoch': '1.608'}
+{'loss': '0.2402', 'grad_norm': '6.073', 'learning_rate': '9.866e-07', 'epoch': '1.611'}
+{'loss': '0.264', 'grad_norm': '6.514', 'learning_rate': '9.803e-07', 'epoch': '1.613'}
+{'loss': '0.2176', 'grad_norm': '3.237', 'learning_rate': '9.739e-07', 'epoch': '1.616'}
+{'loss': '0.26', 'grad_norm': '4.523', 'learning_rate': '9.676e-07', 'epoch': '1.618'}
+{'loss': '0.2202', 'grad_norm': '6.123', 'learning_rate': '9.612e-07', 'epoch': '1.621'}
+{'loss': '0.2711', 'grad_norm': '13.45', 'learning_rate': '9.548e-07', 'epoch': '1.623'}
+{'loss': '0.3095', 'grad_norm': '4.244', 'learning_rate': '9.485e-07', 'epoch': '1.626'}
+{'loss': '0.2539', 'grad_norm': '4.548', 'learning_rate': '9.421e-07', 'epoch': '1.628'}
+{'loss': '0.199', 'grad_norm': '2.949', 'learning_rate': '9.358e-07', 'epoch': '1.631'}
+EVAL12 step6500: {"h00": {"hyp": "08.05.1845", "span_hit": false}, "h01": {"hyp": "28.11.1845", "cer": 0.714, "word_acc": 0.0}, "h02": {"hyp": "27J.1827", "span_hit": true}, "h03": {"hyp": "Hofburg Strauß"}, "h04": {"hyp": "Stelle Strauß"}, "h05": {"hyp": "22.03.1852"}, "h06": {"hyp": "Leopold Rothschild"}, "h07": {"hyp": "b ) Den könn Noch ist dem hiesigen Schönzuden", "cer": 0.31, "word_acc": 0.571}, "h08": {"hyp": "s-Sprecheizer & Kinder nämlich ein Sohn und", "span_hit": false}, "h09": {"hyp": "Die Mädchen geboren , welche die Namen neuen", "span_hit": false}, "h10": {"hyp": "das Wädchen Mergend und der Sohn saßt erhielt,", "span_hit": {"das Mädchen": false, "und der Sohn Joseph": false}}, "h11": {"hyp": "[-Monomme war Unserne Gla-Männer"}}
+EVAL_NAMES step6500: {"n": 7, "cer": 1.3789, "word_acc": 0.0, "detail": {"occupation:38666": {"hyp": "28.01.1854", "cer": 1.111, "word_acc": 0.0}, "occupation:38678": {"hyp": "Jakob Michel", "cer": 1.571, "word_acc": 0.0}, "occupation:38693": {"hyp": "nehmen Strauß", "cer": 1.833, "word_acc": 0.0}, "occupation:38696": {"hyp": "28.12.1852", "cer": 1.667, "word_acc": 0.0}, "name:33739": {"hyp": "19.04.1852", "cer": 1.0, "word_acc": 0.0}, "date:33739": {"hyp": "Edel Strauß", "span_hit": {"28": false, "1845": false}}, "occupation:33739": {"hyp": "J. Hochbacher", "cer": 1.091, "word_acc": 0.0}}}
+Warning: Looks like you're using an outdated `kaggle` version (installed: 2.0.2), please consider upgrading to the latest version (2.2.5)
+Starting upload for file progress.json
+Upload successful: progress.json (217B)
+PROGRESS pushed: step6500 (total 14)
+{'loss': '0.2454', 'grad_norm': '6.28', 'learning_rate': '9.294e-07', 'epoch': '1.633'}
+{'loss': '0.1945', 'grad_norm': '5.301', 'learning_rate': '9.23e-07', 'epoch': '1.636'}
+{'loss': '0.2538', 'grad_norm': '5.483', 'learning_rate': '9.167e-07', 'epoch': '1.638'}
+{'loss': '0.2124', 'grad_norm': '6.456', 'learning_rate': '9.103e-07', 'epoch': '1.641'}
+{'loss': '0.2413', 'grad_norm': '3.091', 'learning_rate': '9.039e-07', 'epoch': '1.643'}
+{'loss': '0.2701', 'grad_norm': '2.578', 'learning_rate': '8.976e-07', 'epoch': '1.646'}
+{'loss': '0.2143', 'grad_norm': '4.487', 'learning_rate': '8.912e-07', 'epoch': '1.648'}
+{'loss': '0.304', 'grad_norm': '6.714', 'learning_rate': '8.849e-07', 'epoch': '1.651'}
+{'loss': '0.3438', 'grad_norm': '4.459', 'learning_rate': '8.785e-07', 'epoch': '1.653'}
+{'loss': '0.1891', 'grad_norm': '4.289', 'learning_rate': '8.721e-07', 'epoch': '1.656'}
+{'loss': '0.3276', 'grad_norm': '5.806', 'learning_rate': '8.658e-07', 'epoch': '1.658'}
+{'loss': '0.2619', 'grad_norm': '8.742', 'learning_rate': '8.594e-07', 'epoch': '1.661'}
+{'loss': '0.2987', 'grad_norm': '10.34', 'learning_rate': '8.531e-07', 'epoch': '1.663'}
+{'loss': '0.3414', 'grad_norm': '3.9', 'learning_rate': '8.467e-07', 'epoch': '1.666'}
+{'loss': '0.1937', 'grad_norm': '2.957', 'learning_rate': '8.403e-07', 'epoch': '1.668'}
+{'loss': '0.2522', 'grad_norm': '6.522', 'learning_rate': '8.34e-07', 'epoch': '1.671'}
+{'loss': '0.3375', 'grad_norm': '4.772', 'learning_rate': '8.276e-07', 'epoch': '1.673'}
+{'loss': '0.3324', 'grad_norm': '7.252', 'learning_rate': '8.212e-07', 'epoch': '1.676'}
+{'loss': '0.227', 'grad_norm': '4.507', 'learning_rate': '8.149e-07', 'epoch': '1.678'}
+{'loss': '0.2401', 'grad_norm': '4.137', 'learning_rate': '8.085e-07', 'epoch': '1.681'}
+{'loss': '0.348', 'grad_norm': '7.295', 'learning_rate': '8.022e-07', 'epoch': '1.683'}
+{'loss': '0.4397', 'grad_norm': '4.971', 'learning_rate': '7.958e-07', 'epoch': '1.686'}
+{'loss': '0.3077', 'grad_norm': '5.473', 'learning_rate': '7.894e-07', 'epoch': '1.688'}
+{'loss': '0.2267', 'grad_norm': '6.934', 'learning_rate': '7.831e-07', 'epoch': '1.691'}
+{'loss': '0.3051', 'grad_norm': '4.34', 'learning_rate': '7.767e-07', 'epoch': '1.693'}
+{'loss': '0.2313', 'grad_norm': '5.169', 'learning_rate': '7.704e-07', 'epoch': '1.696'}
+{'loss': '0.2356', 'grad_norm': '3.947', 'learning_rate': '7.64e-07', 'epoch': '1.698'}
+{'loss': '0.2721', 'grad_norm': '5.512', 'learning_rate': '7.576e-07', 'epoch': '1.701'}
+{'loss': '0.1463', 'grad_norm': '2.503', 'learning_rate': '7.513e-07', 'epoch': '1.704'}
+{'loss': '0.2767', 'grad_norm': '7.107', 'learning_rate': '7.449e-07', 'epoch': '1.706'}
+{'loss': '0.2855', 'grad_norm': '5.456', 'learning_rate': '7.385e-07', 'epoch': '1.709'}
+{'loss': '0.2275', 'grad_norm': '6.662', 'learning_rate': '7.322e-07', 'epoch': '1.711'}
+{'loss': '0.1748', 'grad_norm': '3.475', 'learning_rate': '7.258e-07', 'epoch': '1.714'}
+{'loss': '0.1834', 'grad_norm': '4.598', 'learning_rate': '7.195e-07', 'epoch': '1.716'}
+{'loss': '0.288', 'grad_norm': '5.748', 'learning_rate': '7.131e-07', 'epoch': '1.719'}
+{'loss': '0.2541', 'grad_norm': '3.449', 'learning_rate': '7.067e-07', 'epoch': '1.721'}
+{'loss': '0.2897', 'grad_norm': '5.686', 'learning_rate': '7.004e-07', 'epoch': '1.724'}
+{'loss': '0.2857', 'grad_norm': '4.497', 'learning_rate': '6.94e-07', 'epoch': '1.726'}
+{'loss': '0.2394', 'grad_norm': '6.007', 'learning_rate': '6.877e-07', 'epoch': '1.729'}
+{'loss': '0.2618', 'grad_norm': '3.568', 'learning_rate': '6.813e-07', 'epoch': '1.731'}
+{'loss': '0.2457', 'grad_norm': '6.725', 'learning_rate': '6.749e-07', 'epoch': '1.734'}
+{'loss': '0.2701', 'grad_norm': '8.982', 'learning_rate': '6.686e-07', 'epoch': '1.736'}
+{'loss': '0.2031', 'grad_norm': '4.438', 'learning_rate': '6.622e-07', 'epoch': '1.739'}
+{'loss': '0.306', 'grad_norm': '6.242', 'learning_rate': '6.559e-07', 'epoch': '1.741'}
+{'loss': '0.2398', 'grad_norm': '7.385', 'learning_rate': '6.495e-07', 'epoch': '1.744'}
+{'loss': '0.1971', 'grad_norm': '4.538', 'learning_rate': '6.431e-07', 'epoch': '1.746'}
+{'loss': '0.2118', 'grad_norm': '3.85', 'learning_rate': '6.368e-07', 'epoch': '1.749'}
+{'loss': '0.2621', 'grad_norm': '3.904', 'learning_rate': '6.304e-07', 'epoch': '1.751'}
+{'loss': '0.2708', 'grad_norm': '4.803', 'learning_rate': '6.24e-07', 'epoch': '1.754'}
+{'loss': '0.2273', 'grad_norm': '5.4', 'learning_rate': '6.177e-07', 'epoch': '1.756'}
+EVAL12 step7000: {"h00": {"hyp": "18.05.1845", "span_hit": false}, "h01": {"hyp": "08.11.1845", "cer": 0.643, "word_acc": 0.0}, "h02": {"hyp": "27J.1827", "span_hit": true}, "h03": {"hyp": "Hofburg Strauß"}, "h04": {"hyp": "19.05.1854"}, "h05": {"hyp": "28.12.1852"}, "h06": {"hyp": "Gesellschaft"}, "h07": {"hyp": "b ) Den könn Noch ist dem hiesigen Schönzuden", "cer": 0.31, "word_acc": 0.571}, "h08": {"hyp": "s-Sprecheizer & Kinder nämlich ein Sohn und", "span_hit": false}, "h09": {"hyp": "Die Mädchen geboren , welche die Namen neuen", "span_hit": false}, "h10": {"hyp": "das Wädchen Mergend und der Sohn saßt erhielt,", "span_hit": {"das Mädchen": false, "und der Sohn Joseph": false}}, "h11": {"hyp": "[-Monomme war Unserne Gla-Männer"}}
+EVAL_NAMES step7000: {"n": 7, "cer": 1.3789, "word_acc": 0.0, "detail": {"occupation:38666": {"hyp": "28.01.1854", "cer": 1.111, "word_acc": 0.0}, "occupation:38678": {"hyp": "Jakob Michel", "cer": 1.571, "word_acc": 0.0}, "occupation:38693": {"hyp": "nehmen Strauß", "cer": 1.833, "word_acc": 0.0}, "occupation:38696": {"hyp": "28.12.1852", "cer": 1.667, "word_acc": 0.0}, "name:33739": {"hyp": "19.06.1845", "cer": 1.0, "word_acc": 0.0}, "date:33739": {"hyp": "Edel Strauß", "span_hit": {"28": false, "1845": false}}, "occupation:33739": {"hyp": "J. Hochbacher", "cer": 1.091, "word_acc": 0.0}}}
+Warning: Looks like you're using an outdated `kaggle` version (installed: 2.0.2), please consider upgrading to the latest version (2.2.5)
+Starting upload for file progress.json
+Upload successful: progress.json (218B)
+PROGRESS pushed: step7000 (total 15)
+{'loss': '0.2236', 'grad_norm': '4.499', 'learning_rate': '6.113e-07', 'epoch': '1.759'}
+{'loss': '0.2123', 'grad_norm': '7.718', 'learning_rate': '6.05e-07', 'epoch': '1.761'}
+{'loss': '0.2267', 'grad_norm': '6.168', 'learning_rate': '5.986e-07', 'epoch': '1.764'}
+{'loss': '0.2726', 'grad_norm': '7.404', 'learning_rate': '5.922e-07', 'epoch': '1.766'}
+{'loss': '0.2058', 'grad_norm': '7.677', 'learning_rate': '5.859e-07', 'epoch': '1.769'}
+{'loss': '0.3287', 'grad_norm': '4.143', 'learning_rate': '5.795e-07', 'epoch': '1.771'}
+{'loss': '0.2685', 'grad_norm': '4.302', 'learning_rate': '5.732e-07', 'epoch': '1.774'}
+{'loss': '0.2807', 'grad_norm': '6.879', 'learning_rate': '5.668e-07', 'epoch': '1.776'}
+{'loss': '0.2677', 'grad_norm': '5.095', 'learning_rate': '5.604e-07', 'epoch': '1.779'}
+{'loss': '0.2672', 'grad_norm': '4.056', 'learning_rate': '5.541e-07', 'epoch': '1.781'}
+{'loss': '0.2828', 'grad_norm': '5.201', 'learning_rate': '5.477e-07', 'epoch': '1.784'}
+{'loss': '0.284', 'grad_norm': '4.068', 'learning_rate': '5.413e-07', 'epoch': '1.786'}
+{'loss': '0.292', 'grad_norm': '4.621', 'learning_rate': '5.35e-07', 'epoch': '1.789'}
+{'loss': '0.3179', 'grad_norm': '4.908', 'learning_rate': '5.286e-07', 'epoch': '1.791'}
+{'loss': '0.2837', 'grad_norm': '4.266', 'learning_rate': '5.223e-07', 'epoch': '1.794'}
+{'loss': '0.3248', 'grad_norm': '3.978', 'learning_rate': '5.159e-07', 'epoch': '1.796'}
+{'loss': '0.2195', 'grad_norm': '7.851', 'learning_rate': '5.095e-07', 'epoch': '1.799'}
+{'loss': '0.1533', 'grad_norm': '3.512', 'learning_rate': '5.032e-07', 'epoch': '1.802'}
+{'loss': '0.4141', 'grad_norm': '4.615', 'learning_rate': '4.968e-07', 'epoch': '1.804'}
+{'loss': '0.2835', 'grad_norm': '3.805', 'learning_rate': '4.905e-07', 'epoch': '1.807'}
+{'loss': '0.187', 'grad_norm': '3.727', 'learning_rate': '4.841e-07', 'epoch': '1.809'}
+{'loss': '0.2845', 'grad_norm': '9.073', 'learning_rate': '4.777e-07', 'epoch': '1.812'}
+{'loss': '0.1925', 'grad_norm': '3.111', 'learning_rate': '4.714e-07', 'epoch': '1.814'}
+{'loss': '0.2429', 'grad_norm': '6.306', 'learning_rate': '4.65e-07', 'epoch': '1.817'}
+{'loss': '0.1519', 'grad_norm': '4.265', 'learning_rate': '4.587e-07', 'epoch': '1.819'}
+{'loss': '0.2873', 'grad_norm': '8.422', 'learning_rate': '4.523e-07', 'epoch': '1.822'}
+{'loss': '0.3033', 'grad_norm': '7.962', 'learning_rate': '4.459e-07', 'epoch': '1.824'}
+{'loss': '0.2152', 'grad_norm': '5.09', 'learning_rate': '4.396e-07', 'epoch': '1.827'}
+{'loss': '0.2518', 'grad_norm': '2.755', 'learning_rate': '4.332e-07', 'epoch': '1.829'}
+{'loss': '0.2256', 'grad_norm': '5.087', 'learning_rate': '4.268e-07', 'epoch': '1.832'}
+{'loss': '0.266', 'grad_norm': '8.624', 'learning_rate': '4.205e-07', 'epoch': '1.834'}
+{'loss': '0.2264', 'grad_norm': '4.448', 'learning_rate': '4.141e-07', 'epoch': '1.837'}
+{'loss': '0.2953', 'grad_norm': '4.174', 'learning_rate': '4.078e-07', 'epoch': '1.839'}
+{'loss': '0.3111', 'grad_norm': '7.191', 'learning_rate': '4.014e-07', 'epoch': '1.842'}
+{'loss': '0.2221', 'grad_norm': '4.996', 'learning_rate': '3.95e-07', 'epoch': '1.844'}
+{'loss': '0.3164', 'grad_norm': '4.047', 'learning_rate': '3.887e-07', 'epoch': '1.847'}
+{'loss': '0.456', 'grad_norm': '7.059', 'learning_rate': '3.823e-07', 'epoch': '1.849'}
+{'loss': '0.3151', 'grad_norm': '4.423', 'learning_rate': '3.76e-07', 'epoch': '1.852'}
+{'loss': '0.2816', 'grad_norm': '5.93', 'learning_rate': '3.696e-07', 'epoch': '1.854'}
+{'loss': '0.2262', 'grad_norm': '5.195', 'learning_rate': '3.632e-07', 'epoch': '1.857'}
+{'loss': '0.2868', 'grad_norm': '4.088', 'learning_rate': '3.569e-07', 'epoch': '1.859'}
+{'loss': '0.2563', 'grad_norm': '4.804', 'learning_rate': '3.505e-07', 'epoch': '1.862'}
+{'loss': '0.2027', 'grad_norm': '5.136', 'learning_rate': '3.441e-07', 'epoch': '1.864'}
+{'loss': '0.2674', 'grad_norm': '2.828', 'learning_rate': '3.378e-07', 'epoch': '1.867'}
+{'loss': '0.2312', 'grad_norm': '3.213', 'learning_rate': '3.314e-07', 'epoch': '1.869'}
+{'loss': '0.2444', 'grad_norm': '7.142', 'learning_rate': '3.251e-07', 'epoch': '1.872'}
+{'loss': '0.1893', 'grad_norm': '5.049', 'learning_rate': '3.187e-07', 'epoch': '1.874'}
+{'loss': '0.2352', 'grad_norm': '5.73', 'learning_rate': '3.123e-07', 'epoch': '1.877'}
+{'loss': '0.2832', 'grad_norm': '6.351', 'learning_rate': '3.06e-07', 'epoch': '1.879'}
+{'loss': '0.2467', 'grad_norm': '6.153', 'learning_rate': '2.996e-07', 'epoch': '1.882'}
+EVAL12 step7500: {"h00": {"hyp": "08.05.1845", "span_hit": false}, "h01": {"hyp": "08.11.1845", "cer": 0.643, "word_acc": 0.0}, "h02": {"hyp": "27J.1827", "span_hit": true}, "h03": {"hyp": "Hofburg Strauß"}, "h04": {"hyp": "19.05.1854"}, "h05": {"hyp": "28.06.1849"}, "h06": {"hyp": "19.12.1854"}, "h07": {"hyp": "b ) Den könn Noch ist dem hiesigen Schönzuden", "cer": 0.31, "word_acc": 0.571}, "h08": {"hyp": "s-Sprecheizer & Kinder nämlich ein Sohn und", "span_hit": false}, "h09": {"hyp": "Die Mädchen geboren , welche die Namen neuen", "span_hit": false}, "h10": {"hyp": "das Wädchen Mergend und der Sohn saßt erhielt,", "span_hit": {"das Mädchen": false, "und der Sohn Joseph": false}}, "h11": {"hyp": "[-Monomme war Unserne Gla-Männer"}}
+EVAL_NAMES step7500: {"n": 7, "cer": 1.3789, "word_acc": 0.0, "detail": {"occupation:38666": {"hyp": "28.01.1854", "cer": 1.111, "word_acc": 0.0}, "occupation:38678": {"hyp": "Jakob Michel", "cer": 1.571, "word_acc": 0.0}, "occupation:38693": {"hyp": "nehmen Strauß", "cer": 1.833, "word_acc": 0.0}, "occupation:38696": {"hyp": "25.12.1852", "cer": 1.667, "word_acc": 0.0}, "name:33739": {"hyp": "19.04.1845", "cer": 1.0, "word_acc": 0.0}, "date:33739": {"hyp": "Edel Strauß", "span_hit": {"28": false, "1845": false}}, "occupation:33739": {"hyp": "J. Hahn Mosbacher", "cer": 1.091, "word_acc": 0.0}}}
+Warning: Looks like you're using an outdated `kaggle` version (installed: 2.0.2), please consider upgrading to the latest version (2.2.5)
+Starting upload for file progress.json
+Upload successful: progress.json (218B)
+PROGRESS pushed: step7500 (total 16)
+{'loss': '0.2382', 'grad_norm': '10.12', 'learning_rate': '2.933e-07', 'epoch': '1.884'}
+{'loss': '0.3264', 'grad_norm': '12', 'learning_rate': '2.869e-07', 'epoch': '1.887'}
+{'loss': '0.3747', 'grad_norm': '5.171', 'learning_rate': '2.805e-07', 'epoch': '1.889'}
+{'loss': '0.2777', 'grad_norm': '5.21', 'learning_rate': '2.742e-07', 'epoch': '1.892'}
+{'loss': '0.2558', 'grad_norm': '4.856', 'learning_rate': '2.678e-07', 'epoch': '1.894'}
+{'loss': '0.3035', 'grad_norm': '4.451', 'learning_rate': '2.615e-07', 'epoch': '1.897'}
+{'loss': '0.2538', 'grad_norm': '4.788', 'learning_rate': '2.551e-07', 'epoch': '1.899'}
+{'loss': '0.2913', 'grad_norm': '5.879', 'learning_rate': '2.487e-07', 'epoch': '1.902'}
+{'loss': '0.2132', 'grad_norm': '4.056', 'learning_rate': '2.424e-07', 'epoch': '1.905'}
+{'loss': '0.1597', 'grad_norm': '5.201', 'learning_rate': '2.36e-07', 'epoch': '1.907'}
+{'loss': '0.2252', 'grad_norm': '3.841', 'learning_rate': '2.296e-07', 'epoch': '1.91'}
+{'loss': '0.2214', 'grad_norm': '4.638', 'learning_rate': '2.233e-07', 'epoch': '1.912'}
+{'loss': '0.3164', 'grad_norm': '4.815', 'learning_rate': '2.169e-07', 'epoch': '1.915'}
+{'loss': '0.2404', 'grad_norm': '6.551', 'learning_rate': '2.106e-07', 'epoch': '1.917'}
+{'loss': '0.138', 'grad_norm': '3.947', 'learning_rate': '2.042e-07', 'epoch': '1.92'}
+{'loss': '0.226', 'grad_norm': '4.198', 'learning_rate': '1.978e-07', 'epoch': '1.922'}
+{'loss': '0.2748', 'grad_norm': '5.273', 'learning_rate': '1.915e-07', 'epoch': '1.925'}
+{'loss': '0.1901', 'grad_norm': '3.938', 'learning_rate': '1.851e-07', 'epoch': '1.927'}
+{'loss': '0.3152', 'grad_norm': '2.58', 'learning_rate': '1.788e-07', 'epoch': '1.93'}
+{'loss': '0.2299', 'grad_norm': '5.508', 'learning_rate': '1.724e-07', 'epoch': '1.932'}
+{'loss': '0.2327', 'grad_norm': '5.478', 'learning_rate': '1.66e-07', 'epoch': '1.935'}
+{'loss': '0.2283', 'grad_norm': '4.488', 'learning_rate': '1.597e-07', 'epoch': '1.937'}
+{'loss': '0.2181', 'grad_norm': '7.551', 'learning_rate': '1.533e-07', 'epoch': '1.94'}
+{'loss': '0.2179', 'grad_norm': '8.797', 'learning_rate': '1.469e-07', 'epoch': '1.942'}
+{'loss': '0.2561', 'grad_norm': '4.407', 'learning_rate': '1.406e-07', 'epoch': '1.945'}
+{'loss': '0.3127', 'grad_norm': '7.228', 'learning_rate': '1.342e-07', 'epoch': '1.947'}
+{'loss': '0.2726', 'grad_norm': '9.607', 'learning_rate': '1.279e-07', 'epoch': '1.95'}
+{'loss': '0.1938', 'grad_norm': '3.148', 'learning_rate': '1.215e-07', 'epoch': '1.952'}
+{'loss': '0.2207', 'grad_norm': '6.913', 'learning_rate': '1.151e-07', 'epoch': '1.955'}
+{'loss': '0.2805', 'grad_norm': '5.46', 'learning_rate': '1.088e-07', 'epoch': '1.957'}
+{'loss': '0.2094', 'grad_norm': '4.971', 'learning_rate': '1.024e-07', 'epoch': '1.96'}
+{'loss': '0.2833', 'grad_norm': '5.541', 'learning_rate': '9.606e-08', 'epoch': '1.962'}
+{'loss': '0.2318', 'grad_norm': '4.676', 'learning_rate': '8.969e-08', 'epoch': '1.965'}
+{'loss': '0.2651', 'grad_norm': '4.644', 'learning_rate': '8.333e-08', 'epoch': '1.967'}
+{'loss': '0.2052', 'grad_norm': '5.021', 'learning_rate': '7.697e-08', 'epoch': '1.97'}
+{'loss': '0.2599', 'grad_norm': '2.829', 'learning_rate': '7.061e-08', 'epoch': '1.972'}
+{'loss': '0.2374', 'grad_norm': '7.077', 'learning_rate': '6.425e-08', 'epoch': '1.975'}
+{'loss': '0.3125', 'grad_norm': '4.263', 'learning_rate': '5.789e-08', 'epoch': '1.977'}
+{'loss': '0.2553', 'grad_norm': '4.38', 'learning_rate': '5.153e-08', 'epoch': '1.98'}
+{'loss': '0.2588', 'grad_norm': '2.43', 'learning_rate': '4.517e-08', 'epoch': '1.982'}
+{'loss': '0.2899', 'grad_norm': '3.548', 'learning_rate': '3.88e-08', 'epoch': '1.985'}
+{'loss': '0.33', 'grad_norm': '4.794', 'learning_rate': '3.244e-08', 'epoch': '1.987'}
+{'loss': '0.2986', 'grad_norm': '6.597', 'learning_rate': '2.608e-08', 'epoch': '1.99'}
+{'loss': '0.2733', 'grad_norm': '6.075', 'learning_rate': '1.972e-08', 'epoch': '1.992'}
+{'loss': '0.2524', 'grad_norm': '4.706', 'learning_rate': '1.336e-08', 'epoch': '1.995'}
+{'loss': '0.3521', 'grad_norm': '7.25', 'learning_rate': '6.997e-09', 'epoch': '1.997'}
+{'loss': '0.2223', 'grad_norm': '6.133', 'learning_rate': '6.361e-10', 'epoch': '2'}
+{'train_runtime': '1.277e+04', 'train_samples_per_second': '9.973', 'train_steps_per_second': '0.623', 'train_loss': '0.4198', 'epoch': '2'}
+train_seconds=12767
+STAGE eval-after-final
+EVAL12 after-final: {"h00": {"hyp": "08.05.1845", "span_hit": false}, "h01": {"hyp": "08.11.1845", "cer": 0.643, "word_acc": 0.0}, "h02": {"hyp": "27J.1827", "span_hit": true}, "h03": {"hyp": "Hofburg Strauß"}, "h04": {"hyp": "19.05.1854"}, "h05": {"hyp": "28.06.1849"}, "h06": {"hyp": "19.12.1854"}, "h07": {"hyp": "b ) Den könn Noch ist dem hiesigen Schönzuden", "cer": 0.31, "word_acc": 0.571}, "h08": {"hyp": "s-Sprecheizer & Kinder nämlich ein Sohn und", "span_hit": false}, "h09": {"hyp": "Die Mädchen geboren , welche die Namen neuen", "span_hit": false}, "h10": {"hyp": "das Wädchen Mergend und der Sohn saßt erhielt,", "span_hit": {"das Mädchen": false, "und der Sohn Joseph": false}}, "h11": {"hyp": "[-Monomme war Unserne Gla-Männer"}}
+STAGE eval-best
+EVAL12 best-step500: {"h00": {"hyp": "9. heute haben", "span_hit": false}, "h01": {"hyp": "13.5.1845", "cer": 0.714, "word_acc": 0.0}, "h02": {"hyp": "27.|", "span_hit": false}, "h03": {"hyp": "Hofburg"}, "h04": {"hyp": "Ed . Fenzl"}, "h05": {"hyp": "23.18.1833"}, "h06": {"hyp": "Gesellschaft"}, "h07": {"hyp": "Den können Nov ist dem häufigen Schön zuden", "cer": 0.262, "word_acc": 0.571}, "h08": {"hyp": "Sprecheizer u. Rindes nämlich ein Sohn und", "span_hit": false}, "h09": {"hyp": "Die Mädchen geboren welches die Namen neuung", "span_hit": false}, "h10": {"hyp": "das Wädchen Merzend und der Sohn Joseph erhielt", "span_hit": {"das Mädchen": false, "und der Sohn Joseph": true}}, "h11": {"hyp": "—M. zusammen war dochanna Glašmann !"}}
+EVAL500 best-step500: {"n": 500, "cer": 0.0225, "word_acc": 0.8996}
+EVAL_NAMES best-step500: {"n": 7, "cer": 1.1706, "word_acc": 0.0, "detail": {"occupation:38666": {"hyp": "xx", "cer": 1.0, "word_acc": 0.0}, "occupation:38678": {"hyp": "Weltin", "cer": 0.857, "word_acc": 0.0}, "occupation:38693": {"hyp": "neben Sie", "cer": 1.5, "word_acc": 0.0}, "occupation:38696": {"hyp": "22.10.1849", "cer": 1.667, "word_acc": 0.0}, "name:33739": {"hyp": "19.1845.1833", "cer": 1.0, "word_acc": 0.0}, "date:33739": {"hyp": "Ziel, Bedarlach", "span_hit": {"28": false, "1845": false}}, "occupation:33739": {"hyp": "7.11.1833", "cer": 1.0, "word_acc": 0.0}}}
+EVAL_SEEDS_FIT: {"n": 12, "cer": 1.0121}
+Warning: Looks like you're using an outdated `kaggle` version (installed: 2.0.2), please consider upgrading to the latest version (2.2.5)
+Starting upload for file progress.json
+Upload successful: progress.json (103B)
+PROGRESS pushed: train-done (total 17)
+STAGE done {"n": 500, "cer": 0.0225, "word_acc": 0.8996}
