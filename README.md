@@ -96,7 +96,8 @@ The model downloads from Hugging Face on first use (~1.3 GB).
 ```bash
 pip install ".[dev]"
 python -m pytest tests/        # synthetic data only; no model download
-python -m mypy src/
+python -m mypy src/          # enforced in CI for src/ + the typed test files
+                             # (the remaining test modules are not type-checked)
 ```
 
 ## Layout
