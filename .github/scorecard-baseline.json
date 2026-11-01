@@ -3,30 +3,6 @@
   "findings": [
     {
       "path": ".github/workflows/release.yml",
-      "rule": "top-level-permissions",
-      "scope": "workflow",
-      "evidence": "expected exactly one top-level permissions mapping",
-      "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
-      "reason": "Workflow predates the guard (merged via PR #8); least-privilege hardening tracked separately, baseline documents the known state."
-    },
-    {
-      "path": ".github/workflows/release.yml",
-      "rule": "unpinned-action",
-      "scope": "test",
-      "evidence": "actions/checkout@v7",
-      "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
-      "reason": "Workflow predates the guard (merged via PR #8); tags bumped to v7 by the combined dependabot PR; SHA-pinning of actions/checkout and actions/setup-python tracked as follow-up hardening."
-    },
-    {
-      "path": ".github/workflows/release.yml",
-      "rule": "unpinned-action",
-      "scope": "test",
-      "evidence": "actions/setup-python@v7",
-      "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
-      "reason": "Workflow predates the guard (merged via PR #8); tags bumped to v7 by the combined dependabot PR; SHA-pinning of actions/checkout and actions/setup-python tracked as follow-up hardening."
-    },
-    {
-      "path": ".github/workflows/release.yml",
       "rule": "job-write",
       "scope": "release",
       "evidence": "contents: write",
@@ -35,51 +11,11 @@
     },
     {
       "path": ".github/workflows/release.yml",
-      "rule": "unpinned-action",
-      "scope": "release",
-      "evidence": "actions/checkout@v7",
-      "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
-      "reason": "Workflow predates the guard (merged via PR #8); tags bumped to v7 by the combined dependabot PR; SHA-pinning of actions/checkout and actions/setup-python tracked as follow-up hardening."
-    },
-    {
-      "path": ".github/workflows/release.yml",
-      "rule": "unpinned-action",
-      "scope": "release",
-      "evidence": "actions/setup-python@v7",
-      "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
-      "reason": "Workflow predates the guard (merged via PR #8); tags bumped to v7 by the combined dependabot PR; SHA-pinning of actions/checkout and actions/setup-python tracked as follow-up hardening."
-    },
-    {
-      "path": ".github/workflows/release.yml",
       "rule": "unhashed-pip-install",
       "scope": "dependencies",
       "evidence": "pip install -e '.[dev]' pytest",
       "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
       "reason": "CI installs the local package with dev extras from PyPI without hashes; hash-pinning tracked as follow-up hardening."
-    },
-    {
-      "path": ".github/workflows/tests.yml",
-      "rule": "top-level-permissions",
-      "scope": "workflow",
-      "evidence": "expected exactly one top-level permissions mapping",
-      "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
-      "reason": "Workflow predates the guard (merged via PR #8); least-privilege hardening tracked separately, baseline documents the known state."
-    },
-    {
-      "path": ".github/workflows/tests.yml",
-      "rule": "unpinned-action",
-      "scope": "pytest",
-      "evidence": "actions/checkout@v7",
-      "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
-      "reason": "Workflow predates the guard (merged via PR #8); tags bumped to v7 by the combined dependabot PR; SHA-pinning of actions/checkout and actions/setup-python tracked as follow-up hardening."
-    },
-    {
-      "path": ".github/workflows/tests.yml",
-      "rule": "unpinned-action",
-      "scope": "pytest",
-      "evidence": "actions/setup-python@v7",
-      "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
-      "reason": "Workflow predates the guard (merged via PR #8); tags bumped to v7 by the combined dependabot PR; SHA-pinning of actions/checkout and actions/setup-python tracked as follow-up hardening."
     },
     {
       "path": ".github/workflows/tests.yml",
