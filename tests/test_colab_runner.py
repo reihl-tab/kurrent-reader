@@ -12,6 +12,7 @@ SCRIPTS = [
     Path(__file__).resolve().parents[1] / "scripts" / "kaggle_kernel_v4.py",
     Path(__file__).resolve().parents[1] / "scripts" / "kaggle_kernel_v8.py",
     Path(__file__).resolve().parents[1] / "scripts" / "kaggle_kernel_v11.py",
+    Path(__file__).resolve().parents[1] / "scripts" / "kaggle_kernel_v12.py",
 ]
 
 
@@ -54,6 +55,7 @@ V4_RUNNERS = [
     Path(__file__).resolve().parents[1] / "scripts" / "kaggle_kernel_v4.py",
     Path(__file__).resolve().parents[1] / "scripts" / "kaggle_kernel_v8.py",
     Path(__file__).resolve().parents[1] / "scripts" / "kaggle_kernel_v11.py",
+    Path(__file__).resolve().parents[1] / "scripts" / "kaggle_kernel_v12.py",
 ]
 
 
@@ -287,3 +289,42 @@ def test_progress_push_survives_mkdtemp_failure() -> None:
         _tempfile.mkdtemp = real_mkdtemp
     assert ok is False
     assert ns["_progress_state"]["last_error"] == "OSError"
+
+
+V12 = Path(__file__).resolve().parents[1] / "scripts" / "kaggle_kernel_v12.py"
+
+_V12_DOCSTRING_ADDITIONS = {
+    '"""Kaggle GPU run v12: v11 pipeline, single-lever recipe change (issue #32).',
+    "v12 = v11 EXACT except REPEAT 40 -> 4. v10 showed the x40 oversample drives",
+    "perfect memorization (seeds_fit CER 0.0) while held-out names got WORSE than",
+    "the untrained base (0.9067 -> best 1.2173) and the model recites training-set",
+    "names on held-out crops. x4 keeps target gradient signal (836 target samples",
+    "per epoch, 1.3% of mix) with 10x less repetition pressure. Everything else",
+    "frozen: 2 epochs, from base, LR 5e-6, batch 8, eval-every-500, keep-best,",
+    "frozen metrics, heartbeat.",
+    "Original v11 header follows.",
+    "Kaggle GPU run v11: v10 pipeline + run-progress heartbeat (issue #30).",
+}
+
+
+def test_v12_single_lever_repeat_only() -> None:
+    """v12 (issue #32) is v11 with ONE lever changed: REPEAT 40 -> 4.
+
+    Pins the recipe change so a later edit cannot silently move a second
+    lever: v12's lines must be v11's lines plus only the new docstring
+    lines, with 'REPEAT = 40' replaced by the v12 REPEAT assignment.
+    """
+    v11 = V11.read_text(encoding="utf-8").splitlines()
+    v12 = V12.read_text(encoding="utf-8").splitlines()
+    ns: dict = {}
+    _load_assignments(V12, {"REPEAT"}, ns)
+    assert ns["REPEAT"] == 4, f"v12 REPEAT must be 4, got {ns['REPEAT']}"
+    only12 = set(v12) - set(v11)
+    assert only12 <= _V12_DOCSTRING_ADDITIONS | {next(l for l in v12 if l.startswith("REPEAT = 4"))}, (
+        f"v12 adds lines beyond the docstring + REPEAT change: {sorted(only12 - _V12_DOCSTRING_ADDITIONS)}"
+    )
+    only11 = set(v11) - set(v12)
+    assert only11 == {"REPEAT = 40", '"""Kaggle GPU run v11: v10 pipeline + run-progress heartbeat (issue #30).'}, (
+        f"v12 dropped v11 lines other than REPEAT and the re-homed docstring opener: {sorted(only11)}"
+    )
+    assert "issue #32" in V12.read_text(encoding="utf-8")
