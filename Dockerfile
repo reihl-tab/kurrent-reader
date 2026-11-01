@@ -11,6 +11,11 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends libgomp1 \
     && rm -rf /var/lib/apt/lists/*
 
+# pip 24.0 bundled in the base image mis-resolves safetensors (InconsistentCandidate
+# on ~=0.7 vs the 0.8.0 candidate) during `pip install .`; upgrade pip first.
+# Found by the docker-smoke CI job (issue #34).
+RUN pip install --upgrade pip
+
 # CPU-only PyTorch keeps the image small; it is not on PyPI's default index.
 RUN pip install --index-url https://download.pytorch.org/whl/cpu "torch>=2.1"
 
