@@ -13,17 +13,17 @@
       "path": ".github/workflows/release.yml",
       "rule": "unpinned-action",
       "scope": "test",
-      "evidence": "actions/checkout@v4",
+      "evidence": "actions/checkout@v7",
       "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
-      "reason": "Workflow predates the guard (merged via PR #8); SHA-pinning of actions/checkout and actions/setup-python tracked as follow-up hardening."
+      "reason": "Workflow predates the guard (merged via PR #8); tags bumped to v7 by the combined dependabot PR; SHA-pinning of actions/checkout and actions/setup-python tracked as follow-up hardening."
     },
     {
       "path": ".github/workflows/release.yml",
       "rule": "unpinned-action",
       "scope": "test",
-      "evidence": "actions/setup-python@v5",
+      "evidence": "actions/setup-python@v7",
       "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
-      "reason": "Workflow predates the guard (merged via PR #8); SHA-pinning of actions/checkout and actions/setup-python tracked as follow-up hardening."
+      "reason": "Workflow predates the guard (merged via PR #8); tags bumped to v7 by the combined dependabot PR; SHA-pinning of actions/checkout and actions/setup-python tracked as follow-up hardening."
     },
     {
       "path": ".github/workflows/release.yml",
@@ -37,17 +37,17 @@
       "path": ".github/workflows/release.yml",
       "rule": "unpinned-action",
       "scope": "release",
-      "evidence": "actions/checkout@v4",
+      "evidence": "actions/checkout@v7",
       "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
-      "reason": "Workflow predates the guard (merged via PR #8); SHA-pinning of actions/checkout and actions/setup-python tracked as follow-up hardening."
+      "reason": "Workflow predates the guard (merged via PR #8); tags bumped to v7 by the combined dependabot PR; SHA-pinning of actions/checkout and actions/setup-python tracked as follow-up hardening."
     },
     {
       "path": ".github/workflows/release.yml",
       "rule": "unpinned-action",
       "scope": "release",
-      "evidence": "actions/setup-python@v5",
+      "evidence": "actions/setup-python@v7",
       "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
-      "reason": "Workflow predates the guard (merged via PR #8); SHA-pinning of actions/checkout and actions/setup-python tracked as follow-up hardening."
+      "reason": "Workflow predates the guard (merged via PR #8); tags bumped to v7 by the combined dependabot PR; SHA-pinning of actions/checkout and actions/setup-python tracked as follow-up hardening."
     },
     {
       "path": ".github/workflows/release.yml",
@@ -69,17 +69,17 @@
       "path": ".github/workflows/tests.yml",
       "rule": "unpinned-action",
       "scope": "pytest",
-      "evidence": "actions/checkout@v4",
+      "evidence": "actions/checkout@v7",
       "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
-      "reason": "Workflow predates the guard (merged via PR #8); SHA-pinning of actions/checkout and actions/setup-python tracked as follow-up hardening."
+      "reason": "Workflow predates the guard (merged via PR #8); tags bumped to v7 by the combined dependabot PR; SHA-pinning of actions/checkout and actions/setup-python tracked as follow-up hardening."
     },
     {
       "path": ".github/workflows/tests.yml",
       "rule": "unpinned-action",
       "scope": "pytest",
-      "evidence": "actions/setup-python@v5",
+      "evidence": "actions/setup-python@v7",
       "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
-      "reason": "Workflow predates the guard (merged via PR #8); SHA-pinning of actions/checkout and actions/setup-python tracked as follow-up hardening."
+      "reason": "Workflow predates the guard (merged via PR #8); tags bumped to v7 by the combined dependabot PR; SHA-pinning of actions/checkout and actions/setup-python tracked as follow-up hardening."
     },
     {
       "path": ".github/workflows/tests.yml",
