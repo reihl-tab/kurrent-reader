@@ -110,17 +110,32 @@ def _progress_api():
     return api
 
 
+def _json_safe(value):
+    """Replace non-finite floats with None so json.dumps never emits Infinity/NaN."""
+    import math
+    if isinstance(value, float) and not math.isfinite(value):
+        return None
+    if isinstance(value, dict):
+        return {k: _json_safe(v) for k, v in value.items()}
+    if isinstance(value, list):
+        return [_json_safe(v) for v in value]
+    return value
+
+
 def progress_push(payload: dict) -> bool:
     """Version the PRIVATE progress dataset with this payload as progress.json.
 
     Best-effort: returns False instead of raising so training never dies on a
-    heartbeat failure.
+    heartbeat failure. Payload policy (issue #30 review): aggregates only, no
+    per-row hypotheses or gold text.
     """
     if not PROGRESS_ENABLED:
         return False
+    import shutil
+    import tempfile
+    d = Path(tempfile.mkdtemp(prefix="kurrent-progress-"))
     try:
-        import tempfile
-        d = Path(tempfile.mkdtemp(prefix="kurrent-progress-"))
+        payload = _json_safe(payload)
         (d / "progress.json").write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
         (d / "dataset-metadata.json").write_text(json.dumps({
             "title": PROGRESS_DATASET.split("/")[-1],
@@ -132,9 +147,11 @@ def progress_push(payload: dict) -> bool:
         print(f"PROGRESS pushed: {payload.get('stage')} (total {_progress_state['pushes']})", flush=True)
         return True
     except Exception as e:
-        _progress_state["last_error"] = f"{type(e).__name__}: {e}"
+        _progress_state["last_error"] = type(e).__name__
         print(f"PROGRESS push failed (non-fatal): {_progress_state['last_error']}", flush=True)
         return False
+    finally:
+        shutil.rmtree(d, ignore_errors=True)
 
 
 
@@ -324,7 +341,7 @@ if not SMOKE:
     assert not _missing, f"training pages missing: {_missing[:5]}"
     assert not _eval_missing, f"eval pages missing: {_eval_missing[:5]}"
 progress_push(progress_payload("boot", train_samples=len(samples), target_cells=len(_cells),
-                               missing_pages=_missing, eval_pages_missing=_eval_missing))
+                               missing_pages=len(_missing), eval_pages_missing=len(_eval_missing)))
 if _seed_files:
     _im = Image.open(PAGE_ROOT[_seed_files[0]])
     print("seed page resolution:", _seed_files[0], _im.size, flush=True)
@@ -410,7 +427,9 @@ class KeepBestCallback(TrainerCallback):
                     drive_save_best()
                 progress_push(progress_payload(
                     f"step{state.global_step}", step=state.global_step,
-                    eval12=r, eval_names=rn, combined=round(s, 4), best=dict(BEST)))
+                    score12=round(score12(r), 4),
+                    names_n=rn.get("n"), names_cer=rn.get("cer"), names_word_acc=rn.get("word_acc"),
+                    combined=round(s, 4), best_step=BEST["step"], best_score=BEST["score"]))
             except Exception as e:  # never let keep-best kill a run
                 print(f"keep-best eval failed at step {state.global_step}: {type(e).__name__}: {e}", flush=True)
             finally:
