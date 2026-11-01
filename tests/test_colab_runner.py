@@ -271,3 +271,19 @@ def test_progress_push_sanitizes_non_finite() -> None:
     assert payload["combined"] is None
     assert payload["nested"] == {"x": None}
     assert payload["ok"] == 1.5
+
+
+def test_progress_push_survives_mkdtemp_failure() -> None:
+    """F5: a mkdtemp failure must be swallowed like any other push error."""
+    import tempfile as _tempfile
+
+    ns = _load_heartbeat({})
+    ns["_progress_api"] = lambda: _FakeApi()
+    real_mkdtemp = _tempfile.mkdtemp
+    _tempfile.mkdtemp = lambda *a, **k: (_ for _ in ()).throw(OSError("disk full"))
+    try:
+        ok = ns["progress_push"]({"stage": "boot"})
+    finally:
+        _tempfile.mkdtemp = real_mkdtemp
+    assert ok is False
+    assert ns["_progress_state"]["last_error"] == "OSError"

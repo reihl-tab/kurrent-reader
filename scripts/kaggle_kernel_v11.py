@@ -133,8 +133,9 @@ def progress_push(payload: dict) -> bool:
         return False
     import shutil
     import tempfile
-    d = Path(tempfile.mkdtemp(prefix="kurrent-progress-"))
+    d = None
     try:
+        d = Path(tempfile.mkdtemp(prefix="kurrent-progress-"))
         payload = _json_safe(payload)
         (d / "progress.json").write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
         (d / "dataset-metadata.json").write_text(json.dumps({
@@ -151,7 +152,8 @@ def progress_push(payload: dict) -> bool:
         print(f"PROGRESS push failed (non-fatal): {_progress_state['last_error']}", flush=True)
         return False
     finally:
-        shutil.rmtree(d, ignore_errors=True)
+        if d is not None:
+            shutil.rmtree(d, ignore_errors=True)
 
 
 
