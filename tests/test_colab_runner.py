@@ -9,6 +9,8 @@ SCRIPTS = [
     Path(__file__).resolve().parents[1] / "scripts" / "colab_train.py",
     Path(__file__).resolve().parents[1] / "scripts" / "colab_train_v2.py",
     Path(__file__).resolve().parents[1] / "scripts" / "colab_train_v4.py",
+    Path(__file__).resolve().parents[1] / "scripts" / "kaggle_kernel_v4.py",
+    Path(__file__).resolve().parents[1] / "scripts" / "kaggle_kernel_v8.py",
 ]
 
 
@@ -105,3 +107,37 @@ def test_evaluate12_rejects_traversal() -> None:
                     pass
                 else:
                     raise AssertionError(f"{script.name}: traversal accepted: {bad}")
+
+
+def _load_assignments(path: Path, names: set, ns: dict) -> dict:
+    """Exec top-level assignments to the given names, in source order, into ns."""
+    tree = ast.parse(path.read_text(encoding="utf-8"))
+    nodes = [
+        n
+        for n in tree.body
+        if isinstance(n, ast.Assign)
+        and any(isinstance(t, ast.Name) and t.id in names for t in n.targets)
+    ]
+    found = {t.id for n in nodes for t in n.targets if isinstance(t, ast.Name)}
+    missing = names - found
+    if missing:
+        raise AssertionError(f"{path.name}: assignments not found: {sorted(missing)}")
+    exec(compile(ast.Module(body=nodes, type_ignores=[]), str(path), "exec"), ns)
+    return ns
+
+
+def test_held_out_leak_check_catches_int_and_str() -> None:
+    """Behaviorally pin the row-level held-out check (issue #24).
+
+    Execs the runner's own _held_idnrs/_leaked lines against synthetic
+    samples: the held-out IdNrs must be caught whether the manifest stores
+    them as int or str, and clean samples must pass.
+    """
+    for script in V4_RUNNERS:
+        for idnr in (33739, "33739", 35238, "35238"):
+            ns = {"samples": [{"IdNr": idnr}, {"IdNr": 1}, {"IdNr": "2"}, {"IdNr": None}]}
+            _load_assignments(script, {"_held_idnrs", "_leaked"}, ns)
+            assert ns["_leaked"] == [str(idnr)], f"{script.name}: missed held-out IdNr {idnr!r}"
+        ns = {"samples": [{"IdNr": 1}, {"IdNr": "2"}, {"IdNr": None}]}
+        _load_assignments(script, {"_held_idnrs", "_leaked"}, ns)
+        assert ns["_leaked"] == [], f"{script.name}: false positive on clean samples"

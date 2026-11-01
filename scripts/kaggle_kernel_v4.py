@@ -3,7 +3,7 @@
 v4 changes (2026-10-20, after the v2-best checkpoint proved date-collapsed on
 Eschau cell crops - register inference produced date-junk):
 - checkpoint source is chosen by the NOTEBOOK (v3 best if its timing_result is
-  healthy, else v2 best) and extracted to /content/ckpt-best as before
+  healthy, else v2 best) via KURRENT_CKPT_SRC (from-base by default)
 - new held-out eval: eval_names_v4.jsonl = the 4 occupation crops + the Gerson
   Mosbacher row cells (name "Gerson Mosbacher", occupation "Handelsmann",
   date scored as span-hit on ["28","1845"] because the cell is narrative);
