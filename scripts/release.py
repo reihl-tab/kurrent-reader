@@ -16,6 +16,8 @@ from pathlib import Path
 
 VERSION_FILE = Path("VERSION")
 CHANGELOG_FILE = Path("CHANGELOG.md")
+PYPROJECT_FILE = Path("pyproject.toml")
+INIT_FILE = Path("src/kurrent_reader/__init__.py")
 
 PATCH_TYPES = ("fix", "perf", "revert")
 MINOR_TYPES = ("feat",)
@@ -161,6 +163,27 @@ def push_with_rebase_retry(attempts: int = 3) -> None:
             sh("git", "rebase", "origin/main")
 
 
+def sync_version_files(version: str, root: Path = Path(".")) -> list[Path]:
+    """Write the release version into pyproject.toml and the package __init__.
+
+    Keeps the three version carriers (VERSION, pyproject, __init__.__version__)
+    in lockstep; a consistency test in tests/test_release.py catches skew.
+    """
+    touched: list[Path] = []
+    for rel, pattern, replacement in (
+        (PYPROJECT_FILE, r'(?m)^version = "[^"]+"', 'version = "%s"'),
+        (INIT_FILE, r'(?m)^__version__ = "[^"]+"', '__version__ = "%s"'),
+    ):
+        path = root / rel
+        if not path.exists():
+            continue
+        text, n = re.subn(pattern, replacement % version, path.read_text(), count=1)
+        if n:
+            path.write_text(text)
+            touched.append(rel)
+    return touched
+
+
 def main(dry_run: bool = False) -> int:
     sh("git", "fetch", "origin", "main", "--tags")
     interrupted = find_untagged_release_commit()
@@ -194,7 +217,8 @@ def main(dry_run: bool = False) -> int:
     marker = "\n## ["
     idx = old.find(marker)
     CHANGELOG_FILE.write_text(old[:idx + 1] + entry + "\n" + old[idx + 1:])
-    sh("git", "add", "VERSION", "CHANGELOG.md")
+    touched = sync_version_files(version)
+    sh("git", "add", "VERSION", "CHANGELOG.md", *(str(t) for t in touched))
     sh("git", "commit", "-m", f"chore(release): v{version}")
     push_with_rebase_retry()
     sh("git", "tag", "-a", f"v{version}", "-m", f"v{version}")

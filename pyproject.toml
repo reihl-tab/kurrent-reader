@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kurrent-reader"
+version = "0.2.1"
+description = "Free, local line-level reader for 19th-century German Kurrent handwriting: scan cleanup, kraken segmentation, and TrOCR (dh-unibe/trocr-kurrent) reading."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "numpy>=1.24",
+    "pillow>=10.0",
+    "opencv-python-headless>=4.8",
+    "scikit-image>=0.22",
+    "transformers>=4.45,<5",
+    "kraken>=5.2",
+    "safetensors~=0.7",
+    "click>=8.1,<8.3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "mypy>=1.10"]
+
+[project.scripts]
+kurrent-reader = "kurrent_reader.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+mypy_path = "src"
+
+[[tool.mypy.overrides]]
+module = ["cv2.*", "skimage.*", "kraken.*", "transformers.*", "scipy.*"]
+ignore_missing_imports = true

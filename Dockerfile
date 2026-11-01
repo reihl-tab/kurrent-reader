@@ -1,0 +1,28 @@
+# syntax=docker/dockerfile:1
+FROM python:3.11-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_NO_CACHE_DIR=1
+
+# libgomp is required by the CPU build of PyTorch.
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends libgomp1 \
+    && rm -rf /var/lib/apt/lists/*
+
+# CPU-only PyTorch keeps the image small; it is not on PyPI's default index.
+RUN pip install --index-url https://download.pytorch.org/whl/cpu "torch>=2.1"
+
+WORKDIR /app
+COPY pyproject.toml README.md ./
+COPY src ./src
+RUN pip install .
+
+COPY tests ./tests
+RUN pip install ".[dev]"
+
+# The TrOCR model (~1.3 GB) is downloaded on first use, or bake it in with:
+#   RUN python -c "from huggingface_hub import snapshot_download; snapshot_download('dh-unibe/trocr-kurrent')"
+
+ENTRYPOINT ["kurrent-reader"]
+CMD ["--help"]
