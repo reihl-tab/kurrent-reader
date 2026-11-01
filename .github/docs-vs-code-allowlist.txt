@@ -1,0 +1,9 @@
+# CLI tokens intentionally not spelled out in the docs. Each entry needs a reason.
+# Format: token # reason
+--line-fraction # expert derule tuning; covered by kurrent-reader derule --help
+--split # expert derule option; covered by --help
+--mode # segmentation mode choice; covered by --help, default fits most scans
+--model # expert kraken model selection; covered by --help
+--model-id # expert alternate HF model; covered by --help
+--quantize # expert int8 quantization toggle; covered by --help
+--seg-model # expert segmentation model path; covered by --help
