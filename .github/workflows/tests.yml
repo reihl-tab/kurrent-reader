@@ -20,3 +20,4 @@ jobs:
       - run: pip install -e '.[dev]' pytest
       - run: |
           if [ -d tests ]; then python -m pytest tests/ -q; else echo "no tests/ dir on this tree; skipping"; fi
+      - run: python -m mypy src tests/test_ruled_table.py tests/test_train.py

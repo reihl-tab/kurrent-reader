@@ -3,13 +3,15 @@
 Designed for weekly Kaggle runs: free-tier GPU, quota reset, resume from the
 previous week's checkpoint. Data is a folder of PNG line crops plus a JSONL
 manifest ({"file": ..., "text": ...}); labels must come from verified
-transcriptions only (see issue #3 label rules). The held-out eval manifest
-(quorum-scored crops) is loaded separately and never enters training.
+transcriptions only (see issue #3 label rules). Held-out evaluation lives
+outside this module; build_trainer ENFORCES the held-out blocklist (via
+load_training_samples) so reserved filenames can never enter training.
 """
 
 from __future__ import annotations
 
 import json
+from collections import Counter
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -27,13 +29,20 @@ class LineSample:
 
 
 def load_manifest(path: Path, image_dir: Path) -> list[LineSample]:
-    """Load a JSONL manifest of {"file", "text"} rows, skipping blank labels."""
+    """Load a JSONL manifest of {"file", "text"} rows, skipping blank labels.
+
+    Rows whose "file" escapes ``image_dir`` (e.g. "../other/page.png") are
+    skipped: manifests name crops inside one directory, never outside it.
+    """
+    base = image_dir.resolve()
     samples: list[LineSample] = []
     with path.open(encoding="utf-8") as fh:
         for line in fh:
             row = json.loads(line)
             text = str(row.get("text", "")).strip()
-            image = image_dir / str(row["file"])
+            image = (image_dir / str(row["file"])).resolve()
+            if not image.is_relative_to(base):
+                continue
             if text and image.exists():
                 samples.append(LineSample(file=image, text=text))
     return samples
@@ -59,12 +68,49 @@ def cer(hypothesis: str, reference: str) -> float:
 
 
 def word_accuracy(hypothesis: str, reference: str) -> float:
-    """Share of reference words present verbatim in the hypothesis."""
-    hyp_words = hypothesis.split()
-    ref_words = reference.split()
-    if not ref_words:
+    """Share of reference words present verbatim in the hypothesis.
+
+    Multiset match: a word occurring twice in the reference must appear twice
+    in the hypothesis to count both occurrences.
+    """
+    if not reference.split():
         return 0.0
-    return sum(1 for w in ref_words if w in hyp_words) / len(ref_words)
+    matched = Counter(reference.split()) & Counter(hypothesis.split())
+    return sum(matched.values()) / len(reference.split())
+
+
+def load_training_samples(
+    train_manifest: Path,
+    image_dir: Path,
+    blocked_files: set[str] | None = None,
+) -> list[LineSample]:
+    """Load manifest samples with the held-out blocklist enforced.
+
+    ``blocked_files`` carries the filenames reserved for evaluation
+    (e.g. the held-out register rows); matching samples are dropped so a
+    reserved crop can never leak into training.
+    """
+    return exclude_files(load_manifest(train_manifest, image_dir), blocked_files or set())
+
+
+def make_pad_collator(pad_token_id: int) -> Any:
+    """Collator that pads variable-length label sequences with -100.
+
+    TrOCR line crops vary in text length, so default_data_collator crashes
+    on torch.stack; -100 is ignored by the loss.
+    """
+
+    def collate(features: list[dict[str, Any]]) -> dict[str, Any]:
+        import torch
+
+        pixel_values = torch.stack([f["pixel_values"] for f in features])
+        max_len = max(int(f["labels"].shape[0]) for f in features)
+        labels = torch.full((len(features), max_len), -100, dtype=torch.long)
+        for i, f in enumerate(features):
+            labels[i, : int(f["labels"].shape[0])] = f["labels"]
+        return {"pixel_values": pixel_values, "labels": labels}
+
+    return collate
 
 
 def build_trainer(
@@ -76,8 +122,13 @@ def build_trainer(
     epochs: float = 3.0,
     batch_size: int = 4,
     learning_rate: float = 5e-5,
+    blocked_files: set[str] | None = None,
 ) -> Any:
-    """Assemble the HF Trainer (heavy imports deferred to call time)."""
+    """Assemble the HF Trainer (heavy imports deferred to call time).
+
+    ``blocked_files``: filenames reserved for held-out evaluation; enforced
+    through load_training_samples.
+    """
     import torch
     from PIL import Image
     from transformers import (
@@ -85,7 +136,6 @@ def build_trainer(
         Seq2SeqTrainingArguments,
         TrOCRProcessor,
         VisionEncoderDecoderModel,
-        default_data_collator,
     )
 
     processor = TrOCRProcessor.from_pretrained(model_id)
@@ -95,7 +145,7 @@ def build_trainer(
     model.config.pad_token_id = processor.tokenizer.pad_token_id
     model.config.eos_token_id = processor.tokenizer.eos_token_id
 
-    samples = load_manifest(train_manifest, image_dir)
+    samples = load_training_samples(train_manifest, image_dir, blocked_files)
     if not samples:
         raise ValueError(f"no labeled samples in {train_manifest}")
 
@@ -125,5 +175,5 @@ def build_trainer(
         model=model,
         args=args,
         train_dataset=LineDataset(),
-        data_collator=default_data_collator,
+        data_collator=make_pad_collator(processor.tokenizer.pad_token_id),
     )

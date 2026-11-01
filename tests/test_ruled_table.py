@@ -3,11 +3,12 @@
 from __future__ import annotations
 
 import numpy as np
+from numpy.typing import NDArray
 
 from kurrent_reader.ruled_table import align_chronological, detect_rules, row_bands
 
 
-def _synthetic_table() -> np.ndarray:
+def _synthetic_table() -> NDArray[np.uint8]:
     img = np.full((400, 600), 220, dtype=np.uint8)
     for y in (50, 150, 250, 350):
         img[y - 1 : y + 2, :] = 30  # horizontal rules
@@ -43,15 +44,21 @@ def test_align_missing_rows_gives_none() -> None:
     assert aligned[1:] == bands
 
 
+def test_align_anchors_to_bottom_of_range() -> None:
+    bands = row_bands(_synthetic_table())
+    aligned = align_chronological(bands, 5)
+    assert aligned[0] is None and aligned[1] is None
+    assert aligned[2:] == bands  # the LAST entries of the range get the page's bands
+
+
 def test_align_empty() -> None:
     assert align_chronological([], 0) == []
 
 
-def _skewed_table(angle: float = 0.0) -> np.ndarray:
-    import numpy as np
+def _skewed_table(angle: float = 0.0) -> NDArray[np.uint8]:
     from PIL import Image
 
-    img = np.full((800, 600), 220, dtype=np.uint8)
+    img: NDArray[np.uint8] = np.full((800, 600), 220, dtype=np.uint8)
     for y in range(50, 750, 60):
         img[y - 1 : y + 2, :] = 30  # horizontal rules
     for x in range(80, 520, 110):

@@ -33,7 +33,8 @@ def detect_rules(
 ) -> list[int]:
     """Detect long straight rules in a grayscale image.
 
-    axis=0 finds horizontal rules (dark rows), axis=1 vertical rules.
+    axis=0 finds vertical rules (the profile is averaged over rows, so hits
+    are x positions); axis=1 finds horizontal rules (hits are y positions).
     A line qualifies when at least ``min_fraction`` of its pixels along the
     rule direction are darker than ``dark_threshold``.
     """
@@ -76,10 +77,12 @@ def row_bands(
 def align_chronological(bands: list[RowBand], n_entries: int) -> list[RowBand | None]:
     """Assign the ``n_entries`` chronologically ordered entries to row bands.
 
-    Register rows are written in date order top to bottom. With more bands
-    than entries the header band(s) are skipped; with fewer bands than
-    entries the surplus entries get ``None`` and must be looked for on the
-    next scan.
+    Entries are anchored to the BOTTOM of the page's band list. With more
+    bands than entries, the top band(s) are skipped (headers and any earlier
+    rows). With fewer bands than entries, the EARLIEST entries get ``None``:
+    the page is assumed to hold the tail of the requested chronological
+    range, with the missing earlier entries on earlier scans. Callers that
+    need the opposite page-position assumption must realign beforehand.
     """
     if n_entries <= 0:
         return []
