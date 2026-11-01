@@ -1,0 +1,61 @@
+{"file": "g02_22.jpg", "bbox": [1307, 546, 333, 152], "text": "Elias Mosbacher", "IdNr": 34023, "project": "eschau1081-batch1", "kind": "name", "conf": "verified", "band": "1.2"}
+{"file": "g02_22.jpg", "bbox": [1927, 546, 320, 152], "text": "25.06.1823", "IdNr": 34023, "project": "eschau1081-batch1", "kind": "date", "conf": "verified", "band": "1.2"}
+{"file": "g02_22.jpg", "bbox": [1307, 698, 333, 204], "text": "Hajum Strauß", "IdNr": 37361, "project": "eschau1081-batch1", "kind": "name", "conf": "verified-person", "band": "1.3"}
+{"file": "g02_22.jpg", "bbox": [1307, 902, 333, 206], "text": "Jakob Michel", "IdNr": 38015, "project": "eschau1081-batch1", "kind": "name", "conf": "verified", "band": "1.4"}
+{"file": "g02_22.jpg", "bbox": [1927, 902, 320, 206], "text": "03.10.1824", "IdNr": 38015, "project": "eschau1081-batch1", "kind": "date", "conf": "verified", "band": "1.4"}
+{"file": "g02_22.jpg", "bbox": [1307, 1108, 333, 173], "text": "Kindle Michel", "IdNr": 38018, "project": "eschau1081-batch1", "kind": "name", "conf": "verified", "band": "1.5"}
+{"file": "g02_22.jpg", "bbox": [1927, 1108, 320, 173], "text": "01.11.1824", "IdNr": 38018, "project": "eschau1081-batch1", "kind": "date", "conf": "verified", "band": "1.5"}
+{"file": "g02_22.jpg", "bbox": [1307, 1281, 333, 173], "text": "NN Vromeln Michel", "IdNr": 38022, "project": "eschau1081-batch1", "kind": "name", "conf": "verified", "band": "1.6"}
+{"file": "g02_22.jpg", "bbox": [1927, 1281, 320, 173], "text": "27.02.1825", "IdNr": 38022, "project": "eschau1081-batch1", "kind": "date", "conf": "verified", "band": "1.6"}
+{"file": "g02_22.jpg", "bbox": [1307, 1454, 333, 148], "text": "Abraham Strauß", "IdNr": 38784, "project": "eschau1081-batch1", "kind": "name", "conf": "verified", "band": "1.7"}
+{"file": "g02_22.jpg", "bbox": [1927, 1454, 320, 148], "text": "18.11.1825", "IdNr": 38784, "project": "eschau1081-batch1", "kind": "date", "conf": "verified", "band": "1.7"}
+{"file": "g02_22.jpg", "bbox": [1307, 1602, 333, 235], "text": "Vromel Michel", "IdNr": 38738, "project": "eschau1081-batch1", "kind": "name", "conf": "verified", "band": "1.8"}
+{"file": "g02_22.jpg", "bbox": [1927, 1602, 320, 235], "text": "24.06.1826", "IdNr": 38738, "project": "eschau1081-batch1", "kind": "date", "conf": "verified", "band": "1.8"}
+{"file": "g02_22.jpg", "bbox": [1307, 1837, 333, 275], "text": "Isaak Strasburger", "IdNr": 38031, "project": "eschau1081-batch1", "kind": "name", "conf": "verified", "band": "1.9"}
+{"file": "g02_22.jpg", "bbox": [1927, 1837, 320, 275], "text": "07.08.1826", "IdNr": 38031, "project": "eschau1081-batch1", "kind": "date", "conf": "verified", "band": "1.9"}
+{"file": "g04_22.jpg", "bbox": [1906, 362, 450, 175], "text": "23.04.1831", "IdNr": 38037, "project": "eschau1081-batch1", "kind": "date", "conf": "verified", "band": "1.1"}
+{"file": "g04_22.jpg", "bbox": [1906, 537, 450, 153], "text": "18.10.1831", "IdNr": 3763, "project": "eschau1081-batch1", "kind": "date", "conf": "verified", "band": "1.2"}
+{"file": "g04_22.jpg", "bbox": [1906, 713, 450, 187], "text": "19.12.1831", "IdNr": 38043, "project": "eschau1081-batch1", "kind": "date", "conf": "verified", "band": "1.4"}
+{"file": "g04_22.jpg", "bbox": [1906, 1101, 450, 142], "text": "14.06.1833", "IdNr": 38794, "project": "eschau1081-batch1", "kind": "date", "conf": "verified", "band": "1.6"}
+{"file": "g04_22.jpg", "bbox": [1906, 1243, 450, 198], "text": "18.08.1833", "IdNr": 6403, "project": "eschau1081-batch1", "kind": "date", "conf": "verified", "band": "1.7"}
+{"file": "g04_22.jpg", "bbox": [1906, 1664, 450, 154], "text": "15.01.1835", "IdNr": 38097, "project": "eschau1081-batch1", "kind": "date", "conf": "verified", "band": "1.10.0"}
+{"file": "g04_22.jpg", "bbox": [1906, 1818, 450, 292], "text": "28.11.1835", "IdNr": 38098, "project": "eschau1081-batch1", "kind": "date", "conf": "verified", "band": "1.10.1"}
+{"file": "g07_22.jpg", "bbox": [81, 150, 271, 181], "text": "Regina Mosbacher", "IdNr": 38749, "project": "eschau1081-batch1", "kind": "name", "conf": "verified", "band": "0.1"}
+{"file": "g07_22.jpg", "bbox": [81, 331, 271, 334], "text": "Josef Rothschild", "IdNr": 1945, "project": "eschau1081-batch1", "kind": "name", "conf": "verified", "band": "0.2"}
+{"file": "g07_22.jpg", "bbox": [81, 1096, 271, 174], "text": "Madel Strauß", "IdNr": 38816, "project": "eschau1081-batch1", "kind": "name", "conf": "verified", "band": "0.4"}
+{"file": "g07_22.jpg", "bbox": [81, 1407, 271, 199], "text": "Mina Mosbacher", "IdNr": 38653, "project": "eschau1081-batch1", "kind": "name", "conf": "verified", "band": "0.6"}
+{"file": "g07_22.jpg", "bbox": [81, 1606, 271, 138], "text": "Sarah Rothschild", "IdNr": 38780, "project": "eschau1081-batch1", "kind": "name", "conf": "verified", "band": "0.7"}
+{"file": "g07_22.jpg", "bbox": [1908, 162, 348, 161], "text": "25.03.1848", "IdNr": 38749, "project": "eschau1081-batch1", "kind": "date", "conf": "medium", "band": "1.1"}
+{"file": "g07_22.jpg", "bbox": [1908, 323, 348, 333], "text": "25.01.1849", "IdNr": 1945, "project": "eschau1081-batch1", "kind": "date", "conf": "medium", "band": "1.2"}
+{"file": "g07_22.jpg", "bbox": [1908, 1086, 348, 173], "text": "25.10.1849", "IdNr": 38816, "project": "eschau1081-batch1", "kind": "date", "conf": "medium", "band": "1.5"}
+{"file": "g07_22.jpg", "bbox": [1908, 1394, 348, 200], "text": "28.03.1851", "IdNr": 38653, "project": "eschau1081-batch1", "kind": "date", "conf": "verified", "band": "1.7"}
+{"file": "g07_22.jpg", "bbox": [1908, 1594, 348, 137], "text": "08.04.1851", "IdNr": 38780, "project": "eschau1081-batch1", "kind": "date", "conf": "verified", "band": "1.8"}
+{"file": "g07_22.jpg", "bbox": [1908, 1731, 348, 156], "text": "05.01.1852", "IdNr": 38765, "project": "eschau1081-batch1", "kind": "date", "conf": "verified", "band": "1.9"}
+{"file": "g07_22.jpg", "bbox": [1908, 1887, 348, 253], "text": "08.02.1852", "IdNr": 38798, "project": "eschau1081-batch1", "kind": "date", "conf": "verified", "band": "1.10"}
+{"file": "g08_22.jpg", "bbox": [1379, 158, 514, 228], "text": "Jette Michel", "IdNr": 38739, "project": "eschau1081-batch1", "kind": "name", "conf": "verified", "band": "1.1"}
+{"file": "g08_22.jpg", "bbox": [2064, 158, 400, 228], "text": "07.03.1852", "IdNr": 38739, "project": "eschau1081-batch1", "kind": "date", "conf": "verified", "band": "1.1"}
+{"file": "g08_22.jpg", "bbox": [1379, 386, 514, 146], "text": "Fanny Strauß", "IdNr": 38785, "project": "eschau1081-batch1", "kind": "name", "conf": "verified", "band": "1.2"}
+{"file": "g08_22.jpg", "bbox": [2064, 386, 400, 146], "text": "08.05.1852", "IdNr": 38785, "project": "eschau1081-batch1", "kind": "date", "conf": "verified", "band": "1.2"}
+{"file": "g08_22.jpg", "bbox": [1379, 835, 514, 151], "text": "Moses Regensburger", "IdNr": 38664, "project": "eschau1081-batch1", "kind": "name", "conf": "verified", "band": "1.5"}
+{"file": "g08_22.jpg", "bbox": [2064, 835, 400, 151], "text": "27.05.1854", "IdNr": 38664, "project": "eschau1081-batch1", "kind": "date", "conf": "verified", "band": "1.5"}
+{"file": "g08_22.jpg", "bbox": [1379, 986, 514, 221], "text": "Gidel Mosbacher", "IdNr": 38751, "project": "eschau1081-batch1", "kind": "name", "conf": "verified", "band": "1.6"}
+{"file": "g08_22.jpg", "bbox": [2064, 986, 400, 221], "text": "18.08.1854", "IdNr": 38751, "project": "eschau1081-batch1", "kind": "date", "conf": "verified", "band": "1.6"}
+{"file": "g08_22.jpg", "bbox": [1379, 1207, 514, 220], "text": "Elias Michel", "IdNr": 38740, "project": "eschau1081-batch1", "kind": "name", "conf": "verified", "band": "1.7"}
+{"file": "g08_22.jpg", "bbox": [2064, 1207, 400, 220], "text": "28.09.1854", "IdNr": 38740, "project": "eschau1081-batch1", "kind": "date", "conf": "verified", "band": "1.7"}
+{"file": "g08_22.jpg", "bbox": [2064, 1427, 400, 279], "text": "29.12.1854", "IdNr": 38756, "project": "eschau1081-batch1", "kind": "date", "conf": "medium", "band": "1.8"}
+{"file": "g08_22.jpg", "bbox": [1379, 1706, 514, 419], "text": "Lazarus Strauß", "IdNr": 38799, "project": "eschau1081-batch1", "kind": "name", "conf": "verified", "band": "1.9"}
+{"file": "g08_22.jpg", "bbox": [2064, 1706, 400, 419], "text": "30.05.1855", "IdNr": 38799, "project": "eschau1081-batch1", "kind": "date", "conf": "verified", "band": "1.9"}
+{"file": "g08_22.jpg", "bbox": [1379, 532, 514, 116], "text": "Getta Mosbacher", "IdNr": 38745, "project": "eschau1081-batch1", "kind": "name", "conf": "verified", "band": "1.3.0"}
+{"file": "g08_22.jpg", "bbox": [2064, 532, 400, 116], "text": "21.06.1852", "IdNr": 38745, "project": "eschau1081-batch1", "kind": "date", "conf": "verified", "band": "1.3.0"}
+{"file": "g08_22.jpg", "bbox": [1379, 648, 514, 116], "text": "Gerson Mosbacher", "IdNr": 38750, "project": "eschau1081-batch1", "kind": "name", "conf": "verified", "band": "1.3.1"}
+{"file": "g08_22.jpg", "bbox": [2064, 648, 400, 116], "text": "30.11.1852", "IdNr": 38750, "project": "eschau1081-batch1", "kind": "date", "conf": "verified", "band": "1.3.1"}
+{"file": "g10_22.jpg", "bbox": [169, 335, 300, 217], "text": "Isaak Mosbacher", "IdNr": 38752, "project": "eschau1081-batch1", "kind": "name", "conf": "verified", "band": "0.2"}
+{"file": "g10_22.jpg", "bbox": [169, 552, 300, 273], "text": "Mina Strauß", "IdNr": 38675, "project": "eschau1081-batch1", "kind": "name", "conf": "verified", "band": "0.3", "label_note": "index canonical 'Wilhelmine'; manuscript+index call-name = Mina"}
+{"file": "g10_22.jpg", "bbox": [169, 825, 300, 200], "text": "Jette Marx", "IdNr": 3664, "project": "eschau1081-batch1", "kind": "name", "conf": "verified", "band": "0.4.0"}
+{"file": "g10_22.jpg", "bbox": [169, 1025, 300, 255], "text": "Manuel Mosbacher", "IdNr": 38674, "project": "eschau1081-batch1", "kind": "name", "conf": "verified", "band": "0.4.1"}
+{"file": "g10_22.jpg", "bbox": [169, 1280, 300, 255], "text": "Elieser Marx", "IdNr": 38733, "project": "eschau1081-batch1", "kind": "name", "conf": "verified", "band": "0.4.2"}
+{"file": "g10_22.jpg", "bbox": [169, 1535, 300, 78], "text": "Mendel Strauß", "IdNr": 38788, "project": "eschau1081-batch1", "kind": "name", "conf": "medium", "band": "0.4.3", "label_note": "may be cut at page bottom"}
+{"file": "g10_22.jpg", "bbox": [1784, 1633, 271, 153], "text": "08.12.1860", "IdNr": 38753, "project": "eschau1081-batch1", "kind": "date", "conf": "verified", "band": "1.6"}
+{"file": "g10_22.jpg", "bbox": [1784, 1912, 271, 174], "text": "30.01.1862", "IdNr": 38677, "project": "eschau1081-batch1", "kind": "date", "conf": "medium", "band": "1.8"}
+{"file": "g10_22.jpg", "bbox": [1784, 753, 271, 119], "text": "21.07.1858", "IdNr": 38675, "project": "eschau1081-batch1", "kind": "date", "conf": "medium", "band": "1.2"}
+{"file": "g10_22.jpg", "bbox": [1784, 937, 271, 341], "text": "19.12.1859", "IdNr": 38674, "project": "eschau1081-batch1", "kind": "date", "conf": "medium", "band": "1.4"}

@@ -47,3 +47,9 @@ Fine-tune dh-unibe/trocr-kurrent (MIT) to read Kurrent register table cells. Fre
 - FINDING: right-side pages of g07/g10 = second hand's rendition (duplicate register/parents-side): same events, clear dates, child-name cell TBD -> future augmentation samples.
 - Multi-band splits recorded in map JSON 'splits' (manual, verify at crop).
 - Next: header read of right pages (locate child-name cell), g07 0.3 order, then cell crops + manifest.jsonl + spot-check, then user go for Kaggle run.
+
+## 2026-11-01: batch-1 manifest built
+- labeling/batch1/manifest.jsonl: 61 rows (27 name + 34 date), loader-compatible bbox format (colab_train_v4 crop_from_page), held-out IdNrs asserted absent, conf tags per row (52 verified / 9 medium).
+- Exclusions: g02 1.3 date, g04 1.0 candidate, g07 0.3 pair (order TBD), g07 0.5 (non-indexed), g08 1.8 name (near-empty crop).
+- Crop geometry verified visually per page/kind; g08 name col is faint but located; right-page date fracs recorded in map.
+- Next: Kaggle data-mount check (are g-pages already in the dataset?), kernel v10 config (add batch-1 manifest, keep held-out eval), then user go.

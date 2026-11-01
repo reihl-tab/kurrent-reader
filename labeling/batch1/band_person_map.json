@@ -15,7 +15,8 @@
    "Right-side pages of g07/g10 are a SECOND hand's rendition (duplicate register / parents-side): same events, clear date cells, child-name cell location TBD - usable as independent augmentation samples later.",
    "g07 band 0.5 = non-indexed entry (skipped); g07 band 0.3 two entries (Joseph 28.05.1849, Karoline 12.07.1849) - order TBD.",
    "g10 band 0.4 last sub-entry (Mendel Strauß) may be cut at page bottom.",
-   "Multi-band splits are manual (eyeballed on full-width strips, verified against entry text) - re-verify at crop time."
+   "Multi-band splits are manual (eyeballed on full-width strips, verified against entry text) - re-verify at crop time.",
+   "g08 band 1.8 (Mendel 29.12.1854) name cell visually near-empty at review - NAME row dropped from manifest; date row kept (medium)."
   ],
   "column_geometry_fullres": {
    "g02_22.jpg": {
@@ -54,8 +55,8 @@
    "g08_22.jpg": {
     "half1": {
      "name_x_frac": [
-      0.08,
-      0.3
+      0.0,
+      0.36
      ],
      "date_x_frac": [
       0.48,
@@ -66,15 +67,35 @@
    "g10_22.jpg": {
     "half0": {
      "name_x_frac": [
-      0.05,
-      0.25
+      0.13,
+      0.36
      ],
      "col2_x_frac": [
       0.25,
       0.45
      ]
     }
+   },
+   "g07_22.jpg_right": {
+    "date_x_frac": [
+     0.38,
+     0.62
+    ]
+   },
+   "g10_22.jpg_right": {
+    "date_x_frac": [
+     0.32,
+     0.5
+    ]
    }
+  },
+  "manifest": {
+   "file": "labeling/batch1/manifest.jsonl",
+   "rows": 61,
+   "names": 27,
+   "dates": 34,
+   "format": "{file,bbox[x,y,w,h] full-page px,text,IdNr,project,kind,conf,band[,label_note]} - loader-compatible with scripts/colab_train_v4.py crop_from_page",
+   "excluded": "g02 1.3 date (19-vs-18), g04 1.0 candidate, g07 0.3 order-tbd pair, g07 0.5 non-indexed, g08 1.8 name (near-empty)"
   }
  },
  "matches": {
