@@ -1,0 +1,63 @@
+{
+  "run": "v14, Kaggle Version 16, launched 2026-11-02 13:53 IST; completed about 15:04 IST",
+  "recipe": "from base dh-unibe/trocr-kurrent, lowlr LR 1e-6, x4 target mix, batch 8, max_steps 2000, eval every 500",
+  "data": {
+    "embedded": 148,
+    "batch1": 61,
+    "batch2": 136,
+    "heldout_person_cells_removed": 8,
+    "unique_target_cells": 337,
+    "mm_lines": 62829,
+    "total_samples": 64177,
+    "heldout_ids": [
+      "33739",
+      "35238",
+      "38666",
+      "38678",
+      "38693",
+      "38696"
+    ]
+  },
+  "eval_names": {
+    "before": 0.9067,
+    "best_trained": 1.0387,
+    "best_step": 500,
+    "trajectory": {
+      "500": 1.0387,
+      "1000": 1.1047,
+      "1500": 1.311,
+      "2000": 1.377
+    },
+    "word_acc": 0.0,
+    "date_span_hits": "28 and 1845 both false at all checkpoints"
+  },
+  "mm006_500": {
+    "before": {
+      "cer": 0.0624,
+      "word_acc": 0.7372
+    },
+    "best_step500": {
+      "cer": 0.039,
+      "word_acc": 0.8458
+    }
+  },
+  "seeds_fit": {
+    "n": 12,
+    "cer": 0.9434
+  },
+  "runtime": {
+    "train_seconds": 3352,
+    "script_total_seconds": 4214,
+    "log_span_seconds": 4255,
+    "wall_minutes_approx": 71,
+    "allocated_gpu_type": "T4 x2 per notebook settings; exact billed GPU-hour counter not measured",
+    "allocation_gpu_hours_approx": 2.364,
+    "cost": "free Kaggle tier; no spending"
+  },
+  "contamination": "v8-v13 embedded seed set included 8 name/date cells belonging to eval persons 38666/38678/38693/38696, contaminating their occupation-crop evaluation at person level. Those results may be optimistic; exact effect cannot be quantified without reruns. Base and Gerson row unaffected. v14 removes all 8 before training.",
+  "comparison": "v13a best 1.0005 and v13b best 1.0365 versus v14 1.0387; not a clean data-count comparison because decontamination changes the set and v14 is capped at 2000 steps. Only 7 eval crops; cause not isolated.",
+  "verdict": "No improvement over base for target register crops. Keep base for this use. No further run authorized. Printed-text gain does not establish Kurrent-cell accuracy.",
+  "output_note": "timing_result and full stdout retained; weights not downloaded because worse than base on target eval. Partial zero-byte interrupted weight download removed.",
+  "metadata_caveat": "Raw timing_result config.resume=true is stale boilerplate; actual source verified in stdout is base, not resumed checkpoint.",
+  "source": "https://www.kaggle.com/code/reihlinstinct/kurrent-timing-run-1"
+}

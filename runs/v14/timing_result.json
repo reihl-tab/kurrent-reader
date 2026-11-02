@@ -1,0 +1,277 @@
+{
+ "config": {
+  "lr": 1e-06,
+  "warmup": 100,
+  "epochs": 2,
+  "eval_every": 500,
+  "batch": 8,
+  "base_model": "/kaggle/input/__nonexistent_no_checkpoint__",
+  "resume": true,
+  "left_out": "MM_1_006"
+ },
+ "before": {
+  "h12": {
+   "h00": {
+    "hyp": "Ed . Fenzl",
+    "span_hit": false
+   },
+   "h01": {
+    "hyp": "ist",
+    "cer": 0.929,
+    "word_acc": 0.0
+   },
+   "h02": {
+    "hyp": "27 .",
+    "span_hit": false
+   },
+   "h03": {
+    "hyp": "größen"
+   },
+   "h04": {
+    "hyp": "Papay"
+   },
+   "h05": {
+    "hyp": "23 ."
+   },
+   "h06": {
+    "hyp": "Beltsch"
+   },
+   "h07": {
+    "hyp": "2 . ) Den könn . Nov ist dem häufigen Schön unden",
+    "cer": 0.476,
+    "word_acc": 0.571
+   },
+   "h08": {
+    "hyp": "Exrechniger 2 Kinder nämlich ein Sohn und",
+    "span_hit": true
+   },
+   "h09": {
+    "hyp": "Die Mädchen geboren welche die Namen neuen",
+    "span_hit": false
+   },
+   "h10": {
+    "hyp": "das Wädchen Mergend und der Sohn Joseph erhielt .",
+    "span_hit": {
+     "das Mädchen": false,
+     "und der Sohn Joseph": true
+    }
+   },
+   "h11": {
+    "hyp": "[ .... ] übernomme war profanna Gla-Männer )"
+   }
+  },
+  "mm006_500": {
+   "n": 500,
+   "cer": 0.0624,
+   "word_acc": 0.7372
+  },
+  "names": {
+   "n": 7,
+   "cer": 0.9067,
+   "word_acc": 0.0,
+   "detail": {
+    "occupation:38666": {
+     "hyp": "xx",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "occupation:38678": {
+     "hyp": "Weltan",
+     "cer": 0.857,
+     "word_acc": 0.0
+    },
+    "occupation:38693": {
+     "hyp": "die",
+     "cer": 0.833,
+     "word_acc": 0.0
+    },
+    "occupation:38696": {
+     "hyp": "22 .",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "name:33739": {
+     "hyp": "Breite nach",
+     "cer": 0.75,
+     "word_acc": 0.0
+    },
+    "date:33739": {
+     "hyp": "Zu B. M.",
+     "span_hit": {
+      "28": false,
+      "1845": false
+     }
+    },
+    "occupation:33739": {
+     "hyp": "|",
+     "cer": 1.0,
+     "word_acc": 0.0
+    }
+   }
+  }
+ },
+ "after_final": {
+  "h12": {
+   "h00": {
+    "hyp": "9.1845.1891",
+    "span_hit": false
+   },
+   "h01": {
+    "hyp": "13.5.1845",
+    "cer": 0.714,
+    "word_acc": 0.0
+   },
+   "h02": {
+    "hyp": "227.|",
+    "span_hit": false
+   },
+   "h03": {
+    "hyp": "Hofburg"
+   },
+   "h04": {
+    "hyp": "Januar 14.1849"
+   },
+   "h05": {
+    "hyp": "23.23.1849"
+   },
+   "h06": {
+    "hyp": "B.arlach"
+   },
+   "h07": {
+    "hyp": "b ) Den könn . Nov ist dem häufigen Schönzuden",
+    "cer": 0.381,
+    "word_acc": 0.571
+   },
+   "h08": {
+    "hyp": "sprecheizer u. Kinder nämlich ein Sohn und",
+    "span_hit": false
+   },
+   "h09": {
+    "hyp": "Die Mädchen geboren welche die Namen neuung",
+    "span_hit": false
+   },
+   "h10": {
+    "hyp": "das Wädchen Mergend und der Sohn Joseph erhielt",
+    "span_hit": {
+     "das Mädchen": false,
+     "und der Sohn Joseph": true
+    }
+   },
+   "h11": {
+    "hyp": "[ ! ] übernomme war befanna Glašmann „"
+   }
+  }
+ },
+ "best": {
+  "step": 500,
+  "combined_cer": 1.0387,
+  "h12": {
+   "h00": {
+    "hyp": "9.5.1891",
+    "span_hit": false
+   },
+   "h01": {
+    "hyp": "13.5.30",
+    "cer": 1.0,
+    "word_acc": 0.0
+   },
+   "h02": {
+    "hyp": "227.|",
+    "span_hit": false
+   },
+   "h03": {
+    "hyp": "eckosteile"
+   },
+   "h04": {
+    "hyp": "Papay"
+   },
+   "h05": {
+    "hyp": "23.23.1849"
+   },
+   "h06": {
+    "hyp": "B.arlach"
+   },
+   "h07": {
+    "hyp": "Dr. ) Den könn . Nov ist dem häufigen Schönzuden",
+    "cer": 0.429,
+    "word_acc": 0.571
+   },
+   "h08": {
+    "hyp": "Expenheimer 2 Kinder nämlich ein Sohn und",
+    "span_hit": true
+   },
+   "h09": {
+    "hyp": "Die Mädchen geboren welche die Namen neuung ,",
+    "span_hit": false
+   },
+   "h10": {
+    "hyp": "das Wädchen Mergend und der Sohn Joseph erhielt",
+    "span_hit": {
+     "das Mädchen": false,
+     "und der Sohn Joseph": true
+    }
+   },
+   "h11": {
+    "hyp": "[ ! ] übernomme war befanna Glašmann „"
+   }
+  },
+  "mm006_500": {
+   "n": 500,
+   "cer": 0.039,
+   "word_acc": 0.8458
+  },
+  "names": {
+   "n": 7,
+   "cer": 1.0387,
+   "word_acc": 0.0,
+   "detail": {
+    "occupation:38666": {
+     "hyp": "xx",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "occupation:38678": {
+     "hyp": "Weltin |",
+     "cer": 0.857,
+     "word_acc": 0.0
+    },
+    "occupation:38693": {
+     "hyp": "isten bis",
+     "cer": 1.5,
+     "word_acc": 0.0
+    },
+    "occupation:38696": {
+     "hyp": "22. xx",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "name:33739": {
+     "hyp": "19. bei.30",
+     "cer": 0.875,
+     "word_acc": 0.0
+    },
+    "date:33739": {
+     "hyp": "Z. H. Maß .",
+     "span_hit": {
+      "28": false,
+      "1845": false
+     }
+    },
+    "occupation:33739": {
+     "hyp": ".|",
+     "cer": 1.0,
+     "word_acc": 0.0
+    }
+   }
+  }
+ },
+ "train_seconds": 3352,
+ "total_seconds": 4214,
+ "samples": 64177,
+ "seeds_fit": {
+  "n": 12,
+  "cer": 0.9434
+ },
+ "pages": 1474,
+ "max_steps": 2000
+}
