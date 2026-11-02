@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import ast
+
+import pytest
 from pathlib import Path
 
 SCRIPTS = [
@@ -356,7 +358,7 @@ _V13_ADDITIONS = {
     "    else:  # freeze-encoder",
     "        for _p in model.encoder.parameters():",
     "            _p.requires_grad_(False)",
-    "_frozen = sum(1 for _p in model.parameters() if not _p.requires_grad())",
+    "_frozen = sum(1 for _p in model.parameters() if not _p.requires_grad)",
     'print(f"STAGE gentle mode={GENTLE} lr={LR} frozen_params={_frozen}", flush=True)',
 }
 
@@ -384,3 +386,61 @@ def test_v13_is_v12_plus_gentle_block_only() -> None:
     assert ns["REPEAT"] == 4, "v13 must keep the v12 x4 mix"
     assert ns["GENTLE"] == "lowlr", "v13 default variant must be lowlr"
     assert "issue #37" in V13.read_text(encoding="utf-8")
+
+
+def _run_gentle_block(variant: str, model) -> dict:
+    """Exec the v13 gentle block against a stand-in model (behavioral pin).
+
+    Guards the block's torch semantics (issue #37 hotfix: requires_grad is an
+    attribute, not a method - the typo crashed the v13a launch at boot).
+    """
+    import os as _os
+
+    lines = V13.read_text(encoding="utf-8").splitlines()
+    start = next(i for i, l in enumerate(lines) if l.startswith("GENTLE = os.environ.get"))
+    end = next(i for i, l in enumerate(lines) if l.startswith('print(f"STAGE gentle'))
+    block = "\n".join(lines[start : end + 1])
+    ns: dict = {"os": _os, "model": model, "SMOKE": False, "LR": 5e-6}
+    _os.environ["KURRENT_GENTLE"] = variant
+    try:
+        exec(compile(block, str(V13), "exec"), ns)
+    finally:
+        _os.environ.pop("KURRENT_GENTLE", None)
+    return ns
+
+
+def test_gentle_block_lowlr() -> None:
+    torch = pytest.importorskip("torch")
+    model = torch.nn.Linear(2, 2)
+    ns = _run_gentle_block("lowlr", model)
+    assert ns["LR"] == 1e-6
+    assert ns["_frozen"] == 0
+    assert all(p.requires_grad for p in model.parameters())
+
+
+def test_gentle_block_freeze_encoder() -> None:
+    torch = pytest.importorskip("torch")
+
+    class _Tiny(torch.nn.Module):
+        def __init__(self) -> None:
+            super().__init__()
+            self.encoder = torch.nn.Linear(2, 2)
+            self.decoder = torch.nn.Linear(2, 2)
+
+    model = _Tiny()
+    ns = _run_gentle_block("freeze-encoder", model)
+    assert ns["LR"] == 5e-6, "freeze variant keeps the v12 LR"
+    enc = list(model.encoder.parameters())
+    assert enc and all(not p.requires_grad for p in enc)
+    assert all(p.requires_grad for p in model.decoder.parameters())
+    assert ns["_frozen"] == len(enc)
+
+
+def test_gentle_block_rejects_unknown_variant() -> None:
+    torch = pytest.importorskip("torch")
+    try:
+        _run_gentle_block("bogus", torch.nn.Linear(2, 2))
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("unknown GENTLE variant accepted")
