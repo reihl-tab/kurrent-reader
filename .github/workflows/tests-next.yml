@@ -24,5 +24,10 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
           allow-prereleases: true
+      - name: Install CPU-only torch first
+        # Full CUDA torch exhausts the runner disk (#47 follow-up); CPU wheels
+        # match the Dockerfile. Pinned to kraken's torch range (>=2.9,<=2.14),
+        # otherwise the editable install replaces it with full-CUDA torch.
+        run: pip install --index-url https://download.pytorch.org/whl/cpu "torch>=2.9,<=2.14"
       - run: pip install -e '.[dev]' pytest
       - run: python -m pytest tests/ -q
