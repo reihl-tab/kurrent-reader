@@ -1,0 +1,152 @@
+[
+ {
+  "file": "s08_22.jpg",
+  "bbox": [
+   150,
+   500,
+   410,
+   165
+  ],
+  "text": "Siegmund Strauß",
+  "IdNr": 38697,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "2"
+ },
+ {
+  "file": "s08_22.jpg",
+  "bbox": [
+   1300,
+   490,
+   870,
+   190
+  ],
+  "text": "31.05.1870",
+  "IdNr": 38697,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "2"
+ },
+ {
+  "file": "s08_22.jpg",
+  "bbox": [
+   150,
+   705,
+   410,
+   110
+  ],
+  "text": "Charlotte Mosbacher",
+  "IdNr": 38042,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "3"
+ },
+ {
+  "file": "s08_22.jpg",
+  "bbox": [
+   1300,
+   695,
+   870,
+   185
+  ],
+  "text": "08.07.1871",
+  "IdNr": 38042,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "3"
+ },
+ {
+  "file": "s08_22.jpg",
+  "bbox": [
+   150,
+   925,
+   410,
+   150
+  ],
+  "text": "Sara Strauß",
+  "IdNr": 38698,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "4"
+ },
+ {
+  "file": "s08_22.jpg",
+  "bbox": [
+   1300,
+   900,
+   870,
+   215
+  ],
+  "text": "05.06.1872",
+  "IdNr": 38698,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "4"
+ },
+ {
+  "file": "s08_22.jpg",
+  "bbox": [
+   150,
+   1225,
+   410,
+   180
+  ],
+  "text": "Clara Mosbacher",
+  "IdNr": 38039,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "5"
+ },
+ {
+  "file": "s08_22.jpg",
+  "bbox": [
+   1300,
+   1180,
+   870,
+   235
+  ],
+  "text": "02.04.1874",
+  "IdNr": 38039,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "5"
+ },
+ {
+  "file": "s08_22.jpg",
+  "bbox": [
+   150,
+   1430,
+   410,
+   145
+  ],
+  "text": "Isaak Strauß",
+  "IdNr": 38699,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "6"
+ },
+ {
+  "file": "s08_22.jpg",
+  "bbox": [
+   1300,
+   1425,
+   870,
+   135
+  ],
+  "text": "15.11.1875",
+  "IdNr": 38699,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "6"
+ }
+]

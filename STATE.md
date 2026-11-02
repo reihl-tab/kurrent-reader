@@ -107,3 +107,7 @@ Fine-tune dh-unibe/trocr-kurrent (MIT) to read Kurrent register table cells. Fre
 ## wave-2: s07 done (2026-11-02 ~13:25 IST)
 - s07: 12 cells (6 name + 6 date) for 6 of 9 index persons; HELD-OUT excluded: 38678, 38693, 38696 (bands identified and skipped). Two infant 'Jeanette Strauß' (1869 entries #1/#2) assigned by chronological order + date reads (38694=08.02, 38695=11.02). Non-index spacer entries skipped. All conf=medium (page hand is loose; sequence+age+name-shape consistent).
 - Wave-2 running total: 93 new cells. Projected training total if merged: 209 + 93 = 302.
+
+## wave-2: s08 done (2026-11-02 ~13:30 IST)
+- s08: 10 cells (5 name + 5 date) for 5 persons; faint page read via CLAHE. Mendel Mosbacher (3763/3764, d.1895) NOT on page - index scan_file mis-mapping, skipped. Siegmund's date cell is struck through but legible ('31. Mai 1870', weekday consistent) - kept with note. Gestorben col on s08 is wide (x1300-2170, year floats top-right). No held-out persons on this page.
+- Wave-2 running total: 103 new cells. Projected training total if merged: 209 + 103 = 312.

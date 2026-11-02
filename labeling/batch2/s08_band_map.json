@@ -1,0 +1,52 @@
+{
+ "_meta": {
+  "method": "wave-2 (batch-2): s08 = death register 1870-1875 (page 48), faint page - CLAHE (clipLimit 3.0, 8x8) needed to read. Left: name col x150-560. Right: Gestorben col is WIDE (x1300-2170) - weekday+day+month written left, YEAR floats top-right of each cell (x~1950-2140); Begraben col starts ~x2180 (excluded). Paired by chronological order + date reads; ages consistent with index gebdatum. Mendel Mosbacher (3763/3764, d.31.08.1895) NOT FOUND on this page - entries end 1875 (Isaak), rows below blank -> index scan_file mis-mapping, skipped. No held-out persons on s08.",
+  "page": "s08_22.jpg",
+  "date": "2026-11-02",
+  "col_geometry": {
+   "left_name_x": [
+    150,
+    560
+   ],
+   "right_gestorben_x": [
+    1300,
+    2170
+   ]
+  },
+  "skipped": {
+   "3763/3764": "Mendel Mosbacher d.1895 not on page (register ends 1875) - index mis-mapping"
+  }
+ },
+ "matches": {
+  "38697": {
+   "name": "Siegmund Strauß",
+   "sterbedatum": "31.05.1870",
+   "conf": "medium",
+   "note": "date cell STRUCK THROUGH but legible 'Dienstag ... 31. Mai 1870' (31.05.1870 was a Tuesday, consistent); name cell clean"
+  },
+  "38042": {
+   "name": "Charlotte Mosbacher",
+   "sterbedatum": "08.07.1871",
+   "conf": "medium",
+   "note": "date '...den achten Juli 1871' read (year floats top-right); index: geb. Hahn, death register uses married name Mosbacher"
+  },
+  "38698": {
+   "name": "Sara Strauß",
+   "sterbedatum": "05.06.1872",
+   "conf": "medium",
+   "note": "date 'Mittwoch den fünften Juni 1872' read (05.06.1872 was a Wednesday, consistent)"
+  },
+  "38039": {
+   "name": "Clara Mosbacher",
+   "sterbedatum": "02.04.1874",
+   "conf": "medium",
+   "note": "date '...den zweiten April 1874' + 'abends 4 1/2 Uhr' read; index 'um 1806' birth - age cell unreadable, order+date pairing"
+  },
+  "38699": {
+   "name": "Isaak Strauß",
+   "sterbedatum": "15.11.1875",
+   "conf": "medium",
+   "note": "date '...November 1875.' read inline; name cell incl. 'Sohn des ... Strauß' matches index note (Isaak Sohn des Jehuda Halevi)"
+  }
+ }
+}
