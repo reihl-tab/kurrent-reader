@@ -103,3 +103,7 @@ Fine-tune dh-unibe/trocr-kurrent (MIT) to read Kurrent register table cells. Fre
 ## wave-2: s06 done (2026-11-02 ~13:22 IST)
 - s06: 16 cells (8 name + 8 date) for all 8 index persons (deaths 1856-1860). Left page = identity rows (name col x140-560), right page = Gestorben col (x1290-1530) + Begraben + age + remarks. Paired by order + age cross-check vs index gebdatum (infant Gerson '6 Monate', Sara 14, Seligmann 72, Mattche 82 - all exact). Empty spacer rows on both halves. No held-out persons on page.
 - Wave-2 running total: 81 new cells. Projected training total if merged: 209 + 81 = 290.
+
+## wave-2: s07 done (2026-11-02 ~13:25 IST)
+- s07: 12 cells (6 name + 6 date) for 6 of 9 index persons; HELD-OUT excluded: 38678, 38693, 38696 (bands identified and skipped). Two infant 'Jeanette Strauß' (1869 entries #1/#2) assigned by chronological order + date reads (38694=08.02, 38695=11.02). Non-index spacer entries skipped. All conf=medium (page hand is loose; sequence+age+name-shape consistent).
+- Wave-2 running total: 93 new cells. Projected training total if merged: 209 + 93 = 302.

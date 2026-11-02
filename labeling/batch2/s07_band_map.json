@@ -1,0 +1,72 @@
+{
+ "_meta": {
+  "method": "wave-2 (batch-2): s07 = death register 1860-1869, same layout as s06 (left identity rows name col x150-580; right Gestorben col x1300-1620 + Begraben + age). Entries can span 2 left grid rows (name row + parents row). HELD-OUT EXCLUDED: 38678 Hirsch Rothschild d.10.10.1864 (band L6 y1102-1262), 38693 Moses Rothschild d.30.04.1867 (band L9 y1582-1742), 38696 Marcus Ascher d.14.04.1869 (band ~y1900+, entry 3 of 1869). Non-index entries (1862-64, 1865-66) occupy L5/L8 bands - skipped per index-partial rule. Two infant 'Jeanette Strauß' entries (1869 #1 and #2) assigned by chronological order + date shape: 08.02.1869 -> 38694, 11.02.1869 -> 38695.",
+  "page": "s07_22.jpg",
+  "date": "2026-11-02",
+  "col_geometry": {
+   "left_name_x": [
+    150,
+    580
+   ],
+   "right_gestorben_x": [
+    1300,
+    1620
+   ]
+  },
+  "held_out_excluded": [
+   "38678",
+   "38693",
+   "38696"
+  ]
+ },
+ "matches": {
+  "38676": {
+   "band_L": 0,
+   "band_R": 0,
+   "name": "Rachel Strauß",
+   "sterbedatum": "31.05.1860",
+   "conf": "medium",
+   "note": "date '31ten Mai 1860' partially read; name 'Rachel / Strauß' partial; infant (b.~1860); entry at page top"
+  },
+  "38675": {
+   "band_L": "1-2",
+   "band_R": "1-2",
+   "name": "Wilhelmine Strauß",
+   "sterbedatum": "24.03.1861",
+   "conf": "medium",
+   "note": "date '24 ... März 1861' read; given-name ink reads 'Mina'-ish (index: Wilhelmine (Mina)); entry spans 2 grid rows"
+  },
+  "38677": {
+   "band_L": "3-4",
+   "band_R": "3-4",
+   "name": "Veist Strauß",
+   "sterbedatum": "31.03.1862",
+   "conf": "medium",
+   "note": "date '31ten ... 1862' + 'Sonntag den' read; 'Veist / Strauß' partial; infant (b.30.01.1862)"
+  },
+  "38036": {
+   "band_L": 7,
+   "band_R": 7,
+   "name": "Jeanette Strauß",
+   "sterbedatum": "22.11.1864",
+   "conf": "medium",
+   "note": "date '... November 1864' read; death register -> married name Strauß (index: geb. Billigheimer), no birth-name ambiguity"
+  },
+  "38694": {
+   "band_L": 10,
+   "band_R": 10,
+   "name": "Jeanette Strauß",
+   "sterbedatum": "08.02.1869",
+   "conf": "medium",
+   "note": "entry 1 of 1869; 'Februar 1869' read; assigned 08.02 by chronological order (two infant Jeanettes, see 38695)"
+  },
+  "38695": {
+   "band_L": 11,
+   "band_R": 11,
+   "name": "Jeanette Strauß",
+   "sterbedatum": "11.02.1869",
+   "conf": "medium",
+   "note": "entry 2 of 1869; 'Februar 1869' read; assigned 11.02 by chronological order"
+  }
+ }
+}
