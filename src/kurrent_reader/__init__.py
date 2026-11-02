@@ -6,4 +6,4 @@ modified; every cleaned artefact is written next to the original and both
 variants are read so the two outputs can be compared line by line.
 """
 
-__version__ = "0.5.0"
+__version__ = "0.5.1"
