@@ -1,0 +1,83 @@
+{
+ "_meta": {
+  "method": "wave-2 (batch-2): s06 = death register 1856-1860. LEFT page: complete identity rows (entry Nr, name col x140-560, occupation, L.G., residence); RIGHT page: Gestorben date col (x1290-1530) + Begraben col + age col + remarks. Both pages chronological, same entry order; paired by order + same physical Y where grids allow + AGE cross-check vs index gebdatum (Gerson 6 Monate vs b.06.09.1855; Jeanette 66 vs ~1790; Sara 14 vs 02.05.1844; Seligmann 72 vs ~1786; Mattche 82 vs ~1777). Left row L4 (y1014-1234) and right band y1471-1620 are empty spacers. No held-out persons on this page (38668 Gerson d.14.04.1856 infant is NOT the held-out Gerson d.28.05.1845 of s04).",
+  "page": "s06_22.jpg",
+  "date": "2026-11-02",
+  "col_geometry": {
+   "left_name_x": [
+    140,
+    560
+   ],
+   "right_gestorben_x": [
+    1290,
+    1530
+   ]
+  }
+ },
+ "matches": {
+  "38667": {
+   "band_L": 0,
+   "band_R": "0-1",
+   "name": "Kehle Mosbacher",
+   "sterbedatum": "28.01.1856",
+   "conf": "medium",
+   "note": "date 'd. 28ten Jan 1856' read; name 'Kehle ... Mosbacher' plausible; entry 1 of 1856"
+  },
+  "38668": {
+   "band_L": 1,
+   "band_R": 2,
+   "name": "Gerson Mosbacher",
+   "sterbedatum": "14.04.1856",
+   "conf": "verified",
+   "note": "date 'd. 14ten Apr 1856' + age '6 Monate' matches index b.06.09.1855 exactly; 'Sohn des ... Mosbacher' (infant entry)"
+  },
+  "38669": {
+   "band_L": 2,
+   "band_R": 3,
+   "name": "Jeanette Strauß",
+   "sterbedatum": "26.10.1856",
+   "conf": "medium",
+   "note": "date 'd. 26ten Oct 1856' + age 66 matches b.~1790; index names 'Jeanette (Johanna), Schanelle'; widow of David noted in entry"
+  },
+  "38035": {
+   "band_L": 3,
+   "band_R": 5,
+   "name": "Alexander Strauß",
+   "sterbedatum": "19.10.1857",
+   "conf": "verified",
+   "note": "'Alexander Strauß / ...makler' read clearly (index: Handelsjude/Makler); date 'd. 19ten Oct 1857'; entry 1 of 1857; date ink y920-1024 (grid band loose) | date bbox y900-1024"
+  },
+  "38671": {
+   "band_L": 5,
+   "band_R": "6-7",
+   "name": "Sara Strauß",
+   "sterbedatum": "19.03.1858",
+   "conf": "verified",
+   "note": "date 'd. 19ten März 1858' + age 14 matches b.02.05.1844 (same Sara whose birth cell is in g06 manifest - different register entry, not a dup)"
+  },
+  "38672": {
+   "band_L": 6,
+   "band_R": 8,
+   "name": "Seligmann Hirsch",
+   "sterbedatum": "11.08.1858",
+   "conf": "verified",
+   "note": "'Seligmann Hirsch' read clearly; date 'd. 11ten August 1858' + age 72 matches b.~1786"
+  },
+  "38673": {
+   "band_L": 7,
+   "band_R": 10,
+   "name": "Mattche Marx",
+   "sterbedatum": "27.02.1859",
+   "conf": "medium",
+   "note": "date 'd. 27ten Febr 1859' + age 82 matches b.~1777; name 'Mattche Marx' plausible"
+  },
+  "38674": {
+   "band_L": 8,
+   "band_R": "11-12",
+   "name": "Manuel Mosbacher",
+   "sterbedatum": "06.01.1860",
+   "conf": "medium",
+   "note": "date 'd. 6ten Jan 1860' + age in days ('18 Tage'?) matches b.19.12.1859 infant; index 'Manuel, Mendel' | date ink y1910-2140 (well below grid band start)"
+  }
+ }
+}

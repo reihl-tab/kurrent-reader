@@ -99,3 +99,7 @@ Fine-tune dh-unibe/trocr-kurrent (MIT) to read Kurrent register table cells. Fre
 ## wave-2: g06 done (2026-11-02 ~13:09 IST)
 - g06: 20 cells (10 name + 10 date) for 10 of 11 index persons; 38039 Clara ('um 1806') = index scan_file mis-mapping, skipped. Same gutter-spanning g-register layout as g05 (left: name/gender/father/mother; right: remarks/L.G./date/notes), pair by physical Y. Fanny labeled with index geb. name 'Fanny Mosbacher' (ink reads Mosbacher; index primary = married name Goldschmidt). Leopold Rothschild: index gives 'Leopold, Löb', ink reads Löb/Leopold.
 - Wave-2 running total: 65 new cells (s02 16 + s03 10 + g05 19 + g06 20). Projected training total if merged: 209 + 65 = 274.
+
+## wave-2: s06 done (2026-11-02 ~13:22 IST)
+- s06: 16 cells (8 name + 8 date) for all 8 index persons (deaths 1856-1860). Left page = identity rows (name col x140-560), right page = Gestorben col (x1290-1530) + Begraben + age + remarks. Paired by order + age cross-check vs index gebdatum (infant Gerson '6 Monate', Sara 14, Seligmann 72, Mattche 82 - all exact). Empty spacer rows on both halves. No held-out persons on page.
+- Wave-2 running total: 81 new cells. Projected training total if merged: 209 + 81 = 290.

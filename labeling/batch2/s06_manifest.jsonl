@@ -1,0 +1,242 @@
+[
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   140,
+   134,
+   420,
+   220
+  ],
+  "text": "Kehle Mosbacher",
+  "IdNr": 38667,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.0"
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   1290,
+   250,
+   240,
+   178
+  ],
+  "text": "28.01.1856",
+  "IdNr": 38667,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.0-1"
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   140,
+   354,
+   420,
+   220
+  ],
+  "text": "Gerson Mosbacher",
+  "IdNr": 38668,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "0.1"
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   1290,
+   428,
+   240,
+   149
+  ],
+  "text": "14.04.1856",
+  "IdNr": 38668,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "1.2"
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   140,
+   574,
+   420,
+   220
+  ],
+  "text": "Jeanette Strauß",
+  "IdNr": 38669,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.2"
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   1290,
+   577,
+   240,
+   149
+  ],
+  "text": "26.10.1856",
+  "IdNr": 38669,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.3"
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   140,
+   794,
+   420,
+   220
+  ],
+  "text": "Alexander Strauß",
+  "IdNr": 38035,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "0.3"
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   1290,
+   900,
+   240,
+   124
+  ],
+  "text": "19.10.1857",
+  "IdNr": 38035,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "1.5"
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   140,
+   1234,
+   420,
+   220
+  ],
+  "text": "Sara Strauß",
+  "IdNr": 38671,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "0.5"
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   1290,
+   1090,
+   240,
+   170
+  ],
+  "text": "19.03.1858",
+  "IdNr": 38671,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "1.6-7"
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   140,
+   1454,
+   420,
+   220
+  ],
+  "text": "Seligmann Hirsch",
+  "IdNr": 38672,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "0.6"
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   1290,
+   1322,
+   240,
+   149
+  ],
+  "text": "11.08.1858",
+  "IdNr": 38672,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "1.8"
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   140,
+   1674,
+   420,
+   220
+  ],
+  "text": "Mattche Marx",
+  "IdNr": 38673,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.7"
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   1290,
+   1620,
+   240,
+   149
+  ],
+  "text": "27.02.1859",
+  "IdNr": 38673,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.10"
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   140,
+   1894,
+   420,
+   220
+  ],
+  "text": "Manuel Mosbacher",
+  "IdNr": 38674,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.8"
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   1290,
+   1910,
+   270,
+   230
+  ],
+  "text": "06.01.1860",
+  "IdNr": 38674,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.11-12"
+ }
+]
