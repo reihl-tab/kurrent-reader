@@ -13,6 +13,7 @@ SCRIPTS = [
     Path(__file__).resolve().parents[1] / "scripts" / "kaggle_kernel_v8.py",
     Path(__file__).resolve().parents[1] / "scripts" / "kaggle_kernel_v11.py",
     Path(__file__).resolve().parents[1] / "scripts" / "kaggle_kernel_v12.py",
+    Path(__file__).resolve().parents[1] / "scripts" / "kaggle_kernel_v13.py",
 ]
 
 
@@ -56,6 +57,7 @@ V4_RUNNERS = [
     Path(__file__).resolve().parents[1] / "scripts" / "kaggle_kernel_v8.py",
     Path(__file__).resolve().parents[1] / "scripts" / "kaggle_kernel_v11.py",
     Path(__file__).resolve().parents[1] / "scripts" / "kaggle_kernel_v12.py",
+    Path(__file__).resolve().parents[1] / "scripts" / "kaggle_kernel_v13.py",
 ]
 
 
@@ -328,3 +330,57 @@ def test_v12_single_lever_repeat_only() -> None:
         f"v12 dropped v11 lines other than REPEAT and the re-homed docstring opener: {sorted(only11)}"
     )
     assert "issue #32" in V12.read_text(encoding="utf-8")
+
+
+V13 = Path(__file__).resolve().parents[1] / "scripts" / "kaggle_kernel_v13.py"
+
+_V13_ADDITIONS = {
+    '"""Kaggle GPU run v13: gentle training, two variants (issue #37).',
+    "v13 = v12 EXACT (x4 mix, 2 epochs, from base, frozen metrics, heartbeat) plus",
+    'ONE gentle-training block, selected by GENTLE:',
+    '- "lowlr": LR 5e-6 -> 1e-6 (optimization-pressure hypothesis)',
+    '- "freeze-encoder": vision encoder frozen, LR stays 5e-6 (visual-drift hypothesis)',
+    "Evidence boundary (parent, 2026-11-02): v12 rejected only the x4/full-fine-tune",
+    "recipe on the 7 held-out name crops; it did NOT isolate cause. LR, freezing and",
+    "unique-label count are competing hypotheses; this run tests the first two. The",
+    "held-out signal is only 7 crops - treat small deltas as noise.",
+    "Original v12 header follows.",
+    "Kaggle GPU run v12: v11 pipeline, single-lever recipe change (issue #32).",
+    "# --- v13 gentle-training block (issue #37): exactly one variant per run ---",
+    'GENTLE = os.environ.get("KURRENT_GENTLE", "lowlr")',
+    'if GENTLE not in ("lowlr", "freeze-encoder"):',
+    '    raise ValueError(f"unknown KURRENT_GENTLE variant: {GENTLE!r}")',
+    "if not SMOKE:",
+    '    if GENTLE == "lowlr":',
+    "        LR = 1e-6  # was 5e-6 in v8-v12",
+    "    else:  # freeze-encoder",
+    "        for _p in model.encoder.parameters():",
+    "            _p.requires_grad_(False)",
+    "_frozen = sum(1 for _p in model.parameters() if not _p.requires_grad())",
+    'print(f"STAGE gentle mode={GENTLE} lr={LR} frozen_params={_frozen}", flush=True)',
+}
+
+
+def test_v13_is_v12_plus_gentle_block_only() -> None:
+    """v13 (issue #37) must be v12 plus ONLY the gentle block + docstring.
+
+    Pins the variant so no other lever can slip in: v13's lines must be
+    v12's lines plus the known additions, with nothing removed.
+    """
+    v12 = V12.read_text(encoding="utf-8").splitlines()
+    v13 = V13.read_text(encoding="utf-8").splitlines()
+    only13 = set(v13) - set(v12)
+    assert only13 <= _V13_ADDITIONS, (
+        f"v13 adds lines beyond the gentle block + docstring: {sorted(only13 - _V13_ADDITIONS)}"
+    )
+    only12 = set(v12) - set(v13)
+    assert only12 == {'"""Kaggle GPU run v12: v11 pipeline, single-lever recipe change (issue #32).'}, (
+        f"v13 dropped v12 lines beyond the re-homed docstring opener: {sorted(only12)}"
+    )
+    import os as _os
+
+    ns: dict = {"os": _os}
+    _load_assignments(V13, {"REPEAT", "GENTLE"}, ns)
+    assert ns["REPEAT"] == 4, "v13 must keep the v12 x4 mix"
+    assert ns["GENTLE"] == "lowlr", "v13 default variant must be lowlr"
+    assert "issue #37" in V13.read_text(encoding="utf-8")
