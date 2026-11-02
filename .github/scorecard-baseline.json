@@ -63,7 +63,7 @@
    "scope": "dependencies",
    "evidence": "pip install --upgrade pip",
    "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
-   "reason": "Base-image pip upgrade before dependency install; unhashed by the same accepted class as the other pip installs (owner declined hash-locking, issue #13)."
+   "reason": "Base-image pip upgrade before dependency install; unhashed by the same class as the other pip installs; hash-pinning tracked as follow-up hardening, issue #13."
   },
   {
    "path": ".github/workflows/tests.yml",
