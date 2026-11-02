@@ -1,0 +1,103 @@
+{
+ "_meta": {
+  "method": "wave-2 (batch-2): row-grid fit -> y-paired name(L page)/death-date(R page) bands -> visual date+name read vs JUF index persons mapped to the file -> label text from index only. s03 = pages 38-39 of the death register; entries span the gutter (identity cols left, death/burial/age/cause right).",
+  "page": "s03_22.jpg",
+  "date": "2026-11-02",
+  "col_geometry": {
+   "left_name_x": [
+    147,
+    373
+   ],
+   "right_deathdate_x": [
+    1292,
+    1740
+   ]
+  }
+ },
+ "matches": {
+  "38633": {
+   "band_L": 3,
+   "band_R": 3,
+   "name": "Gudle Straus",
+   "sterbedatum": "26.11.1831",
+   "conf": "medium",
+   "note": "date 26 Nov 1831 + age 17 match index exactly; surname script partial ('Gulle S(?)'), single death that day"
+  },
+  "38636": {
+   "band_L": 6,
+   "band_R": 6,
+   "name": "Jakob Mehnl",
+   "sterbedatum": "22.05.1834",
+   "conf": "verified",
+   "note": "date 22 May 1834 + name 'Jakob Mehl' + age 2 all match"
+  },
+  "38639": {
+   "band_L": 9,
+   "band_R": 9,
+   "name": "Jonas Mosbacher",
+   "sterbedatum": "09.08.1835",
+   "conf": "verified",
+   "note": "date 9 Aug 1835 + name 'Jonas Mosbacher aus...' match"
+  },
+  "38640": {
+   "band_L": 10,
+   "band_R": 10,
+   "name": "Michelle Michael",
+   "sterbedatum": "26.06.1836",
+   "conf": "verified",
+   "note": "date 26 Juni 1836 + name 'Michele Michael' match"
+  },
+  "38098": {
+   "band_L": 11,
+   "band_R": 11,
+   "name": "Madel Mosbacher",
+   "sterbedatum": "08.04.1837",
+   "conf": "verified",
+   "note": "date 8 Apr 1837 + name 'Madel Mosbacher' match"
+  }
+ },
+ "excluded": [
+  {
+   "band": "R4/L4",
+   "read": "Johan(n) B. Allmann, d. 30 May 1833, age 4 Wochen",
+   "why": "date collides with index Isaak Straus d. 30.05.1833 but name clearly reads Allmann, not Straus - excluded per label rule"
+  },
+  {
+   "band": "R7/L7",
+   "read": "death '1 Jul 1834' or '3 Jan 1834' (ambiguous), name unclear",
+   "why": "possible Babet Michael d. 03.01.1834 but both reads too uncertain"
+  }
+ ],
+ "unlocated_index_persons": [
+  {
+   "IdNr": 38629,
+   "name": "Michel, Jakob",
+   "sterbedatum": "01.08.1831",
+   "note": "no 01.08.1831 death on s03; check s02 (index scan_file mis-mapping precedent)"
+  },
+  {
+   "IdNr": 38634,
+   "name": "Straus, Isaak",
+   "sterbedatum": "30.05.1833",
+   "note": "only 30.05.1833 death on page reads Johan B. Allmann; Isaak Straus not found"
+  },
+  {
+   "IdNr": 38635,
+   "name": "Strauß, Isaak",
+   "sterbedatum": "05.08.1833",
+   "note": "no 05.08.1833 death found on s03"
+  },
+  {
+   "IdNr": 38637,
+   "name": "Mosbacher, Brendel",
+   "sterbedatum": "10.05.1834",
+   "note": "no 10.05.1834 death found on s03"
+  },
+  {
+   "IdNr": 38638,
+   "name": "Michael, Babet",
+   "sterbedatum": "03.01.1834",
+   "note": "only candidate R7 ambiguous"
+  }
+ ]
+}

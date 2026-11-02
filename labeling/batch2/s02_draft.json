@@ -1,0 +1,76 @@
+{
+ "_meta": {
+  "status": "DRAFT readings, pending zoom verification + left-page name pairing",
+  "page": "s02_22.jpg",
+  "date": "2026-11-02",
+  "layout": "R2 = column header row: death date | burial date | Alter | Krankheit/Bemerkung; entries span gutter (names on left page); grid drifts at bottom - verify band boundaries per band"
+ },
+ "candidates": [
+  {
+   "band_R": 3,
+   "date_read": "d. 28 Juni 1823 Abends 8 Uhr",
+   "idnr": 38315,
+   "name": "Mosbacher, Giedle",
+   "index_sterb": "28.06.1823",
+   "conf": "strong-date"
+  },
+  {
+   "band_R": 4,
+   "date_read": "d. 4ten Octbr 1823 Morgens 6 Uhr",
+   "idnr": 38622,
+   "name": "Mosbacher, Salomon",
+   "index_sterb": "04.10.1823",
+   "conf": "strong-date"
+  },
+  {
+   "band_R": 5,
+   "date_read": "d. 9ten April 1825 Abends 11 Uhr",
+   "idnr": 38623,
+   "name": "Rothschild, Riefke",
+   "index_sterb": "9.4.1825",
+   "conf": "strong-date"
+  },
+  {
+   "band_R": 6,
+   "date_read": "d. 11ten May 1825 Morgens 4 Uhr",
+   "idnr": 38624,
+   "name": "Rothschild, Löw",
+   "index_sterb": "11.05.1825",
+   "conf": "strong-date"
+  },
+  {
+   "band_R": 7,
+   "date_read": "d. 8(?) April 1827 Abends 11 Uhr",
+   "idnr": 38625,
+   "name": "Mosbacher, Ruchme",
+   "index_sterb": "08.04.1827",
+   "conf": "needs-zoom"
+  },
+  {
+   "band_R": "8-or-9",
+   "date_read": "R8 'd. 8 Dec 1827 Mittags 2 Uhr' age 62 J vs R9 'd. 7 Dec 1827 Mittags 2 Uhr' age 5 Tage",
+   "idnr": 38626,
+   "name": "Mosbacher, Gundle",
+   "index_sterb": "07.12.1827",
+   "conf": "needs-zoom",
+   "note": "two Dec-1827 deaths; Gundle = 07.12 - settle which band + name read"
+  },
+  {
+   "band_R": 11,
+   "date_read": "d. 29ten März 1829 Abends 6 Uhr",
+   "idnr": 38627,
+   "name": "Mosbacher, Lorenz",
+   "index_sterb": "29.03.1829",
+   "conf": "strong-date"
+  },
+  {
+   "band_R": 12,
+   "date_read": "d. 21 Dec 1829 Abends 10 Uhr",
+   "idnr": 38628,
+   "name": "Michel, Michael",
+   "index_sterb": "21.12.1829",
+   "conf": "strong-date"
+  }
+ ],
+ "s03_unlocated_recheck": "38629 (01.08.1831), 38634 (30.05.1833), 38635 (05.08.1833), 38637 (10.05.1834), 38638 (03.01.1834) - chronologically belong to s03 pages 38-39, NOT s02; re-zoom s03 bands L5/L7/L8 names + R1/R5/R7/R8 dates next run"
+}
