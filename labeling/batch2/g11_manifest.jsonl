@@ -1,0 +1,242 @@
+[
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   225,
+   460,
+   220,
+   110
+  ],
+  "text": "Sara Strauß",
+  "IdNr": 38789,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-r1"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   235,
+   720,
+   200,
+   95
+  ],
+  "text": "Felix Mosbacher",
+  "IdNr": 3766,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-r2"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   235,
+   890,
+   300,
+   140
+  ],
+  "text": "Jeanette Strauß",
+  "IdNr": 38806,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-r3"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   210,
+   1200,
+   230,
+   135
+  ],
+  "text": "Louis Mosbacher",
+  "IdNr": 6446,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-r4"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   185,
+   1475,
+   220,
+   135
+  ],
+  "text": "David Strauß",
+  "IdNr": 38807,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-r5"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   210,
+   1620,
+   250,
+   130
+  ],
+  "text": "Amalie Mosbacher",
+  "IdNr": 38757,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-r6"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   195,
+   1825,
+   290,
+   90
+  ],
+  "text": "Jeanette Strauß",
+  "IdNr": 38694,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "L-r7"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   230,
+   1935,
+   240,
+   100
+  ],
+  "text": "Fanny Strauß",
+  "IdNr": 38808,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-r8"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   1740,
+   490,
+   420,
+   210
+  ],
+  "text": "15.09.1863",
+  "IdNr": 38789,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-1863"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   1740,
+   735,
+   420,
+   150
+  ],
+  "text": "18.03.1864",
+  "IdNr": 3766,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-1864"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   1740,
+   955,
+   420,
+   240
+  ],
+  "text": "30.08.1865",
+  "IdNr": 38806,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-1865"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   1740,
+   1210,
+   420,
+   165
+  ],
+  "text": "14.09.1866",
+  "IdNr": 6446,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-1866"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   1740,
+   1505,
+   420,
+   150
+  ],
+  "text": "06.07.1867",
+  "IdNr": 38807,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-1867"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   1740,
+   1780,
+   420,
+   105
+  ],
+  "text": "28.01.1869",
+  "IdNr": 38757,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "R-1869a"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   1740,
+   1880,
+   420,
+   95
+  ],
+  "text": "25.01.1869",
+  "IdNr": 38694,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "R-1869b"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   1740,
+   1960,
+   420,
+   140
+  ],
+  "text": "12.02.1869",
+  "IdNr": 38808,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "R-1869c"
+ }
+]

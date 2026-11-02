@@ -1,0 +1,15 @@
+{
+ "_page": "g11_22.jpg (2807x2187) — TWO BOOKS: left p.20 = summary register (Nr|Name des Kindes|Geburtsfolge/Hebamme|Vater|Stand|Landgericht/Wohnort; NO dates; year dividers 1863-1869), right p.21 = chronological cert book (mother col | Stand/Wohnort | full date+time; ordered by certificate receipt, NOT strict chronology).",
+ "pairing": "cross-book via index: name cells from left book, date cells from right book; weekday cross-checks: 15.09.1863=Dienstag✓, 30.08.1865=Mittwoch✓, 28.01.1869=Donnerstag✓, 25.01.1869=Montag✓.",
+ "rows": {
+  "L-r1": "38789 Sara Strauß b.15.09.1863; father Heium Strauß; R-1863 mother Isabella geb. Ostheimer; 'Dienstag den 15ten September 1863, 10-11 Uhr Nachts'",
+  "L-r2": "3766 Felix (Feibel) Mosbacher b.18.03.1864; father Mendel Mosbacher; R-1864 mother Johanna; 'den 18ten März 1864' + rabbi cert note Eschau 18.1.1866",
+  "L-r3": "38806 Jeanette Strauß (Stern) b.30.08.1865; father Loeb Strauß Kaufmann; R-1865 'Mittwoch den 30ten'",
+  "L-r4": "6446 Louis Mosbacher b.14.09.1866; father Mendel Mosbacher; R-1866 mother Johanna; '14ten September ... 6-7 Uhr'",
+  "L-r5": "38807 David Strauß b.06.07.1867; father Loeb Strauß; 1939 'Israel' name-note; R-1867 mother Marjam Oppenheimer v. Kleinwallstadt; 'sechsten Julius ... Nachts 9 Uhr'",
+  "L-r6": "38757 Amalie Mosbacher idx b.28.01.1869; father Mendel Mosbacher; 1939 'Sara' note; ANOMALY: row sits under left-book '1868' divider (registrar year-slip suspected); R-1869a 'Donnerstag den 28ten Januar 1869, Nachts 4 Uhr' has EMPTY mother cell -> date conf medium",
+  "L-r7": "38694 Jeanette Strauß idx b.25.01.1869 d.08.02.1869; name cell row2 'Strauß/Jeanette' with '† 8 Februar 1869' note (matches index death); father J??? Strauß; R-1869b mother Sophia Baumann v. Kleinwallstadt 'Montag den 25ten Januar'; conf medium (row1 'Jeannette' without surname/father = non-indexed, skipped)",
+  "L-r8": "38808 Fanny Strauß (Frommet/Appel) b.12.02.1869; father Loeb Strauß Kaufmann; R-1869c mother Mirjam Oppenheimer 'den 12ten/zwölften ... 2-3 Uhr' (month word weak) -> date conf medium",
+  "skipped": "R-1868 entry: child of Mendel STRAUß + Johanna Ehrlich v. Schohaupten, 'Mittwoch den ... Nachts 4 Uhr' (month illegible) — NON-INDEXED on g11, skipped; L-1869 row1 'Jeannette' (no surname/father) — non-indexed, skipped"
+ }
+}
