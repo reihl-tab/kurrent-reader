@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for helping improve kurrent-reader. This repository is private - keep its contents inside it.
+Thanks for helping improve kurrent-reader.
 
 ## Ground rules
 
