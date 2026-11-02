@@ -90,3 +90,8 @@ Fine-tune dh-unibe/trocr-kurrent (MIT) to read Kurrent register table cells. Fre
 - Recipe: GENTLE=freeze-encoder (164 encoder tensors frozen, 247.3M/333.9M trainable), LR 5e-6, same data mix as v12/v13a.
 - EVAL_NAMES (primary): 0.9067 base -> best 1.0365 @500 (single NEW BEST; then ~1.29-1.44). word_acc 0.0; date 28/1845 never hit. seeds_fit 1.0562. mm006: 0.0624/0.7372 -> 0.0316/0.8714 @500.
 - Verdict vs #37: freezing the encoder did NOT recover held-out names; essentially tied with v13a (1.0365 vs 1.0005). Both gentle levers fail on the 7 held-out crops while mm006 improves and seeds fit. Weight shifts to data composition (unique labels) or train/eval mismatch, not optimization mechanics. Cause NOT isolated; 7-crop limit stands.
+
+## wave-2 labeling progress (2026-11-02 ~12:55 IST)
+- s02 done: 8 persons / 16 cells; s03 done: 5 persons / 10 cells; s05 parked (faint left page, CLAHE works, 9 labelable, 38666 held-out).
+- g05 done: 19 cells (9 name + 10 date) for 11 of 12 index persons. KEY LAYOUT FINDING: g-register (births) entries span the gutter like s-register: child name + gender on LEFT page (x160-400), birth date + baptism/rabbi on RIGHT page (date ink x2050-2470). Pair by same physical Y; half grids drift (L period 191 origin 171; R period 179 origin 35) and grid rules can cut ink (Rebecca date y170-370 crosses R0/R1 rule; Abraham entry below last L rule). Twin row L4 = Josef Leopold + Joseph (one cell, labeled Josef Leopold, twin noted). Giedel name cell SKIPPED (index 'Grünewald geb. Strauß', birth surname ambiguous) - date cell kept. 38103/38104 dup labeled once.
+- Wave-2 running total: 45 new cells (s02 16 + s03 10 + g05 19). Projected training total if merged: 209 + 45 = 254.

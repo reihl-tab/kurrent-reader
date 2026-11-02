@@ -1,0 +1,99 @@
+{
+ "_meta": {
+  "method": "wave-2 (batch-2): row-grid fit -> y-paired bands -> visual date+name read vs JUF index persons mapped to the file -> label text from index only. g05 = birth register (Geburten) 1836-1844; entries SPAN THE GUTTER like the s-register: child name + gender cols on LEFT page (x160-400), birth date + baptism/rabbi cols on RIGHT page (date ink x2080-2450). Pair by same physical Y; halves' grids drift (L period 191, R period 179, different origins). Right-page first entry spans grid rows 1-2 (y214-572) = 10.01.1836; twin row L4 (y935-1126) holds Josef Leopold + Joseph (08.04.1841). Giedel name cell SKIPPED: index says 'Grünewald geb. Strauß', birth-register surname ink ambiguous -> kept date cell only.",
+  "page": "g05_22.jpg",
+  "date": "2026-11-02",
+  "col_geometry": {
+   "left_name_x": [
+    160,
+    400
+   ],
+   "right_birthdate_x": [
+    2050,
+    2470
+   ]
+  }
+ },
+ "matches": {
+  "38099": {
+   "band_L": "0-1",
+   "band_R": "1-2",
+   "name": "Rebecca Mosbacher",
+   "gebdatum": "10.01.1836",
+   "conf": "verified",
+   "note": "name 'Rebecca / Mosbacher' read on left page; date 'd. 10ten Jan 1836' read on right page at same Y; baptism note '13 Juli 1837(?)' in remarks | date ink y170-370 (grid rows 1-2 loose; baptism note below excluded from bbox)"
+  },
+  "38100": {
+   "band_L": 2,
+   "band_R": 3,
+   "name": "Giedel Grünewald",
+   "gebdatum": "15.09.1837",
+   "conf": "date-only",
+   "note": "date 'd. 15ten Sep 1837' read clearly; NAME CELL SKIPPED: index 'Grünewald geb. Strauß', birth surname ink ambiguous (single-reader guess risk); right-page remark 'uneheliche Tochter'"
+  },
+  "38101": {
+   "band_L": 3,
+   "band_R": 4,
+   "name": "Emanuel Mosbacher",
+   "gebdatum": "07.04.1838",
+   "conf": "medium",
+   "note": "date 'd. 7ten Apr 1838' clear; given-name ink mushy (index gives 'Emanuel,Mendl'); surname Mosbacher plausible"
+  },
+  "6407": {
+   "band_L": 4,
+   "band_R": 5,
+   "name": "Josef Leopold Mosbacher",
+   "gebdatum": "08.04.1841",
+   "conf": "medium",
+   "note": "TWIN ROW: cell names 'Josef Leopold Mosbacher u. Joseph' (two 'männl.' gender entries); date 'd. 8ten Apr 1841, Morgens 6 Uhr(?)'; twin Joseph (IdNr 38102) shares band, not separately labeled"
+  },
+  "38103": {
+   "band_L": 5,
+   "band_R": 6,
+   "name": "Therese Regensburger",
+   "gebdatum": "06.06.1841",
+   "conf": "medium",
+   "note": "date '6ten Juni 1841' clear; name plausible; duplicate index IdNr 38104 = same person, labeled once"
+  },
+  "38106": {
+   "band_L": 6,
+   "band_R": 7,
+   "name": "Aaron Strauß",
+   "gebdatum": "14.09.1841",
+   "conf": "verified",
+   "note": "'Aaron / Strauß' read clearly; date 'd. 14ten Sept 1841' clear"
+  },
+  "38107": {
+   "band_L": 7,
+   "band_R": 8,
+   "name": "Resel Mosbacher",
+   "gebdatum": "21.10.1841",
+   "conf": "medium",
+   "note": "date '21ten Oct 1841' clear; given name 'Resel' plausible"
+  },
+  "38113": {
+   "band_L": 8,
+   "band_R": 9,
+   "name": "Emanuel Mosbacher",
+   "gebdatum": "28.01.1843",
+   "conf": "verified",
+   "note": "'Emanuel / Mosbacher' + gender 'männl.' read; date '28ten Jan 1843'; disambiguated from Ernestine (L9) by surname+gender"
+  },
+  "38198": {
+   "band_L": 9,
+   "band_R": 10,
+   "name": "Ernestine Regensburger",
+   "gebdatum": "28.01.1843",
+   "conf": "medium",
+   "note": "'Ernestine' + weibl. gender; surname line mushy; date same as Emanuel (L8) - disambiguated by gender cell"
+  },
+  "38199": {
+   "band_L": "10 (partial)",
+   "band_R": 11,
+   "name": "Abraham Mosbacher",
+   "gebdatum": "29.02.1844",
+   "conf": "medium",
+   "note": "date 'd. 29ten Febr 1844' clear (leap day, distinctive); name cell partly below grid at image bottom (y2081-2187), 'Abraham' visible | ink-based bands: name y2025-2187 (rule at y2020), date y1950-2175 (grid rule at 2004 cuts the entry)"
+  }
+ }
+}
