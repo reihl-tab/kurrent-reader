@@ -1,0 +1,30 @@
+NOTICE - third-party source attribution
+
+The historical register scans referenced by this project are published by
+JUF/Stadtarchiv-Digital ( Stadtarchiv Heilbronn, Juden in Franken / JUF
+collection ), quelleId=1081, Eschau Standesregister:
+https://stadtarchiv-digital.de/juf/
+
+Per https://stadtarchiv-digital.de/impressum/ all content on that site -
+including page images - is published under a Creative Commons Attribution 3.0
+license (CC BY 3.0, https://creativecommons.org/licenses/by/3.0/) unless
+otherwise noted; the viewer pages for quelleId=1081 carry no differing rights
+notice.
+
+Derivative material in this repository:
+
+- labeling/geometry/overlays/*_ov.png - derived from the CC BY 3.0 scans,
+  modified by drawn band/geometry overlays (modification indicated by the
+  overlay graphics themselves).
+- labeling/eschau1081_index.json, labeling/batch*/ manifests and band maps -
+  transcripts and metadata derived from the public JUF person index and the
+  CC BY 3.0 scans. All indexed persons are 19th-century / long deceased.
+
+Attribution: JUF/Stadtarchiv-Digital, quelleId=1081 (Eschau Standesregister),
+https://stadtarchiv-digital.de/juf/, licensed CC BY 3.0,
+https://creativecommons.org/licenses/by/3.0/. Modifications as described
+above.
+
+Raw page scans themselves are NOT committed; re-fetch them read-only from
+files.juf.stadtarchiv-digital.de/quellen/eschau/standesregister/1081/ when
+needed.
