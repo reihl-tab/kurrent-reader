@@ -1,0 +1,32 @@
+[
+ {
+  "file": "g07_22.jpg",
+  "bbox": [
+   81,
+   690,
+   271,
+   190
+  ],
+  "text": "Karoline Mosbacher",
+  "IdNr": 38744,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "0.3-top"
+ },
+ {
+  "file": "g07_22.jpg",
+  "bbox": [
+   1908,
+   690,
+   348,
+   190
+  ],
+  "text": "12.07.1849",
+  "IdNr": 38744,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "0.3-top"
+ }
+]

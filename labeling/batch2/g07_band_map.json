@@ -1,0 +1,21 @@
+{
+ "_meta": {
+  "method": "wave-2 (batch-2): g07 band-3 pair resolution (batch1 left it 'tentative-order-tbd'). Read at 3-4x raw+CLAHE: TOP sub-band (y665-880) = Nr 2 'Carolin Mosbacher', date 'zwoelften Juli 1849, Morgens 2 Uhr' -> index pair 38744 Karoline Mosbacher 12.07.1849 MATCH -> labeled. BOTTOM sub-band (y880-1096) = Nr 3, date '[28?] Mai 1849, abends 6 Uhr', but name cell reads 'Carolin[a] Mosbacher' AND father cell reads '...bacher' - does NOT match the index's May-1849 child (38797 Joseph Strauss 28.05.1849). Conclusion: bottom = NON-INDEXED second Caroline Mosbacher (different father than the top entry's); 38797 Joseph Strauss = index mis-mapping, NOT on g07 (same class as s08 Mendel 1895). Bottom sub-band: NO label (index-partial rule).",
+  "page": "g07_22.jpg",
+  "date": "2026-11-02"
+ },
+ "matches": {
+  "38744": {
+   "name": "Mosbacher, Karoline",
+   "gebdatum": "12.07.1849",
+   "conf": "verified",
+   "note": "band 3 TOP sub-band, entry Nr 2; name 'Carolin Mosbacher' + date '12 Juli 1849 Morgens 2 Uhr' both read"
+  },
+  "38797": {
+   "name": "Strauß, Joseph",
+   "gebdatum": "28.05.1849",
+   "conf": "not-found-index-mis-mapping",
+   "note": "band 3 BOTTOM sub-band has Mai-1849 date but name+father read Caroline/Mosbacher, not Joseph/Strauss - index mis-mapping, no label"
+  }
+ }
+}
