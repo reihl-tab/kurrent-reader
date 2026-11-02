@@ -1,4 +1,4 @@
-name: tests-py315
+name: tests-next
 # Informational early-compatibility signal (issues #34, #36, #44):
 # weekly instead of per-PR, since kraken has no py3.14/py3.15 release yet
 # and these legs fail at install. Never blocks.

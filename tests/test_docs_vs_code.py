@@ -8,7 +8,7 @@
 - The three version carriers (VERSION, pyproject.toml, __init__.__version__)
   must agree.
 
-Stdlib only, offline; sources are parsed as text so no dependency is needed.
+Stdlib only, offline; cli.py is parsed with ast, the docs as text, so no dependency is needed.
 """
 
 from __future__ import annotations
