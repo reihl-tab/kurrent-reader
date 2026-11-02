@@ -17,7 +17,7 @@ RUN apt-get update \
 RUN pip install --upgrade pip
 
 # CPU-only PyTorch keeps the image small; it is not on PyPI's default index.
-RUN pip install --index-url https://download.pytorch.org/whl/cpu "torch>=2.1"
+RUN pip install --index-url https://download.pytorch.org/whl/cpu "torch>=2.9,<=2.14"
 
 WORKDIR /app
 COPY pyproject.toml README.md ./

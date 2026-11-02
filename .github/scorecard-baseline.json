@@ -37,7 +37,7 @@
    "path": "Dockerfile",
    "rule": "unhashed-pip-install",
    "scope": "dependencies",
-   "evidence": "pip install --index-url https://download.pytorch.org/whl/cpu 'torch>=2.1'",
+   "evidence": "pip install --index-url https://download.pytorch.org/whl/cpu 'torch>=2.9,<=2.14'",
    "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
    "reason": "Docker image installs unpinned deps (torch cpu wheel + local package); hash-pinning tracked as follow-up hardening."
   },
