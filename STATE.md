@@ -78,3 +78,9 @@ Fine-tune dh-unibe/trocr-kurrent (MIT) to read Kurrent register table cells. Fre
 
 ## 2026-11-02 05:05 - EVIDENCE-BOUNDARY CORRECTION on the v12 write-up
 - The 23:30 conclusion overclaimed. What v12 actually supports: this x4/full-fine-tune recipe is rejected on the 7 held-out name crops (best 1.1706 vs 0.9067 base, degradation from step500). What it does NOT support: 'repetition is not the driver' or 'full fine-tuning itself is the cause' - REPEAT 40->4 also changed target exposure 10x, and seeds_fit 1.0121 shows lack of fit, not cause isolation. LR / freezing / unique-label count remain competing hypotheses. Held-out signal = only 7 crops; carry that limit into any v13 design. (User was told the stronger claim 23:29; parent will correct on his reply.)
+
+## 2026-11-02 09:40 - v13a (lowlr) COMPLETE: still worse than base, best of four runs
+- Run 05:56-09:37 IST (~3h37m, T4; kernel Version 14 after Version-13 boot crash + hotfix #40). Pipeline clean: mix 63665, 209 cells, no missing pages, leak asserts passed. Full log: runs/v13a/stdout.log; metrics: runs/v13a/summary.json.
+- Recipe: GENTLE=lowlr, LR 5e-6 -> 1e-6, no frozen params, v12's exact data mix otherwise.
+- EVAL_NAMES (primary): 0.9067 base -> best 1.0005 @1000 (NEW BESTs at 500/1000, then ~1.16-1.21). word_acc 0.0; date 28/1845 never hit. seeds_fit 0.951. mm006: 0.0624/0.7372 -> 0.0281/0.8832 @1000.
+- Verdict vs #37: low-LR did NOT recover held-out names (1.0005 vs base 0.9067) but is the best of v9/v10/v12/v13a, best point later (1000 vs 500). Interpretation: consistent with optimization pressure contributing; cause NOT isolated (LR changes update magnitude on same exposure). 7-crop limit stands. Remaining designed lever: v13b freeze-encoder.
