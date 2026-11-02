@@ -1,0 +1,197 @@
+[
+ {
+  "file": "g01_22.jpg",
+  "bbox": [
+   310,
+   512,
+   300,
+   48
+  ],
+  "text": "Beile Marx",
+  "IdNr": 38736,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "1821#1"
+ },
+ {
+  "file": "g01_22.jpg",
+  "bbox": [
+   1055,
+   815,
+   155,
+   60
+  ],
+  "text": "Joseph Mosbacher",
+  "IdNr": 33729,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "1821#2"
+ },
+ {
+  "file": "g01_22.jpg",
+  "bbox": [
+   460,
+   640,
+   330,
+   52
+  ],
+  "text": "23.11.1821",
+  "IdNr": 33729,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1821#2"
+ },
+ {
+  "file": "g01_22.jpg",
+  "bbox": [
+   560,
+   815,
+   185,
+   60
+  ],
+  "text": "Merjem Mosbacher",
+  "IdNr": 38747,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "1821#2"
+ },
+ {
+  "file": "g01_22.jpg",
+  "bbox": [
+   460,
+   640,
+   330,
+   52
+  ],
+  "text": "23.11.1821",
+  "IdNr": 38747,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1821#2"
+ },
+ {
+  "file": "g01_22.jpg",
+  "bbox": [
+   940,
+   1105,
+   170,
+   43
+  ],
+  "text": "Beile Michel",
+  "IdNr": 38737,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "1822#1"
+ },
+ {
+  "file": "g01_22.jpg",
+  "bbox": [
+   320,
+   1000,
+   325,
+   56
+  ],
+  "text": "11.06.1822",
+  "IdNr": 38737,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1822#1"
+ },
+ {
+  "file": "g01_22.jpg",
+  "bbox": [
+   320,
+   1290,
+   1080,
+   130
+  ],
+  "text": "Julia Schönlein Strauß",
+  "IdNr": 38314,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "1822#2"
+ },
+ {
+  "file": "g01_22.jpg",
+  "bbox": [
+   400,
+   1230,
+   300,
+   60
+  ],
+  "text": "28.05.1822",
+  "IdNr": 38314,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1822#2"
+ },
+ {
+  "file": "g01_22.jpg",
+  "bbox": [
+   760,
+   1635,
+   250,
+   53
+  ],
+  "text": "Wolf Strauß",
+  "IdNr": 38813,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "1822#3"
+ },
+ {
+  "file": "g01_22.jpg",
+  "bbox": [
+   420,
+   1543,
+   347,
+   55
+  ],
+  "text": "29.07.1822",
+  "IdNr": 38813,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1822#3"
+ },
+ {
+  "file": "g01_22.jpg",
+  "bbox": [
+   660,
+   1853,
+   340,
+   62
+  ],
+  "text": "Vrommet Michel",
+  "IdNr": 38742,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "1822#4"
+ },
+ {
+  "file": "g01_22.jpg",
+  "bbox": [
+   420,
+   1773,
+   313,
+   55
+  ],
+  "text": "29.11.1822",
+  "IdNr": 38742,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1822#4"
+ }
+]

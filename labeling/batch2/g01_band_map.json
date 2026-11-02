@@ -1,0 +1,51 @@
+{
+ "_meta": {
+  "method": "wave-2 (batch-2): g01 = NARRATIVE PROSE birth register 1821-1822 (single page 2149x1510, no grid). Entries numbered per year: 'N) Den <date> ... ist dem hiesigen Bürgersmann <father> und seiner Ehefrau <mother> ... ein Sohn/eine Tochter geboren worden, welche(r) den Namen <NAME> erhielt.' Name bbox = the written name phrase; date bbox = the 'Den <date>' phrase. Labels from index. Parent-generation index persons (38734/38735 Marx, 38311/38811/38812 Strauß/Mosbacher) mentioned as parents without own birth dates - skipped per name+DATE pair rule.",
+  "page": "g01_22.jpg",
+  "date": "2026-11-02"
+ },
+ "matches": {
+  "38736": {
+   "name": "Beile Marx",
+   "gebdatum": "27.08.1821",
+   "conf": "medium",
+   "note": "entry 1821#1; parents Marx Joseph+Frieda match index. DATE TARGET EXCLUDED: numeral reads 27-vs-29 ambiguous at 3.5x zoom (batch1 18-vs-19 precedent) - name cell only"
+  },
+  "33729": {
+   "name": "Joseph Mosbacher",
+   "gebdatum": "23.11.1821",
+   "conf": "medium",
+   "note": "entry 1821#2 TWIN band with Merjem; date '23ten Nov' read; father Gerson (=Gershon per index Hebrew note); name phrase split: 'das Mädchen ... Merjem und der Sohn Joseph erhielt' - Joseph ink at line end x1055-1210 with strike/underline marks through it"
+  },
+  "38747": {
+   "name": "Merjem Mosbacher",
+   "gebdatum": "23.11.1821",
+   "conf": "medium",
+   "note": "twin of 33729; shares date bbox; separate name word 'Merjem'"
+  },
+  "38737": {
+   "name": "Beile Michel",
+   "gebdatum": "11.06.1822",
+   "conf": "medium",
+   "note": "entry 1822#1; '11ten Juni' read; name 'Beile' written with large capital flourish after 'Namen'"
+  },
+  "38314": {
+   "name": "Julia Schönlein Strauß",
+   "gebdatum": "28.05.1822",
+   "conf": "medium",
+   "note": "entry 1822#2; '28 Mai' read; name phrase 'Julia / Schönlein' SPLIT ACROSS LINE BREAK - name bbox spans both lines (contains other words, tighter box impossible)"
+  },
+  "38813": {
+   "name": "Wolf Strauß",
+   "gebdatum": "29.07.1822",
+   "conf": "medium",
+   "note": "entry 1822#3; '29ten Juli' read; mother Gudel (38812) read in entry"
+  },
+  "38742": {
+   "name": "Vrommet Michel",
+   "gebdatum": "29.11.1822",
+   "conf": "medium",
+   "note": "entry 1822#4; '29ten Nov. Morgens 7 Uhr' read"
+  }
+ }
+}
