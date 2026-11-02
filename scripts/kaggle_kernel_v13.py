@@ -207,7 +207,7 @@ if not SMOKE:
     else:  # freeze-encoder
         for _p in model.encoder.parameters():
             _p.requires_grad_(False)
-_frozen = sum(1 for _p in model.parameters() if not _p.requires_grad())
+_frozen = sum(1 for _p in model.parameters() if not _p.requires_grad)
 print(f"STAGE gentle mode={GENTLE} lr={LR} frozen_params={_frozen}", flush=True)
 
 
