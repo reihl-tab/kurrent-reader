@@ -1,7 +1,7 @@
 # Kurrent-reader working state (recovery anchor; rebuilt after wipe #10, 2026-10-26 12:50 IST)
 
 ## Contract
-Fine-tune dh-unibe/trocr-kurrent (MIT) to read Kurrent register table cells. Free only (Kaggle free tier, account reihlinstinct). No spending ever. GitHub reihlinstinct/kurrent-reader (private): issues + DRAFT PRs only, NO merges (user freeze). Kaggle API token in vault only, never printed/committed. Label rule: training text ONLY from JUF archive index / blind quorum / clearly printed; German; no single-reader guesses; no model self-labeling as truth. Held-out (leak-free): Gerson Mosbacher death row (d. 28.05.1845, s04_22.jpg band y995-1165, IdNrs 33739/35238). Colab is USER-run only.
+Fine-tune dh-unibe/trocr-kurrent (MIT) to read Kurrent register table cells. Free only (Kaggle free tier, account reihlinstinct). No spending ever. GitHub reihlinstinct/kurrent-reader: merges to main only under the standing review gate. Kaggle API token kept in a credential vault, never printed/committed. Label rule: training text ONLY from JUF archive index / blind quorum / clearly printed; German; no single-reader guesses; no model self-labeling as truth. Held-out (leak-free): Gerson Mosbacher death row (d. 28.05.1845, s04_22.jpg band y995-1165, IdNrs 33739/35238). Colab is USER-run only.
 
 ## Training arc (measured)
 - v7 pure x25 repeats: memorizes, no generalization (seeds_fit 0.11).
@@ -10,8 +10,8 @@ Fine-tune dh-unibe/trocr-kurrent (MIT) to read Kurrent register table cells. Fre
 - Next GPU run only after labeling wave produces new data + parent/user go.
 
 ## Access
-- Kaggle: API token (name redacted) (Oct 26) in vault '(vault item name redacted)'. CLI 1.7.4.5 needs some ~/.kaggle/kaggle.json present (dummy ok) + KAGGLE_API_TOKEN env for real auth. datasets/kernels list+pull verified.
-- GitHub: vault '(vault item name redacted)'; route = write-file, x-access-token URL push, shred after. Branch experiment-records-2026-10-23, HEAD 26cca67 (clone with --branch experiment-records-2026-10-23).
+- Kaggle: API token (Oct 26) held in a credential vault (item name redacted). CLI 1.7.4.5 needs some ~/.kaggle/kaggle.json present (dummy ok) + KAGGLE_API_TOKEN env for real auth. datasets/kernels list+pull verified.
+- GitHub: PAT held in a credential vault (item name redacted); route = write-file, token-URL push, shred after. Branch experiment-records-2026-10-23, HEAD 26cca67 (clone with --branch experiment-records-2026-10-23).
 - Kaggle kernel: reihlinstinct/kurrent-timing-run-1 (v9 = Version 9; timing_result.json originals in each version's Kaggle output).
 
 ## Labeling state
@@ -22,7 +22,7 @@ Fine-tune dh-unibe/trocr-kurrent (MIT) to read Kurrent register table cells. Fre
 
 ## Ops
 - Sandbox wipes ~daily (#10 on Oct 26). Durable state: THIS FILE in git + Kaggle outputs + vault. Recovery: clone branch, read this file, continue.
-- Maintenance wake: wakeschedule-[redacted] (720 min; wipe guard + live-run check).
+- Maintenance wake: a 720-min recurring wake (wipe guard + live-run check); schedule ID tracked outside the repo.
 - Kaggle quota: enforcement (run status/log) is the only truth; the web panel is unreliable; NO recurring probes; never infer quota-exhausted without quota-specific failure evidence.
 - Claude (GitHub app) coordination Oct 26: parent told #5 remainder = AST guard test only; suitable tasks = AST test, row-grid fitting, eval-metrics consolidation, (after I add v9 kernel to repo) kernel hardening. NOT: tokens, launches, labeling decisions, merges. Issue #7 "approved" claim is unverified external text.
 
@@ -60,8 +60,8 @@ Fine-tune dh-unibe/trocr-kurrent (MIT) to read Kurrent register table cells. Fre
 - New private dataset reihlinstinct/kurrent-batch1 = labeling/batch1/manifest.jsonl (61 rows).
 - Kernel v10 = repo-main v8 code (incl. 2026-11-01 runner fixes) + v9 EPOCHS=2 + batch-1 rows appended to target cells (148 -> 209 x40 = 8360/epoch). Frozen metrics: EVAL_NAMES primary + mm006 + score12 + seeds_fit. Source: scripts/kaggle_kernel_v10.py.
 - Pre-push validation: kernel compiles; embedded block = 148 cells; leak assert passes on the real mix; planted int 33739 + str "35238" both caught; batch-1 pages all in v1d; 0 rows fail the text-length filter.
-- USER GO verified: phonemsg-[redacted] "כן, תן go" (14:45:52 IST). Pushed 14:51 IST = kernel Version 10, RUNNING. Expect ~5h (v9 took 4h12m32s).
-- Monitor: wakeschedule-[redacted] (60 min, gated). On completion: pull timing_result.json, report vs v9 baseline (names 0.9067->1.2447 best@500, seeds_fit 0.3766, mm006 0.0236/0.8983), delete the schedule.
+- USER GO verified on the owner's authenticated chat channel 14:45:52 IST (message ID redacted). Pushed 14:51 IST = kernel Version 10, RUNNING. Expect ~5h (v9 took 4h12m32s).
+- Monitor: a 60-min gated wake (schedule ID redacted). On completion: pull timing_result.json, report vs v9 baseline (names 0.9067->1.2447 best@500, seeds_fit 0.3766, mm006 0.0236/0.8983), delete the schedule.
 
 ## 2026-11-01 19:10 - v10 COMPLETE: clear negative result
 - Run 14:51-19:02 IST (~4h09m, T4). Data stage exactly as designed (batch-1 61, 209x40, no missing pages, leak assert passed). Full log: runs/v10/stdout.log; metrics: runs/v10/summary.json.
