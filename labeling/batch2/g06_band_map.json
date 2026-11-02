@@ -1,0 +1,99 @@
+{
+ "_meta": {
+  "method": "wave-2 (batch-2): same as g05 - g06 = birth register 1844-1847, entries span the gutter: LEFT page cols = child name (x176-386) + gender + father + mother + L.G. + house; RIGHT page = remarks + L.G. Eltern + birth date (ink x2100-2450) + notes. Pair by same physical Y (L period 183 origin 219 for entries; R period 190 origin 230). Index person 38039 (Clara Mosbacher geb. Seelig, 'um 1806') = index scan_file mis-mapping, no 1806-era entry on this page - skipped.",
+  "page": "g06_22.jpg",
+  "date": "2026-11-02",
+  "col_geometry": {
+   "left_name_x": [
+    160,
+    400
+   ],
+   "right_birthdate_x": [
+    2050,
+    2470
+   ]
+  }
+ },
+ "matches": {
+  "38671": {
+   "band_L": 1,
+   "band_R": 1,
+   "name": "Sara Strauß",
+   "gebdatum": "02.05.1844",
+   "conf": "medium",
+   "note": "date 'd. 2ten May 1844' (month line mushy); name 'Sara / Strauß' plausible; only 1844 index person for g06"
+  },
+  "38309": {
+   "band_L": 2,
+   "band_R": 2,
+   "name": "Isaak Mosbacher",
+   "gebdatum": "09.01.1845",
+   "conf": "medium",
+   "note": "date 'd. 9ten Jan 1845, Abends 7 Uhr' clear; given name mushy, surname Mosbacher clear"
+  },
+  "38763": {
+   "band_L": 3,
+   "band_R": 3,
+   "name": "David Regensburger",
+   "gebdatum": "22.02.1845",
+   "conf": "medium",
+   "note": "date 'd. 22ten Febr 1845, Morgens 8 Uhr' clear; 'David' plausible, surname plausible"
+  },
+  "38814": {
+   "band_L": 4,
+   "band_R": 4,
+   "name": "Koppel Strauß",
+   "gebdatum": "02.05.1845",
+   "conf": "medium",
+   "note": "date 'd. 2ten May 1845, Abends 8 Uhr' clear; 'Koppel / Strauß' plausible"
+  },
+  "38646": {
+   "band_L": 5,
+   "band_R": 5,
+   "name": "Babeta Mosbacher",
+   "gebdatum": "02.06.1846",
+   "conf": "medium",
+   "note": "date 'd. 2ten Juni 1846' clear; given name 'Babetha/Babeta' (index: Babeta (Babette)); surname clear; '+' mark under name (died young?)"
+  },
+  "38796": {
+   "band_L": 6,
+   "band_R": 6,
+   "name": "Edel Strauß",
+   "gebdatum": "11.11.1846",
+   "conf": "verified",
+   "note": "'Edel / Strauß' read clearly; date 'd. 11ten Nov 1846, Mittags 12 Uhr' clear"
+  },
+  "38764": {
+   "band_L": 7,
+   "band_R": 7,
+   "name": "Abraham Regensburger",
+   "gebdatum": "03.02.1847",
+   "conf": "medium",
+   "note": "date 'd. 3ten Febr 1847, Mittags 12 Uhr' clear; name plausible; extra remark lines in mother/notes cells (incl. '3 October 1838' reference)"
+  },
+  "38815": {
+   "band_L": 8,
+   "band_R": 8,
+   "name": "Daniel Strauß",
+   "gebdatum": "18.05.1847",
+   "conf": "medium",
+   "note": "date 'd. 18ten Mai 1847, Mittags 9 Uhr' clear; 'Daniel / Strauß' plausible"
+  },
+  "23186": {
+   "band_L": 9,
+   "band_R": 9,
+   "name": "Fanny Mosbacher",
+   "gebdatum": "21.06.1847",
+   "conf": "medium",
+   "note": "date 'd. 21ten Juni 1847, Abends 6 Uhr' clear; ink reads 'Fanny / Mosbacher' = index geb. name (index: 'Goldschmidt, Fanny geb. Moosbacher'; label uses birth name from index)"
+  },
+  "38766": {
+   "band_L": 10,
+   "band_R": 10,
+   "name": "Leopold Rothschild",
+   "gebdatum": "23.06.1847",
+   "conf": "medium",
+   "note": "date 'd. 23ten Juni 1847, Mittags 9 Uhr' clear; given-name ink reads 'Löb/Leopold' (index: 'Leopold, Löb'); surname Rothschild plausible"
+  }
+ }
+}
