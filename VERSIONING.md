@@ -17,6 +17,6 @@ service exists) is unchanged.
 - **Tests**: every bug fix ships with a regression test that fails without the
   fix. PRs merge only with CI green.
 - **Version display**: repos with a site or app show the version in the footer.
-  Library/CLI repos (like this one) expose it as `kurrent-reader --version`
-  reading the single source of truth: the `VERSION` file at repo root.
+  Library/CLI repos (like this one) expose it as `kurrent-reader --version`, printed from
+  `__init__.__version__` (the drift test keeps it in sync with the `VERSION` file).
 - Release notes never include personal details about the owner or family.

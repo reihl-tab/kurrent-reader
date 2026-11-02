@@ -1,0 +1,24 @@
+name: tests-py315
+# Informational Python 3.15 early-compatibility signal (issues #34, #36):
+# weekly instead of per-PR, since kraken has no py3.15 release yet and the
+# leg always fails at install. Never blocks.
+on:
+  schedule:
+    - cron: "17 3 * * 1"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  pytest-py315:
+    runs-on: ubuntu-24.04
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
+        with:
+          python-version: "3.15"
+          allow-prereleases: true
+      - run: pip install -e '.[dev]' pytest
+      - run: python -m pytest tests/ -q

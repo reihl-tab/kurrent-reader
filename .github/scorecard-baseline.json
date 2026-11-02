@@ -26,6 +26,14 @@
    "reason": "CI installs the local package with dev extras from PyPI without hashes; hash-pinning tracked as follow-up hardening."
   },
   {
+   "path": ".github/workflows/tests-py315.yml",
+   "rule": "unhashed-pip-install",
+   "scope": "dependencies",
+   "evidence": "pip install -e '.[dev]' pytest",
+   "issue": "https://github.com/reihlinstinct/kurrent-reader/issues/13",
+   "reason": "CI installs the local package with dev extras from PyPI without hashes; hash-pinning tracked as follow-up hardening."
+  },
+  {
    "path": "Dockerfile",
    "rule": "unhashed-pip-install",
    "scope": "dependencies",
