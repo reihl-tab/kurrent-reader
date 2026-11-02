@@ -111,3 +111,8 @@ Fine-tune dh-unibe/trocr-kurrent (MIT) to read Kurrent register table cells. Fre
 ## wave-2: s08 done (2026-11-02 ~13:30 IST)
 - s08: 10 cells (5 name + 5 date) for 5 persons; faint page read via CLAHE. Mendel Mosbacher (3763/3764, d.1895) NOT on page - index scan_file mis-mapping, skipped. Siegmund's date cell is struck through but legible ('31. Mai 1870', weekday consistent) - kept with note. Gestorben col on s08 is wide (x1300-2170, year floats top-right). No held-out persons on this page.
 - Wave-2 running total: 103 new cells. Projected training total if merged: 209 + 103 = 312.
+
+## wave-2: s05 done - CHUNK 1 COMPLETE (2026-11-02 ~13:32 IST)
+- s05: 20 cells (10 name + 10 date) for 10 persons; faint left page read via CLAHE. ALL 10 date cells weekday cross-checked against historical calendar (all pass). 38649/38650 same person labeled once. HELD-OUT 38666 excluded (band identified).
+- CHUNK 1 COMPLETE: s02,s03,g05,g06,s06,s07,s08,s05 = 123 new cells (name+date). Projected training total if merged: 209 + 123 = 332.
+- Notable calls: s07 twin infant Jeanettes assigned by chronological order; s08 Siegmund date cell struck-through but legible (kept, noted); s08 Mendel 1895 absent = index mis-mapping; g05 Giedel name skipped (unreadable birth surname).

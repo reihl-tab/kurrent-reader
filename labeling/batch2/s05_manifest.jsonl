@@ -1,0 +1,302 @@
+[
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   150,
+   190,
+   390,
+   105
+  ],
+  "text": "Isaak Michel",
+  "IdNr": 35242,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "L"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   1330,
+   155,
+   370,
+   135
+  ],
+  "text": "06.05.1850",
+  "IdNr": 35242,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "high",
+  "band": "R"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   150,
+   385,
+   390,
+   65
+  ],
+  "text": "Jette Marx",
+  "IdNr": 38649,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "L"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   1330,
+   295,
+   370,
+   170
+  ],
+  "text": "22.05.1850",
+  "IdNr": 38649,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "high",
+  "band": "R"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   150,
+   490,
+   390,
+   80
+  ],
+  "text": "Jette Michel",
+  "IdNr": 38651,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "L"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   1330,
+   485,
+   370,
+   140
+  ],
+  "text": "22.07.1850",
+  "IdNr": 38651,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "high",
+  "band": "R"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   150,
+   635,
+   390,
+   80
+  ],
+  "text": "Eva Rothschild",
+  "IdNr": 38652,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "L"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   1330,
+   635,
+   370,
+   117
+  ],
+  "text": "20.10.1850",
+  "IdNr": 38652,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "high",
+  "band": "R"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   150,
+   720,
+   390,
+   115
+  ],
+  "text": "Mina Mosbacher",
+  "IdNr": 38653,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "L"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   1330,
+   755,
+   370,
+   130
+  ],
+  "text": "28.04.1853",
+  "IdNr": 38653,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "high",
+  "band": "R"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   150,
+   945,
+   390,
+   80
+  ],
+  "text": "Simson Michel",
+  "IdNr": 38654,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "L"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   1330,
+   950,
+   370,
+   155
+  ],
+  "text": "08.09.1853",
+  "IdNr": 38654,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "high",
+  "band": "R"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   150,
+   1055,
+   390,
+   130
+  ],
+  "text": "Vaibel Mosbacher",
+  "IdNr": 38041,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "L"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   1330,
+   1150,
+   370,
+   185
+  ],
+  "text": "30.12.1853",
+  "IdNr": 38041,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "high",
+  "band": "R"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   150,
+   1330,
+   390,
+   105
+  ],
+  "text": "David Strauß",
+  "IdNr": 38655,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "L"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   1330,
+   1340,
+   370,
+   140
+  ],
+  "text": "20.07.1854",
+  "IdNr": 38655,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "high",
+  "band": "R"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   150,
+   1445,
+   390,
+   125
+  ],
+  "text": "Moses Regensburger",
+  "IdNr": 38664,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "L"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   1330,
+   1490,
+   370,
+   135
+  ],
+  "text": "13.12.1854",
+  "IdNr": 38664,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "high",
+  "band": "R"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   150,
+   1595,
+   390,
+   110
+  ],
+  "text": "Mendel Mosbacher",
+  "IdNr": 38665,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "L"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   1330,
+   1650,
+   370,
+   185
+  ],
+  "text": "29.12.1854",
+  "IdNr": 38665,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "high",
+  "band": "R"
+ }
+]
