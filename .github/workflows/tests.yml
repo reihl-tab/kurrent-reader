@@ -8,13 +8,19 @@ permissions:
 jobs:
   pytest:
     runs-on: ubuntu-24.04
+    strategy:
+      matrix:
+        # kraken>=5.2 has no cp314 release yet, so 3.14 cannot install here
+        # (same situation as the informational 3.15 leg); 3.14 joins the
+        # informational signal instead of the gate.
+        python-version: ["3.11", "3.12", "3.13"]
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           fetch-depth: 0
       - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
         with:
-          python-version: "3.12"
+          python-version: ${{ matrix.python-version }}
       - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: ~/.cache/pip
