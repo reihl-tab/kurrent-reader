@@ -84,3 +84,9 @@ Fine-tune dh-unibe/trocr-kurrent (MIT) to read Kurrent register table cells. Fre
 - Recipe: GENTLE=lowlr, LR 5e-6 -> 1e-6, no frozen params, v12's exact data mix otherwise.
 - EVAL_NAMES (primary): 0.9067 base -> best 1.0005 @1000 (NEW BESTs at 500/1000, then ~1.16-1.21). word_acc 0.0; date 28/1845 never hit. seeds_fit 0.951. mm006: 0.0624/0.7372 -> 0.0281/0.8832 @1000.
 - Verdict vs #37: low-LR did NOT recover held-out names (1.0005 vs base 0.9067) but is the best of v9/v10/v12/v13a, best point later (1000 vs 500). Interpretation: consistent with optimization pressure contributing; cause NOT isolated (LR changes update magnitude on same exposure). 7-crop limit stands. Remaining designed lever: v13b freeze-encoder.
+
+## 2026-11-02 12:15 - v13b (freeze-encoder) COMPLETE: gentle pair finished, both worse than base
+- Run 09:56-12:09 IST (~2h09m, T4; kernel Version 15). Pipeline clean: mix 63665, 209 cells, no missing pages, leak asserts passed. Full log: runs/v13b/stdout.log; metrics: runs/v13b/summary.json.
+- Recipe: GENTLE=freeze-encoder (164 encoder tensors frozen, 247.3M/333.9M trainable), LR 5e-6, same data mix as v12/v13a.
+- EVAL_NAMES (primary): 0.9067 base -> best 1.0365 @500 (single NEW BEST; then ~1.29-1.44). word_acc 0.0; date 28/1845 never hit. seeds_fit 1.0562. mm006: 0.0624/0.7372 -> 0.0316/0.8714 @500.
+- Verdict vs #37: freezing the encoder did NOT recover held-out names; essentially tied with v13a (1.0365 vs 1.0005). Both gentle levers fail on the 7 held-out crops while mm006 improves and seeds fit. Weight shifts to data composition (unique labels) or train/eval mismatch, not optimization mechanics. Cause NOT isolated; 7-crop limit stands.

@@ -1,0 +1,66 @@
+{
+  "run": "v13b (kernel Version 15), 2026-11-02 09:56-12:09 IST, Tesla T4, log span 129.0 min, train_runtime 6884s",
+  "recipe": "GENTLE=freeze-encoder (issue #37, PR #38): v12/v13a data mix (62829 MM + 209x4 = 63665 samples/epoch, 2 epochs, from base, batch 8, eval-every-500), encoder frozen (164 tensors, 247.3M/333.9M trainable), LR 5e-6",
+  "data_stage": "batch-1: 61 loaded; mix 63665; 209 cells; missing pages: none; eval pages missing: none; leak asserts passed; heartbeat OK",
+  "gentle_stage": "mode=freeze-encoder lr=5e-06 frozen_params=164",
+  "eval_names": {
+    "before": 0.9067,
+    "best": 1.0365,
+    "best_step": 500,
+    "after_best_only": "single NEW BEST at step500 (1.0365); degrades monotonically to ~1.33-1.44 by step5500 and stays there",
+    "trajectory": {
+      "500": 1.0365,
+      "1000": 1.0665,
+      "1500": 1.0873,
+      "2000": 1.2897,
+      "3000": 1.3175,
+      "5000": 1.336,
+      "5500": 1.4431,
+      "7500": 1.332
+    },
+    "word_acc": 0.0,
+    "date_span_hits": "28/1845 never hit at any step"
+  },
+  "seeds_fit_cer": 1.0562,
+  "mm006_500": {
+    "before": {
+      "cer": 0.0624,
+      "word_acc": 0.7372
+    },
+    "best_step500": {
+      "cer": 0.0316,
+      "word_acc": 0.8714
+    }
+  },
+  "new_best_steps": [
+    500
+  ],
+  "comparison": {
+    "base": 0.9067,
+    "v9": {
+      "names_best": 1.2447,
+      "seeds_fit": 0.3766
+    },
+    "v10": {
+      "names_best": 1.2173,
+      "seeds_fit": 0.0
+    },
+    "v12": {
+      "names_best": 1.1706,
+      "seeds_fit": 1.0121
+    },
+    "v13a_lowlr": {
+      "names_best": 1.0005,
+      "best_step": 1000,
+      "seeds_fit": 0.951
+    },
+    "v13b_freeze_encoder": {
+      "names_best": 1.0365,
+      "best_step": 500,
+      "seeds_fit": 1.0562
+    }
+  },
+  "verdict_vs_issue37": "Freezing the encoder did NOT keep held-out names at/near base (best 1.0365 vs 0.9067 base). Essentially tied with v13a lowlr (1.0005). mm006 improved (0.0624/0.7372 -> 0.0316/0.8714); seeds_fit 1.0562 > 0.",
+  "interpretation": "Both gentle variants of the designed pair land at ~1.00-1.04 on the 7 held-out crops, still worse than base 0.9067: neither cutting optimization pressure (LR 1e-6) nor restricting parameter scope (frozen encoder) preserves held-out name reading, while printed-text metrics (mm006) improve and seeds stay fit (>0). This shifts weight toward data composition (unique-label count/variety) or the train/eval mismatch itself rather than optimization mechanics - but each run was a single-lever change on the same mix, so cause is NOT isolated, and the held-out signal rests on only 7 crops. Next candidate levers: many more unique labels, or parameter-efficient adapters, or accepting base for names and using fine-tunes only for printed text.",
+  "outputs_note": "Metrics from the run log JSON endpoint (kernels-output file route previously degraded). checkpoint-best (step500) weights not retrieved; worse than base on names, low value."
+}
