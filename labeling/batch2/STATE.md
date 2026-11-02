@@ -25,3 +25,14 @@ CROSS-BOOK PAIRING PRECEDENT (to surface to parent): on g09/g11-type spreads the
 
 ## CROSS-BOOK PAIRING METHOD (approved by parent 2026-11-02 14:41)
 Applies to g09/g11/g12/g13-type two-book spreads: left book = child name cells only, right book = date cells only. Pairing via index person; each pair MUST carry either a weekday cross-check (documented in band_map) or conf=medium. Per-cell metadata: manifest field pairing='cross-book' + pairing_note, so these cells can be filtered out of any training/eval subset. Held-out leak check stays on for every page.
+
+## 2026-11-02 h01 PARKED (scan too faint for verified name cells)
+h01 = Heiraten (marriage) register, single book-page scan (1362x2207), page header "Heiraths Protokoll 1821", book page 27.
+Structure discovered: year-divider sections 1821, 1822, 1823, 1824 (empty), 1825 (empty), 1826; four narrative marriage entries:
+- E1 1821 (~y340-730): "Den 2ten Mai ..." + "Mosbacher" x3 + "Gerson Mo[sbacher]" (father) partially readable; index couple = 38627 Lorenz Mosbacher + 38700 Schehnle geb. Mosbacher. Given names Lorenz/Schehnle NOT readable.
+- E2 1822 (~y760-1160): "Libet Moses Bieringer" (38701) most readable name on page; groom given name "Raphael" (38642 Raphael Simon) marginal; "1822" divider clear.
+- E3 1823 (~y1160-1520): "Michel" + "Wolf" fragments; "1823" divider clear. Index couple = 38020 Wolf Michel + 38021 Michele geb. Vromm; fathers 38704 Simson Michel + 38703 Gerson Vromm NOT clearly readable.
+- E4 1826 (~y1720-2100): "Den 8ten Mai 1826" readable; "Gerson Mosbacher" (father of groom) partial; "Klara Selig"/"Hajum Selig" fragments; "Vorsänger Raphael Simon" partial. Index couple = 6400/38038 Berez Löb Mosbacher (dup index rows) + 38039 Clara Seelig; 38705 Hajum Seelig father of bride.
+Decision: NO cells labeled from h01. Unlike g11 mediums (pairing pinned by weekday cross-check / death-note), h01 marriage entries have NO independent cross-check: index carries gebdatum/sterbedatum/beruf only (no marriage-date field), and birth dates are not visibly stated in these four entries. Labeling name cells here would rest on index scan_files mapping + year divider alone = single-reader inference, below the label rule. Page parked for a future quorum pass, same status as g09.
+Enhancement attempts (all insufficient): PIL autocontrast+contrast 1.6/1.15, cv2 CLAHE (clip 3.0, 24x24). Zooms: /tmp/wave2/h01_overview.png, h01_s0-s2.png (strips), h01_e1/e2/e3/e4(.png, b, c variants).
+Remaining wave pages: g09 (parked), h01 (parked), g12, g13, h02-h06, s01.
