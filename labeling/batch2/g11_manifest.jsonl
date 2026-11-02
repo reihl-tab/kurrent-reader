@@ -12,7 +12,9 @@
   "project": "eschau1081-batch2",
   "kind": "name",
   "conf": "verified",
-  "band": "L-r1"
+  "band": "L-r1",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
  },
  {
   "file": "g11_22.jpg",
@@ -27,7 +29,9 @@
   "project": "eschau1081-batch2",
   "kind": "name",
   "conf": "verified",
-  "band": "L-r2"
+  "band": "L-r2",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
  },
  {
   "file": "g11_22.jpg",
@@ -42,7 +46,9 @@
   "project": "eschau1081-batch2",
   "kind": "name",
   "conf": "verified",
-  "band": "L-r3"
+  "band": "L-r3",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
  },
  {
   "file": "g11_22.jpg",
@@ -57,7 +63,9 @@
   "project": "eschau1081-batch2",
   "kind": "name",
   "conf": "verified",
-  "band": "L-r4"
+  "band": "L-r4",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
  },
  {
   "file": "g11_22.jpg",
@@ -72,7 +80,9 @@
   "project": "eschau1081-batch2",
   "kind": "name",
   "conf": "verified",
-  "band": "L-r5"
+  "band": "L-r5",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
  },
  {
   "file": "g11_22.jpg",
@@ -87,7 +97,9 @@
   "project": "eschau1081-batch2",
   "kind": "name",
   "conf": "verified",
-  "band": "L-r6"
+  "band": "L-r6",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
  },
  {
   "file": "g11_22.jpg",
@@ -102,7 +114,9 @@
   "project": "eschau1081-batch2",
   "kind": "name",
   "conf": "medium",
-  "band": "L-r7"
+  "band": "L-r7",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
  },
  {
   "file": "g11_22.jpg",
@@ -117,7 +131,9 @@
   "project": "eschau1081-batch2",
   "kind": "name",
   "conf": "verified",
-  "band": "L-r8"
+  "band": "L-r8",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
  },
  {
   "file": "g11_22.jpg",
@@ -132,7 +148,9 @@
   "project": "eschau1081-batch2",
   "kind": "date",
   "conf": "verified",
-  "band": "R-1863"
+  "band": "R-1863",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
  },
  {
   "file": "g11_22.jpg",
@@ -147,7 +165,9 @@
   "project": "eschau1081-batch2",
   "kind": "date",
   "conf": "verified",
-  "band": "R-1864"
+  "band": "R-1864",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
  },
  {
   "file": "g11_22.jpg",
@@ -162,7 +182,9 @@
   "project": "eschau1081-batch2",
   "kind": "date",
   "conf": "verified",
-  "band": "R-1865"
+  "band": "R-1865",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
  },
  {
   "file": "g11_22.jpg",
@@ -177,7 +199,9 @@
   "project": "eschau1081-batch2",
   "kind": "date",
   "conf": "verified",
-  "band": "R-1866"
+  "band": "R-1866",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
  },
  {
   "file": "g11_22.jpg",
@@ -192,7 +216,9 @@
   "project": "eschau1081-batch2",
   "kind": "date",
   "conf": "verified",
-  "band": "R-1867"
+  "band": "R-1867",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
  },
  {
   "file": "g11_22.jpg",
@@ -207,7 +233,9 @@
   "project": "eschau1081-batch2",
   "kind": "date",
   "conf": "medium",
-  "band": "R-1869a"
+  "band": "R-1869a",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
  },
  {
   "file": "g11_22.jpg",
@@ -222,7 +250,9 @@
   "project": "eschau1081-batch2",
   "kind": "date",
   "conf": "medium",
-  "band": "R-1869b"
+  "band": "R-1869b",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
  },
  {
   "file": "g11_22.jpg",
@@ -237,6 +267,8 @@
   "project": "eschau1081-batch2",
   "kind": "date",
   "conf": "medium",
-  "band": "R-1869c"
+  "band": "R-1869c",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
  }
 ]
