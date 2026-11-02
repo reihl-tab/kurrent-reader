@@ -1,0 +1,242 @@
+[
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   157,
+   495,
+   235,
+   164
+  ],
+  "text": "Giedle Mosbacher",
+  "IdNr": 38315,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "R3@sameY"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   1296,
+   495,
+   474,
+   164
+  ],
+  "text": "28.06.1823",
+  "IdNr": 38315,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R3"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   157,
+   659,
+   235,
+   164
+  ],
+  "text": "Salomon Mosbacher",
+  "IdNr": 38622,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "R4@sameY"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   1296,
+   659,
+   474,
+   164
+  ],
+  "text": "04.10.1823",
+  "IdNr": 38622,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R4"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   157,
+   823,
+   235,
+   164
+  ],
+  "text": "Riefke Rothschild",
+  "IdNr": 38623,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "R5@sameY"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   1296,
+   823,
+   474,
+   164
+  ],
+  "text": "09.04.1825",
+  "IdNr": 38623,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R5"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   157,
+   987,
+   235,
+   164
+  ],
+  "text": "Löw Rothschild",
+  "IdNr": 38624,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "R6@sameY"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   1296,
+   987,
+   474,
+   164
+  ],
+  "text": "11.05.1825",
+  "IdNr": 38624,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R6"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   157,
+   1315,
+   235,
+   164
+  ],
+  "text": "Ruchme Mosbacher",
+  "IdNr": 38625,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "R8@sameY"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   1296,
+   1315,
+   474,
+   164
+  ],
+  "text": "08.04.1827",
+  "IdNr": 38625,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "R8"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   157,
+   1479,
+   235,
+   164
+  ],
+  "text": "Gundle Mosbacher",
+  "IdNr": 38626,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "R9@sameY"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   1296,
+   1479,
+   474,
+   164
+  ],
+  "text": "07.12.1827",
+  "IdNr": 38626,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "R9"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   157,
+   1807,
+   235,
+   164
+  ],
+  "text": "Lorenz Mosbacher",
+  "IdNr": 38627,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "R11@sameY"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   1296,
+   1807,
+   474,
+   164
+  ],
+  "text": "29.03.1829",
+  "IdNr": 38627,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R11"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   157,
+   1971,
+   235,
+   164
+  ],
+  "text": "Michael Michel",
+  "IdNr": 38628,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "R12@sameY"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   1296,
+   1971,
+   474,
+   164
+  ],
+  "text": "21.12.1829",
+  "IdNr": 38628,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R12"
+ }
+]

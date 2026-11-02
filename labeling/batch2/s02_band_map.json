@@ -1,0 +1,84 @@
+{
+ "_meta": {
+  "method": "wave-2: right-page death-date column read vs index, name read on left page at SAME PHYSICAL Y (not grid-row mapping - the two halves' grids drift independently)",
+  "page": "s02_22.jpg",
+  "date": "2026-11-02",
+  "col_geometry": {
+   "left_name_x": [
+    157,
+    392
+   ],
+   "right_deathdate_x": [
+    1296,
+    1770
+   ],
+   "note": "R2 = column header row (death|burial|age|cause); entries span gutter"
+  }
+ },
+ "matches": {
+  "38315": {
+   "band_R": 3,
+   "name": "Giedle Mosbacher",
+   "sterbedatum": "28.06.1823",
+   "conf": "verified",
+   "note": "date '28 Juni 1823' + name 'Giedle M(osbach)er'"
+  },
+  "38622": {
+   "band_R": 4,
+   "name": "Salomon Mosbacher",
+   "sterbedatum": "04.10.1823",
+   "conf": "verified",
+   "note": "date '4 Okt 1823' + name 'Salomon Mosbacher' clear"
+  },
+  "38623": {
+   "band_R": 5,
+   "name": "Riefke Rothschild",
+   "sterbedatum": "09.04.1825",
+   "conf": "verified",
+   "note": "date '9 April 1825' + name 'Riefke Rothschild' clear"
+  },
+  "38624": {
+   "band_R": 6,
+   "name": "Löw Rothschild",
+   "sterbedatum": "11.05.1825",
+   "conf": "verified",
+   "note": "date '11 May 1825' + name 'Löw Rothschild'"
+  },
+  "38625": {
+   "band_R": 8,
+   "name": "Ruchme Mosbacher",
+   "sterbedatum": "08.04.1827",
+   "conf": "medium",
+   "note": "date '8 Apr 1827 Mittags 2 Uhr' clear; name under ink blot, 'R..h.. Mosbacher'"
+  },
+  "38626": {
+   "band_R": 9,
+   "name": "Gundle Mosbacher",
+   "sterbedatum": "07.12.1827",
+   "conf": "medium",
+   "note": "date '7 Dec 1827' clear; name 'G..le Mosbacher' partial"
+  },
+  "38627": {
+   "band_R": 11,
+   "name": "Lorenz Mosbacher",
+   "sterbedatum": "29.03.1829",
+   "conf": "verified",
+   "note": "date '29 März 1829' + name 'Lorenz Mosbacher'"
+  },
+  "38628": {
+   "band_R": 12,
+   "name": "Michael Michel",
+   "sterbedatum": "21.12.1829",
+   "conf": "verified",
+   "note": "date '21 Dec 1829' + name 'Michael Michel'"
+  }
+ },
+ "excluded": [
+  {
+   "band": "R7",
+   "read": "non-index death ~'18 April 1825/1827 Mittags 11 Uhr' (grid drift zone, read uncertain)",
+   "why": "no index person for s02 near that date"
+  }
+ ],
+ "notes": "grid R7 band actually holds a non-index entry; Ruchme sits in grid band R8 (drift). All 8 remaining s02 index persons matched."
+}

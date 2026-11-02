@@ -1,0 +1,152 @@
+[
+ {
+  "file": "s03_22.jpg",
+  "bbox": [
+   147,
+   526,
+   226,
+   164
+  ],
+  "text": "Gudle Straus",
+  "IdNr": 38633,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.3"
+ },
+ {
+  "file": "s03_22.jpg",
+  "bbox": [
+   1292,
+   501,
+   442,
+   167
+  ],
+  "text": "26.11.1831",
+  "IdNr": 38633,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.3"
+ },
+ {
+  "file": "s03_22.jpg",
+  "bbox": [
+   147,
+   1018,
+   226,
+   164
+  ],
+  "text": "Jakob Mehnl",
+  "IdNr": 38636,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "0.6"
+ },
+ {
+  "file": "s03_22.jpg",
+  "bbox": [
+   1292,
+   1002,
+   442,
+   167
+  ],
+  "text": "22.05.1834",
+  "IdNr": 38636,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "1.6"
+ },
+ {
+  "file": "s03_22.jpg",
+  "bbox": [
+   147,
+   1510,
+   226,
+   164
+  ],
+  "text": "Jonas Mosbacher",
+  "IdNr": 38639,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "0.9"
+ },
+ {
+  "file": "s03_22.jpg",
+  "bbox": [
+   1292,
+   1503,
+   442,
+   167
+  ],
+  "text": "09.08.1835",
+  "IdNr": 38639,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "1.9"
+ },
+ {
+  "file": "s03_22.jpg",
+  "bbox": [
+   147,
+   1674,
+   226,
+   164
+  ],
+  "text": "Michelle Michael",
+  "IdNr": 38640,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "0.10"
+ },
+ {
+  "file": "s03_22.jpg",
+  "bbox": [
+   1292,
+   1670,
+   442,
+   167
+  ],
+  "text": "26.06.1836",
+  "IdNr": 38640,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "1.10"
+ },
+ {
+  "file": "s03_22.jpg",
+  "bbox": [
+   147,
+   1838,
+   226,
+   164
+  ],
+  "text": "Madel Mosbacher",
+  "IdNr": 38098,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "0.11"
+ },
+ {
+  "file": "s03_22.jpg",
+  "bbox": [
+   1292,
+   1837,
+   442,
+   167
+  ],
+  "text": "08.04.1837",
+  "IdNr": 38098,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "1.11"
+ }
+]
