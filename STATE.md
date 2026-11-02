@@ -125,3 +125,9 @@ Fine-tune dh-unibe/trocr-kurrent (MIT) to read Kurrent register table cells. Fre
 - Narrative labeling approach: name bbox = the name phrase in the "welche den Namen X erhielt" line; date bbox = the "Den <date>" phrase in line 1 of the entry; label text from index as usual. NEW visual domain (prose-inline phrases) - good for h-page generalization. Batch1 ambiguity precedent applies: ambiguous numeral => name cell only, date target excluded.
 - Zooms saved: /tmp/wave2/g01_z1..z5.png (1.5x, regions z1 y380-700, z2 y640-1010, z3 y1000-1400, z4 y1350-1760, z5 y1700-2080).
 - NEXT: view z4/z5, tighter zoom of 1821#1 numeral, assign g01 bboxes (7 name + up to 7 date), spot-check, commit; then g04 Jonas + g07 pair resolution; then g09/g11/g12/g13/h-pages format discovery.
+
+## 2026-11-02 13:53 - v14 checkpoint LAUNCHED (owner-approved ONE short run) + held-out contamination found
+- Owner go 13:44 (relayed by parent) for ONE short cheap checkpoint run on the wave-2 dataset, Kaggle free tier, held-out untouched.
+- CONTAMINATION: the embedded 148-cell seed set (since v8) holds name+date cells for the 4 s05/s07 EVAL_NAMES persons (38666/38678/38693/38696) - person-level contamination of the occ-crop eval half in every fine-tune v8-v13. Eval crops themselves never trained; Gerson row clean; base baseline unaffected. Bias direction flatters fine-tunes, so worse-than-base verdicts likely stand but were measured dirty.
+- v14 = v13-exact + decontamination (drop 8 cells -> 337 trained: 140 embedded + 61 batch1 + 136 batch2) + leak assert extended to all 6 held-out IdNrs + GENTLE=lowlr + MAX_STEPS=2000. New private Kaggle dataset kurrent-batch2 (136 cells + g01_22.jpg, which was missing from v1 mounts).
+- Boot-crash rule: tests/test_kernel_v14.py - 7 behavioral tests exec the real v14 blocks vs tiny stand-ins; all pass pre-push. Pushed as kernel Version 16 (~30-40 min ETA).
