@@ -1,0 +1,17 @@
+{
+ "_page": "g12_22.jpg (2807x2187) - TWO BOOKS: left p.22 = summary register (Nr|Name des Kindes|Geburtsfolge|Vater|Stand|Bemerkungen; NO birth dates; year dividers 1870/1871/1872; later death/marriage annotations on some rows), right p.23 = cert book (mother col | full date+time with weekday; ordered by certificate receipt, NOT strict chronology: 04.06 before 02.06 in 1870 block).",
+ "pairing": "cross-book via index; weekday cross-checks: 15.03.1870=Dienstag OK, 04.06.1870=Samstag OK, 02.06.1870=Donnerstag OK, 14.05.1872=Dienstag OK, 15.08.1872=Donnerstag OK, 05.10.1872=Samstag OK, 18.06.1872=Dienstag OK (corrected cell). MEDIUM: 05.04.1870 (weekday word illegible), 24.03.1871 (weekday reads 'Sonntag' but calendar=Freitag - clerk error or misread, numeral 24+März clear, matches index), 21.09.1871 (weekday semi-legible, best read Donnerstag which matches calendar).",
+ "rows": {
+  "L-r1": "38697 Siegmund Strauß b.15.03.1870; left row carries later death annotation '+15 Mai 1870'; R-e1 mother Jettchen(?) geb. ...; 'Dienstag den 15ten/fünfzehnten März Abends 10 1/2 Uhr'",
+  "L-r2": "38790 Siegmund Strauß b.05.04.1870 (second son of same name after first died); R-e2 '... den 5ten/fünften April Nachts 12 Uhr' - weekday word illegible (medium)",
+  "L-r3": "38699 Isaak Strauß b.04.06.1870 (left row annotation '+1875'?); R-e3 'Samstag den 4ten/vierten Juni Nachts 2 Uhr'",
+  "L-r4": "6449 Rickchen Mosbacher b.02.06.1870; R-e4 'Donnerstag den 2ten/zweiten Juni Nachmittags 3 1/2 Uhr'",
+  "L-r5": "38781 Abraham Strauß b.24.03.1871; R-e5 'Sonntag(?) den 24ten/vier und zwanzigsten März früh 9 Uhr' - weekday conflicts calendar Friday (medium)",
+  "L-r6": "38791 Jeanette Strauß b.21.09.1871; R-e6 '[Donnerstag?] den 21ten/ein und zwanzigsten September Nachmittags 4 Uhr' - weekday semi-legible (medium)",
+  "L-r7": "38698 Sara Strauß b.14.05.1872; left row annotation '+15 Juni 1872' (died 5 weeks old); R-e7 'Dienstag den 14ten/vierzehnten Mai Nachmittags 4 Uhr'",
+  "L-r8": "6500 Zerline (Lina) Mosbacher b.18.06.1872; left row carries long later note (married name Gundersheim); R-e10 'Dienstag den 8ten[struck]/achtzehnten Juni' + 1897 margin correction note confirming 18 (Eschau 25.VI.1897)",
+  "L-r9": "38809 Regine Strauß b.05.10.1872; R-e9 'Samstag den 5ten/fünften October'",
+  "L-r10": "6412 Lina Mosbacher b.15.08.1872; R-e8 'Donnerstag den 15ten/fünfzehnten August früh 1 Uhr'",
+  "UNLOCATED": "38817 Adelheid Strauß 'vor 1865' - not visibly on this page; skipped"
+ }
+}

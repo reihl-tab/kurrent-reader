@@ -1,0 +1,342 @@
+[
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   70,
+   495,
+   390,
+   105
+  ],
+  "text": "Siegmund Strauß",
+  "IdNr": 38697,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38697",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   70,
+   670,
+   390,
+   95
+  ],
+  "text": "Siegmund Strauß",
+  "IdNr": 38790,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38790",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   70,
+   795,
+   390,
+   95
+  ],
+  "text": "Isaak Strauß",
+  "IdNr": 38699,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38699",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   70,
+   905,
+   390,
+   95
+  ],
+  "text": "Rickchen Mosbacher",
+  "IdNr": 6449,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n6449",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   70,
+   1065,
+   390,
+   100
+  ],
+  "text": "Abraham Strauß",
+  "IdNr": 38781,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38781",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   70,
+   1185,
+   390,
+   115
+  ],
+  "text": "Jeanette Strauß",
+  "IdNr": 38791,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38791",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   70,
+   1380,
+   390,
+   90
+  ],
+  "text": "Sara Strauß",
+  "IdNr": 38698,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38698",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   70,
+   1615,
+   390,
+   85
+  ],
+  "text": "Zerline Mosbacher",
+  "IdNr": 6500,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n6500",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   70,
+   1735,
+   390,
+   90
+  ],
+  "text": "Regine Strauß",
+  "IdNr": 38809,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38809",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   70,
+   1850,
+   390,
+   135
+  ],
+  "text": "Lina Mosbacher",
+  "IdNr": 6412,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n6412",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   1560,
+   555,
+   900,
+   125
+  ],
+  "text": "15.03.1870",
+  "IdNr": 38697,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38697",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag; weekday cross-check Dienstag OK"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   1560,
+   690,
+   900,
+   125
+  ],
+  "text": "05.04.1870",
+  "IdNr": 38790,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "R-d38790",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag; weekday word illegible; numeral 5 + April clear, matches index"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   1560,
+   830,
+   900,
+   120
+  ],
+  "text": "04.06.1870",
+  "IdNr": 38699,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38699",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag; weekday cross-check Samstag OK"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   1560,
+   950,
+   900,
+   120
+  ],
+  "text": "02.06.1870",
+  "IdNr": 6449,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d6449",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag; weekday cross-check Donnerstag OK"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   1560,
+   1140,
+   900,
+   115
+  ],
+  "text": "24.03.1871",
+  "IdNr": 38781,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "R-d38781",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag; weekday reads 'Sonntag' but 24.03.1871=Friday - clerk error or misread; numeral 24 + März clear, matches index"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   1560,
+   1255,
+   900,
+   145
+  ],
+  "text": "21.09.1871",
+  "IdNr": 38791,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "R-d38791",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag; weekday semi-legible (best read Donnerstag, matches calendar Thursday); numeral 21 + September clear, matches index"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   1560,
+   1421,
+   900,
+   139
+  ],
+  "text": "14.05.1872",
+  "IdNr": 38698,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38698",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag; weekday cross-check Dienstag OK"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   1560,
+   1614,
+   900,
+   115
+  ],
+  "text": "15.08.1872",
+  "IdNr": 6412,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d6412",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag; weekday cross-check Donnerstag OK"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   1560,
+   1743,
+   900,
+   102
+  ],
+  "text": "05.10.1872",
+  "IdNr": 38809,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38809",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag; weekday cross-check Samstag OK"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   1560,
+   1865,
+   900,
+   130
+  ],
+  "text": "18.06.1872",
+  "IdNr": 6500,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d6500",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag; cell reads 'Dienstag den 8ten[struck] achtzehnten Juni' + 1897 margin correction confirming 18; Dienstag OK for 18.06.1872"
+ }
+]
