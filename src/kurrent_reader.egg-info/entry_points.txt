@@ -1,0 +1,2 @@
+[console_scripts]
+kurrent-reader = kurrent_reader.cli:main
