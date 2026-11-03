@@ -1,0 +1,16 @@
+{
+ "_meta": {
+  "page": "s01_22.jpg (1362x2207)",
+  "date": "2026-11-03",
+  "format": "NARRATIVE death register 'Gestorbene 1821.' - single free-text entry, NOT tabular like s02/s03.",
+  "entry": "1) Den 10ten Nov. Abends 9 Uhr starb der hiesige Haendler Koppel Strauß an der Lungenentzuendung(?) im Alter von 46 Jahren...",
+  "index_persons": "38312 Strauss, Koppel (index carries NO death date) -> date '10ten Nov. 1821' visually read but NOT labeled (single-reader rule). Full name line-broken 'Kop-pel Strauss' across lines 1-2; only the intact surname word labeled."
+ },
+ "matches": {
+  "38312": {
+   "name": "Koppel Strauß",
+   "conf": "verified (surname word)",
+   "note": "surname word 'Strauß' fully legible; 'Koppel' split across line break (Kop-|gel), not labelable as intact cell; index name matches"
+  }
+ }
+}

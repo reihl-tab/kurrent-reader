@@ -1,0 +1,19 @@
+[
+ {
+  "file": "s01_22.jpg",
+  "bbox": [
+   373,
+   425,
+   118,
+   72
+  ],
+  "text": "Strauß",
+  "IdNr": 38312,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "s01-n1",
+  "pairing": "narrative",
+  "pairing_note": "narrative death entry 1821; full name line-broken (Kop-pel Strauß), surname word labeled; date not in index, unlabeled per single-reader rule"
+ }
+]
