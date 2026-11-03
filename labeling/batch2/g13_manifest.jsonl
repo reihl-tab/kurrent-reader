@@ -1,0 +1,240 @@
+[
+ {
+  "file": "g13_22.jpg",
+  "bbox": [
+   230,
+   630,
+   350,
+   140
+  ],
+  "text": "Jeanette Strauß",
+  "IdNr": 38783,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38783",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right cert book (weekday+date+time); paired via index person + weekday cross-check"
+ },
+ {
+  "file": "g13_22.jpg",
+  "bbox": [
+   230,
+   815,
+   350,
+   115
+  ],
+  "text": "Jeta Mosbacher",
+  "IdNr": 38754,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38754",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right cert book (weekday+date+time); paired via index person + weekday cross-check"
+ },
+ {
+  "file": "g13_22.jpg",
+  "bbox": [
+   230,
+   1020,
+   350,
+   120
+  ],
+  "text": "Moses Strauß",
+  "IdNr": 38792,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38792",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right cert book (weekday+date+time); paired via index person + weekday cross-check"
+ },
+ {
+  "file": "g13_22.jpg",
+  "bbox": [
+   230,
+   1195,
+   350,
+   110
+  ],
+  "text": "Ruben Strauß",
+  "IdNr": 38810,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38810",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right cert book (weekday+date+time); paired via index person + weekday cross-check"
+ },
+ {
+  "file": "g13_22.jpg",
+  "bbox": [
+   230,
+   1365,
+   350,
+   125
+  ],
+  "text": "Selma Strauß",
+  "IdNr": 38782,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38782",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right cert book (weekday+date+time); paired via index person + weekday cross-check"
+ },
+ {
+  "file": "g13_22.jpg",
+  "bbox": [
+   230,
+   1520,
+   350,
+   125
+  ],
+  "text": "Felix Mosbacher",
+  "IdNr": 38755,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38755",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right cert book (weekday+date+time); paired via index person + weekday cross-check"
+ },
+ {
+  "file": "g13_22.jpg",
+  "bbox": [
+   230,
+   1670,
+   350,
+   115
+  ],
+  "text": "Friederike Strauß",
+  "IdNr": 38793,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38793",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right cert book (weekday+date+time); paired via index person + weekday cross-check"
+ },
+ {
+  "file": "g13_22.jpg",
+  "bbox": [
+   1520,
+   700,
+   940,
+   140
+  ],
+  "text": "21.10.1873",
+  "IdNr": 38783,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38783",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right cert book (weekday+date+time); paired via index person + weekday cross-check; weekday cross-check Dienstag OK"
+ },
+ {
+  "file": "g13_22.jpg",
+  "bbox": [
+   1520,
+   840,
+   940,
+   140
+  ],
+  "text": "21.12.1873",
+  "IdNr": 38754,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38754",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right cert book (weekday+date+time); paired via index person + weekday cross-check; weekday cross-check Sonntag OK"
+ },
+ {
+  "file": "g13_22.jpg",
+  "bbox": [
+   1520,
+   1100,
+   940,
+   130
+  ],
+  "text": "06.01.1874",
+  "IdNr": 38792,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38792",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right cert book (weekday+date+time); paired via index person + weekday cross-check; weekday cross-check Dienstag OK"
+ },
+ {
+  "file": "g13_22.jpg",
+  "bbox": [
+   1520,
+   1250,
+   940,
+   100
+  ],
+  "text": "26.02.1874",
+  "IdNr": 38810,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38810",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right cert book (weekday+date+time); paired via index person + weekday cross-check; weekday cross-check Donnerstag OK"
+ },
+ {
+  "file": "g13_22.jpg",
+  "bbox": [
+   1520,
+   1455,
+   940,
+   110
+  ],
+  "text": "07.05.1875",
+  "IdNr": 38782,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38782",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right cert book (weekday+date+time); paired via index person + weekday cross-check; weekday cross-check Freitag OK"
+ },
+ {
+  "file": "g13_22.jpg",
+  "bbox": [
+   1520,
+   1575,
+   940,
+   110
+  ],
+  "text": "25.08.1875",
+  "IdNr": 38755,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38755",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right cert book (weekday+date+time); paired via index person + weekday cross-check; weekday cross-check Mittwoch OK"
+ },
+ {
+  "file": "g13_22.jpg",
+  "bbox": [
+   1520,
+   1695,
+   940,
+   110
+  ],
+  "text": "19.09.1875",
+  "IdNr": 38793,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38793",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right cert book (weekday+date+time); paired via index person + weekday cross-check; weekday cross-check Sonntag OK"
+ }
+]

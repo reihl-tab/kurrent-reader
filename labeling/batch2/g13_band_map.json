@@ -1,0 +1,14 @@
+{
+ "_page": "g13_22.jpg (2807x2187) - TWO BOOKS: left p.24 = summary register (Nr|Name des Kindes|Geburtsfolge/Hebamme|Vater|Stand|Bemerkungen; NO dates; year dividers 1873/1874/1875), right p.25 = cert book (Name der Mutter | Wohnort | Zeit der Geburt with weekday+date+time).",
+ "pairing": "cross-book via index; weekday cross-checks ALL PASS: 21.10.1873=Dienstag, 21.12.1873=Sonntag, 06.01.1874=Dienstag, 26.02.1874=Donnerstag, 07.05.1875=Freitag, 25.08.1875=Mittwoch, 19.09.1875=Sonntag.",
+ "rows": {
+  "L-r1": "38783 Jeanette Strauß b.21.10.1873; father Aaron Strauß; R: mother Jeannette nata Baumgaertner; 'Dienstag den 21ten/ein und zwanzigsten October 3 1/4 Uhr nachts'",
+  "L-r2": "38754 Jeta Mosbacher b.21.12.1873; father Mendel Mosbacher (dup person 3763/3764, father only - not labeled); R: mother Jette nata Sichel; 'Sonntag den 21ten/ein und zwanzigsten December früh'",
+  "L-r3": "38792 Moses Strauß b.06.01.1874 (N1); father Isaak Strauß; R: mother Sophie nata Baumgaertner; 'Dienstag den 6ten/sechsten Januar abends 9 Uhr'",
+  "L-r4": "38810 Ruben Strauß b.26.02.1874 (N2); father Loeb Strauß; R: mother nata Oppenheimer; 'Donnerstag den 26ten/sechs und zwanzigsten Februar'",
+  "L-r5": "38782 Selma Strauß b.07.05.1875 (N1); father Aaron Strauß; R: mother Jeannette nata Baumgaertner; 'Freitag den 7ten/siebenten Mai Nachmittags 4 Uhr'",
+  "L-r6": "38755 Felix Mosbacher b.25.08.1875 (N2); father Mendel Mosbacher; R: mother Jette nata Sichel; 'Mittwoch den 25ten/fuenf und zwanzigsten August Mittags 12 Uhr'",
+  "L-r7": "38793 Friederike Strauß b.19.09.1875 (N3); father Isaak Strauß; R: mother Sophie nata Baumgaertner; 'Sonntag den 19ten/neunzehnten September früh 5 1/2 Uhr'",
+  "NOTE": "Mendel Mosbacher 3763/3764 = FATHER (b.1831), parents-gen, skipped per name+DATE pair rule. Duplicate index person noted once."
+ }
+}
