@@ -8,7 +8,7 @@ variants are read so the two outputs can be compared line by line.
 
 import sys as _sys
 
-__version__ = "0.5.1"
+__version__ = "0.6.0"
 
 MIN_PYTHON = (3, 11)
 
