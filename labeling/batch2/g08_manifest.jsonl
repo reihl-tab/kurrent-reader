@@ -1,0 +1,269 @@
+[
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   150,
+   270,
+   355,
+   65
+  ],
+  "text": "Jette Michel",
+  "IdNr": 38739,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38739"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   150,
+   415,
+   355,
+   55
+  ],
+  "text": "Fanny Strauß",
+  "IdNr": 38785,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38785"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   150,
+   530,
+   355,
+   90
+  ],
+  "text": "Gittel Mosbacher",
+  "IdNr": 38745,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38745",
+  "note": "index name 'Mosbacher, Gitta,Getta (Gittel Gattin des Menachem)'; label matches ink 'Gittel'"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   150,
+   750,
+   355,
+   150
+  ],
+  "text": "Moses Regensburger",
+  "IdNr": 38664,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38664",
+  "note": "scribe's struck false-start line above included in bbox; ink order 'Regensburger / Moses'; person also appears on s05"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   150,
+   985,
+   355,
+   130
+  ],
+  "text": "Gidel Mosbacher",
+  "IdNr": 38751,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38751",
+  "note": "first line struck through by scribe (false start reading '...Strauss...'); label 'Gidel Mosbacher'"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   150,
+   1205,
+   355,
+   90
+  ],
+  "text": "Elias Michel",
+  "IdNr": 38740,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38740"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   150,
+   1525,
+   355,
+   95
+  ],
+  "text": "Mendel Mosbacher",
+  "IdNr": 38756,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38756"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   150,
+   1760,
+   355,
+   110
+  ],
+  "text": "Lazarus Strauß",
+  "IdNr": 38799,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38799"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   2100,
+   268,
+   560,
+   120
+  ],
+  "text": "den 7ten März 1852, früh 8 Uhr",
+  "IdNr": 38739,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38739",
+  "note": "weekday word illegible, omitted from label (no single-reader guesses); 07.03.1852 was a Sunday; numerals from index; 'März' and 'früh 8 Uhr' legible"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   2100,
+   398,
+   560,
+   100
+  ],
+  "text": "Freitag den 8ten Mai 1852, Mittags 3 Uhr",
+  "IdNr": 38785,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38785",
+  "note": "weekday 'Freitag' legible but 08.05.1852 was a Saturday - scribe error, documented; numerals from index"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   2100,
+   542,
+   560,
+   130
+  ],
+  "text": "Montag den 21. Juni 1852, Mittags 4 Uhr",
+  "IdNr": 38745,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "L-d38745",
+  "note": "weekday cross-check PASS (21.06.1852 = Monday)"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   2100,
+   668,
+   560,
+   88
+  ],
+  "text": "Dienstag den 30ten November 1852, Mittags 2 Uhr",
+  "IdNr": 38750,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "L-d38750",
+  "note": "weekday cross-check PASS (30.11.1852 = Tuesday); NAME CELL EXCLUDED: near-duplicate of held-out eval name 'Gerson Mosbacher' (33739); flagged for parent ruling"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   2100,
+   798,
+   560,
+   135
+  ],
+  "text": "Am Sonnabend den 27ten May 1854, Morgens 5 Uhr",
+  "IdNr": 38664,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "L-d38664",
+  "note": "weekday cross-check PASS (27.05.1854 = Saturday); year '1854' on separate line"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   2100,
+   1042,
+   560,
+   150
+  ],
+  "text": "am Freitag d. 18ten August 1854, Morgens 4 Uhr",
+  "IdNr": 38751,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "L-d38751",
+  "note": "weekday cross-check PASS (18.08.1854 = Friday)"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   2100,
+   1208,
+   560,
+   195
+  ],
+  "text": "am Donnerstag d. 28ten September 1854, Morgens 4 Uhr",
+  "IdNr": 38740,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "L-d38740",
+  "note": "weekday cross-check PASS (28.09.1854 = Thursday)"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   2100,
+   1448,
+   560,
+   315
+  ],
+  "text": "Freitag den 29ten December 1854, Vormittags 10 Uhr",
+  "IdNr": 38756,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38756",
+  "note": "certificate header line ('...No 10') inside bbox, not transcribed; hour qualifier faint (reads 'Vormittags'?); weekday+date cross-check PASS (29.12.1854 = Friday)"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   2100,
+   1762,
+   560,
+   140
+  ],
+  "text": "am Mittwoch d. 30ten May 1855, Morgens",
+  "IdNr": 38799,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38799",
+  "note": "hour numeral illegible, omitted from label; weekday cross-check PASS (30.05.1855 = Wednesday)"
+ }
+]

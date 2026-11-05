@@ -1,0 +1,20 @@
+{
+ "_page": "g08_22.jpg (2807x2187) - ruled TABLE SPREAD, birth register 1852-1855 (book pages 14/15). LEFT: child name (+ ordinal prefixes like '2t?/3t?/A?/' and a parents/witness note column x>515). RIGHT: full date cells WITH weekday words + hour. Year dividers 1853/1854 and 1855 on left page; right page mostly blank outside date cells. Ordered by registration, not strict birth chronology (Mendel b.29.12.1854 entered under 1855 divider).",
+ "_pairing": "9 left rows / 9 right date cells; pairing by same physical Y + chronology + index (g06 method). All 9 weekday words cross-checked against computed calendar weekdays.",
+ "_weekday_conflicts": "Two 1852 cells conflict: Fanny 08.05.1852 cell reads 'Freitag' (legible) but was a Saturday - scribe error, date cell conf=medium documented. Jette 07.03.1852 cell's weekday word is illegible - omitted from label (no single-reader guesses), conf=medium.",
+ "matches": {
+  "38739": "Jette Michel 07.03.1852 - L-r1/R-r1 (date medium: weekday word illegible/omitted; 07.03.1852 = Sunday)",
+  "38785": "Fanny Strauß 08.05.1852 - L-r2/R-r2 (date medium: weekday reads 'Freitag' vs calendar Saturday, documented)",
+  "38745": "Gittel Mosbacher 21.06.1852 - L-r3/R-r3, 'Montag' PASS. Index name 'Mosbacher, Gitta,Getta (Gittel Gattin des Menachem)'; label matches ink 'Gittel'",
+  "38750": "Gerson Mosbacher 30.11.1852 - L-r4/R-r4, 'Dienstag' PASS. NAME CELL EXCLUDED: near-duplicate of held-out eval name 'Gerson Mosbacher' (33739); date cell labeled only; flagged for parent ruling 2026-11-05",
+  "38664": "Moses Regensburger 27.05.1854 - L-r5/R-r5, 'Sonnabend' PASS. Struck false-start line above included in name bbox. Person also appears on s05",
+  "38751": "Gidel Mosbacher 18.08.1854 - L-r6/R-r6, 'Freitag' PASS. Scribe struck first line (false start '...Strauss...'), kept in bbox",
+  "38740": "Elias Michel 28.09.1854 - L-r7/R-r7, 'Donnerstag' PASS",
+  "38756": "Mendel Mosbacher 29.12.1854 - L-r8/R-r8, 'Freitag' PASS. Certificate header line ('...No 10') inside date bbox, not transcribed; hour qualifier faint ('Vormittags'?) -> date medium",
+  "38799": "Lazarus Strauß 30.05.1855 - L-r9/R-r9, 'Mittwoch' PASS. Hour numeral illegible, omitted -> date medium"
+ },
+ "skips": {
+  "non-index": "none - all 9 left-page rows matched the 9 index persons; no extra bands",
+  "38750-name": "name cell excluded (near-duplicate of held-out eval target), see matches.38750"
+ }
+}
