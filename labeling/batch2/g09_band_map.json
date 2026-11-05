@@ -1,0 +1,16 @@
+{
+ "_page": "g09_22.jpg (2807x2187) - TWO BOOKS: left = main birth register (Nr|child name|parents|ordinal|legitimacy|cert no; NO dates; 1855 ends Nr16, then 1856 Nr1-4, 1857 Nr1-2), right = parallel cert book (parents left column | weekday+date+time right column; cert receipt header notes like 'Geh. 19/10 1856 N.10').",
+ "_revisit": "2026-11-05: unparked per user option-B approval; cross-book pairing method (approved 2026-11-02) applied. Previously unread block y1130-1560 read: twins David+Jeanette date entry found ('Am Montag den zwanzigsten October 1856' with strike corrections).",
+ "weekday_cross_checks": {
+  "38786+38787": "20.10.1856 = Monday; 'Am Montag ... October 1856' Montag legible -> PASS",
+  "38746": "09.03.1857 = Monday; 'Am Montag ... Maerz 1857' Montag legible -> PASS (day numeral from index, pinned by weekday+month+year)",
+  "38800": "08.11.1857 = Sunday; 'Am Sonntag d. 8ten Nov. 1857' Sonntag legible -> PASS",
+  "38741": "12.10.1856 = Sunday; NO weekday word written -> conf=medium"
+ },
+ "skips": {
+  "33884": "Hofmann, Kele, Kehle geb. Mosbacher - 'geb.' marks a married woman (born Mosbacher), i.e. adult/mother-side person; left-book 1856 Nr1 entry is ambiguous (child-vs-mother reading) AND no right-book date entry exists (right book incomplete vs left). SKIP per label rule (no single-reader guessing).",
+  "34139": "Loeb, Carolina geb. Mosbacher - adult nee-Mosbacher; no child-name cell anywhere (right-book entry names parents only). SKIP.",
+  "38668": "Mosbacher, Gerson - parents-gen person (father reference), not a birth child on this page. SKIP. (Distinct IdNr from held-out 33739; not labeled anywhere regardless.)",
+  "38741_note": "Gina's right-book entry has rabbi-cert note 'laut Geben d. 19/10 1856 E. Samuel Rabbi' in header area - outside date bbox."
+ }
+}

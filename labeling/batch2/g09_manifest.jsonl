@@ -1,0 +1,172 @@
+[
+ {
+  "file": "g09_22.jpg",
+  "bbox": [
+   252,
+   840,
+   145,
+   125
+  ],
+  "text": "Gina Michel",
+  "IdNr": 38741,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38741",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left birth register (no dates there); date cell from right parallel cert book (weekday/date/time); paired via index person + weekday cross-check where weekday word written; two-line 'Gina / Michel'"
+ },
+ {
+  "file": "g09_22.jpg",
+  "bbox": [
+   250,
+   1250,
+   130,
+   70
+  ],
+  "text": "David",
+  "IdNr": 38786,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38786",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left birth register (no dates there); date cell from right parallel cert book (weekday/date/time); paired via index person + weekday cross-check where weekday word written; given name only as inked; surname Strauss in shared parents brace (cert N.104), twins with 38787"
+ },
+ {
+  "file": "g09_22.jpg",
+  "bbox": [
+   245,
+   1340,
+   175,
+   70
+  ],
+  "text": "Jeanette",
+  "IdNr": 38787,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38787",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left birth register (no dates there); date cell from right parallel cert book (weekday/date/time); paired via index person + weekday cross-check where weekday word written; given name only as inked; surname Strauss in shared parents brace, twins with 38786"
+ },
+ {
+  "file": "g09_22.jpg",
+  "bbox": [
+   210,
+   1595,
+   280,
+   100
+  ],
+  "text": "Maier Joseph Mosbacher",
+  "IdNr": 38746,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38746",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left birth register (no dates there); date cell from right parallel cert book (weekday/date/time); paired via index person + weekday cross-check where weekday word written; two-line 'Maier Joseph / Mosbacher'"
+ },
+ {
+  "file": "g09_22.jpg",
+  "bbox": [
+   210,
+   1838,
+   180,
+   52
+  ],
+  "text": "Babette",
+  "IdNr": 38800,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38800",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left birth register (no dates there); date cell from right parallel cert book (weekday/date/time); paired via index person + weekday cross-check where weekday word written; given name only as inked ('posthuma' entry); surname Strauss from index/parent phrase"
+ },
+ {
+  "file": "g09_22.jpg",
+  "bbox": [
+   1900,
+   855,
+   700,
+   155
+  ],
+  "text": "12.10.1856",
+  "IdNr": 38741,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "R-d38741",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left birth register (no dates there); date cell from right parallel cert book (weekday/date/time); paired via index person + weekday cross-check where weekday word written; no weekday word written; 'Am 12ten ... October 1856 ... 6 Uhr' read; 12.10.1856 = Sunday (no cross-check possible)"
+ },
+ {
+  "file": "g09_22.jpg",
+  "bbox": [
+   1900,
+   1215,
+   700,
+   240
+  ],
+  "text": "20.10.1856",
+  "IdNr": 38786,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38786",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left birth register (no dates there); date cell from right parallel cert book (weekday/date/time); paired via index person + weekday cross-check where weekday word written; SHARED date cell with twin 38787; 'Am Montag den zwanzigsten October 1856' - Montag legible, 20.10.1856 = Monday PASS"
+ },
+ {
+  "file": "g09_22.jpg",
+  "bbox": [
+   1900,
+   1215,
+   700,
+   240
+  ],
+  "text": "20.10.1856",
+  "IdNr": 38787,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38787",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left birth register (no dates there); date cell from right parallel cert book (weekday/date/time); paired via index person + weekday cross-check where weekday word written; SHARED date cell with twin 38786; 'Am Montag den zwanzigsten October 1856' - Montag legible, 20.10.1856 = Monday PASS"
+ },
+ {
+  "file": "g09_22.jpg",
+  "bbox": [
+   1900,
+   1610,
+   700,
+   190
+  ],
+  "text": "09.03.1857",
+  "IdNr": 38746,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38746",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left birth register (no dates there); date cell from right parallel cert book (weekday/date/time); paired via index person + weekday cross-check where weekday word written; 'Am Montag ... Maerz 1857, Nachts 12 Uhr' - Montag legible, 09.03.1857 = Monday PASS; day numeral from index, pinned by weekday+month+year"
+ },
+ {
+  "file": "g09_22.jpg",
+  "bbox": [
+   1900,
+   1825,
+   750,
+   125
+  ],
+  "text": "08.11.1857",
+  "IdNr": 38800,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38800",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left birth register (no dates there); date cell from right parallel cert book (weekday/date/time); paired via index person + weekday cross-check where weekday word written; 'Am Sonntag d. 8ten Nov. 1857 Abends' - Sonntag legible, 08.11.1857 = Sunday PASS"
+ }
+]
