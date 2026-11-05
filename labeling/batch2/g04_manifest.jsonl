@@ -1,0 +1,225 @@
+[
+ {
+  "file": "g04_22.jpg",
+  "bbox": [
+   150,
+   365,
+   280,
+   135
+  ],
+  "text": "Veila Mosbacher",
+  "IdNr": 38037,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38037",
+  "note": "ink reads 'Veile', index 'Veila'; label from index"
+ },
+ {
+  "file": "g04_22.jpg",
+  "bbox": [
+   150,
+   540,
+   280,
+   142
+  ],
+  "text": "Mendel Mosbacher",
+  "IdNr": 3763,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n3763",
+  "note": "duplicate index person 3764 = same entry, labeled once (3763); the g12/g13 father as a CHILD here (b.18.10.1831)"
+ },
+ {
+  "file": "g04_22.jpg",
+  "bbox": [
+   150,
+   741,
+   280,
+   148
+  ],
+  "text": "Jakob Michel",
+  "IdNr": 38043,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38043"
+ },
+ {
+  "file": "g04_22.jpg",
+  "bbox": [
+   150,
+   1255,
+   280,
+   145
+  ],
+  "text": "Moses Strauß",
+  "IdNr": 38794,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "L-n38794",
+  "note": "surname heavy flourish, semi-legible"
+ },
+ {
+  "file": "g04_22.jpg",
+  "bbox": [
+   150,
+   1450,
+   280,
+   115
+  ],
+  "text": "Joseph Mosbacher",
+  "IdNr": 6403,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n6403",
+  "note": "duplicate index person 38095 = same entry, labeled once (6403); later-hand death note '+ d. 9 Aug. 1835' below name EXCLUDED from bbox"
+ },
+ {
+  "file": "g04_22.jpg",
+  "bbox": [
+   150,
+   1700,
+   280,
+   120
+  ],
+  "text": "Isaak Strauß",
+  "IdNr": 38097,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38097",
+  "note": "later-hand small repeat annotation below excluded from bbox"
+ },
+ {
+  "file": "g04_22.jpg",
+  "bbox": [
+   150,
+   1880,
+   280,
+   137
+  ],
+  "text": "Madel Mosbacher",
+  "IdNr": 38098,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38098",
+  "note": "d.08.04.1837 per index (also s03 death register person)"
+ },
+ {
+  "file": "g04_22.jpg",
+  "bbox": [
+   2100,
+   370,
+   400,
+   146
+  ],
+  "text": "23.04.1831",
+  "IdNr": 38037,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38037",
+  "note": "'d 23t Apr: 1831 Morgens 1 Uhr' legible; no weekday words in this register"
+ },
+ {
+  "file": "g04_22.jpg",
+  "bbox": [
+   2100,
+   541,
+   400,
+   139
+  ],
+  "text": "18.10.1831",
+  "IdNr": 3763,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d3763",
+  "note": "'d 18t Oct: 1831 Morgens 8 Uhr' legible"
+ },
+ {
+  "file": "g04_22.jpg",
+  "bbox": [
+   2100,
+   712,
+   400,
+   130
+  ],
+  "text": "19.12.1831",
+  "IdNr": 38043,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "R-d38043",
+  "note": "'d 19t Dec 1831 Mittags 4 Uhr' - day numeral weak, month/year legible"
+ },
+ {
+  "file": "g04_22.jpg",
+  "bbox": [
+   2100,
+   1148,
+   400,
+   96
+  ],
+  "text": "14.06.1833",
+  "IdNr": 38794,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38794",
+  "note": "'d 14ten Jun 1833 Abends 4 Uhr' legible"
+ },
+ {
+  "file": "g04_22.jpg",
+  "bbox": [
+   2100,
+   1252,
+   400,
+   152
+  ],
+  "text": "18.08.1833",
+  "IdNr": 6403,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d6403",
+  "note": "'d 18t Aug 1833 Abends 6(?) Uhr' legible"
+ },
+ {
+  "file": "g04_22.jpg",
+  "bbox": [
+   2100,
+   1660,
+   400,
+   200
+  ],
+  "text": "15.01.1835",
+  "IdNr": 38097,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "R-d38097",
+  "note": "'d 15t Jan ...5 Abends 6 Uhr' - year tail weak"
+ },
+ {
+  "file": "g04_22.jpg",
+  "bbox": [
+   2100,
+   1924,
+   400,
+   176
+  ],
+  "text": "28.11.1835",
+  "IdNr": 38098,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38098",
+  "note": "'d 28t Nov 1835 Abends 9 Uhr' legible"
+ }
+]

@@ -1,0 +1,18 @@
+{
+ "_page": "g04_22.jpg (2807x2187) - ruled TABLE SPREAD, birth register 1831-1835 (book pages 6/7). LEFT: Nr|child name|gender|father|mother|L.G.|house. RIGHT: Zusatz|L.G. Eltern|birth date (ink x2120-2370). NO weekday words in this register (dates carry 'Morgens/Mittags/Abends N Uhr' only).",
+ "_drift": "Left page has 9 rows, right page 10: right-page row '15t Dec 1833' (non-index) has NO left-page counterpart; Joseph's left row is taller (later-hand death note '+ d. 9 Aug. 1835' stacked under name) which re-aligns the tail rows (Isaak/Madel align by Y again). Pairing locked by chronology + name+date vs index, per g06 method (grids drift independently; never pair by raw Y alone).",
+ "matches": {
+  "38037": "Veila Mosbacher 23.04.1831 (ink 'Veile'; label from index) - L-r2/R-r2",
+  "3763": "Mendel Mosbacher 18.10.1831 - L-r3/R-r3. DUP index person 3764 = same entry, labeled once. This is the g12/g13 father as a CHILD (b.1831).",
+  "38043": "Jakob Michel 19.12.1831 - L-r4/R-r4 (day numeral weak -> date medium)",
+  "38794": "Moses Strauss 14.06.1833 - L-r6/R-r6 (surname flourish -> name medium)",
+  "6403": "Joseph Mosbacher 18.08.1833 - L-r7/R-r7. DUP index person 38095 = same entry, labeled once. Death note excluded from name bbox.",
+  "38097": "Isaak Strauss 15.01.1835 - L-r8/R-r9 (year tail weak -> date medium)",
+  "38098": "Madel Mosbacher 28.11.1835 - L-r9/R-r10 (d.08.04.1837, also s03 person)"
+ },
+ "skips": {
+  "38096": "Jonas Mosbacher 18.01.1835 - band absent (15.01.1835 then 28.11.1835, empty band between); documented 2026-11-02, re-confirmed.",
+  "non-index": "R-r1 (Jun? 1831), L-r5/R-r5 (Sara 5.05.1832), R-r8 (15.12.1833, no left row) - non-indexed persons, skipped per label rule.",
+  "38034": "Madel Strauss 13.01.1831 - index mis-maps to g04; entry actually on g02 (documented 2026-11-02)."
+ }
+}
