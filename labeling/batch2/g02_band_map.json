@@ -1,0 +1,105 @@
+{
+ "page": "g02_22.jpg",
+ "register": "Geburts-Register der Israeliten (Eschau), book pages 2-3, births 1823-1826",
+ "layout": "8 rows only (header ends ~y540, bottom y2050-2187 verified empty). LEFT p.2: name col1 x140-~330 (col rule drifts x328-354; col2 = father/mother). RIGHT p.3: date col x1840-2245 (rule at ~x2250; r7 'Morgens' overflows past rule). NO weekday words in this register (only 'Tag der Geburt + Stunde') - pairing by row position + chronology + index, as on g04.",
+ "index_persons_on_page": 20,
+ "labelable_birth_entries": 8,
+ "skipped_adults": [
+  {
+   "IdNr": [
+    4320,
+    34448,
+    37821,
+    38016,
+    38029,
+    38017,
+    38021,
+    38032,
+    38033
+   ],
+   "reason": "adults (no birth dates on this register / parents-gen entries)"
+  }
+ ],
+ "unlocatable": [
+  {
+   "IdNr": 38034,
+   "name": "Madel Strauss",
+   "gebdatum": "13.01.1831",
+   "reason": "Index maps her to g02 but NO 1831 band exists on g02 (rows end 1826; bottom of page empty). CORRECTION: the g04 band-map note (2026-11-02) claiming 'entry actually on g02' was wrong - verified by full read of g02 on 2026-11-05. She is on neither g04 nor g02; possibly g03 (not in scan set)."
+  }
+ ],
+ "rows": [
+  {
+   "row": 1,
+   "y": "545-660",
+   "IdNr": 34023,
+   "name": "Elias Mosbacher",
+   "geb": "25.06.1823 (Wed)",
+   "note": "TRIPLE index dup 34023/35707/38748 = same entry, labeled once under 34023"
+  },
+  {
+   "row": 2,
+   "y": "700-800",
+   "IdNr": 37361,
+   "name": "Hajum Strauss",
+   "geb": "18.08.1823 (Mon)",
+   "note": "ink day numeral reads '19ten'? vs index 18 - label from index, documented"
+  },
+  {
+   "row": 3,
+   "y": "910-1015",
+   "IdNr": 38015,
+   "name": "Jakob Michel",
+   "geb": "03.10.1824 (Sun)",
+   "note": "d.18.07.1825 (also s02 person); death-note mark excluded from name bbox"
+  },
+  {
+   "row": 4,
+   "y": "1070-1190",
+   "IdNr": 38018,
+   "name": "Kindle Michel",
+   "geb": "01.11.1824 (Mon)"
+  },
+  {
+   "row": 5,
+   "y": "1270-1385",
+   "IdNr": 38022,
+   "name": "Michel, NN, Vromeln",
+   "geb": "27.02.1825 (Sun)",
+   "note": "given name ink reads 'Vromeln'?/'Vromme'? - index 'Vromeln', labeled medium"
+  },
+  {
+   "row": 6,
+   "y": "1450-1570",
+   "IdNr": 38784,
+   "name": "Abraham Strauss",
+   "geb": "18.11.1825 (Fri)"
+  },
+  {
+   "row": 7,
+   "y": "1600-1750",
+   "IdNr": 38738,
+   "name": "Vromel Michel",
+   "geb": "24.06.1826 (Sat)"
+  },
+  {
+   "row": 8,
+   "y": "1810-1975",
+   "IdNr": 38031,
+   "name": "Isaak Strasburger",
+   "geb": "07.08.1826 (Mon)",
+   "note": "child of skipped adults 38032/38033"
+  }
+ ],
+ "cells": {
+  "names": 8,
+  "dates": 8,
+  "total": 16,
+  "conf": {
+   "verified": 5,
+   "medium": 11
+  },
+  "medium_reasons": "all 8 dates medium: this register has no weekday words and every date cell carries an illegible hour qualifier/numeral (omitted from label text, never guessed) or weak numeral anchored to index; 3 names medium: n34023 faint surname line, n37361 faint ink, n38022 given-name reading ambiguous (index-anchored)"
+ },
+ "label_rule": "label text from printed JUF index / clearly printed words only; illegible words omitted with documented note; numerals anchored to index; no single-reader guesses"
+}

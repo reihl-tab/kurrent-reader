@@ -13,6 +13,6 @@
  "skips": {
   "38096": "Jonas Mosbacher 18.01.1835 - band absent (15.01.1835 then 28.11.1835, empty band between); documented 2026-11-02, re-confirmed.",
   "non-index": "R-r1 (Jun? 1831), L-r5/R-r5 (Sara 5.05.1832), R-r8 (15.12.1833, no left row) - non-indexed persons, skipped per label rule.",
-  "38034": "Madel Strauss 13.01.1831 - index mis-maps to g04; entry actually on g02 (documented 2026-11-02)."
+  "38034": "Madel Strauss 13.01.1831 - index mis-maps to g04; entry actually on g02 (documented 2026-11-02). [CORRECTED 2026-11-05: full read of g02 shows NO 1831 band; 38034 unlocatable on g04 and g02 - see g02_band_map.json]"
  }
 }

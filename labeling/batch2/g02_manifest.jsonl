@@ -1,0 +1,258 @@
+[
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   140,
+   543,
+   205,
+   118
+  ],
+  "text": "Elias Mosbacher",
+  "IdNr": 34023,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "L-n34023",
+  "note": "given name 'Elias' legible, surname line faint/abbreviated in ink; label from index. TRIPLE dup index persons 34023/35707/38748 = same entry, labeled once (34023). Date pairing unique (25.06.1823); bbox width clipped at col1/col2 rule (father column excluded)"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   140,
+   703,
+   195,
+   95
+  ],
+  "text": "Hajum Strauß",
+  "IdNr": 37361,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "L-n37361",
+  "note": "ink faint; index 'Strauss, Hajum (Chaim Sohn des David Halevi)'; date pairing 18.08.1823; bbox width clipped at col1/col2 rule (father column excluded)"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   140,
+   913,
+   180,
+   87
+  ],
+  "text": "Jakob Michel",
+  "IdNr": 38015,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38015",
+  "note": "small mark line below name (possible death-note start, d.18.07.1825 per index) excluded from bbox; bbox width clipped at col1/col2 rule (father column excluded)"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   140,
+   1073,
+   180,
+   90
+  ],
+  "text": "Kindle Michel",
+  "IdNr": 38018,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38018",
+  "note": "bbox width clipped at col1/col2 rule (father column excluded)"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   140,
+   1273,
+   180,
+   110
+  ],
+  "text": "Vromeln Michel",
+  "IdNr": 38022,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "L-n38022",
+  "note": "given name reads 'Vromeln'?/'Vromme'?; index 'Michel, NN, Vromeln'; date pairing 27.02.1825; bbox width clipped at col1/col2 rule (father column excluded)"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   140,
+   1453,
+   180,
+   100
+  ],
+  "text": "Abraham Strauß",
+  "IdNr": 38784,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38784",
+  "note": "bbox width clipped at col1/col2 rule (father column excluded)"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   140,
+   1603,
+   180,
+   95
+  ],
+  "text": "Vromel Michel",
+  "IdNr": 38738,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38738",
+  "note": "bbox width clipped at col1/col2 rule (father column excluded)"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   140,
+   1813,
+   180,
+   120
+  ],
+  "text": "Isaak Strasburger",
+  "IdNr": 38031,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38031",
+  "note": "bbox width clipped at col1/col2 rule (father column excluded)"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   1840,
+   538,
+   405,
+   115
+  ],
+  "text": "den 25ten Juni 1823, 11 Uhr",
+  "IdNr": 34023,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d34023",
+  "note": "hour qualifier word illegible - omitted; no weekday words in this register; numerals from index; bbox x1840-2245: excludes left col bleed and right col rule (~x2250)"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   1840,
+   683,
+   405,
+   100
+  ],
+  "text": "den 18ten August 1823, Morgens",
+  "IdNr": 37361,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d37361",
+  "note": "day numeral ambiguous in ink (reads '19ten'?; index 18.08.1823, label from index); hour numeral illegible - omitted; bbox x1840-2245: excludes left col bleed and right col rule (~x2250)"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   1840,
+   893,
+   405,
+   80
+  ],
+  "text": "den 3ten October 1824, 11 Uhr",
+  "IdNr": 38015,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38015",
+  "note": "hour qualifier word illegible - omitted; numerals from index; bbox x1840-2245: excludes left col bleed and right col rule (~x2250)"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   1840,
+   1078,
+   405,
+   115
+  ],
+  "text": "den 1ten November 1824, Morgens",
+  "IdNr": 38018,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38018",
+  "note": "hour numeral weak - omitted; numerals from index; bbox x1840-2245: excludes left col bleed and right col rule (~x2250)"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   1840,
+   1273,
+   405,
+   80
+  ],
+  "text": "den 27ten Februar 1825, Mittags 1 Uhr",
+  "IdNr": 38022,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38022",
+  "note": "month word weak; numerals from index; bbox x1840-2245: excludes left col bleed and right col rule (~x2250)"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   1840,
+   1448,
+   405,
+   125
+  ],
+  "text": "den 18ten November 1825, Morgens",
+  "IdNr": 38784,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38784",
+  "note": "hour numeral illegible - omitted; numerals from index; bbox x1840-2245: excludes left col bleed and right col rule (~x2250)"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   1840,
+   1595,
+   405,
+   158
+  ],
+  "text": "den 24ten Juni 1826, Morgens",
+  "IdNr": 38738,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38738",
+  "note": "hour numeral weak - omitted; numerals from index; bbox x1840-2245: excludes left col bleed and right col rule (~x2250)"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   1840,
+   1822,
+   405,
+   156
+  ],
+  "text": "den 7ten August 1826, 5 Uhr",
+  "IdNr": 38031,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38031",
+  "note": "hour qualifier word faint - omitted; numerals from index; bbox x1840-2245: excludes left col bleed and right col rule (~x2250)"
+ }
+]
