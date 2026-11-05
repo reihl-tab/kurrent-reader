@@ -1,0 +1,254 @@
+[
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   140,
+   350,
+   330,
+   110
+  ],
+  "text": "Isaak Mosbacher",
+  "IdNr": 38752,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38752"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   140,
+   560,
+   330,
+   95
+  ],
+  "text": "Mina Strauß",
+  "IdNr": 38675,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38675",
+  "note": "index 'Strauß, Wilhelmine, Wilhelmine (Mina)'; ink reads 'Mina Strauß' (call name documented in index)"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   140,
+   845,
+   330,
+   95
+  ],
+  "text": "Jendele Marx",
+  "IdNr": 3664,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n3664",
+  "note": "index 'Marx, Jette, Jendele'; ink reads 'Jendele Marx'; DUP index person 35455 = same entry, labeled once; small-print naming note below excluded from bbox"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   140,
+   1015,
+   330,
+   85
+  ],
+  "text": "Manuel Mosbacher",
+  "IdNr": 38674,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38674",
+  "note": "death note '+ d. 6 Jan. 1860' below excluded from bbox"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   140,
+   1315,
+   330,
+   95
+  ],
+  "text": "Elieser Marx",
+  "IdNr": 38733,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38733"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   140,
+   1495,
+   330,
+   90
+  ],
+  "text": "Mendel Strauß",
+  "IdNr": 38788,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38788"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   140,
+   1610,
+   330,
+   90
+  ],
+  "text": "Abraham Mosbacher",
+  "IdNr": 38753,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38753"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   140,
+   1862,
+   330,
+   78
+  ],
+  "text": "Veist Strauß",
+  "IdNr": 38677,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38677",
+  "note": "index 'Strauß, Veist (Faist, Feist)'; death note '+ 31 Marz 1862' below excluded from bbox"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   1745,
+   382,
+   325,
+   240
+  ],
+  "text": "den 17ten Januar 1858, 10 Uhr",
+  "IdNr": 38752,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38752",
+  "note": "weekday word illegible - omitted (17.01.1858 was a Sunday); hour qualifier faint; numerals from index"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   1745,
+   693,
+   325,
+   137
+  ],
+  "text": "Am Mittwoch den 21ten July 1858",
+  "IdNr": 38675,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "L-d38675",
+  "note": "weekday cross-check PASS (21.07.1858 = Wednesday)"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   1745,
+   853,
+   325,
+   160
+  ],
+  "text": "Am Mittwoch den 15ten September 1858, Morgens 4 Uhr",
+  "IdNr": 3664,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "L-d3664",
+  "note": "weekday cross-check PASS (15.09.1858 = Wednesday)"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   1745,
+   1038,
+   325,
+   185
+  ],
+  "text": "den 19ten December 1859, Mittags 11 Uhr",
+  "IdNr": 38674,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38674",
+  "note": "weekday word illegible - omitted (19.12.1859 was a Monday); numerals from index"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   1745,
+   1293,
+   325,
+   155
+  ],
+  "text": "den 4ten Februar 1860, Morgens 2 Uhr",
+  "IdNr": 38733,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38733",
+  "note": "weekday word illegible - omitted (04.02.1860 was a Saturday); ink word order '...2 Uhr / Morgens'; numerals from index"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   1745,
+   1483,
+   325,
+   145
+  ],
+  "text": "den 4ten April 1860, Morgens 3 Uhr",
+  "IdNr": 38788,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38788",
+  "note": "weekday word illegible - omitted (04.04.1860 was a Wednesday); ink word order '...3 Uhr / Morgens'; numerals from index"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   1745,
+   1640,
+   325,
+   115
+  ],
+  "text": "den 8ten December 1860, Nachmittags 3 Uhr",
+  "IdNr": 38753,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38753",
+  "note": "weekday word illegible - omitted (08.12.1860 was a Saturday); hour qualifier faint ('Nachmittags'?); numerals from index"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   1745,
+   1862,
+   325,
+   140
+  ],
+  "text": "den 30ten Januar 1862, 6 Uhr",
+  "IdNr": 38677,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38677",
+  "note": "weekday and hour-qualifier words faint - omitted (30.01.1862 was a Thursday); numerals from index"
+ }
+]

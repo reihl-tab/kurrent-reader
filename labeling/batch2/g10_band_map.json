@@ -1,0 +1,18 @@
+{
+ "_page": "g10_22.jpg (2807x2187) - two-page spread (book pages 18/19), births 1858-1862. LEFT p.18: columnar birth register (Nr|child name|parents|...); year dividers 1859/1860/1862. RIGHT p.19: three columns - parents narrative (x1430-1740), DATE cells (x1745-2070, weekday+date+hour), witnesses/remarks (x>2075). Pairing by row order + year dividers + chronology + index.",
+ "_ink": "1858 rows (Isaak/Mina/Jendele) clearly legible with weekday words; 1859-1862 rows much fainter - weekday words illegible there, so those date labels omit the weekday word (no single-reader guesses) and carry conf=medium with the calendar weekday documented.",
+ "_weekdays": "Cross-checked: 17.01.1858=Sun, 21.07.1858=Wed ('Mittwoch' PASS), 15.09.1858=Wed ('Mittwoch' PASS), 19.12.1859=Mon, 04.02.1860=Sat, 04.04.1860=Wed, 08.12.1860=Sat, 30.01.1862=Thu.",
+ "matches": {
+  "38752": "Isaak Mosbacher 17.01.1858 - 1858/r1 (date medium: weekday illegible/omitted, Sunday)",
+  "38675": "Mina Strauß 21.07.1858 - 1858/r2, 'Mittwoch' PASS. Index 'Strauß, Wilhelmine (Mina)'; ink reads 'Mina', label uses ink+index-documented call name",
+  "3664": "Jendele Marx 15.09.1858 - 1858/r3, 'Mittwoch' PASS. Index 'Marx, Jette, Jendele'; ink 'Jendele'. DUP 35455 = same entry, labeled once. Small-print naming note excluded from name bbox",
+  "38674": "Manuel Mosbacher 19.12.1859 - 1859/r1 (only 1859 entry). Death note '+ d. 6 Jan. 1860' excluded from name bbox; date medium (weekday illegible, Monday)",
+  "38733": "Elieser Marx 04.02.1860 - 1860/r1 (date medium: weekday illegible, Saturday)",
+  "38788": "Mendel Strauß 04.04.1860 - 1860/r2 (date medium: weekday illegible, Wednesday)",
+  "38753": "Abraham Mosbacher 08.12.1860 - 1860/r3 (date medium: weekday illegible, Saturday)",
+  "38677": "Veist Strauß 30.01.1862 - 1862/r1 (only 1862 entry). Index 'Strauß, Veist (Faist, Feist)'; death note '+ 31 Marz 1862' excluded from name bbox; date medium (weekday faint, Thursday)"
+ },
+ "skips": {
+  "non-index": "none visible - left page ends after Veist row (blank below y2000, checked to y2187); all 8 rows matched 8 unique index entries (9 index persons incl. 3664/35455 dup)"
+ }
+}
