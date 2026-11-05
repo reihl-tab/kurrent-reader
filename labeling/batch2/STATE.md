@@ -46,3 +46,10 @@ Remaining wave pages: g09 (parked), h01-h06 (parked per user Nov 2). Wave pages 
 ## g13 DONE (2026-11-03) - 14 cells (7 name + 7 date), ALL 7 dates weekday-verified; father Mendel Mosbacher 3763/3764 skipped (parents-gen)
 ## s01 DONE (2026-11-03) - 1 cell (surname Strauss, 38312 Koppel Strauss); narrative 1821 death page, full name line-broken, no index date -> date unlabeled per single-reader rule
 Wave total now: 138 + 20 + 14 + 1 = 173 batch2 cells (+18 batch1-era = 191 grand total).
+
+## OPTION B WAVE (user approved 2026-11-05 07:25): grow labeled pool toward ~2x (191 -> ~380) before v15; batch progress reports, not per page
+## g09 DONE (unparked, 2026-11-05) - 10 cells (5 name + 5 date), 3 dates weekday-verified, Gina medium (no weekday word); twins David+Jeanette share one date cell; skips 33884/34139 (adult nee-Mosbacher women), 38668 (parents-gen)
+## g04 DONE (2026-11-05) - 14 cells (7 name + 7 date); drift resolved (extra right-page Dec 1833 row; Joseph tall row); dups 3763/3764 + 6403/38095 labeled once; Mendel 3763 = g12/g13 father as a CHILD; 3 mediums; Jonas 38096 absent (re-confirmed)
+## g08 DONE (2026-11-05) - 17 cells (8 name + 9 date); 5 dates weekday-verified PASS; 4 mediums: Jette (weekday illegible/omitted, Sunday), Fanny (weekday reads 'Freitag' vs calendar Saturday - scribe error documented), Mendel (hour qualifier faint), Lazarus (hour numeral omitted). 38750 Gerson Mosbacher 30.11.1852: NAME CELL EXCLUDED (exact near-duplicate of held-out eval target 'Gerson Mosbacher' 33739), date cell labeled, flagged for parent ruling
+## g10 DONE (2026-11-05) - 16 cells (8 name + 8 date); two-page spread (names left p.18, dates right p.19 x1745-2070); 2 dates weekday-verified (1858 rows); 6 mediums (1859-62 ink faint, weekday words omitted from labels, calendar weekday in notes); dup 3664/35455 labeled once; call-name labels Mina/Jendele per ink+index; death notes excluded from name bboxes
+Pool now: 191 + 10 + 14 + 17 + 16 = 248. Remaining this wave: g02 (~20 persons, est. +30-40) -> ~280-290 (~1.5x, short of 2x). v15 launch decision at that size vs further waves = surfaced to user 2026-11-05.
