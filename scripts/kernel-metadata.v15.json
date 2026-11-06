@@ -1,0 +1,23 @@
+{
+  "id": "reihlinstinct/kurrent-timing-run-1",
+  "title": "kurrent-timing-run-1",
+  "code_file": "kurrent-timing-run-1.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "category_ids": [],
+  "dataset_sources": [
+    "reihlinstinct/kurrent-code",
+    "reihlinstinct/kurrent-train-v1",
+    "reihlinstinct/kurrent-train-v1b",
+    "reihlinstinct/kurrent-train-v1c",
+    "reihlinstinct/kurrent-train-v1d",
+    "reihlinstinct/kurrent-batch1",
+    "reihlinstinct/kurrent-batch2"
+  ],
+  "competition_sources": [],
+  "kernel_sources": []
+}

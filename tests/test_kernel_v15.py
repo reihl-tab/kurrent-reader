@@ -121,3 +121,15 @@ def test_gentle_block_lowlr_default() -> None:
     assert ns["LR"] == 1e-6
     assert ns["_frozen"] == 0
     assert all(p.requires_grad for p in model.parameters())
+
+
+def test_push_metadata_enables_internet() -> None:
+    """2026-11-06 incident: a push with enable_internet:false failed at
+    processor load (DNS blocked). The push metadata MUST keep internet on
+    (needed to fetch dh-unibe/trocr-kurrent from HuggingFace)."""
+    meta = json.loads(
+        (Path(__file__).resolve().parents[1] / "scripts" / "kernel-metadata.v15.json").read_text()
+    )
+    assert meta["enable_internet"] is True
+    assert meta["enable_gpu"] is True
+    assert "reihlinstinct/kurrent-batch2" in meta["dataset_sources"]
