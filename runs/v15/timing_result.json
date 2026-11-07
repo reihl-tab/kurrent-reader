@@ -1,0 +1,9 @@
+{
+  "kernel": "reihlinstinct/kurrent-timing-run-1",
+  "version": 19,
+  "status": "COMPLETE",
+  "launched_ist": "2026-11-07T19:04",
+  "completed_ist": "2026-11-07T20:35",
+  "train_runtime_sec": 3056,
+  "wall_sec_approx": 3900
+}

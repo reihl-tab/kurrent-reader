@@ -1,0 +1,72 @@
+{
+  "run": "v15, Kaggle reihlinstinct/kurrent-timing-run-1 Version 19, launched 2026-11-07 ~19:04 IST; completed ~20:35 IST (Version 18 died ~1 min in on a missing 'import json' before any training; fixed and re-pushed with user approval from 17:29)",
+  "recipe": "from base dh-unibe/trocr-kurrent, lowlr LR 1e-6, x4 target mix, batch 8, max_steps 2000, eval every 500",
+  "data": {
+    "source": "single clean merged manifest (labeling/batch2/merged_v15_manifest.json) = kurrent-batch2 dataset v2 batch2_manifest.jsonl",
+    "merged_v15_cells": 301,
+    "heldout_drops_needed": 0,
+    "heldout_ids": [
+      "33739",
+      "35238",
+      "38666",
+      "38678",
+      "38693",
+      "38696"
+    ],
+    "mm_lines": 62829,
+    "total_samples": 64033,
+    "note": "first run with zero embedded/batch2 duplicates, no row-shifted seeds, no text-level Gerson-name leak - clean measurement vs v14's contaminated 337 loaded / ~224 unique"
+  },
+  "eval_names": {
+    "before": 0.9067,
+    "best_trained": 0.8894,
+    "best_step": 500,
+    "trajectory": {
+      "500": 0.8894,
+      "1000": 1.0213,
+      "1500": 1.0317,
+      "2000": 1.0804
+    },
+    "word_acc": 0.0,
+    "date_span_hits": "28 and 1845 both false at all checkpoints",
+    "note": "v14 best was 1.0387 at step 500; v15 best 0.8894 - cleaner data improved held-out names"
+  },
+  "mm006_500": {
+    "before": {
+      "cer": 0.0624,
+      "word_acc": 0.7372
+    },
+    "best_step500": {
+      "cer": 0.0377,
+      "word_acc": 0.8505
+    },
+    "note": "v14 best was cer 0.039; v15 0.0377, word_acc up"
+  },
+  "eval12": {
+    "h01_cer": {
+      "before": 0.929,
+      "after": 0.714
+    },
+    "h07_cer": {
+      "before": 0.476,
+      "best_step500": 0.429,
+      "after_final": 0.452
+    }
+  },
+  "seeds_fit": {
+    "cer": 1.0797,
+    "note": "high = not memorizing trained seeds"
+  },
+  "training": {
+    "train_runtime_sec": 3056,
+    "train_steps_per_second": 0.654,
+    "train_loss": 1.207,
+    "best_checkpoint": "step 500 saved as checkpoint-best"
+  },
+  "cost": {
+    "gpu": "Tesla T4",
+    "v18_wasted_min": 1,
+    "v19_wall_min": 65,
+    "total_gpu_min_today": 66
+  }
+}
