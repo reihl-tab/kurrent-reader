@@ -1,0 +1,69 @@
+{
+  "run": "v16",
+  "kernel": "reihlinstinct/kurrent-timing-run-1",
+  "kernel_version": 21,
+  "launched_ist": "2026-11-07T22:34",
+  "gpu": "Tesla T4",
+  "train_runtime_s": 778.2,
+  "config": {
+    "init": "from-base",
+    "REPEAT": 6,
+    "MAX_STEPS": 500,
+    "EVAL_EVERY": 250,
+    "LR": 1e-06,
+    "manifest": "train_manifest_v4.jsonl (clean 301 cells, unchanged from v15)"
+  },
+  "results": {
+    "EVAL500": {
+      "before": {
+        "cer": 0.0624,
+        "word_acc": 0.7372
+      },
+      "best_step500": {
+        "cer": 0.047,
+        "word_acc": 0.8121
+      }
+    },
+    "EVAL_NAMES_dev7": {
+      "before": {
+        "cer": 0.9067
+      },
+      "step250": {
+        "cer": 1.0109
+      },
+      "step500_best": {
+        "cer": 0.9276,
+        "word_acc": 0.0
+      }
+    },
+    "EVAL12": {
+      "h01": {
+        "before": 0.929,
+        "after": 0.714
+      },
+      "h07": {
+        "before": 0.476,
+        "after": 0.476
+      }
+    },
+    "EVAL_SEEDS_FIT": {
+      "cer": 0.9487
+    }
+  },
+  "vs_v15": {
+    "EVAL500_best": {
+      "v15": 0.0377,
+      "v16": 0.047
+    },
+    "EVAL_NAMES_best": {
+      "v15": 0.8894,
+      "v16": 0.9276
+    },
+    "EVAL_SEEDS_FIT": {
+      "v15": 1.0797,
+      "v16": 0.9487
+    }
+  },
+  "claim_boundary": "cleaner-data run achieved these scores; REPEAT 4->6 was the deliberate lever vs v15 (step cap 500 = v15's best step), but no causation proof; best step selected on the 7-person dev eval; EVAL500 is a separate benchmark from the names result.",
+  "note": "v20 (first push) died instantly: blob token saved as script text (push bug), no GPU burned. v21 = corrected push."
+}
