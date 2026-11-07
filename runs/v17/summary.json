@@ -1,0 +1,56 @@
+{
+  "run": "v17",
+  "kernel": "reihlinstinct/kurrent-timing-run-1",
+  "kernel_version": 22,
+  "launched_ist": "2026-11-07T23:11",
+  "gpu": "Tesla T4",
+  "train_runtime_s": 416.2,
+  "config": {
+    "init": "v15 best@500 checkpoint (dataset kurrent-checkpoint-v15best)",
+    "REPEAT": 6,
+    "MAX_STEPS": 250,
+    "EVAL_EVERY": 125,
+    "LR": 5e-07,
+    "manifest": "train_manifest_v4.jsonl (clean 301 cells, unchanged)"
+  },
+  "results": {
+    "EVAL500": {
+      "before_v15best": {
+        "cer": 0.0377,
+        "word_acc": 0.8505
+      },
+      "best_step125": {
+        "cer": 0.0357,
+        "word_acc": 0.8587
+      }
+    },
+    "EVAL_NAMES_dev7": {
+      "before_v15best": {
+        "cer": 0.8894
+      },
+      "step125_best": {
+        "cer": 1.1339
+      },
+      "step250": {
+        "cer": 1.1339
+      }
+    },
+    "EVAL12": {
+      "h01": {
+        "before": 0.714,
+        "best125": 0.714,
+        "final250": 1.0
+      },
+      "h07": {
+        "before": 0.429,
+        "after": 0.429
+      }
+    },
+    "EVAL_SEEDS_FIT": {
+      "cer": 0.982,
+      "v15": 1.0797
+    }
+  },
+  "interpretation": "Trade-off, not an improvement: EVAL500 improved slightly (0.0377->0.0357) but the 7-person names CER collapsed 0.8894->1.1339 within the first 125 steps and never recovered. The run's own combinedCER best-checkpoint selector picked step125 despite the names collapse, i.e. the selection metric is not aligned with the names objective. v15 best@500 remains the best names checkpoint (0.8894); v17 step125 is the best EVAL500 checkpoint (0.0357).",
+  "claim_boundary": "achieved-on-cleaner-data scores, no causation proof; best step selected by the run's combinedCER on dev evals; EVAL500 separate from names; init was v15 best@500."
+}
