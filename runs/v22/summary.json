@@ -1,0 +1,52 @@
+{
+ "run": "v22",
+ "kernel": "reihlinstinct/kurrent-armb-run-1",
+ "kernel_version": 3,
+ "launched_ist": "2026-11-08T09:14",
+ "completed_ist": "2026-11-08T09:38",
+ "gpu": "Tesla T4",
+ "train_runtime_s": 901,
+ "total_runtime_s": 1357,
+ "note": "arm-B launch took 3 versions: v20 died on Kaggle's new nested dataset mounts (stale flat paths), v21 fixed pages/eval500 but died on stale CODE path, v22 resolved all mounts recursively. Recipe identical across all three.",
+ "config": {
+  "init": "from-base",
+  "REPEAT": 4,
+  "MAX_STEPS": 500,
+  "EVAL_EVERY": 125,
+  "LR": 1e-06,
+  "selection": "names-CER only, seeded with init score (must beat step-0)",
+  "manifest": "embedded 306-cell arm-B manifest (301 merged v15 + 5 second-hand date cells: g10/38752, g10/3664, g07/38779, g07/38653, g07/38765); 64053 train samples (62829 MM + 306x4)"
+ },
+ "results": {
+  "EVAL_NAMES_dev7_trajectory": {
+   "step0": 0.9067,
+   "step125": 0.9067,
+   "step250": 0.9172,
+   "step375": 1.0109,
+   "step500": 1.0109
+  },
+  "best": {
+   "step": 0,
+   "names_cer": null,
+   "note": "no training step beat the init score 0.9067; selector kept base weights",
+   "EVAL500": {
+    "cer": 0.0624,
+    "word_acc": 0.7372
+   }
+  },
+  "EVAL12": {
+   "h01_before": 0.929,
+   "h01_step250": 0.714,
+   "h07_before": 0.476,
+   "h07_step500": 0.429
+  },
+  "EVAL_SEEDS_FIT": {
+   "cer": 0.9622
+  }
+ },
+ "vs_v18_baseline": {
+  "v18_names_peak": "0.8894@250",
+  "v22": "never below init 0.9067",
+  "reading": "adding the 5 second-hand date cells (306 vs 301) under the identical lowlr recipe removed the step-250 improvement v18 showed; no evidence arm-B additions help held-out names, and v18's 0.8894@250 peak did not survive a 5-cell training-set change - treat it as selection noise on the 7-person dev eval, not a robust effect"
+ }
+}
