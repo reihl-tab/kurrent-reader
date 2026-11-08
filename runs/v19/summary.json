@@ -1,0 +1,36 @@
+{
+  "run": "v19",
+  "kernel": "reihlinstinct/kurrent-timing-run-1",
+  "kernel_version": 24,
+  "launched_ist": "2026-11-08T06:30",
+  "gpu": "Tesla T4",
+  "train_runtime_s": 506.4,
+  "config": {
+    "init": "from-base",
+    "REPEAT": 4,
+    "MAX_STEPS": 500,
+    "EVAL_EVERY": 125,
+    "gentle": "freeze-encoder (164 params frozen), LR 5e-6 warmup 100",
+    "selection": "names-CER only, seeded with init score",
+    "manifest": "train_manifest_v4.jsonl (clean 301 cells, unchanged)"
+  },
+  "results": {
+    "EVAL_NAMES_dev7_trajectory": {
+      "step0": 0.9067,
+      "step125": 0.9345,
+      "step250": 1.0791,
+      "step375": 1.1069,
+      "step500": 1.1069
+    },
+    "best": "base (no trained step beat init; selector kept step 0 as designed)",
+    "EVAL500": {
+      "before": 0.0624,
+      "best_is_base": 0.0624
+    },
+    "EVAL_SEEDS_FIT": {
+      "cer": 0.9616
+    }
+  },
+  "interpretation": "Freeze-encoder + its paired 5e-6 LR degrades held-out names from the first eval point, monotonically. The init-seeded selector prevented a bad checkpoint from being crowned (best = base). Answer to the variant question: freezing the encoder does NOT preserve names; lowlr (all-param, LR 1e-6) remains the right mode. Confound noted: this variant changes both freeze and LR, so the harm can't be attributed to freezing alone - but as a package it is clearly worse.",
+  "claim_boundary": "achieved-on-cleaner-data scores, no causation; names = 7-person dev eval; EVAL500 separate."
+}
