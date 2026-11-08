@@ -1,0 +1,43 @@
+{
+  "run": "v18",
+  "kernel": "reihlinstinct/kurrent-timing-run-1",
+  "kernel_version": 23,
+  "launched_ist": "2026-11-08T05:22",
+  "gpu": "Tesla T4",
+  "train_runtime_s": 876.9,
+  "config": {
+    "init": "from-base",
+    "REPEAT": 4,
+    "MAX_STEPS": 500,
+    "EVAL_EVERY": 125,
+    "LR": 1e-06,
+    "selection": "names-CER only, seeded with init score (must beat step-0)",
+    "manifest": "train_manifest_v4.jsonl (clean 301 cells, unchanged)"
+  },
+  "results": {
+    "EVAL_NAMES_dev7_trajectory": {
+      "step0": 0.9067,
+      "step125": 0.9067,
+      "step250": 0.8894,
+      "step375": 1.0005,
+      "step500": 0.9172
+    },
+    "best": {
+      "step": 250,
+      "names_cer": 0.8894,
+      "EVAL500": {
+        "cer": 0.0546,
+        "word_acc": 0.774
+      }
+    },
+    "EVAL12": {
+      "h01": 0.714,
+      "h07": 0.476
+    },
+    "EVAL_SEEDS_FIT": {
+      "cer": 0.895
+    }
+  },
+  "interpretation": "Early peak confirmed: names dev CER bottoms at step 250 then deteriorates (1.0005@375). Best names 0.8894 TIES v15's best@500 exactly (same recipe ceiling on the 7-crop dev set, reproduced independently). Trade-off remains: v18's names-best checkpoint has EVAL500 0.0546 vs v15-best's 0.0377 - the names-best and EVAL500-best points do not coincide. v15 best@500 remains the reference checkpoint.",
+  "claim_boundary": "achieved-on-cleaner-data scores, no causation; best@250 is selection on the 7-person dev eval; EVAL500 reported separately; init-seeded selector worked as designed (rejected steps 375/500)."
+}
