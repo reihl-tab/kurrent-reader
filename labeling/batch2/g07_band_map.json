@@ -17,5 +17,71 @@
    "conf": "not-found-index-mis-mapping",
    "note": "band 3 BOTTOM sub-band has Mai-1849 date but name+father read Caroline/Mosbacher, not Joseph/Strauss - index mis-mapping, no label"
   }
+ },
+ "right_page_inventory_2026-11-08": {
+  "_meta": "g07_22.jpg RIGHT page (second hand), 10 date-column rows read at 2-3x autocontrast. Rows = births 1848-1852. Weekday kept only if ink legible AND calendar-verified AND non-conflicting. Time-of-day words: left-page time readings do not exist for these rows -> all uncorroborated -> excluded everywhere (consistent with g10 cross-page conflict finding). Index matching by gebdatum against eschau1081_index.json.",
+  "rows": {
+   "r1": {
+    "read": "den 25. Nov. 1848 (faint)",
+    "index": "no match 25.11.1848",
+    "cell": "none"
+   },
+   "r2": {
+    "read": "[weekday cut/ambiguous] den 25. fünfundzwanzigsten Jan. 1849 Morgens 6 Uhr",
+    "calendar": "25.01.1849 = Thursday (ink weekday not legible -> omitted)",
+    "index": "38779 Rothschild, Josef 25.01.1849",
+    "cell": "R-d38779 (lines 'fünfundzwanzigsten'+'Jan. 1849')",
+    "conf": "medium"
+   },
+   "r3": {
+    "read": "den zwölften Juli 1849 Morgens 2 Uhr",
+    "index": "38744 Karoline Mosbacher (already labeled band3-top)",
+    "cell": "none (dup of existing)"
+   },
+   "r4": {
+    "read": "Dienstag den 8. Okt. achten Oct. 1849 abends 6 Uhr",
+    "calendar": "08.10.1849 = Monday -> ink weekday CONFLICTS",
+    "index": "no match",
+    "cell": "none"
+   },
+   "r5": {
+    "read": "[..tag illegible] den 15. fünfzehnten Nov. 1849 Morgens 8 Uhr",
+    "calendar": "15.11.1849 = Thursday",
+    "index": "no match",
+    "cell": "none"
+   },
+   "r6": {
+    "read": "Freitag den 28. achtundzwanzigsten [Dez.] 1849 abends 3 Uhr",
+    "calendar": "28.12.1849 = Friday PASS",
+    "index": "no match",
+    "cell": "none"
+   },
+   "r7": {
+    "read": "Freitag den 28. achtundzwanzigsten März 1851 abends 10 Uhr",
+    "calendar": "28.03.1851 = Friday PASS",
+    "index": "38653 Mosbacher, Mina 28.03.1851",
+    "cell": "R-d38653",
+    "conf": "medium"
+   },
+   "r8": {
+    "read": "Montag den 8 April 1851 abends 6 Uhr",
+    "calendar": "08.04.1851 = Tuesday -> ink weekday CONFLICTS; date+year lines not separable from weekday in one bbox",
+    "index": "38780 Rothschild, Sarah 08.04.1851",
+    "cell": "none (weekday conflict, not cleanly croppable)"
+   },
+   "r9": {
+    "read": "Montag den 5. fünften Jan. 1852 Morgens 8 Uhr",
+    "calendar": "05.01.1852 = Monday PASS",
+    "index": "38765 Regensburger, Sarah 05.01.1852",
+    "cell": "R-d38765",
+    "conf": "medium"
+   },
+   "r10": {
+    "read": "Mittwoch den 18. achtzehnten Febr. 1852 mittags 2 Uhr",
+    "calendar": "18.02.1852 = Wednesday PASS",
+    "index": "no match",
+    "cell": "none"
+   }
+  }
  }
 }

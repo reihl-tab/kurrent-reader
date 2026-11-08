@@ -1,0 +1,4712 @@
+[
+ {
+  "file": "g01_22.jpg",
+  "bbox": [
+   310,
+   512,
+   300,
+   48
+  ],
+  "text": "Beile Marx",
+  "IdNr": 38736,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "1821#1"
+ },
+ {
+  "file": "g01_22.jpg",
+  "bbox": [
+   1055,
+   815,
+   155,
+   60
+  ],
+  "text": "Joseph Mosbacher",
+  "IdNr": 33729,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "1821#2"
+ },
+ {
+  "file": "g01_22.jpg",
+  "bbox": [
+   460,
+   640,
+   330,
+   52
+  ],
+  "text": "23.11.1821",
+  "IdNr": 33729,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1821#2"
+ },
+ {
+  "file": "g01_22.jpg",
+  "bbox": [
+   560,
+   815,
+   185,
+   60
+  ],
+  "text": "Merjem Mosbacher",
+  "IdNr": 38747,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "1821#2"
+ },
+ {
+  "file": "g01_22.jpg",
+  "bbox": [
+   460,
+   640,
+   330,
+   52
+  ],
+  "text": "23.11.1821",
+  "IdNr": 38747,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1821#2"
+ },
+ {
+  "file": "g01_22.jpg",
+  "bbox": [
+   940,
+   1105,
+   170,
+   43
+  ],
+  "text": "Beile Michel",
+  "IdNr": 38737,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "1822#1"
+ },
+ {
+  "file": "g01_22.jpg",
+  "bbox": [
+   320,
+   1000,
+   325,
+   56
+  ],
+  "text": "11.06.1822",
+  "IdNr": 38737,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1822#1"
+ },
+ {
+  "file": "g01_22.jpg",
+  "bbox": [
+   320,
+   1290,
+   1080,
+   130
+  ],
+  "text": "Julia Schönlein Strauß",
+  "IdNr": 38314,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "1822#2"
+ },
+ {
+  "file": "g01_22.jpg",
+  "bbox": [
+   400,
+   1230,
+   300,
+   60
+  ],
+  "text": "28.05.1822",
+  "IdNr": 38314,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1822#2"
+ },
+ {
+  "file": "g01_22.jpg",
+  "bbox": [
+   760,
+   1635,
+   250,
+   53
+  ],
+  "text": "Wolf Strauß",
+  "IdNr": 38813,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "1822#3"
+ },
+ {
+  "file": "g01_22.jpg",
+  "bbox": [
+   420,
+   1543,
+   347,
+   55
+  ],
+  "text": "29.07.1822",
+  "IdNr": 38813,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1822#3"
+ },
+ {
+  "file": "g01_22.jpg",
+  "bbox": [
+   660,
+   1853,
+   340,
+   62
+  ],
+  "text": "Vrommet Michel",
+  "IdNr": 38742,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "1822#4"
+ },
+ {
+  "file": "g01_22.jpg",
+  "bbox": [
+   420,
+   1773,
+   313,
+   55
+  ],
+  "text": "29.11.1822",
+  "IdNr": 38742,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1822#4"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   140,
+   543,
+   205,
+   118
+  ],
+  "text": "Elias Mosbacher",
+  "IdNr": 34023,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "L-n34023",
+  "note": "given name 'Elias' legible, surname line faint/abbreviated in ink; label from index. TRIPLE dup index persons 34023/35707/38748 = same entry, labeled once (34023). Date pairing unique (25.06.1823); bbox width clipped at col1/col2 rule (father column excluded)"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   140,
+   703,
+   195,
+   95
+  ],
+  "text": "Hajum Strauß",
+  "IdNr": 37361,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "L-n37361",
+  "note": "ink faint; index 'Strauss, Hajum (Chaim Sohn des David Halevi)'; date pairing 18.08.1823; bbox width clipped at col1/col2 rule (father column excluded)"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   140,
+   913,
+   180,
+   87
+  ],
+  "text": "Jakob Michel",
+  "IdNr": 38015,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38015",
+  "note": "small mark line below name (possible death-note start, d.18.07.1825 per index) excluded from bbox; bbox width clipped at col1/col2 rule (father column excluded)"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   140,
+   1073,
+   180,
+   90
+  ],
+  "text": "Kindle Michel",
+  "IdNr": 38018,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38018",
+  "note": "bbox width clipped at col1/col2 rule (father column excluded)"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   140,
+   1273,
+   180,
+   110
+  ],
+  "text": "Vromeln Michel",
+  "IdNr": 38022,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "L-n38022",
+  "note": "given name reads 'Vromeln'?/'Vromme'?; index 'Michel, NN, Vromeln'; date pairing 27.02.1825; bbox width clipped at col1/col2 rule (father column excluded)"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   140,
+   1453,
+   180,
+   100
+  ],
+  "text": "Abraham Strauß",
+  "IdNr": 38784,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38784",
+  "note": "bbox width clipped at col1/col2 rule (father column excluded)"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   140,
+   1603,
+   180,
+   95
+  ],
+  "text": "Vromel Michel",
+  "IdNr": 38738,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38738",
+  "note": "bbox width clipped at col1/col2 rule (father column excluded)"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   140,
+   1813,
+   180,
+   120
+  ],
+  "text": "Isaak Strasburger",
+  "IdNr": 38031,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38031",
+  "note": "bbox width clipped at col1/col2 rule (father column excluded)"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   1840,
+   538,
+   405,
+   115
+  ],
+  "text": "den 25ten Juni 1823, 11 Uhr",
+  "IdNr": 34023,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d34023",
+  "note": "hour qualifier word illegible - omitted; no weekday words in this register; numerals from index; bbox x1840-2245: excludes left col bleed and right col rule (~x2250)"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   1840,
+   683,
+   405,
+   100
+  ],
+  "text": "den 18ten August 1823, Morgens",
+  "IdNr": 37361,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d37361",
+  "note": "day numeral ambiguous in ink (reads '19ten'?; index 18.08.1823, label from index); hour numeral illegible - omitted; bbox x1840-2245: excludes left col bleed and right col rule (~x2250)"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   1840,
+   893,
+   405,
+   80
+  ],
+  "text": "den 3ten October 1824, 11 Uhr",
+  "IdNr": 38015,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38015",
+  "note": "hour qualifier word illegible - omitted; numerals from index; bbox x1840-2245: excludes left col bleed and right col rule (~x2250)"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   1840,
+   1078,
+   405,
+   115
+  ],
+  "text": "den 1ten November 1824, Morgens",
+  "IdNr": 38018,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38018",
+  "note": "hour numeral weak - omitted; numerals from index; bbox x1840-2245: excludes left col bleed and right col rule (~x2250)"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   1840,
+   1273,
+   405,
+   80
+  ],
+  "text": "den 27ten Februar 1825, Mittags 1 Uhr",
+  "IdNr": 38022,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38022",
+  "note": "month word weak; numerals from index; bbox x1840-2245: excludes left col bleed and right col rule (~x2250)"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   1840,
+   1448,
+   405,
+   125
+  ],
+  "text": "den 18ten November 1825, Morgens",
+  "IdNr": 38784,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38784",
+  "note": "hour numeral illegible - omitted; numerals from index; bbox x1840-2245: excludes left col bleed and right col rule (~x2250)"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   1840,
+   1595,
+   405,
+   158
+  ],
+  "text": "den 24ten Juni 1826, Morgens",
+  "IdNr": 38738,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38738",
+  "note": "hour numeral weak - omitted; numerals from index; bbox x1840-2245: excludes left col bleed and right col rule (~x2250)"
+ },
+ {
+  "file": "g02_22.jpg",
+  "bbox": [
+   1840,
+   1822,
+   405,
+   156
+  ],
+  "text": "den 7ten August 1826, 5 Uhr",
+  "IdNr": 38031,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38031",
+  "note": "hour qualifier word faint - omitted; numerals from index; bbox x1840-2245: excludes left col bleed and right col rule (~x2250)"
+ },
+ {
+  "file": "g04_22.jpg",
+  "bbox": [
+   150,
+   365,
+   280,
+   135
+  ],
+  "text": "Veila Mosbacher",
+  "IdNr": 38037,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38037",
+  "note": "ink reads 'Veile', index 'Veila'; label from index"
+ },
+ {
+  "file": "g04_22.jpg",
+  "bbox": [
+   150,
+   540,
+   280,
+   142
+  ],
+  "text": "Mendel Mosbacher",
+  "IdNr": 3763,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n3763",
+  "note": "duplicate index person 3764 = same entry, labeled once (3763); the g12/g13 father as a CHILD here (b.18.10.1831)"
+ },
+ {
+  "file": "g04_22.jpg",
+  "bbox": [
+   150,
+   741,
+   280,
+   148
+  ],
+  "text": "Jakob Michel",
+  "IdNr": 38043,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38043"
+ },
+ {
+  "file": "g04_22.jpg",
+  "bbox": [
+   150,
+   1255,
+   280,
+   145
+  ],
+  "text": "Moses Strauß",
+  "IdNr": 38794,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "L-n38794",
+  "note": "surname heavy flourish, semi-legible"
+ },
+ {
+  "file": "g04_22.jpg",
+  "bbox": [
+   150,
+   1450,
+   280,
+   115
+  ],
+  "text": "Joseph Mosbacher",
+  "IdNr": 6403,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n6403",
+  "note": "duplicate index person 38095 = same entry, labeled once (6403); later-hand death note '+ d. 9 Aug. 1835' below name EXCLUDED from bbox"
+ },
+ {
+  "file": "g04_22.jpg",
+  "bbox": [
+   150,
+   1700,
+   280,
+   120
+  ],
+  "text": "Isaak Strauß",
+  "IdNr": 38097,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38097",
+  "note": "later-hand small repeat annotation below excluded from bbox"
+ },
+ {
+  "file": "g04_22.jpg",
+  "bbox": [
+   150,
+   1880,
+   280,
+   137
+  ],
+  "text": "Madel Mosbacher",
+  "IdNr": 38098,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38098",
+  "note": "d.08.04.1837 per index (also s03 death register person)"
+ },
+ {
+  "file": "g04_22.jpg",
+  "bbox": [
+   2100,
+   370,
+   400,
+   146
+  ],
+  "text": "23.04.1831",
+  "IdNr": 38037,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38037",
+  "note": "'d 23t Apr: 1831 Morgens 1 Uhr' legible; no weekday words in this register"
+ },
+ {
+  "file": "g04_22.jpg",
+  "bbox": [
+   2100,
+   541,
+   400,
+   139
+  ],
+  "text": "18.10.1831",
+  "IdNr": 3763,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d3763",
+  "note": "'d 18t Oct: 1831 Morgens 8 Uhr' legible"
+ },
+ {
+  "file": "g04_22.jpg",
+  "bbox": [
+   2100,
+   712,
+   400,
+   130
+  ],
+  "text": "19.12.1831",
+  "IdNr": 38043,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "R-d38043",
+  "note": "'d 19t Dec 1831 Mittags 4 Uhr' - day numeral weak, month/year legible"
+ },
+ {
+  "file": "g04_22.jpg",
+  "bbox": [
+   2100,
+   1148,
+   400,
+   96
+  ],
+  "text": "14.06.1833",
+  "IdNr": 38794,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38794",
+  "note": "'d 14ten Jun 1833 Abends 4 Uhr' legible"
+ },
+ {
+  "file": "g04_22.jpg",
+  "bbox": [
+   2100,
+   1252,
+   400,
+   152
+  ],
+  "text": "18.08.1833",
+  "IdNr": 6403,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d6403",
+  "note": "'d 18t Aug 1833 Abends 6(?) Uhr' legible"
+ },
+ {
+  "file": "g04_22.jpg",
+  "bbox": [
+   2100,
+   1660,
+   400,
+   200
+  ],
+  "text": "15.01.1835",
+  "IdNr": 38097,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "R-d38097",
+  "note": "'d 15t Jan ...5 Abends 6 Uhr' - year tail weak"
+ },
+ {
+  "file": "g04_22.jpg",
+  "bbox": [
+   2100,
+   1924,
+   400,
+   176
+  ],
+  "text": "28.11.1835",
+  "IdNr": 38098,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38098",
+  "note": "'d 28t Nov 1835 Abends 9 Uhr' legible"
+ },
+ {
+  "file": "g05_22.jpg",
+  "bbox": [
+   160,
+   171,
+   240,
+   382
+  ],
+  "text": "Rebecca Mosbacher",
+  "IdNr": 38099,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "0.0-1"
+ },
+ {
+  "file": "g05_22.jpg",
+  "bbox": [
+   2050,
+   170,
+   420,
+   200
+  ],
+  "text": "10.01.1836",
+  "IdNr": 38099,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "1.1-2"
+ },
+ {
+  "file": "g05_22.jpg",
+  "bbox": [
+   2050,
+   572,
+   420,
+   179
+  ],
+  "text": "15.09.1837",
+  "IdNr": 38100,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.3"
+ },
+ {
+  "file": "g05_22.jpg",
+  "bbox": [
+   160,
+   744,
+   240,
+   191
+  ],
+  "text": "Emanuel Mosbacher",
+  "IdNr": 38101,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.3"
+ },
+ {
+  "file": "g05_22.jpg",
+  "bbox": [
+   2050,
+   751,
+   420,
+   179
+  ],
+  "text": "07.04.1838",
+  "IdNr": 38101,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.4"
+ },
+ {
+  "file": "g05_22.jpg",
+  "bbox": [
+   160,
+   935,
+   240,
+   191
+  ],
+  "text": "Josef Leopold Mosbacher",
+  "IdNr": 6407,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.4"
+ },
+ {
+  "file": "g05_22.jpg",
+  "bbox": [
+   2050,
+   930,
+   420,
+   179
+  ],
+  "text": "08.04.1841",
+  "IdNr": 6407,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.5"
+ },
+ {
+  "file": "g05_22.jpg",
+  "bbox": [
+   160,
+   1126,
+   240,
+   191
+  ],
+  "text": "Therese Regensburger",
+  "IdNr": 38103,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.5"
+ },
+ {
+  "file": "g05_22.jpg",
+  "bbox": [
+   2050,
+   1109,
+   420,
+   179
+  ],
+  "text": "06.06.1841",
+  "IdNr": 38103,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.6"
+ },
+ {
+  "file": "g05_22.jpg",
+  "bbox": [
+   160,
+   1317,
+   240,
+   191
+  ],
+  "text": "Aaron Strauß",
+  "IdNr": 38106,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "0.6"
+ },
+ {
+  "file": "g05_22.jpg",
+  "bbox": [
+   2050,
+   1288,
+   420,
+   179
+  ],
+  "text": "14.09.1841",
+  "IdNr": 38106,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "1.7"
+ },
+ {
+  "file": "g05_22.jpg",
+  "bbox": [
+   160,
+   1508,
+   240,
+   191
+  ],
+  "text": "Resel Mosbacher",
+  "IdNr": 38107,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.7"
+ },
+ {
+  "file": "g05_22.jpg",
+  "bbox": [
+   2050,
+   1467,
+   420,
+   179
+  ],
+  "text": "21.10.1841",
+  "IdNr": 38107,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.8"
+ },
+ {
+  "file": "g05_22.jpg",
+  "bbox": [
+   160,
+   1699,
+   240,
+   191
+  ],
+  "text": "Emanuel Mosbacher",
+  "IdNr": 38113,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "0.8"
+ },
+ {
+  "file": "g05_22.jpg",
+  "bbox": [
+   2050,
+   1646,
+   420,
+   179
+  ],
+  "text": "28.01.1843",
+  "IdNr": 38113,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "1.9"
+ },
+ {
+  "file": "g05_22.jpg",
+  "bbox": [
+   160,
+   1890,
+   240,
+   191
+  ],
+  "text": "Ernestine Regensburger",
+  "IdNr": 38198,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.9"
+ },
+ {
+  "file": "g05_22.jpg",
+  "bbox": [
+   2050,
+   1825,
+   420,
+   179
+  ],
+  "text": "28.01.1843",
+  "IdNr": 38198,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.10"
+ },
+ {
+  "file": "g05_22.jpg",
+  "bbox": [
+   160,
+   2025,
+   240,
+   162
+  ],
+  "text": "Abraham Mosbacher",
+  "IdNr": 38199,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.10"
+ },
+ {
+  "file": "g05_22.jpg",
+  "bbox": [
+   2050,
+   1950,
+   420,
+   225
+  ],
+  "text": "29.02.1844",
+  "IdNr": 38199,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.11"
+ },
+ {
+  "file": "g06_22.jpg",
+  "bbox": [
+   160,
+   219,
+   240,
+   183
+  ],
+  "text": "Sara Strauß",
+  "IdNr": 38671,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.1"
+ },
+ {
+  "file": "g06_22.jpg",
+  "bbox": [
+   2050,
+   230,
+   420,
+   190
+  ],
+  "text": "02.05.1844",
+  "IdNr": 38671,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.1"
+ },
+ {
+  "file": "g06_22.jpg",
+  "bbox": [
+   160,
+   402,
+   240,
+   183
+  ],
+  "text": "Isaak Mosbacher",
+  "IdNr": 38309,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.2"
+ },
+ {
+  "file": "g06_22.jpg",
+  "bbox": [
+   2050,
+   420,
+   420,
+   190
+  ],
+  "text": "09.01.1845",
+  "IdNr": 38309,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.2"
+ },
+ {
+  "file": "g06_22.jpg",
+  "bbox": [
+   160,
+   585,
+   240,
+   183
+  ],
+  "text": "David Regensburger",
+  "IdNr": 38763,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.3"
+ },
+ {
+  "file": "g06_22.jpg",
+  "bbox": [
+   2050,
+   610,
+   420,
+   190
+  ],
+  "text": "22.02.1845",
+  "IdNr": 38763,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.3"
+ },
+ {
+  "file": "g06_22.jpg",
+  "bbox": [
+   160,
+   768,
+   240,
+   183
+  ],
+  "text": "Koppel Strauß",
+  "IdNr": 38814,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.4"
+ },
+ {
+  "file": "g06_22.jpg",
+  "bbox": [
+   2050,
+   800,
+   420,
+   190
+  ],
+  "text": "02.05.1845",
+  "IdNr": 38814,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.4"
+ },
+ {
+  "file": "g06_22.jpg",
+  "bbox": [
+   160,
+   951,
+   240,
+   183
+  ],
+  "text": "Babeta Mosbacher",
+  "IdNr": 38646,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.5"
+ },
+ {
+  "file": "g06_22.jpg",
+  "bbox": [
+   2050,
+   990,
+   420,
+   190
+  ],
+  "text": "02.06.1846",
+  "IdNr": 38646,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.5"
+ },
+ {
+  "file": "g06_22.jpg",
+  "bbox": [
+   160,
+   1134,
+   240,
+   183
+  ],
+  "text": "Edel Strauß",
+  "IdNr": 38796,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "0.6"
+ },
+ {
+  "file": "g06_22.jpg",
+  "bbox": [
+   2050,
+   1180,
+   420,
+   190
+  ],
+  "text": "11.11.1846",
+  "IdNr": 38796,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "1.6"
+ },
+ {
+  "file": "g06_22.jpg",
+  "bbox": [
+   160,
+   1317,
+   240,
+   183
+  ],
+  "text": "Abraham Regensburger",
+  "IdNr": 38764,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.7"
+ },
+ {
+  "file": "g06_22.jpg",
+  "bbox": [
+   2050,
+   1370,
+   420,
+   190
+  ],
+  "text": "03.02.1847",
+  "IdNr": 38764,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.7"
+ },
+ {
+  "file": "g06_22.jpg",
+  "bbox": [
+   160,
+   1500,
+   240,
+   183
+  ],
+  "text": "Daniel Strauß",
+  "IdNr": 38815,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.8"
+ },
+ {
+  "file": "g06_22.jpg",
+  "bbox": [
+   2050,
+   1560,
+   420,
+   190
+  ],
+  "text": "18.05.1847",
+  "IdNr": 38815,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.8"
+ },
+ {
+  "file": "g06_22.jpg",
+  "bbox": [
+   160,
+   1683,
+   240,
+   183
+  ],
+  "text": "Fanny Mosbacher",
+  "IdNr": 23186,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.9"
+ },
+ {
+  "file": "g06_22.jpg",
+  "bbox": [
+   2050,
+   1750,
+   420,
+   190
+  ],
+  "text": "21.06.1847",
+  "IdNr": 23186,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.9"
+ },
+ {
+  "file": "g06_22.jpg",
+  "bbox": [
+   160,
+   1866,
+   240,
+   183
+  ],
+  "text": "Leopold Rothschild",
+  "IdNr": 38766,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.10"
+ },
+ {
+  "file": "g06_22.jpg",
+  "bbox": [
+   2050,
+   1940,
+   420,
+   190
+  ],
+  "text": "23.06.1847",
+  "IdNr": 38766,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.10"
+ },
+ {
+  "file": "g07_22.jpg",
+  "bbox": [
+   81,
+   690,
+   271,
+   190
+  ],
+  "text": "Karoline Mosbacher",
+  "IdNr": 38744,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "0.3-top"
+ },
+ {
+  "file": "g07_22.jpg",
+  "bbox": [
+   1908,
+   690,
+   348,
+   190
+  ],
+  "text": "12.07.1849",
+  "IdNr": 38744,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "0.3-top"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   150,
+   270,
+   355,
+   65
+  ],
+  "text": "Jette Michel",
+  "IdNr": 38739,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38739"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   150,
+   415,
+   355,
+   55
+  ],
+  "text": "Fanny Strauß",
+  "IdNr": 38785,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38785"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   150,
+   530,
+   355,
+   90
+  ],
+  "text": "Gittel Mosbacher",
+  "IdNr": 38745,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38745",
+  "note": "index name 'Mosbacher, Gitta,Getta (Gittel Gattin des Menachem)'; label matches ink 'Gittel'"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   150,
+   750,
+   355,
+   150
+  ],
+  "text": "Moses Regensburger",
+  "IdNr": 38664,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38664",
+  "note": "scribe's struck false-start line above included in bbox; ink order 'Regensburger / Moses'; person also appears on s05"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   150,
+   985,
+   355,
+   130
+  ],
+  "text": "Gidel Mosbacher",
+  "IdNr": 38751,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38751",
+  "note": "first line struck through by scribe (false start reading '...Strauss...'); label 'Gidel Mosbacher'"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   150,
+   1205,
+   355,
+   90
+  ],
+  "text": "Elias Michel",
+  "IdNr": 38740,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38740"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   150,
+   1525,
+   355,
+   95
+  ],
+  "text": "Mendel Mosbacher",
+  "IdNr": 38756,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38756"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   150,
+   1760,
+   355,
+   110
+  ],
+  "text": "Lazarus Strauß",
+  "IdNr": 38799,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38799"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   2100,
+   268,
+   560,
+   120
+  ],
+  "text": "den 7ten März 1852, früh 8 Uhr",
+  "IdNr": 38739,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38739",
+  "note": "weekday word illegible, omitted from label (no single-reader guesses); 07.03.1852 was a Sunday; numerals from index; 'März' and 'früh 8 Uhr' legible"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   2100,
+   398,
+   560,
+   100
+  ],
+  "text": "Freitag den 8ten Mai 1852, Mittags 3 Uhr",
+  "IdNr": 38785,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38785",
+  "note": "weekday 'Freitag' legible but 08.05.1852 was a Saturday - scribe error, documented; numerals from index"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   2100,
+   542,
+   560,
+   130
+  ],
+  "text": "Montag den 21. Juni 1852, Mittags 4 Uhr",
+  "IdNr": 38745,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "L-d38745",
+  "note": "weekday cross-check PASS (21.06.1852 = Monday)"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   2100,
+   668,
+   560,
+   88
+  ],
+  "text": "Dienstag den 30ten November 1852, Mittags 2 Uhr",
+  "IdNr": 38750,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "L-d38750",
+  "note": "weekday cross-check PASS (30.11.1852 = Tuesday); NAME CELL EXCLUDED: near-duplicate of held-out eval name 'Gerson Mosbacher' (33739); flagged for parent ruling"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   2100,
+   798,
+   560,
+   135
+  ],
+  "text": "Am Sonnabend den 27ten May 1854, Morgens 5 Uhr",
+  "IdNr": 38664,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "L-d38664",
+  "note": "weekday cross-check PASS (27.05.1854 = Saturday); year '1854' on separate line"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   2100,
+   1042,
+   560,
+   150
+  ],
+  "text": "am Freitag d. 18ten August 1854, Morgens 4 Uhr",
+  "IdNr": 38751,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "L-d38751",
+  "note": "weekday cross-check PASS (18.08.1854 = Friday)"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   2100,
+   1208,
+   560,
+   195
+  ],
+  "text": "am Donnerstag d. 28ten September 1854, Morgens 4 Uhr",
+  "IdNr": 38740,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "L-d38740",
+  "note": "weekday cross-check PASS (28.09.1854 = Thursday)"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   2100,
+   1448,
+   560,
+   315
+  ],
+  "text": "Freitag den 29ten December 1854, Vormittags 10 Uhr",
+  "IdNr": 38756,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38756",
+  "note": "certificate header line ('...No 10') inside bbox, not transcribed; hour qualifier faint (reads 'Vormittags'?); weekday+date cross-check PASS (29.12.1854 = Friday)"
+ },
+ {
+  "file": "g08_22.jpg",
+  "bbox": [
+   2100,
+   1762,
+   560,
+   140
+  ],
+  "text": "am Mittwoch d. 30ten May 1855, Morgens",
+  "IdNr": 38799,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38799",
+  "note": "hour numeral illegible, omitted from label; weekday cross-check PASS (30.05.1855 = Wednesday)"
+ },
+ {
+  "file": "g09_22.jpg",
+  "bbox": [
+   252,
+   840,
+   145,
+   125
+  ],
+  "text": "Gina Michel",
+  "IdNr": 38741,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38741",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left birth register (no dates there); date cell from right parallel cert book (weekday/date/time); paired via index person + weekday cross-check where weekday word written; two-line 'Gina / Michel'"
+ },
+ {
+  "file": "g09_22.jpg",
+  "bbox": [
+   250,
+   1250,
+   130,
+   70
+  ],
+  "text": "David",
+  "IdNr": 38786,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38786",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left birth register (no dates there); date cell from right parallel cert book (weekday/date/time); paired via index person + weekday cross-check where weekday word written; given name only as inked; surname Strauss in shared parents brace (cert N.104), twins with 38787"
+ },
+ {
+  "file": "g09_22.jpg",
+  "bbox": [
+   245,
+   1340,
+   175,
+   70
+  ],
+  "text": "Jeanette",
+  "IdNr": 38787,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38787",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left birth register (no dates there); date cell from right parallel cert book (weekday/date/time); paired via index person + weekday cross-check where weekday word written; given name only as inked; surname Strauss in shared parents brace, twins with 38786"
+ },
+ {
+  "file": "g09_22.jpg",
+  "bbox": [
+   210,
+   1595,
+   280,
+   100
+  ],
+  "text": "Maier Joseph Mosbacher",
+  "IdNr": 38746,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38746",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left birth register (no dates there); date cell from right parallel cert book (weekday/date/time); paired via index person + weekday cross-check where weekday word written; two-line 'Maier Joseph / Mosbacher'"
+ },
+ {
+  "file": "g09_22.jpg",
+  "bbox": [
+   210,
+   1838,
+   180,
+   52
+  ],
+  "text": "Babette",
+  "IdNr": 38800,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38800",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left birth register (no dates there); date cell from right parallel cert book (weekday/date/time); paired via index person + weekday cross-check where weekday word written; given name only as inked ('posthuma' entry); surname Strauss from index/parent phrase"
+ },
+ {
+  "file": "g09_22.jpg",
+  "bbox": [
+   1900,
+   855,
+   700,
+   155
+  ],
+  "text": "12.10.1856",
+  "IdNr": 38741,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "R-d38741",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left birth register (no dates there); date cell from right parallel cert book (weekday/date/time); paired via index person + weekday cross-check where weekday word written; no weekday word written; 'Am 12ten ... October 1856 ... 6 Uhr' read; 12.10.1856 = Sunday (no cross-check possible)"
+ },
+ {
+  "file": "g09_22.jpg",
+  "bbox": [
+   1900,
+   1215,
+   700,
+   240
+  ],
+  "text": "20.10.1856",
+  "IdNr": 38786,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38786",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left birth register (no dates there); date cell from right parallel cert book (weekday/date/time); paired via index person + weekday cross-check where weekday word written; SHARED date cell with twin 38787; 'Am Montag den zwanzigsten October 1856' - Montag legible, 20.10.1856 = Monday PASS"
+ },
+ {
+  "file": "g09_22.jpg",
+  "bbox": [
+   1900,
+   1215,
+   700,
+   240
+  ],
+  "text": "20.10.1856",
+  "IdNr": 38787,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38787",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left birth register (no dates there); date cell from right parallel cert book (weekday/date/time); paired via index person + weekday cross-check where weekday word written; SHARED date cell with twin 38786; 'Am Montag den zwanzigsten October 1856' - Montag legible, 20.10.1856 = Monday PASS"
+ },
+ {
+  "file": "g09_22.jpg",
+  "bbox": [
+   1900,
+   1610,
+   700,
+   190
+  ],
+  "text": "09.03.1857",
+  "IdNr": 38746,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38746",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left birth register (no dates there); date cell from right parallel cert book (weekday/date/time); paired via index person + weekday cross-check where weekday word written; 'Am Montag ... Maerz 1857, Nachts 12 Uhr' - Montag legible, 09.03.1857 = Monday PASS; day numeral from index, pinned by weekday+month+year"
+ },
+ {
+  "file": "g09_22.jpg",
+  "bbox": [
+   1900,
+   1825,
+   750,
+   125
+  ],
+  "text": "08.11.1857",
+  "IdNr": 38800,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38800",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left birth register (no dates there); date cell from right parallel cert book (weekday/date/time); paired via index person + weekday cross-check where weekday word written; 'Am Sonntag d. 8ten Nov. 1857 Abends' - Sonntag legible, 08.11.1857 = Sunday PASS"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   140,
+   350,
+   330,
+   110
+  ],
+  "text": "Isaak Mosbacher",
+  "IdNr": 38752,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38752"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   140,
+   560,
+   330,
+   95
+  ],
+  "text": "Mina Strauß",
+  "IdNr": 38675,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38675",
+  "note": "index 'Strauß, Wilhelmine, Wilhelmine (Mina)'; ink reads 'Mina Strauß' (call name documented in index)"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   140,
+   845,
+   330,
+   95
+  ],
+  "text": "Jendele Marx",
+  "IdNr": 3664,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n3664",
+  "note": "index 'Marx, Jette, Jendele'; ink reads 'Jendele Marx'; DUP index person 35455 = same entry, labeled once; small-print naming note below excluded from bbox"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   140,
+   1015,
+   330,
+   85
+  ],
+  "text": "Manuel Mosbacher",
+  "IdNr": 38674,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38674",
+  "note": "death note '+ d. 6 Jan. 1860' below excluded from bbox"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   140,
+   1315,
+   330,
+   95
+  ],
+  "text": "Elieser Marx",
+  "IdNr": 38733,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38733"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   140,
+   1495,
+   330,
+   90
+  ],
+  "text": "Mendel Strauß",
+  "IdNr": 38788,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38788"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   140,
+   1610,
+   330,
+   90
+  ],
+  "text": "Abraham Mosbacher",
+  "IdNr": 38753,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38753"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   140,
+   1862,
+   330,
+   78
+  ],
+  "text": "Veist Strauß",
+  "IdNr": 38677,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38677",
+  "note": "index 'Strauß, Veist (Faist, Feist)'; death note '+ 31 Marz 1862' below excluded from bbox"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   1745,
+   382,
+   325,
+   240
+  ],
+  "text": "den 17ten Januar 1858, 10 Uhr",
+  "IdNr": 38752,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38752",
+  "note": "weekday word illegible - omitted (17.01.1858 was a Sunday); hour qualifier faint; numerals from index"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   1745,
+   693,
+   325,
+   137
+  ],
+  "text": "Am Mittwoch den 21ten July 1858",
+  "IdNr": 38675,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "L-d38675",
+  "note": "weekday cross-check PASS (21.07.1858 = Wednesday)"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   1745,
+   853,
+   325,
+   160
+  ],
+  "text": "Am Mittwoch den 15ten September 1858, Morgens 4 Uhr",
+  "IdNr": 3664,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "L-d3664",
+  "note": "weekday cross-check PASS (15.09.1858 = Wednesday)"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   1745,
+   1038,
+   325,
+   185
+  ],
+  "text": "den 19ten December 1859, Mittags 11 Uhr",
+  "IdNr": 38674,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38674",
+  "note": "weekday word illegible - omitted (19.12.1859 was a Monday); numerals from index"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   1745,
+   1293,
+   325,
+   155
+  ],
+  "text": "den 4ten Februar 1860, Morgens 2 Uhr",
+  "IdNr": 38733,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38733",
+  "note": "weekday word illegible - omitted (04.02.1860 was a Saturday); ink word order '...2 Uhr / Morgens'; numerals from index"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   1745,
+   1483,
+   325,
+   145
+  ],
+  "text": "den 4ten April 1860, Morgens 3 Uhr",
+  "IdNr": 38788,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38788",
+  "note": "weekday word illegible - omitted (04.04.1860 was a Wednesday); ink word order '...3 Uhr / Morgens'; numerals from index"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   1745,
+   1640,
+   325,
+   115
+  ],
+  "text": "den 8ten December 1860, Nachmittags 3 Uhr",
+  "IdNr": 38753,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38753",
+  "note": "weekday word illegible - omitted (08.12.1860 was a Saturday); hour qualifier faint ('Nachmittags'?); numerals from index"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   1745,
+   1862,
+   325,
+   140
+  ],
+  "text": "den 30ten Januar 1862, 6 Uhr",
+  "IdNr": 38677,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "L-d38677",
+  "note": "weekday and hour-qualifier words faint - omitted (30.01.1862 was a Thursday); numerals from index"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   225,
+   460,
+   220,
+   110
+  ],
+  "text": "Sara Strauß",
+  "IdNr": 38789,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-r1",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   235,
+   720,
+   200,
+   95
+  ],
+  "text": "Felix Mosbacher",
+  "IdNr": 3766,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-r2",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   235,
+   890,
+   300,
+   140
+  ],
+  "text": "Jeanette Strauß",
+  "IdNr": 38806,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-r3",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   210,
+   1200,
+   230,
+   135
+  ],
+  "text": "Louis Mosbacher",
+  "IdNr": 6446,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-r4",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   185,
+   1475,
+   220,
+   135
+  ],
+  "text": "David Strauß",
+  "IdNr": 38807,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-r5",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   210,
+   1620,
+   250,
+   130
+  ],
+  "text": "Amalie Mosbacher",
+  "IdNr": 38757,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-r6",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   195,
+   1825,
+   290,
+   90
+  ],
+  "text": "Jeanette Strauß",
+  "IdNr": 38694,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "L-r7",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   230,
+   1935,
+   240,
+   100
+  ],
+  "text": "Fanny Strauß",
+  "IdNr": 38808,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-r8",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   1740,
+   490,
+   420,
+   210
+  ],
+  "text": "15.09.1863",
+  "IdNr": 38789,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-1863",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   1740,
+   735,
+   420,
+   150
+  ],
+  "text": "18.03.1864",
+  "IdNr": 3766,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-1864",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   1740,
+   955,
+   420,
+   240
+  ],
+  "text": "30.08.1865",
+  "IdNr": 38806,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-1865",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   1740,
+   1210,
+   420,
+   165
+  ],
+  "text": "14.09.1866",
+  "IdNr": 6446,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-1866",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   1740,
+   1505,
+   420,
+   150
+  ],
+  "text": "06.07.1867",
+  "IdNr": 38807,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-1867",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   1740,
+   1780,
+   420,
+   105
+  ],
+  "text": "28.01.1869",
+  "IdNr": 38757,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "R-1869a",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   1740,
+   1880,
+   420,
+   95
+  ],
+  "text": "25.01.1869",
+  "IdNr": 38694,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "R-1869b",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g11_22.jpg",
+  "bbox": [
+   1740,
+   1960,
+   420,
+   140
+  ],
+  "text": "12.02.1869",
+  "IdNr": 38808,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "R-1869c",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   70,
+   495,
+   390,
+   105
+  ],
+  "text": "Siegmund Strauß",
+  "IdNr": 38697,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38697",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   70,
+   670,
+   390,
+   95
+  ],
+  "text": "Siegmund Strauß",
+  "IdNr": 38790,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38790",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   70,
+   795,
+   390,
+   95
+  ],
+  "text": "Isaak Strauß",
+  "IdNr": 38699,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38699",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   70,
+   905,
+   390,
+   95
+  ],
+  "text": "Rickchen Mosbacher",
+  "IdNr": 6449,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n6449",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   70,
+   1065,
+   390,
+   100
+  ],
+  "text": "Abraham Strauß",
+  "IdNr": 38781,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38781",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   70,
+   1185,
+   390,
+   115
+  ],
+  "text": "Jeanette Strauß",
+  "IdNr": 38791,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38791",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   70,
+   1380,
+   390,
+   90
+  ],
+  "text": "Sara Strauß",
+  "IdNr": 38698,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38698",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   70,
+   1615,
+   390,
+   85
+  ],
+  "text": "Zerline Mosbacher",
+  "IdNr": 6500,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n6500",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   70,
+   1735,
+   390,
+   90
+  ],
+  "text": "Regine Strauß",
+  "IdNr": 38809,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38809",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   70,
+   1850,
+   390,
+   135
+  ],
+  "text": "Lina Mosbacher",
+  "IdNr": 6412,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n6412",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   1560,
+   555,
+   900,
+   125
+  ],
+  "text": "15.03.1870",
+  "IdNr": 38697,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38697",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag; weekday cross-check Dienstag OK"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   1560,
+   690,
+   900,
+   125
+  ],
+  "text": "05.04.1870",
+  "IdNr": 38790,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "R-d38790",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag; weekday word illegible; numeral 5 + April clear, matches index"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   1560,
+   830,
+   900,
+   120
+  ],
+  "text": "04.06.1870",
+  "IdNr": 38699,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38699",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag; weekday cross-check Samstag OK"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   1560,
+   950,
+   900,
+   120
+  ],
+  "text": "02.06.1870",
+  "IdNr": 6449,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d6449",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag; weekday cross-check Donnerstag OK"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   1560,
+   1140,
+   900,
+   115
+  ],
+  "text": "24.03.1871",
+  "IdNr": 38781,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "R-d38781",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag; weekday reads 'Sonntag' but 24.03.1871=Friday - clerk error or misread; numeral 24 + März clear, matches index"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   1560,
+   1255,
+   900,
+   145
+  ],
+  "text": "21.09.1871",
+  "IdNr": 38791,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "R-d38791",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag; weekday semi-legible (best read Donnerstag, matches calendar Thursday); numeral 21 + September clear, matches index"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   1560,
+   1421,
+   900,
+   139
+  ],
+  "text": "14.05.1872",
+  "IdNr": 38698,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38698",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag; weekday cross-check Dienstag OK"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   1560,
+   1614,
+   900,
+   115
+  ],
+  "text": "15.08.1872",
+  "IdNr": 6412,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d6412",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag; weekday cross-check Donnerstag OK"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   1560,
+   1743,
+   900,
+   102
+  ],
+  "text": "05.10.1872",
+  "IdNr": 38809,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38809",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag; weekday cross-check Samstag OK"
+ },
+ {
+  "file": "g12_22.jpg",
+  "bbox": [
+   1560,
+   1865,
+   900,
+   130
+  ],
+  "text": "18.06.1872",
+  "IdNr": 6500,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d6500",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right parallel cert book; paired via index person + weekday cross-check or medium flag; cell reads 'Dienstag den 8ten[struck] achtzehnten Juni' + 1897 margin correction confirming 18; Dienstag OK for 18.06.1872"
+ },
+ {
+  "file": "g13_22.jpg",
+  "bbox": [
+   230,
+   630,
+   350,
+   140
+  ],
+  "text": "Jeanette Strauß",
+  "IdNr": 38783,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38783",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right cert book (weekday+date+time); paired via index person + weekday cross-check"
+ },
+ {
+  "file": "g13_22.jpg",
+  "bbox": [
+   230,
+   815,
+   350,
+   115
+  ],
+  "text": "Jeta Mosbacher",
+  "IdNr": 38754,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38754",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right cert book (weekday+date+time); paired via index person + weekday cross-check"
+ },
+ {
+  "file": "g13_22.jpg",
+  "bbox": [
+   230,
+   1020,
+   350,
+   120
+  ],
+  "text": "Moses Strauß",
+  "IdNr": 38792,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38792",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right cert book (weekday+date+time); paired via index person + weekday cross-check"
+ },
+ {
+  "file": "g13_22.jpg",
+  "bbox": [
+   230,
+   1195,
+   350,
+   110
+  ],
+  "text": "Ruben Strauß",
+  "IdNr": 38810,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38810",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right cert book (weekday+date+time); paired via index person + weekday cross-check"
+ },
+ {
+  "file": "g13_22.jpg",
+  "bbox": [
+   230,
+   1365,
+   350,
+   125
+  ],
+  "text": "Selma Strauß",
+  "IdNr": 38782,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38782",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right cert book (weekday+date+time); paired via index person + weekday cross-check"
+ },
+ {
+  "file": "g13_22.jpg",
+  "bbox": [
+   230,
+   1520,
+   350,
+   125
+  ],
+  "text": "Felix Mosbacher",
+  "IdNr": 38755,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38755",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right cert book (weekday+date+time); paired via index person + weekday cross-check"
+ },
+ {
+  "file": "g13_22.jpg",
+  "bbox": [
+   230,
+   1670,
+   350,
+   115
+  ],
+  "text": "Friederike Strauß",
+  "IdNr": 38793,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "L-n38793",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right cert book (weekday+date+time); paired via index person + weekday cross-check"
+ },
+ {
+  "file": "g13_22.jpg",
+  "bbox": [
+   1520,
+   700,
+   940,
+   140
+  ],
+  "text": "21.10.1873",
+  "IdNr": 38783,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38783",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right cert book (weekday+date+time); paired via index person + weekday cross-check; weekday cross-check Dienstag OK"
+ },
+ {
+  "file": "g13_22.jpg",
+  "bbox": [
+   1520,
+   840,
+   940,
+   140
+  ],
+  "text": "21.12.1873",
+  "IdNr": 38754,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38754",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right cert book (weekday+date+time); paired via index person + weekday cross-check; weekday cross-check Sonntag OK"
+ },
+ {
+  "file": "g13_22.jpg",
+  "bbox": [
+   1520,
+   1100,
+   940,
+   130
+  ],
+  "text": "06.01.1874",
+  "IdNr": 38792,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38792",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right cert book (weekday+date+time); paired via index person + weekday cross-check; weekday cross-check Dienstag OK"
+ },
+ {
+  "file": "g13_22.jpg",
+  "bbox": [
+   1520,
+   1250,
+   940,
+   100
+  ],
+  "text": "26.02.1874",
+  "IdNr": 38810,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38810",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right cert book (weekday+date+time); paired via index person + weekday cross-check; weekday cross-check Donnerstag OK"
+ },
+ {
+  "file": "g13_22.jpg",
+  "bbox": [
+   1520,
+   1455,
+   940,
+   110
+  ],
+  "text": "07.05.1875",
+  "IdNr": 38782,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38782",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right cert book (weekday+date+time); paired via index person + weekday cross-check; weekday cross-check Freitag OK"
+ },
+ {
+  "file": "g13_22.jpg",
+  "bbox": [
+   1520,
+   1575,
+   940,
+   110
+  ],
+  "text": "25.08.1875",
+  "IdNr": 38755,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38755",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right cert book (weekday+date+time); paired via index person + weekday cross-check; weekday cross-check Mittwoch OK"
+ },
+ {
+  "file": "g13_22.jpg",
+  "bbox": [
+   1520,
+   1695,
+   940,
+   110
+  ],
+  "text": "19.09.1875",
+  "IdNr": 38793,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R-d38793",
+  "pairing": "cross-book",
+  "pairing_note": "name cell from left summary register (no dates there); date cell from right cert book (weekday+date+time); paired via index person + weekday cross-check; weekday cross-check Sonntag OK"
+ },
+ {
+  "file": "s01_22.jpg",
+  "bbox": [
+   373,
+   425,
+   118,
+   72
+  ],
+  "text": "Strauß",
+  "IdNr": 38312,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "s01-n1",
+  "pairing": "narrative",
+  "pairing_note": "narrative death entry 1821; full name line-broken (Kop-pel Strauß), surname word labeled; date not in index, unlabeled per single-reader rule"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   157,
+   495,
+   235,
+   164
+  ],
+  "text": "Giedle Mosbacher",
+  "IdNr": 38315,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "R3@sameY"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   1296,
+   495,
+   474,
+   164
+  ],
+  "text": "28.06.1823",
+  "IdNr": 38315,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R3"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   157,
+   659,
+   235,
+   164
+  ],
+  "text": "Salomon Mosbacher",
+  "IdNr": 38622,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "R4@sameY"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   1296,
+   659,
+   474,
+   164
+  ],
+  "text": "04.10.1823",
+  "IdNr": 38622,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R4"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   157,
+   823,
+   235,
+   164
+  ],
+  "text": "Riefke Rothschild",
+  "IdNr": 38623,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "R5@sameY"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   1296,
+   823,
+   474,
+   164
+  ],
+  "text": "09.04.1825",
+  "IdNr": 38623,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R5"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   157,
+   987,
+   235,
+   164
+  ],
+  "text": "Löw Rothschild",
+  "IdNr": 38624,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "R6@sameY"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   1296,
+   987,
+   474,
+   164
+  ],
+  "text": "11.05.1825",
+  "IdNr": 38624,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R6"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   157,
+   1315,
+   235,
+   164
+  ],
+  "text": "Ruchme Mosbacher",
+  "IdNr": 38625,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "R8@sameY"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   1296,
+   1315,
+   474,
+   164
+  ],
+  "text": "08.04.1827",
+  "IdNr": 38625,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "R8"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   157,
+   1479,
+   235,
+   164
+  ],
+  "text": "Gundle Mosbacher",
+  "IdNr": 38626,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "R9@sameY"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   1296,
+   1479,
+   474,
+   164
+  ],
+  "text": "07.12.1827",
+  "IdNr": 38626,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "R9"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   157,
+   1807,
+   235,
+   164
+  ],
+  "text": "Lorenz Mosbacher",
+  "IdNr": 38627,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "R11@sameY"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   1296,
+   1807,
+   474,
+   164
+  ],
+  "text": "29.03.1829",
+  "IdNr": 38627,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R11"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   157,
+   1971,
+   235,
+   164
+  ],
+  "text": "Michael Michel",
+  "IdNr": 38628,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "R12@sameY"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   1296,
+   1971,
+   474,
+   164
+  ],
+  "text": "21.12.1829",
+  "IdNr": 38628,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "R12"
+ },
+ {
+  "file": "s03_22.jpg",
+  "bbox": [
+   147,
+   526,
+   226,
+   164
+  ],
+  "text": "Gudle Straus",
+  "IdNr": 38633,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.3"
+ },
+ {
+  "file": "s03_22.jpg",
+  "bbox": [
+   1292,
+   501,
+   442,
+   167
+  ],
+  "text": "26.11.1831",
+  "IdNr": 38633,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.3"
+ },
+ {
+  "file": "s03_22.jpg",
+  "bbox": [
+   147,
+   1018,
+   226,
+   164
+  ],
+  "text": "Jakob Mehnl",
+  "IdNr": 38636,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "0.6"
+ },
+ {
+  "file": "s03_22.jpg",
+  "bbox": [
+   1292,
+   1002,
+   442,
+   167
+  ],
+  "text": "22.05.1834",
+  "IdNr": 38636,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "1.6"
+ },
+ {
+  "file": "s03_22.jpg",
+  "bbox": [
+   147,
+   1510,
+   226,
+   164
+  ],
+  "text": "Jonas Mosbacher",
+  "IdNr": 38639,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "0.9"
+ },
+ {
+  "file": "s03_22.jpg",
+  "bbox": [
+   1292,
+   1503,
+   442,
+   167
+  ],
+  "text": "09.08.1835",
+  "IdNr": 38639,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "1.9"
+ },
+ {
+  "file": "s03_22.jpg",
+  "bbox": [
+   147,
+   1674,
+   226,
+   164
+  ],
+  "text": "Michelle Michael",
+  "IdNr": 38640,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "0.10"
+ },
+ {
+  "file": "s03_22.jpg",
+  "bbox": [
+   1292,
+   1670,
+   442,
+   167
+  ],
+  "text": "26.06.1836",
+  "IdNr": 38640,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "1.10"
+ },
+ {
+  "file": "s03_22.jpg",
+  "bbox": [
+   147,
+   1838,
+   226,
+   164
+  ],
+  "text": "Madel Mosbacher",
+  "IdNr": 38098,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "0.11"
+ },
+ {
+  "file": "s03_22.jpg",
+  "bbox": [
+   1292,
+   1837,
+   442,
+   167
+  ],
+  "text": "08.04.1837",
+  "IdNr": 38098,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "1.11"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   150,
+   190,
+   390,
+   105
+  ],
+  "text": "Isaak Michel",
+  "IdNr": 35242,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "L"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   1330,
+   155,
+   370,
+   135
+  ],
+  "text": "06.05.1850",
+  "IdNr": 35242,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "high",
+  "band": "R"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   150,
+   385,
+   390,
+   65
+  ],
+  "text": "Jette Marx",
+  "IdNr": 38649,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "L"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   1330,
+   295,
+   370,
+   170
+  ],
+  "text": "22.05.1850",
+  "IdNr": 38649,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "high",
+  "band": "R"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   150,
+   490,
+   390,
+   80
+  ],
+  "text": "Jette Michel",
+  "IdNr": 38651,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "L"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   1330,
+   485,
+   370,
+   140
+  ],
+  "text": "22.07.1850",
+  "IdNr": 38651,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "high",
+  "band": "R"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   150,
+   635,
+   390,
+   80
+  ],
+  "text": "Eva Rothschild",
+  "IdNr": 38652,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "L"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   1330,
+   635,
+   370,
+   117
+  ],
+  "text": "20.10.1850",
+  "IdNr": 38652,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "high",
+  "band": "R"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   150,
+   720,
+   390,
+   115
+  ],
+  "text": "Mina Mosbacher",
+  "IdNr": 38653,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "L"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   1330,
+   755,
+   370,
+   130
+  ],
+  "text": "28.04.1853",
+  "IdNr": 38653,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "high",
+  "band": "R"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   150,
+   945,
+   390,
+   80
+  ],
+  "text": "Simson Michel",
+  "IdNr": 38654,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "L"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   1330,
+   950,
+   370,
+   155
+  ],
+  "text": "08.09.1853",
+  "IdNr": 38654,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "high",
+  "band": "R"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   150,
+   1055,
+   390,
+   130
+  ],
+  "text": "Vaibel Mosbacher",
+  "IdNr": 38041,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "L"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   1330,
+   1150,
+   370,
+   185
+  ],
+  "text": "30.12.1853",
+  "IdNr": 38041,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "high",
+  "band": "R"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   150,
+   1330,
+   390,
+   105
+  ],
+  "text": "David Strauß",
+  "IdNr": 38655,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "L"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   1330,
+   1340,
+   370,
+   140
+  ],
+  "text": "20.07.1854",
+  "IdNr": 38655,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "high",
+  "band": "R"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   150,
+   1445,
+   390,
+   125
+  ],
+  "text": "Moses Regensburger",
+  "IdNr": 38664,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "L"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   1330,
+   1490,
+   370,
+   135
+  ],
+  "text": "13.12.1854",
+  "IdNr": 38664,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "high",
+  "band": "R"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   150,
+   1595,
+   390,
+   110
+  ],
+  "text": "Mendel Mosbacher",
+  "IdNr": 38665,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "L"
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   1330,
+   1650,
+   370,
+   185
+  ],
+  "text": "29.12.1854",
+  "IdNr": 38665,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "high",
+  "band": "R"
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   140,
+   134,
+   420,
+   220
+  ],
+  "text": "Kehle Mosbacher",
+  "IdNr": 38667,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.0"
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   1290,
+   250,
+   240,
+   178
+  ],
+  "text": "28.01.1856",
+  "IdNr": 38667,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.0-1"
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   1290,
+   428,
+   240,
+   149
+  ],
+  "text": "14.04.1856",
+  "IdNr": 38668,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "1.2"
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   140,
+   574,
+   420,
+   220
+  ],
+  "text": "Jeanette Strauß",
+  "IdNr": 38669,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.2"
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   1290,
+   577,
+   240,
+   149
+  ],
+  "text": "26.10.1856",
+  "IdNr": 38669,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.3"
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   140,
+   794,
+   420,
+   220
+  ],
+  "text": "Alexander Strauß",
+  "IdNr": 38035,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "0.3"
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   1290,
+   900,
+   240,
+   124
+  ],
+  "text": "19.10.1857",
+  "IdNr": 38035,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "1.5"
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   140,
+   1234,
+   420,
+   220
+  ],
+  "text": "Sara Strauß",
+  "IdNr": 38671,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "0.5"
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   1290,
+   1090,
+   240,
+   170
+  ],
+  "text": "19.03.1858",
+  "IdNr": 38671,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "1.6-7"
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   140,
+   1454,
+   420,
+   220
+  ],
+  "text": "Seligmann Hirsch",
+  "IdNr": 38672,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "verified",
+  "band": "0.6"
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   1290,
+   1322,
+   240,
+   149
+  ],
+  "text": "11.08.1858",
+  "IdNr": 38672,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "verified",
+  "band": "1.8"
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   140,
+   1674,
+   420,
+   220
+  ],
+  "text": "Mattche Marx",
+  "IdNr": 38673,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.7"
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   1290,
+   1620,
+   240,
+   149
+  ],
+  "text": "27.02.1859",
+  "IdNr": 38673,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.10"
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   140,
+   1894,
+   420,
+   220
+  ],
+  "text": "Manuel Mosbacher",
+  "IdNr": 38674,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.8"
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   1290,
+   1910,
+   270,
+   230
+  ],
+  "text": "06.01.1860",
+  "IdNr": 38674,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.11-12"
+ },
+ {
+  "file": "s07_22.jpg",
+  "bbox": [
+   150,
+   142,
+   430,
+   160
+  ],
+  "text": "Rachel Strauß",
+  "IdNr": 38676,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.0"
+ },
+ {
+  "file": "s07_22.jpg",
+  "bbox": [
+   1300,
+   145,
+   320,
+   155
+  ],
+  "text": "31.05.1860",
+  "IdNr": 38676,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.0"
+ },
+ {
+  "file": "s07_22.jpg",
+  "bbox": [
+   150,
+   302,
+   430,
+   160
+  ],
+  "text": "Wilhelmine Strauß",
+  "IdNr": 38675,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.1"
+ },
+ {
+  "file": "s07_22.jpg",
+  "bbox": [
+   1300,
+   430,
+   320,
+   180
+  ],
+  "text": "24.03.1861",
+  "IdNr": 38675,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.1-2"
+ },
+ {
+  "file": "s07_22.jpg",
+  "bbox": [
+   150,
+   622,
+   430,
+   160
+  ],
+  "text": "Veist Strauß",
+  "IdNr": 38677,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.3"
+ },
+ {
+  "file": "s07_22.jpg",
+  "bbox": [
+   1300,
+   615,
+   320,
+   160
+  ],
+  "text": "31.03.1862",
+  "IdNr": 38677,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.3-4"
+ },
+ {
+  "file": "s07_22.jpg",
+  "bbox": [
+   150,
+   1262,
+   430,
+   160
+  ],
+  "text": "Jeanette Strauß",
+  "IdNr": 38036,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.7"
+ },
+ {
+  "file": "s07_22.jpg",
+  "bbox": [
+   1300,
+   1225,
+   320,
+   185
+  ],
+  "text": "22.11.1864",
+  "IdNr": 38036,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.7"
+ },
+ {
+  "file": "s07_22.jpg",
+  "bbox": [
+   150,
+   1742,
+   430,
+   160
+  ],
+  "text": "Jeanette Strauß",
+  "IdNr": 38694,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.10"
+ },
+ {
+  "file": "s07_22.jpg",
+  "bbox": [
+   1300,
+   1685,
+   320,
+   160
+  ],
+  "text": "08.02.1869",
+  "IdNr": 38694,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.10"
+ },
+ {
+  "file": "s07_22.jpg",
+  "bbox": [
+   150,
+   1902,
+   430,
+   160
+  ],
+  "text": "Jeanette Strauß",
+  "IdNr": 38695,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "0.11"
+ },
+ {
+  "file": "s07_22.jpg",
+  "bbox": [
+   1300,
+   1845,
+   320,
+   160
+  ],
+  "text": "11.02.1869",
+  "IdNr": 38695,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.11"
+ },
+ {
+  "file": "s08_22.jpg",
+  "bbox": [
+   150,
+   500,
+   410,
+   165
+  ],
+  "text": "Siegmund Strauß",
+  "IdNr": 38697,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "2"
+ },
+ {
+  "file": "s08_22.jpg",
+  "bbox": [
+   1300,
+   490,
+   870,
+   190
+  ],
+  "text": "31.05.1870",
+  "IdNr": 38697,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "2"
+ },
+ {
+  "file": "s08_22.jpg",
+  "bbox": [
+   150,
+   705,
+   410,
+   110
+  ],
+  "text": "Charlotte Mosbacher",
+  "IdNr": 38042,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "3"
+ },
+ {
+  "file": "s08_22.jpg",
+  "bbox": [
+   1300,
+   695,
+   870,
+   185
+  ],
+  "text": "08.07.1871",
+  "IdNr": 38042,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "3"
+ },
+ {
+  "file": "s08_22.jpg",
+  "bbox": [
+   150,
+   925,
+   410,
+   150
+  ],
+  "text": "Sara Strauß",
+  "IdNr": 38698,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "4"
+ },
+ {
+  "file": "s08_22.jpg",
+  "bbox": [
+   1300,
+   900,
+   870,
+   215
+  ],
+  "text": "05.06.1872",
+  "IdNr": 38698,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "4"
+ },
+ {
+  "file": "s08_22.jpg",
+  "bbox": [
+   150,
+   1225,
+   410,
+   180
+  ],
+  "text": "Clara Mosbacher",
+  "IdNr": 38039,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "5"
+ },
+ {
+  "file": "s08_22.jpg",
+  "bbox": [
+   1300,
+   1180,
+   870,
+   235
+  ],
+  "text": "02.04.1874",
+  "IdNr": 38039,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "5"
+ },
+ {
+  "file": "s08_22.jpg",
+  "bbox": [
+   150,
+   1430,
+   410,
+   145
+  ],
+  "text": "Isaak Strauß",
+  "IdNr": 38699,
+  "project": "eschau1081-batch2",
+  "kind": "name",
+  "conf": "medium",
+  "band": "6"
+ },
+ {
+  "file": "s08_22.jpg",
+  "bbox": [
+   1300,
+   1425,
+   870,
+   135
+  ],
+  "text": "15.11.1875",
+  "IdNr": 38699,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium",
+  "band": "6"
+ },
+ {
+  "file": "g07_22.jpg",
+  "bbox": [
+   81,
+   150,
+   271,
+   181
+  ],
+  "text": "Regina Mosbacher",
+  "IdNr": 38749,
+  "project": "eschau1081-batch1",
+  "kind": "name",
+  "conf": "verified",
+  "band": "0.1"
+ },
+ {
+  "file": "g07_22.jpg",
+  "bbox": [
+   81,
+   331,
+   271,
+   334
+  ],
+  "text": "Josef Rothschild",
+  "IdNr": 1945,
+  "project": "eschau1081-batch1",
+  "kind": "name",
+  "conf": "verified",
+  "band": "0.2"
+ },
+ {
+  "file": "g07_22.jpg",
+  "bbox": [
+   81,
+   1096,
+   271,
+   174
+  ],
+  "text": "Madel Strauß",
+  "IdNr": 38816,
+  "project": "eschau1081-batch1",
+  "kind": "name",
+  "conf": "verified",
+  "band": "0.4"
+ },
+ {
+  "file": "g07_22.jpg",
+  "bbox": [
+   81,
+   1407,
+   271,
+   199
+  ],
+  "text": "Mina Mosbacher",
+  "IdNr": 38653,
+  "project": "eschau1081-batch1",
+  "kind": "name",
+  "conf": "verified",
+  "band": "0.6"
+ },
+ {
+  "file": "g07_22.jpg",
+  "bbox": [
+   81,
+   1606,
+   271,
+   138
+  ],
+  "text": "Sarah Rothschild",
+  "IdNr": 38780,
+  "project": "eschau1081-batch1",
+  "kind": "name",
+  "conf": "verified",
+  "band": "0.7"
+ },
+ {
+  "file": "g07_22.jpg",
+  "bbox": [
+   1908,
+   162,
+   348,
+   161
+  ],
+  "text": "25.03.1848",
+  "IdNr": 38749,
+  "project": "eschau1081-batch1",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.1"
+ },
+ {
+  "file": "g07_22.jpg",
+  "bbox": [
+   1908,
+   323,
+   348,
+   333
+  ],
+  "text": "25.01.1849",
+  "IdNr": 1945,
+  "project": "eschau1081-batch1",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.2"
+ },
+ {
+  "file": "g07_22.jpg",
+  "bbox": [
+   1908,
+   1086,
+   348,
+   173
+  ],
+  "text": "25.10.1849",
+  "IdNr": 38816,
+  "project": "eschau1081-batch1",
+  "kind": "date",
+  "conf": "medium",
+  "band": "1.5"
+ },
+ {
+  "file": "g07_22.jpg",
+  "bbox": [
+   1908,
+   1394,
+   348,
+   200
+  ],
+  "text": "28.03.1851",
+  "IdNr": 38653,
+  "project": "eschau1081-batch1",
+  "kind": "date",
+  "conf": "verified",
+  "band": "1.7"
+ },
+ {
+  "file": "g07_22.jpg",
+  "bbox": [
+   1908,
+   1594,
+   348,
+   137
+  ],
+  "text": "08.04.1851",
+  "IdNr": 38780,
+  "project": "eschau1081-batch1",
+  "kind": "date",
+  "conf": "verified",
+  "band": "1.8"
+ },
+ {
+  "file": "g07_22.jpg",
+  "bbox": [
+   1908,
+   1731,
+   348,
+   156
+  ],
+  "text": "05.01.1852",
+  "IdNr": 38765,
+  "project": "eschau1081-batch1",
+  "kind": "date",
+  "conf": "verified",
+  "band": "1.9"
+ },
+ {
+  "file": "g07_22.jpg",
+  "bbox": [
+   1908,
+   1887,
+   348,
+   253
+  ],
+  "text": "08.02.1852",
+  "IdNr": 38798,
+  "project": "eschau1081-batch1",
+  "kind": "date",
+  "conf": "verified",
+  "band": "1.10"
+ },
+ {
+  "file": "s04_22.jpg",
+  "bbox": [
+   150,
+   92,
+   280,
+   232
+  ],
+  "text": "Rachel Strauß",
+  "project": "eschau-seeds",
+  "kind": "name",
+  "IdNr": 38641
+ },
+ {
+  "file": "s04_22.jpg",
+  "bbox": [
+   150,
+   296,
+   280,
+   165
+  ],
+  "text": "Raphael Simon",
+  "project": "eschau-seeds",
+  "kind": "name",
+  "IdNr": 38642
+ },
+ {
+  "file": "s04_22.jpg",
+  "bbox": [
+   890,
+   322,
+   360,
+   157
+  ],
+  "text": "30.03.1840",
+  "project": "eschau-seeds",
+  "kind": "date",
+  "IdNr": 38642
+ },
+ {
+  "file": "s04_22.jpg",
+  "bbox": [
+   150,
+   605,
+   280,
+   173
+  ],
+  "text": "Wolf Mehnl",
+  "project": "eschau-seeds",
+  "kind": "name",
+  "IdNr": 38644
+ },
+ {
+  "file": "s04_22.jpg",
+  "bbox": [
+   890,
+   631,
+   360,
+   165
+  ],
+  "text": "14.04.1840",
+  "project": "eschau-seeds",
+  "kind": "date",
+  "IdNr": 38644
+ },
+ {
+  "file": "s04_22.jpg",
+  "bbox": [
+   150,
+   433,
+   280,
+   200
+  ],
+  "text": "Gudle Straus",
+  "project": "eschau-seeds",
+  "kind": "name",
+  "IdNr": 38643
+ },
+ {
+  "file": "s04_22.jpg",
+  "bbox": [
+   890,
+   459,
+   360,
+   192
+  ],
+  "text": "17.04.1840",
+  "project": "eschau-seeds",
+  "kind": "date",
+  "IdNr": 38643
+ },
+ {
+  "file": "s04_22.jpg",
+  "bbox": [
+   150,
+   750,
+   280,
+   195
+  ],
+  "text": "Isaak Mosbacher",
+  "project": "eschau-seeds",
+  "kind": "name",
+  "IdNr": 38309
+ },
+ {
+  "file": "s04_22.jpg",
+  "bbox": [
+   890,
+   776,
+   360,
+   173
+  ],
+  "text": "19.01.1845",
+  "project": "eschau-seeds",
+  "kind": "date",
+  "IdNr": 38309,
+  "conf": "medium",
+  "note": "faint/partially illegible ink; band+row verified 2026-11-06; numerals index-anchored"
+ },
+ {
+  "file": "s04_22.jpg",
+  "bbox": [
+   150,
+   1309,
+   280,
+   176
+  ],
+  "text": "Babeta Mosbacher",
+  "project": "eschau-seeds",
+  "kind": "name",
+  "IdNr": 38646
+ },
+ {
+  "file": "s04_22.jpg",
+  "bbox": [
+   890,
+   1335,
+   360,
+   168
+  ],
+  "text": "14.06.1846",
+  "project": "eschau-seeds",
+  "kind": "date",
+  "IdNr": 38646
+ },
+ {
+  "file": "s04_22.jpg",
+  "bbox": [
+   150,
+   1457,
+   280,
+   208
+  ],
+  "text": "Jakob Solinger",
+  "project": "eschau-seeds",
+  "kind": "name",
+  "IdNr": 38647
+ },
+ {
+  "file": "s04_22.jpg",
+  "bbox": [
+   890,
+   1483,
+   360,
+   200
+  ],
+  "text": "03.02.1848",
+  "project": "eschau-seeds",
+  "kind": "date",
+  "IdNr": 38647
+ },
+ {
+  "file": "s04_22.jpg",
+  "bbox": [
+   150,
+   1637,
+   280,
+   178
+  ],
+  "text": "Sara Rothschild",
+  "project": "eschau-seeds",
+  "kind": "name",
+  "IdNr": 38648
+ },
+ {
+  "file": "s04_22.jpg",
+  "bbox": [
+   890,
+   1663,
+   360,
+   170
+  ],
+  "text": "13.04.1848",
+  "project": "eschau-seeds",
+  "kind": "date",
+  "IdNr": 38648
+ },
+ {
+  "file": "s04_22.jpg",
+  "bbox": [
+   150,
+   1787,
+   280,
+   189
+  ],
+  "text": "Berez Löb Mosbacher",
+  "project": "eschau-seeds",
+  "kind": "name",
+  "IdNr": 6400
+ },
+ {
+  "file": "s04_22.jpg",
+  "bbox": [
+   890,
+   1813,
+   360,
+   181
+  ],
+  "text": "20.04.1849",
+  "project": "eschau-seeds",
+  "kind": "date",
+  "IdNr": 6400,
+  "conf": "medium",
+  "note": "faint ink; band verified 2026-11-06; numerals index-anchored"
+ },
+ {
+  "file": "s04_22.jpg",
+  "bbox": [
+   150,
+   1948,
+   280,
+   158
+  ],
+  "text": "Jette Michel",
+  "project": "eschau-seeds",
+  "kind": "name",
+  "IdNr": 35241
+ },
+ {
+  "file": "s04_22.jpg",
+  "bbox": [
+   890,
+   1974,
+   360,
+   150
+  ],
+  "text": "04.05.1849",
+  "project": "eschau-seeds",
+  "kind": "date",
+  "IdNr": 35241,
+  "conf": "medium",
+  "note": "very faint ink; band verified 2026-11-06; numerals index-anchored"
+ },
+ {
+  "file": "s02_22.jpg",
+  "bbox": [
+   180,
+   1108,
+   220,
+   259
+  ],
+  "text": "Jakob Michel",
+  "project": "eschau-seeds",
+  "kind": "name",
+  "IdNr": 38015
+ },
+ {
+  "file": "s04_22.jpg",
+  "bbox": [
+   434,
+   296,
+   166,
+   165
+  ],
+  "text": "Lehrer, Vorsänger",
+  "project": "eschau-occ",
+  "kind": "occupation",
+  "IdNr": 38642
+ },
+ {
+  "file": "s04_22.jpg",
+  "bbox": [
+   434,
+   1457,
+   166,
+   208
+  ],
+  "text": "Handelsmann",
+  "project": "eschau-occ",
+  "kind": "occupation",
+  "IdNr": 38647
+ },
+ {
+  "file": "s04_22.jpg",
+  "bbox": [
+   434,
+   1787,
+   166,
+   189
+  ],
+  "text": "Händler",
+  "project": "eschau-occ",
+  "kind": "occupation",
+  "IdNr": 6400
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   474,
+   173,
+   152,
+   201
+  ],
+  "text": "Handelsmann",
+  "project": "eschau-occ",
+  "kind": "occupation",
+  "IdNr": 35242
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   458,
+   1036,
+   166,
+   138
+  ],
+  "text": "Krämer, Ökonom",
+  "project": "eschau-occ",
+  "kind": "occupation",
+  "IdNr": 38041
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   458,
+   1254,
+   166,
+   178
+  ],
+  "text": "Viehhändler",
+  "project": "eschau-occ",
+  "kind": "occupation",
+  "IdNr": 38655
+ },
+ {
+  "file": "s05_22.jpg",
+  "bbox": [
+   458,
+   1630,
+   166,
+   106
+  ],
+  "text": "Händler",
+  "project": "eschau-occ",
+  "kind": "occupation",
+  "IdNr": 38665
+ },
+ {
+  "file": "s06_22.jpg",
+  "bbox": [
+   450,
+   1671,
+   166,
+   266
+  ],
+  "text": "Schreibmaterialienhändler",
+  "project": "eschau-occ",
+  "kind": "occupation",
+  "IdNr": 38673
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   1745,
+   448,
+   330,
+   128
+  ],
+  "text": "d. 17ten siebzehnten Jan. 1858",
+  "IdNr": 38752,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium"
+ },
+ {
+  "file": "g10_22.jpg",
+  "bbox": [
+   1745,
+   872,
+   330,
+   80
+  ],
+  "text": "den Mittwoch 15ten fünfzehnten",
+  "IdNr": 3664,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium"
+ },
+ {
+  "file": "g07_22.jpg",
+  "bbox": [
+   1880,
+   545,
+   270,
+   105
+  ],
+  "text": "fünfundzwanzigsten Jan. 1849",
+  "IdNr": 38779,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium"
+ },
+ {
+  "file": "g07_22.jpg",
+  "bbox": [
+   1880,
+   1465,
+   280,
+   130
+  ],
+  "text": "Freitag den 28. achtundzwanzigsten März 1851",
+  "IdNr": 38653,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium"
+ },
+ {
+  "file": "g07_22.jpg",
+  "bbox": [
+   1900,
+   1770,
+   280,
+   115
+  ],
+  "text": "Montag den 5. fünften Jan. 1852",
+  "IdNr": 38765,
+  "project": "eschau1081-batch2",
+  "kind": "date",
+  "conf": "medium"
+ }
+]
