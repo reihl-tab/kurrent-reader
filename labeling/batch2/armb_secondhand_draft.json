@@ -1,0 +1,10 @@
+{
+ "_note": "Arm-B draft additions: second-hand (right-page) date cells, STRICT under current label rules. Only text verified by JUF index + calendar arithmetic + plainly legible ink. Weekday omitted when ink conflicts with calendar (r1: ink reads 'Freitag', 17.01.1858 = Sunday). Clock times excluded: left/right pages disagree (4Uhr vs 1Uhr etc.). bboxes [x,y,w,h] on g10_22.jpg (2807x2187). Cells cropped to exactly the verified lines.",
+ "cells": [
+  {"file": "g10_22.jpg", "bbox": [1745, 448, 330, 128], "text": "d. 17ten siebzehnten Jan. 1858", "IdNr": 38752, "project": "eschau1081-batch2", "kind": "date", "conf": "medium", "band": "R-d38752", "pairing": "second-hand", "notes": "weekday omitted (ink/calendar conflict); 'Nachm. 1 Uhr' line excluded (uncorroborated time)"},
+  {"file": "g10_22.jpg", "bbox": [1745, 872, 330, 80], "text": "den Mittwoch 15ten fünfzehnten", "IdNr": 3664, "project": "eschau1081-batch2", "kind": "date", "conf": "medium", "band": "R-d3664", "pairing": "second-hand", "notes": "weekday Mittwoch = calendar PASS + legible; 'Sept. 1858' + time word on next line excluded (line mixes verified + uncorroborated)"}
+ ],
+ "proposal_samples_not_in_manifest": [
+  {"file": "g10_22.jpg", "bbox": [1745, 665, 330, 210], "text": "Am Mittwoch Abends d. 21ten u. zwanzigsten July 1858.", "IdNr": 38675, "kind": "date", "band": "R-d38675", "pairing": "second-hand", "why_not_strict": "'Abends' legible but uncorroborated time-of-day word; left-page verified label carries no time"}
+ ]
+}
