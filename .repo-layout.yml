@@ -36,6 +36,18 @@
         "CODEOWNERS"
       ]
     },
+    "docs": {
+      "allow": [
+        "*.md"
+      ]
+    },
+    "requirements": {
+      "allow": [
+        "*.in",
+        "*.json",
+        "*.txt"
+      ]
+    },
     "scripts": {
       "allow": [
         "*.py"

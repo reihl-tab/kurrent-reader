@@ -71,13 +71,18 @@ docker build -t kurrent-reader .
 docker run --rm -v "$PWD/data:/data" kurrent-reader run /data/page.jpg /data/out
 ```
 
-Local:
+Local (Python 3.11 to 3.13; kraken has no Python 3.14 release yet, #39):
 
 ```bash
-pip install --index-url https://download.pytorch.org/whl/cpu torch
-pip install .
+pip install --require-hashes -r requirements/build.txt
+pip install --require-hashes --extra-index-url https://download.pytorch.org/whl/cpu -r requirements/core.txt
+pip install --no-deps --no-build-isolation ./
 kurrent-reader --help
 ```
+
+Every install reads a hash-locked file under `requirements/`; CPU-only
+`torch` and `torchvision` come from the PyTorch CPU index, everything else
+from PyPI. See [docs/DEPENDENCY-LOCKS.md](docs/DEPENDENCY-LOCKS.md).
 
 Commands:
 
@@ -94,7 +99,10 @@ The model downloads from Hugging Face on first use (~1.3 GB).
 ## Development
 
 ```bash
-pip install ".[dev]"
+pip install --require-hashes -r requirements/build.txt
+pip install --require-hashes --extra-index-url https://download.pytorch.org/whl/cpu -r requirements/dev.txt
+pip install --no-deps --no-build-isolation -e ./
+python scripts/check_install_pins.py   # every install stays hash-locked
 python -m pytest tests/        # synthetic data only; no model download
 python -m mypy src/          # enforced in CI for src/ + the typed test files
                              # (the remaining test modules are not type-checked)
@@ -111,6 +119,7 @@ src/kurrent_reader/
   pipeline.py     original-vs-cleaned end-to-end run + comparison
   cli.py          kurrent-reader command
 Dockerfile        python:3.11-slim, CPU torch, package + tests
+requirements/     hash-locked installs (docs/DEPENDENCY-LOCKS.md)
 tests/            pytest suite on synthetic images (fast, offline)
 ```
 

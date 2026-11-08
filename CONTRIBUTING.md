@@ -21,6 +21,22 @@ Thanks for helping improve kurrent-reader.
 4. **Squash merge** once checks pass. Commit messages explain the why and
    reference the issue.
 
+## Dependencies (hash-locked)
+
+Install for development with the locks under `requirements/` (Python 3.11
+to 3.13; kraken has no Python 3.14 release yet, #39):
+
+```bash
+pip install --require-hashes -r requirements/build.txt
+pip install --require-hashes --extra-index-url https://download.pytorch.org/whl/cpu -r requirements/dev.txt
+pip install --no-deps --no-build-isolation -e ./
+```
+
+Documented, Docker and workflow installs stay in these shapes;
+`python scripts/check_install_pins.py` (also run by the test suite) flags
+any other. A dependency change edits `pyproject.toml` and re-locks in the
+same PR, as described in `docs/DEPENDENCY-LOCKS.md`.
+
 ## Style
 
 - Code and documentation are written in English unless the repo says

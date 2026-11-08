@@ -11,21 +11,26 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends libgomp1 \
     && rm -rf /var/lib/apt/lists/*
 
-# pip 24.0 bundled in the base image mis-resolves safetensors (InconsistentCandidate
-# on ~=0.7 vs the 0.8.0 candidate) during `pip install .`; upgrade pip first.
-# Found by the docker-smoke CI job (issue #34).
-RUN pip install --upgrade pip
-
-# CPU-only PyTorch keeps the image small; it is not on PyPI's default index.
-RUN pip install --index-url https://download.pytorch.org/whl/cpu "torch>=2.9,<=2.14"
-
+# Every install reads a hash-locked file under requirements/ (see
+# docs/DEPENDENCY-LOCKS.md). The base image's pip 24.0 is used as is: with
+# exact pins it no longer hits the safetensors InconsistentCandidate error
+# (issue #34) that the unpinned `pip install .` met, so no pip upgrade step.
 WORKDIR /app
+COPY requirements ./requirements
+
+# Build prerequisites for the --no-build-isolation install below.
+RUN pip install --require-hashes -r requirements/build.txt
+
+# Runtime dependencies. CPU-only PyTorch keeps the image small; torch and
+# torchvision are locked from the PyTorch CPU index, everything else from PyPI.
+RUN pip install --require-hashes --extra-index-url https://download.pytorch.org/whl/cpu -r requirements/core.txt
+
 COPY pyproject.toml README.md ./
 COPY src ./src
-RUN pip install .
+RUN pip install --no-deps --no-build-isolation ./
 
 COPY tests ./tests
-RUN pip install ".[dev]"
+RUN pip install --require-hashes --no-deps -r requirements/dev.txt
 
 # The TrOCR model (~1.3 GB) is downloaded on first use, or bake it in with:
 #   RUN python -c "from huggingface_hub import snapshot_download; snapshot_download('dh-unibe/trocr-kurrent')"
