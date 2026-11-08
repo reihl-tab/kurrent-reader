@@ -16,7 +16,12 @@ jobs:
         with:
           path: ~/.cache/pip
           key: pip-${{ runner.os }}-${{ hashFiles('pyproject.toml') }}
-      - run: pip install -e '.[dev]' pytest
+      - name: Install hash-locked dependencies
+        # Locks under requirements/ (#63, docs/DEPENDENCY-LOCKS.md).
+        run: |
+          pip install --require-hashes -r requirements/build.txt
+          pip install --require-hashes --extra-index-url https://download.pytorch.org/whl/cpu -r requirements/dev.txt
+          pip install --no-deps --no-build-isolation -e ./
       - run: |
           if [ -d tests ]; then python -m pytest tests/ -q; else echo "no tests/ dir on this tree; skipping"; fi
   release:

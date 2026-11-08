@@ -24,10 +24,12 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
           allow-prereleases: true
-      - name: Install CPU-only torch first
-        # Full CUDA torch exhausts the runner disk (#47 follow-up); CPU wheels
-        # match the Dockerfile. Pinned to kraken's torch range (>=2.9,<=2.14),
-        # otherwise the editable install replaces it with full-CUDA torch.
-        run: pip install --index-url https://download.pytorch.org/whl/cpu "torch>=2.9,<=2.14"
-      - run: pip install -e '.[dev]' pytest
+      - name: Install hash-locked dependencies
+        # Locks under requirements/ (#63, docs/DEPENDENCY-LOCKS.md). CPU-only
+        # torch and torchvision come from the PyTorch CPU index (full CUDA
+        # torch exhausts the runner disk, #47 follow-up), as in the Dockerfile.
+        run: |
+          pip install --require-hashes -r requirements/build.txt
+          pip install --require-hashes --extra-index-url https://download.pytorch.org/whl/cpu -r requirements/dev.txt
+          pip install --no-deps --no-build-isolation -e ./
       - run: python -m pytest tests/ -q

@@ -34,3 +34,4 @@ jobs:
         run: |
           python3 -m unittest discover -s tests/security -p test_scorecard_guard.py -v
           python3 scripts/security/scorecard_guard.py
+          python3 scripts/check_install_pins.py
