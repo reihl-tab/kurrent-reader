@@ -1,0 +1,4 @@
+{"run":"kurrent-namesv5-run-1 (v24)","kernel_url":"https://www.kaggle.com/code/reihlinstinct/kurrent-namesv5-run-1",
+ "outcome":"FAILED FAST - post-boot assert: expected 306 arm-B cells, got 216 after the (correct) 90-cell held-out decontamination; all 3 seed subprocesses exit=1 before training. Kaggle marked the session COMPLETE because the driver itself exited normally.",
+ "fix":"v25: KURRENT_EXPECT_CELLS default 306 -> 216. Relaunched as kurrent-namesv5-run-2.",
+ "useful_byproduct":"boot evals ran clean 3x on the v5 set with the BASE model: names v5 CER 0.8928 (105 cells), cer_v4subset 0.9067 (unchanged - sanity), span_hit_rate 0.0 (50 date cells), EVAL500 0.0624/0.7372 (unchanged). Timing: boot ~500s/seed (EVAL500 dominates ~385s; 105-cell names eval only ~38s)."}
