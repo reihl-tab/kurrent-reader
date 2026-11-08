@@ -1,0 +1,99 @@
+{
+  "run": "kurrent-multiseed-run-1 (v23)",
+  "kernel_url": "https://www.kaggle.com/code/reihlinstinct/kurrent-multiseed-run-1",
+  "question": "Does v18's step-250 names-CER dip (0.8894, init 0.9067) recur across seeds, or is it selection noise on the 7-cell names dev eval?",
+  "seeds": {
+    "1": {
+      "names_traj": {
+        "init": 0.9067,
+        "125": 0.9067,
+        "250": 1.0005,
+        "375": 0.9276,
+        "500": 0.9276
+      },
+      "best": {
+        "step": 0,
+        "names_cer": 0.9067,
+        "note": "no step beat init; selector kept base"
+      },
+      "eval500": {
+        "before": [
+          0.0624,
+          0.7372
+        ],
+        "best": "base (unchanged)"
+      },
+      "seeds_fit_cer": 0.9646,
+      "train_s": 793
+    },
+    "2": {
+      "names_traj": {
+        "init": 0.9067,
+        "125": 0.9067,
+        "250": 0.8998,
+        "375": 0.8998,
+        "500": 0.8998
+      },
+      "best": {
+        "step": 250,
+        "names_cer": 0.8998
+      },
+      "eval500": {
+        "before": [
+          0.0624,
+          0.7372
+        ],
+        "best_step250": [
+          0.0543,
+          0.7756
+        ]
+      },
+      "seeds_fit_cer": 0.9032,
+      "train_s": 793
+    },
+    "3": {
+      "names_traj": {
+        "init": 0.9067,
+        "125": 0.879,
+        "250": 1.0109,
+        "375": 1.0109,
+        "500": 1.0109
+      },
+      "best": {
+        "step": 125,
+        "names_cer": 0.879
+      },
+      "eval500": {
+        "before": [
+          0.0624,
+          0.7372
+        ],
+        "best_step125": [
+          0.0614,
+          0.7423
+        ]
+      },
+      "seeds_fit_cer": 0.9158,
+      "train_s": 795
+    }
+  },
+  "references": {
+    "v18_seed42": {
+      "names_best": "0.8894@250"
+    },
+    "v22_armB_seed42": {
+      "names_traj": [
+        0.9067,
+        0.9067,
+        0.9172,
+        1.0109,
+        1.0109
+      ],
+      "selector": "kept base",
+      "seeds_fit_cer": 0.9622
+    }
+  },
+  "finding": "2 of 3 fresh seeds produced transient names-CER dips below init (0.8998@250, 0.8790@125), 1 produced none. v18's 0.8894@250 sits inside this spread: dips of this size occur by chance across seeds on the 7-cell names eval. Word accuracy stayed 0.0 on all names evals; movement is character-level wiggle on 7 short cells.",
+  "claim_boundary": "dev-best@step is selection on a 7-person dev eval; achieved scores, not causal effects; EVAL500 reported separately (seed2 best ckpt 0.0543/0.7756 vs before 0.0624/0.7372; seed3 flat 0.0614/0.7423; single runs each).",
+  "wall_s_total": 4323
+}
